@@ -1,0 +1,13 @@
+filename = 'RecipeDumper-0.3.0.jar'
+name = 'RecipeDumper'
+side = 'both'
+
+[download]
+hash = '599af61f627fb8b8d8011a3671c5f6017b90112fa7a251033ed819ddb77c8fe2a13320b7a3eed153d044e751ba06cd8324c1caafd597fafb608067973c6faabb'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/1qVS13Zd/versions/gCkR68qK/RecipeDumper-0.3.0.jar'
+
+[update.modrinth]
+mod-id = '1qVS13Zd'
+version = 'gCkR68qK'

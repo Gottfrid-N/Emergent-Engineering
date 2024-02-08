@@ -1,0 +1,13 @@
+filename = 'ModernStartupQOL-1.1-1.20.X.jar'
+name = 'Modern Startup QOL'
+side = 'both'
+
+[download]
+hash = '91341a31aff33011bd6b1337bd4e2f59ed97017b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4581271
+project-id = 865091

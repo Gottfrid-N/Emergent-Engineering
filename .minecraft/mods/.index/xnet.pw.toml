@@ -1,0 +1,13 @@
+filename = 'xnet-1.20-6.0.2.jar'
+name = 'XNet'
+side = 'both'
+
+[download]
+hash = 'b49acb4465f34dc07fa690c3c6390ac8a891c2148d8863bed9131296501f3b8c0f61548e85b13feff81d241bfb14b619feab0e673299afeb0d01755fbaab882f'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/iu1jkWqa/versions/v7egKLKS/xnet-1.20-6.0.2.jar'
+
+[update.modrinth]
+mod-id = 'iu1jkWqa'
+version = 'v7egKLKS'

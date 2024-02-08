@@ -1,0 +1,13 @@
+filename = 'bloodmagic-1.20.1-3.3.2-44.jar'
+name = 'Blood Magic'
+side = 'both'
+
+[download]
+hash = '722e59a9c56aff3fabe5bf612463fc088f315eae06890be046d133710c8ec438c0c4875a11329f8f3c29a64a58289163f2eb4d7a6f637855d39c01d37d2932e7'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/PbNc6qBY/versions/KFYCrtLV/bloodmagic-1.20.1-3.3.2-44.jar'
+
+[update.modrinth]
+mod-id = 'PbNc6qBY'
+version = 'KFYCrtLV'

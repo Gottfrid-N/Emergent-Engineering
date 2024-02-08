@@ -1,0 +1,13 @@
+filename = 'rubidium-extra-0.5.4+mc1.20.1-build.116.jar'
+name = 'Embeddium (Rubidium) Extra'
+side = 'both'
+
+[download]
+hash = 'f85427c5eea280b8d162367c0139eebfd661daff'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5071765
+project-id = 654373

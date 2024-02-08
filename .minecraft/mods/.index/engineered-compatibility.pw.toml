@@ -1,0 +1,13 @@
+filename = 'engineeredcompatibility-2.2.0.jar'
+name = 'Engineered Compatibility'
+side = 'server'
+
+[download]
+hash = '0f6fb6ef3b48d1c5cee83c29391fd0c0dc1fa15cf396df49044c91bd93eab2a3f3531adfc06ec6427554ca5a2c490c603223282f904dcf904eb9e1d1265a4739'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/WlumywmT/versions/zRCay8k4/engineeredcompatibility-2.2.0.jar'
+
+[update.modrinth]
+mod-id = 'WlumywmT'
+version = 'zRCay8k4'

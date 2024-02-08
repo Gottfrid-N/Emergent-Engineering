@@ -1,0 +1,13 @@
+filename = 'thermal_cultivation-1.20.1-11.0.0.22.jar'
+name = 'Thermal Cultivation'
+side = 'both'
+
+[download]
+hash = 'd5a537c80dca8151798d0c5ae3e122ca9ded5989c885f88c4e4620e7c66250ba82cfb2a26527b70e319b7498a83a5c2f1f7080bb08e14c987a1c7af57f02936e'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/5beJoehw/versions/68y2RhYV/thermal_cultivation-1.20.1-11.0.0.22.jar'
+
+[update.modrinth]
+mod-id = '5beJoehw'
+version = '68y2RhYV'

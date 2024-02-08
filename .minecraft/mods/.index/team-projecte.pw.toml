@@ -1,0 +1,13 @@
+filename = 'teamprojecte-1.20.1-1.1.2.jar'
+name = 'Team ProjectE'
+side = 'both'
+
+[download]
+hash = '9cbdd550d6e3200b41c18d511d433c9fc41f5056'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4882959
+project-id = 689273
