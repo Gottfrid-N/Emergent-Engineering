@@ -25,12 +25,12 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | getBlock |  |  | BlockContainerJS | ✘ |
 | getEntity |  |  | LivingEntity | ✘ |
-| setXp | int |  | void | ✘ |
 | getXp |  |  | int | ✘ |
+| setXp | int |  | void | ✘ |
 | getPlayer |  |  | Player | ✘ |
-| removeGameStage | String |  | void | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
+| removeGameStage | String |  | void | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
@@ -53,6 +53,11 @@ The block that was broken.
 The player that broke the block.
 ```
 
+- `int getXp()`
+```
+The experience dropped by the block. Always `0` on Fabric.
+```
+
 - `void setXp(int var0)`
 
   Parameters:
@@ -60,20 +65,6 @@ The player that broke the block.
 
 ```
 Sets the experience dropped by the block. Only works on Forge.
-```
-
-- `int getXp()`
-```
-The experience dropped by the block. Always `0` on Fabric.
-```
-
-- `void removeGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
-```
-Removes the specified game stage from the player
 ```
 
 - `boolean hasGameStage(String var0)`
@@ -92,6 +83,15 @@ Checks if the player has the specified game stage
 
 ```
 Adds the specified game stage to the player
+```
+
+- `void removeGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Removes the specified game stage from the player
 ```
 
 - `Object exit(Object var0)`

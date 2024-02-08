@@ -23,8 +23,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getLevel |  |  | Level | ✘ |
 | getBlock |  |  | BlockContainerJS | ✘ |
+| getLevel |  |  | Level | ✘ |
 | getEntity |  |  | Entity | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
@@ -38,14 +38,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ### Documented members:
 
-- `Level getLevel()`
-```
-The level of the block that was placed.
-```
-
 - `BlockContainerJS getBlock()`
 ```
 The block that is placed.
+```
+
+- `Level getLevel()`
+```
+The level of the block that was placed.
 ```
 
 - `Entity getEntity()`

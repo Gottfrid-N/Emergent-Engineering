@@ -20,10 +20,10 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getDrops |  |  | List<ItemEntity> | ✘ |
 | getSource |  |  | DamageSource | ✘ |
 | getEntity |  |  | Entity | ✘ |
 | getLootingLevel |  |  | int | ✘ |
+| getDrops |  |  | List<ItemEntity> | ✘ |
 | isRecentlyHit |  |  | boolean | ✘ |
 | addDrop | ItemStack, float |  | ItemEntity | ✘ |
 | addDrop | ItemStack |  | ItemEntity | ✘ |

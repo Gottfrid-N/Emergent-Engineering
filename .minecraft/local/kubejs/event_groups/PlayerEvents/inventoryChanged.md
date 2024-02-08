@@ -27,9 +27,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | getItem |  |  | ItemStack | ✘ |
 | getEntity |  |  | Entity | ✘ |
 | getPlayer |  |  | Player | ✘ |
-| removeGameStage | String |  | void | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
+| removeGameStage | String |  | void | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
@@ -57,15 +57,6 @@ Gets the item that was changed.
 Gets the player that changed their inventory.
 ```
 
-- `void removeGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
-```
-Removes the specified game stage from the player
-```
-
 - `boolean hasGameStage(String var0)`
 
   Parameters:
@@ -82,6 +73,15 @@ Checks if the player has the specified game stage
 
 ```
 Adds the specified game stage to the player
+```
+
+- `void removeGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Removes the specified game stage from the player
 ```
 
 - `Object exit(Object var0)`

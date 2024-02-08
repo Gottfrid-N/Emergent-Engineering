@@ -1,3 +1,7 @@
+// priority: 10
+
+console.info("Running \"item.js\"")
+
 StartupEvents.registry("item", event => {
     event.create("test")
     event.create("item_unifier").unstackable().tooltip("Craft with a non-standard item to get back its standard item.")

@@ -20,8 +20,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | register | ResourceLocation, RecipeSchema |  | void | ✘ |
-| getComponents |  |  | Map<String, RecipeComponentFactory> | ✘ |
 | namespace | String |  | RecipeNamespace | ✘ |
+| getComponents |  |  | Map<String, RecipeComponentFactory> | ✘ |
 | mapRecipe | String, String |  | void | ✘ |
 | mapRecipe | String, ResourceLocation |  | void | ✘ |
 | exit | Object |  | Object | ✘ |

@@ -1,7 +1,6 @@
 // priority: 0
 
 console.info("Running \"unify.js\"")
-Utils.server.tell("Running \"unify.js\"")
 
 let unify = []
 
@@ -16,16 +15,11 @@ ServerEvents.tags("item", event => {
     let _unify = []
     
     function addMaterialTags(material, types) {
-        console.log("Adding material Tags")
+        console.log("Adding material: " + material + " with types: " + types.toString())
         types.forEach(type => {
             let tag = type + "/" + material
-            console.log(tag.toString())
-
-            let tagItems = event.get(tag).getObjectIds()
-            console.log(tagItems.toString() + "\n")
-
-            Utils.server.tell(tag)
-            Utils.server.tell(tagItems[0])
+            let tagItems = event.get(tag).getObjectIds().toArray().sort((a, b) => { // sorts alphabetically
+                if (a < b) { return 1; }; if (a > b) { return -1; }; return 0;});
             _unify.push([tag, tagItems[0]])
         })
     }
@@ -39,7 +33,6 @@ ServerEvents.tags("item", event => {
     addMaterialTags("lead", metalTypes)
     addMaterialTags("nickel", metalTypes)
     
-
     addMaterialTags("steel", metalTypes)
     addMaterialTags("electrum", metalTypes)
     addMaterialTags("constantan", metalTypes)
@@ -53,5 +46,4 @@ ServerEvents.recipes(event => {
     unify.forEach(pair => {
         event.shapeless(pair[1], ["kubejs:item_unifier", "#" + pair[0]])
     });
-    console.log(unify)
 })

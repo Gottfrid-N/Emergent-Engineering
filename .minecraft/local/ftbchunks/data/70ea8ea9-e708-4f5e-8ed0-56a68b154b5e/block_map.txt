@@ -56,3 +56,4 @@
 #BC20FE minecraft:white_wool
 #4AF229 minecraft:yellow_bed
 #97FF93 minecraft:yellow_wool
+#12A6B3 createdeco:zinc_coinstack

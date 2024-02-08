@@ -20,9 +20,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getException |  |  | Throwable | ✘ |
 | getInput |  |  | String | ✘ |
 | setException | Throwable |  | void | ✘ |
+| getException |  |  | Throwable | ✘ |
 | getCommandName |  |  | String | ✘ |
 | getParseResults |  |  | ParseResults<CommandSourceStack> | ✘ |
 | setParseResults | ParseResults<CommandSourceStack> |  | void | ✘ |

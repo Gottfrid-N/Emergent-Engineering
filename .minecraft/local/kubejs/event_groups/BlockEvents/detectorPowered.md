@@ -25,8 +25,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getLevel |  |  | Level | ✘ |
 | getBlock |  |  | BlockContainerJS | ✘ |
+| getLevel |  |  | Level | ✘ |
 | isPowered |  |  | boolean | ✘ |
 | getDetectorId |  |  | String | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
@@ -40,14 +40,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ### Documented members:
 
-- `Level getLevel()`
-```
-The level where the detector block is located.
-```
-
 - `BlockContainerJS getBlock()`
 ```
 The detector block.
+```
+
+- `Level getLevel()`
+```
+The level where the detector block is located.
 ```
 
 - `boolean isPowered()`

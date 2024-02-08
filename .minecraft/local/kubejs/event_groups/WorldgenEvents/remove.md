@@ -20,22 +20,22 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | printFeaturesForType | GenerationStep$Decoration, BiomeFilter, boolean |  | void | ✘ |
+| printSpawns | MobCategory |  | void | ✘ |
+| printSpawns |  |  | void | ✘ |
+| removeSpawns | Consumer<RemoveSpawnsProperties> |  | void | ✘ |
+| removeOres | Consumer<RemoveOresProperties> |  | void | ✘ |
+| printFiltered | GenerationStep$Decoration, BiomeFilter |  | void | ✘ |
+| printFiltered |  |  | void | ✘ |
+| printFiltered | GenerationStep$Decoration |  | void | ✘ |
+| removeAllSpawns |  |  | void | ✘ |
+| printFeatures | GenerationStep$Decoration, BiomeFilter |  | void | ✘ |
+| printFeatures | GenerationStep$Decoration |  | void | ✘ |
+| printFeatures |  |  | void | ✘ |
+| removeFeatureById | BiomeFilter, GenerationStep$Decoration, ResourceLocation[] |  | void | ✘ |
+| removeFeatureById | GenerationStep$Decoration, ResourceLocation[] |  | void | ✘ |
 | removeAllFeatures | BiomeFilter |  | void | ✘ |
 | removeAllFeatures |  |  | void | ✘ |
 | removeAllFeatures | BiomeFilter, GenerationStep$Decoration |  | void | ✘ |
-| removeOres | Consumer<RemoveOresProperties> |  | void | ✘ |
-| removeSpawns | Consumer<RemoveSpawnsProperties> |  | void | ✘ |
-| printSpawns | MobCategory |  | void | ✘ |
-| printSpawns |  |  | void | ✘ |
-| printFeatures | GenerationStep$Decoration, BiomeFilter |  | void | ✘ |
-| printFeatures |  |  | void | ✘ |
-| printFeatures | GenerationStep$Decoration |  | void | ✘ |
-| printFiltered |  |  | void | ✘ |
-| printFiltered | GenerationStep$Decoration, BiomeFilter |  | void | ✘ |
-| printFiltered | GenerationStep$Decoration |  | void | ✘ |
-| removeFeatureById | GenerationStep$Decoration, ResourceLocation[] |  | void | ✘ |
-| removeFeatureById | BiomeFilter, GenerationStep$Decoration, ResourceLocation[] |  | void | ✘ |
-| removeAllSpawns |  |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |
