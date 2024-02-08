@@ -20,22 +20,22 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | printFeaturesForType | GenerationStep$Decoration, BiomeFilter, boolean |  | void | ✘ |
-| printSpawns | MobCategory |  | void | ✘ |
-| printSpawns |  |  | void | ✘ |
-| removeSpawns | Consumer<RemoveSpawnsProperties> |  | void | ✘ |
-| removeOres | Consumer<RemoveOresProperties> |  | void | ✘ |
-| printFiltered | GenerationStep$Decoration, BiomeFilter |  | void | ✘ |
-| printFiltered |  |  | void | ✘ |
-| printFiltered | GenerationStep$Decoration |  | void | ✘ |
-| removeAllSpawns |  |  | void | ✘ |
-| printFeatures | GenerationStep$Decoration, BiomeFilter |  | void | ✘ |
-| printFeatures | GenerationStep$Decoration |  | void | ✘ |
-| printFeatures |  |  | void | ✘ |
-| removeFeatureById | BiomeFilter, GenerationStep$Decoration, ResourceLocation[] |  | void | ✘ |
 | removeFeatureById | GenerationStep$Decoration, ResourceLocation[] |  | void | ✘ |
-| removeAllFeatures | BiomeFilter |  | void | ✘ |
+| removeFeatureById | BiomeFilter, GenerationStep$Decoration, ResourceLocation[] |  | void | ✘ |
+| removeOres | Consumer<RemoveOresProperties> |  | void | ✘ |
 | removeAllFeatures |  |  | void | ✘ |
 | removeAllFeatures | BiomeFilter, GenerationStep$Decoration |  | void | ✘ |
+| removeAllFeatures | BiomeFilter |  | void | ✘ |
+| printFiltered |  |  | void | ✘ |
+| printFiltered | GenerationStep$Decoration |  | void | ✘ |
+| printFiltered | GenerationStep$Decoration, BiomeFilter |  | void | ✘ |
+| printFeatures | GenerationStep$Decoration |  | void | ✘ |
+| printFeatures |  |  | void | ✘ |
+| printFeatures | GenerationStep$Decoration, BiomeFilter |  | void | ✘ |
+| printSpawns |  |  | void | ✘ |
+| printSpawns | MobCategory |  | void | ✘ |
+| removeAllSpawns |  |  | void | ✘ |
+| removeSpawns | Consumer<RemoveSpawnsProperties> |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

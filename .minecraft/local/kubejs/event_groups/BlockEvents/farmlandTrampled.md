@@ -23,8 +23,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getBlock |  |  | BlockContainerJS | ✘ |
 | getLevel |  |  | Level | ✘ |
+| getBlock |  |  | BlockContainerJS | ✘ |
 | getEntity |  |  | Entity | ✘ |
 | getDistance |  |  | float | ✘ |
 | getPlayer |  |  | Player | ✘ |
@@ -39,14 +39,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ### Documented members:
 
-- `BlockContainerJS getBlock()`
-```
-The farmland block.
-```
-
 - `Level getLevel()`
 ```
 The level that the farmland and the entity are in.
+```
+
+- `BlockContainerJS getBlock()`
+```
+The farmland block.
 ```
 
 - `Entity getEntity()`

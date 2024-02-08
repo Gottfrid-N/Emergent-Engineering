@@ -23,18 +23,18 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getAffectedEntities |  |  | EntityArrayList | ✘ |
 | removeKnockback |  |  | void | ✘ |
 | getAffectedBlocks |  |  | List<BlockContainerJS> | ✘ |
-| removeAffectedBlock | BlockContainerJS |  | void | ✘ |
-| removeAffectedEntity | Entity |  | void | ✘ |
+| getAffectedEntities |  |  | EntityArrayList | ✘ |
 | removeAllAffectedEntities |  |  | void | ✘ |
 | removeAllAffectedBlocks |  |  | void | ✘ |
+| removeAffectedBlock | BlockContainerJS |  | void | ✘ |
+| removeAffectedEntity | Entity |  | void | ✘ |
+| getLevel |  |  | Level | ✘ |
 | getPosition |  |  | Vec3 | ✘ |
 | getBlock |  |  | BlockContainerJS | ✘ |
 | getY |  |  | double | ✘ |
 | getX |  |  | double | ✘ |
-| getLevel |  |  | Level | ✘ |
 | getZ |  |  | double | ✘ |
 | getExploder |  |  | LivingEntity | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
@@ -48,11 +48,6 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ### Documented members:
 
-- `EntityArrayList getAffectedEntities()`
-```
-Gets a list of all entities affected by the explosion.
-```
-
 - `void removeKnockback()`
 ```
 Remove all knockback from all affected *players*.
@@ -61,6 +56,21 @@ Remove all knockback from all affected *players*.
 - `List<BlockContainerJS> getAffectedBlocks()`
 ```
 Gets a list of all blocks affected by the explosion.
+```
+
+- `EntityArrayList getAffectedEntities()`
+```
+Gets a list of all entities affected by the explosion.
+```
+
+- `void removeAllAffectedEntities()`
+```
+Remove all entities from the list of affected entities.
+```
+
+- `void removeAllAffectedBlocks()`
+```
+Remove all blocks from the list of affected blocks.
 ```
 
 - `void removeAffectedBlock(BlockContainerJS var0)`
@@ -79,16 +89,6 @@ Remove a block from the list of affected blocks.
 
 ```
 Remove an entity from the list of affected entities.
-```
-
-- `void removeAllAffectedEntities()`
-```
-Remove all entities from the list of affected entities.
-```
-
-- `void removeAllAffectedBlocks()`
-```
-Remove all blocks from the list of affected blocks.
 ```
 
 - `Object exit(Object var0)`

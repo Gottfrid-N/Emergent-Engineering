@@ -28,8 +28,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | getMessage |  |  | String | ✘ |
 | getEntity |  |  | Entity | ✘ |
-| getComponent |  |  | Component | ✘ |
 | setMessage | Component |  | void | ✘ |
+| getComponent |  |  | Component | ✘ |
 | setComponent | Component |  | void | ✘ |
 | getUsername |  |  | String | ✘ |
 | getPlayer |  |  | Player | ✘ |
@@ -58,11 +58,6 @@ Gets the message that the player sent.
 Gets the player that sent the message.
 ```
 
-- `Component getComponent()`
-```
-Gets the message that the player sent.
-```
-
 - `void setMessage(Component var0)`
 
   Parameters:
@@ -70,6 +65,11 @@ Gets the message that the player sent.
 
 ```
 Sets the message that the player sent.
+```
+
+- `Component getComponent()`
+```
+Gets the message that the player sent.
 ```
 
 - `void setComponent(Component var0)`

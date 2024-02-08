@@ -22,8 +22,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | create | String |  | BuilderBase<? extends T> | ✘ |
 | create | String, String |  | BuilderBase<? extends T> | ✘ |
-| createCustom | String, Supplier<Object> |  | CustomBuilderObject | ✘ |
 | custom | String, Object |  | CustomBuilderObject | ✘ |
+| createCustom | String, Supplier<Object> |  | CustomBuilderObject | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

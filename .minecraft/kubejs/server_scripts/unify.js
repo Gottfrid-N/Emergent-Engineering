@@ -5,7 +5,7 @@ console.info("Running \"unify.js\"")
 let unify = []
 
 ServerEvents.tags("item", event => {
-    console.log("Event: \"tags\"")
+    console.info("Event: \"tags\"")
     let metalTypes = [
         "forge:storage_blocks", "forge:ingots", "forge:nuggets",
         "forge:dusts",
@@ -15,7 +15,7 @@ ServerEvents.tags("item", event => {
     let _unify = []
     
     function addMaterialTags(material, types) {
-        console.log("Adding material: " + material + " with types: " + types.toString())
+        console.info("Adding material: " + material + " with types: " + types.toString())
         types.forEach(type => {
             let tag = type + "/" + material
             let tagItems = event.get(tag).getObjectIds().toArray().sort((a, b) => { // sorts alphabetically
@@ -37,12 +37,11 @@ ServerEvents.tags("item", event => {
     addMaterialTags("electrum", metalTypes)
     addMaterialTags("constantan", metalTypes)
 
-    Utils.server.tell(_unify.toString())
     unify = _unify
 })
 
 ServerEvents.recipes(event => {
-    console.log("Event: recipes")
+    console.info("Event: recipes")
     unify.forEach(pair => {
         event.shapeless(pair[1], ["kubejs:item_unifier", "#" + pair[0]])
     });

@@ -31,8 +31,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | get | ResourceLocation |  | TagWrapper | ✘ |
 | getType |  |  | ResourceLocation | ✘ |
 | removeAll | ResourceLocation |  | TagWrapper | ✘ |
-| getElementIds |  |  | Set<ResourceLocation> | ✘ |
 | removeAllTagsFrom | Object[] |  | void | ✘ |
+| getElementIds |  |  | Set<ResourceLocation> | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

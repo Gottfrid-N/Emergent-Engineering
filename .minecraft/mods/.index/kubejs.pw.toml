@@ -3,11 +3,11 @@ name = 'KubeJS'
 side = 'both'
 
 [download]
-hash = '6492046f56194323ce8501252754790595502844aeac50b9a5950c57fce21d5154a29cf9ae7c12e5eaafc76fa6e2acecb3fee376459eacbbde460c4f4022c6c9'
-hash-format = 'sha512'
-mode = 'url'
-url = 'https://cdn.modrinth.com/data/umyGl7zF/versions/sG7Ike2a/kubejs-forge-2001.6.4-build.133.jar'
+hash = '8c76c1ba64322c2ea5d1601794e86a3c46407231'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update.modrinth]
-mod-id = 'umyGl7zF'
-version = 'sG7Ike2a'
+[update.curseforge]
+file-id = 5085508
+project-id = 238086

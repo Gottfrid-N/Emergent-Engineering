@@ -1,3 +1,6 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "532F399FBEA8F33D", title: "Engineering" }
+		{ id: "33F7677F8552D398", title: "Magic" }
+	]
 }

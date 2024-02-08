@@ -23,9 +23,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getBlock |  |  | BlockContainerJS | ✘ |
 | getItem |  |  | ItemStack | ✘ |
-| getEntity |  |  | Entity | ✘ |
+| getBlock |  |  | BlockContainerJS | ✘ |
+| getEntity |  |  | LivingEntity | ✘ |
 | getHand |  |  | InteractionHand | ✘ |
 | getFacing |  |  | Direction | ✘ |
 | getPlayer |  |  | Player | ✘ |
@@ -44,17 +44,17 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ### Documented members:
 
-- `BlockContainerJS getBlock()`
-```
-The block that was right clicked.
-```
-
 - `ItemStack getItem()`
 ```
 The position of the block that was right clicked.
 ```
 
-- `Entity getEntity()`
+- `BlockContainerJS getBlock()`
+```
+The block that was right clicked.
+```
+
+- `LivingEntity getEntity()`
 ```
 The player that right clicked the block.
 ```

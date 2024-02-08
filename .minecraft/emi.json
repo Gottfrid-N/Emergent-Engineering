@@ -1,6 +1,126 @@
 {
-  "favorites": [],
+  "favorites": [
+    {
+      "stack": "item:create:mechanical_crafter"
+    }
+  ],
   "lookup_history": [
+    "item:rftoolsbase:machine_base",
+    "item:rftoolsutility:creative_screen",
+    {
+      "type": "item",
+      "id": "extendedcrafting:ultimate_table",
+      "amount": 64
+    },
+    "item:botania:crafty_crate",
+    "item:create:crushing_wheel",
+    {
+      "type": "fluid",
+      "id": "immersiveengineering:creosote",
+      "amount": 0
+    },
+    "item:thermal:phytosoil",
+    "item:thermal:tar",
+    "item:thermal:bitumen",
+    {
+      "type": "fluid",
+      "id": "thermal:crude_oil",
+      "amount": 0
+    },
+    "item:createcasing:chorium_ingot",
+    "item:createbigcannons:nethersteel_ingot",
+    {
+      "type": "item",
+      "id": "extendedcrafting:basic_table",
+      "amount": 64
+    },
+    "item:extendedcrafting:handheld_table",
+    "item:extendedcrafting:enhanced_redstone_ingot",
+    "item:extendedcrafting:crystaltine_component",
+    "item:extendedcrafting:crystaltine_ingot",
+    "item:extendedcrafting:elite_table",
+    "item:thermal:xp_crystal{}",
+    "item:create:crushed_raw_aluminum",
+    "item:immersiveengineering:alu_fence",
+    "item:immersiveengineering:ingot_aluminum",
+    "item:extendedcrafting:flux_crafter",
+    "item:extendedcrafting:enhanced_ender_catalyst",
+    "item:extendedcrafting:ender_star",
+    "item:extendedcrafting:ender_crafter",
+    "item:extendedcrafting:ender_alternator",
+    {
+      "type": "item",
+      "id": "minecraft:rotten_flesh",
+      "amount": 64
+    },
+    "item:hostilenetworks:prediction{data_model:{id:\"hostilenetworks:witch\"}}",
+    "item:hostilenetworks:data_model{data_model:{id:\"hostilenetworks:witch\"}}",
+    {
+      "type": "item",
+      "id": "minecraft:glass_bottle",
+      "amount": 16
+    },
+    "item:hostilenetworks:overworld_prediction",
+    "item:hostilenetworks:prediction_matrix",
+    "item:hostilenetworks:sim_chamber",
+    {
+      "type": "fluid",
+      "id": "createbigcannons:molten_nethersteel",
+      "amount": 0
+    },
+    "item:botania:dreadthorn",
+    "item:iceandfire:armor_silver_helmet{Damage:0}",
+    "item:thermal:lead_ingot",
+    "item:immersiveengineering:ingot_lead",
+    {
+      "type": "fluid",
+      "id": "immersiveengineering:biodiesel",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "immersiveengineering:ethanol",
+      "amount": 8
+    },
+    {
+      "type": "fluid",
+      "id": "immersiveengineering:plantoil",
+      "amount": 0
+    },
+    {
+      "type": "tag",
+      "registry": "minecraft:fluid",
+      "id": "forge:plantoil",
+      "amount": 8
+    },
+    "item:ae2:sky_dust",
+    "item:minecraft:suspicious_sand",
+    "item:immersiveengineering:treated_wood_vertical",
+    "item:bloodmagic:bleedingedge",
+    "item:bloodmagic:rawdemoniteblock",
+    "item:minecraft:oak_slab",
+    "item:projectexpansion:white_fuel",
+    "item:projecte:alchemical_coal",
+    "item:projecte:mobius_fuel",
+    "item:projecte:aeternalis_fuel",
+    "item:projecte:aeternalis_fuel_block",
+    "item:projectexpansion:magenta_fuel",
+    "item:projectexpansion:pink_fuel",
+    "item:projectexpansion:purple_fuel",
+    "item:projectexpansion:violet_fuel",
+    "item:projectexpansion:blue_fuel",
+    "item:projectexpansion:cyan_fuel",
+    "item:projectexpansion:green_fuel",
+    "item:projectexpansion:lime_fuel",
+    "item:projectexpansion:yellow_fuel",
+    "item:projectexpansion:orange_fuel",
+    "item:projectexpansion:infinite_fuel",
+    "item:projecte:hyperkinetic_lens{}",
+    {
+      "type": "fluid",
+      "id": "createbigcannons:molten_steel",
+      "amount": 0
+    },
     "item:kubejs:item_unifier",
     "#item:forge:dusts/iron",
     "item:projecte:transmutation_tablet",
@@ -35,10 +155,6 @@
     "item:projectexpansion:purple_matter",
     "item:projectexpansion:pink_matter",
     "item:projectexpansion:magenta_matter",
-    "item:projecte:aeternalis_fuel",
-    "item:projecte:mobius_fuel",
-    "item:projecte:alchemical_coal",
-    "item:projecte:aeternalis_fuel_block",
     "#item:forge:dusts/gold",
     "#item:forge:storage_blocks/steel",
     "item:thermal:cinnabar_dust",
@@ -164,9 +280,7 @@
       "id": "thermal:refined_fuel",
       "amount": 0
     },
-    "item:projectexpansion:white_fuel",
     "item:projecte:dark_matter",
-    "item:projecte:hyperkinetic_lens{}",
     "item:projecte:catalytic_lens{}",
     "item:create:crushed_raw_iron",
     "item:minecraft:raw_iron",

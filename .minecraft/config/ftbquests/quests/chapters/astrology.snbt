@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "astrology"
+	group: "33F7677F8552D398"
+	id: "7423311FC36DE04A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Astrology"
+}

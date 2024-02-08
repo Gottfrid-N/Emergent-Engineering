@@ -36,26 +36,26 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | remove | RecipeFilter |  | void | ✘ |
 | stage | RecipeFilter, String |  | void | ✘ |
 | custom | JsonObject |  | RecipeJS | ✘ |
-| customFilter | Predicate<RecipeKJS> |  | RecipeFilter | ✘ |
 | printTypes |  |  | void | ✘ |
+| replaceOutput | RecipeFilter, ReplacementMatch, OutputReplacement |  | void | ✘ |
+| replaceInput | RecipeFilter, ReplacementMatch, InputReplacement |  | void | ✘ |
+| countRecipes | RecipeFilter |  | int | ✘ |
+| takeId | RecipeJS, String, String |  | ResourceLocation | ✘ |
+| customFilter | Predicate<RecipeKJS> |  | RecipeFilter | ✘ |
 | getRecipes |  |  | Map<String, Object> | ✘ |
-| runInParallel | Callable<T> |  | T | ✔ |
+| addRecipe | RecipeJS, boolean |  | RecipeJS | ✘ |
+| handler$zdb000$injectRecipes | RecipeManager, Map, CallbackInfo |  | void | ✘ |
+| getRecipeFunction | String |  | RecipeTypeFunction | ✘ |
+| findRecipes | RecipeFilter |  | Collection<RecipeJS> | ✘ |
 | runInParallel | Runnable |  | void | ✔ |
+| runInParallel | Callable<T> |  | T | ✔ |
 | recipeStream | RecipeFilter |  | Stream<RecipeJS> | ✘ |
 | forEachRecipe | RecipeFilter, Consumer<RecipeJS> |  | void | ✘ |
 | containsRecipe | RecipeFilter |  | boolean | ✘ |
 | setItemErrors | boolean |  | void | ✘ |
-| findRecipeIds | RecipeFilter |  | Collection<ResourceLocation> | ✘ |
-| printExamples | String |  | void | ✘ |
 | printAllTypes |  |  | void | ✘ |
-| addRecipe | RecipeJS, boolean |  | RecipeJS | ✘ |
-| replaceOutput | RecipeFilter, ReplacementMatch, OutputReplacement |  | void | ✘ |
-| replaceInput | RecipeFilter, ReplacementMatch, InputReplacement |  | void | ✘ |
-| countRecipes | RecipeFilter |  | int | ✘ |
-| findRecipes | RecipeFilter |  | Collection<RecipeJS> | ✘ |
-| takeId | RecipeJS, String, String |  | ResourceLocation | ✘ |
-| getRecipeFunction | String |  | RecipeTypeFunction | ✘ |
-| handler$zge000$sliceanddice$injectRecipes | RecipeManager, Map, CallbackInfo |  | void | ✘ |
+| printExamples | String |  | void | ✘ |
+| findRecipeIds | RecipeFilter |  | Collection<ResourceLocation> | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

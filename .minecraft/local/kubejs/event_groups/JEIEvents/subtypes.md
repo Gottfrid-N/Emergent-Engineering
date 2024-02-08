@@ -19,9 +19,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| registerInterpreter | Item, Interpreter |  | void | ✘ |
 | useNBT | Ingredient |  | void | ✘ |
 | useNBTKey | Ingredient, String |  | void | ✘ |
+| registerInterpreter | Item, Interpreter |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |
