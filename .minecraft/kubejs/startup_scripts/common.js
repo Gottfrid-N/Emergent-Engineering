@@ -1,18 +1,19 @@
-// priority: 0
+// priority: 10
 
 global["itemMetalTypes"] = [
-    "storage_block", "ingot", "nugget",
+    "ingot", "nugget",
     "dust",
     "plate",
     "gear",
-    "coil", "sheet", "sheetmetal",
+    "coil", "sheet",
     "wire", "wire_coil",
     "rod",
-    "coin", "coin_stack",
+    "coin", 
     "alchemical_catalyst"]
 
 global["blockMetalTypes"] = [
-    "storage_block", "sheetmetal"
+    "storage_block", "sheetmetal",
+    "coin_stack"
 ]
 
 global["metalTagTypes"] = [
@@ -21,3 +22,28 @@ global["metalTagTypes"] = [
     "forge:plates",
     "forge:gears",
     "forge:wires"]
+
+global["materials"] = [
+    // [material, [[item types], [block types], [fluid types]]]
+    // vanilla
+    ["iron", []]
+    ["copper", []]
+    ["gold", []]
+    // thermal
+    ["tin", []]
+    ["lead", []]
+    ["silver", []]
+    ["nickel", []]
+    ["steel", []]
+    ["rose_gold", []]
+    ["bronze", []]
+    ["electrum", []]
+    ["invar", []]
+    ["constantan", []]
+    ["iron", []]
+    // create
+    ["brass", [["plate"]]]
+    ["zinc", [["plate"]]]
+    // custom
+    ["platinum", [["ingot", "nugget"], ["storage_block"]]]
+]

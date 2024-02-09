@@ -12,7 +12,10 @@
 - [ ] % Basic Progression Outline
 - [ ] % Quests
 
+## Playtrough 1
+
 # Content
+- [ ] !!!!!!!!!!!!!!! Working material + type vault
 - [ ] ?. A Reactor mod (Extreme Reactors or Thorium Reactors)
 - [ ] ?.. [Fusion: Connected Textures](https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures) (Athena has connected textures maybe (havent tried))
 - [ ] ? [Relics](https:%%modrinth.com%mod%relics-mod)

@@ -10,7 +10,7 @@ ServerEvents.tags("item", event => {
     let _unify = []
     
     function addMaterialTags(material, tagTypes) {
-        console.info("Adding material: " + material + " with types: " + tagTypes.toString())
+        console.info("Unifying material: " + material + " with types: " + tagTypes.toString())
         tagTypes.forEach(type => {
             let tag = type + "/" + material
             let tagItems = event.get(tag).getObjectIds().toArray().sort((a, b) => { // sorts alphabetically
