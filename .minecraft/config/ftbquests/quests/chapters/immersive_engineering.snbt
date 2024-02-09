@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "immersive_engineering"
+	group: "532F399FBEA8F33D"
+	icon: {
+		Count: 1b
+		id: "immersiveengineering:hammer"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "77BA1ACF902E05CE"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Immersive Engineering"
+}

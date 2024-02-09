@@ -1,0 +1,13 @@
+filename = 'rftoolsbuilder-1.20-6.0.4.jar'
+name = 'RFTools Builder'
+side = 'both'
+
+[download]
+hash = 'ef881a385be928738bed92d752056ac59cd5184ebc5a954b33665cef0be5c4f86bbf7155971cd75f4c21e0429a317807333cb01a53c32f6d4b85012857554615'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/e0IclJLr/versions/8mIUaono/rftoolsbuilder-1.20-6.0.4.jar'
+
+[update.modrinth]
+mod-id = 'e0IclJLr'
+version = '8mIUaono'

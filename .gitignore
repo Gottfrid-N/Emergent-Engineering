@@ -1,0 +1,13 @@
+/.minecraft/saves/
+/.minecraft/XaeroWaypoints/
+/.minecraft/XaeroWaypoints_BACKUP032021/
+/.minecraft/XaeroWorldMap/
+/.minecraft/logs/
+/instance.cfg
+/.minecraft/config/modernstartupqol/startup_times.json
+/.minecraft/config/xaerominimap_entities.json
+/.minecraft/usercache.json
+/.minecraft/usernamecache.json
+/.minecraft/local/ftbchunks/data/
+/.minecraft/crash-reports/
+/.minecraft/.vscode/

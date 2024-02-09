@@ -1,0 +1,13 @@
+filename = 'thermal_locomotion-1.20.1-11.0.0.17.jar'
+name = 'Thermal Locomotion'
+side = 'both'
+
+[download]
+hash = '69a848bb6d31e033c0af6d33774b718d998316d8b08a43c7fb6efb06a79d92ed6b13f56c4104ef9e2ebbb5c47dbe94021d68f1e920518b6f2b04166968639ede'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/L3eFR8i3/versions/apiHU0aI/thermal_locomotion-1.20.1-11.0.0.17.jar'
+
+[update.modrinth]
+mod-id = 'L3eFR8i3'
+version = 'apiHU0aI'

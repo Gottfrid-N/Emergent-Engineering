@@ -1,0 +1,13 @@
+filename = 'thermal_innovation-1.20.1-11.0.0.21.jar'
+name = 'Thermal Innovation'
+side = 'both'
+
+[download]
+hash = '2e26c734ec0b885fa55c41d68610ff2cd981c65b1031e92aed2033d267e0879463e7a2bca85af928b0b1de7f6447705afb77240da5c7a798c71ae532f004844a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/MNgLmnvM/versions/KY9kG3dq/thermal_innovation-1.20.1-11.0.0.21.jar'
+
+[update.modrinth]
+mod-id = 'MNgLmnvM'
+version = 'KY9kG3dq'

@@ -1,0 +1,13 @@
+filename = 'embeddiumextras-1.20.1-v2.0.0.jar'
+name = 'Embeddium/Rubidium Extras'
+side = 'both'
+
+[download]
+hash = 'e971f11f98eb7ef50b8c774a1fe7beb170f8d3ec'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5090254
+project-id = 558905
