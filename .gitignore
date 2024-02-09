@@ -6,3 +6,6 @@
 /instance.cfg
 /.minecraft/config/modernstartupqol/startup_times.json
 /.minecraft/config/xaerominimap_entities.json
+/.minecraft/usercache.json
+/.minecraft/usernamecache.json
+/.minecraft/local/ftbchunks/data/
