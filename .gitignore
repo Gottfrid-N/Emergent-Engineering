@@ -3,3 +3,6 @@
 /.minecraft/XaeroWaypoints_BACKUP032021/
 /.minecraft/XaeroWorldMap/
 /.minecraft/logs/
+/instance.cfg
+/.minecraft/config/modernstartupqol/startup_times.json
+/.minecraft/config/xaerominimap_entities.json
