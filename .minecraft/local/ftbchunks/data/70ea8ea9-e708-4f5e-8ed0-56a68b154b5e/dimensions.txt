@@ -1,4 +1,0 @@
-minecraft:overworld
-ae2:spatial_storage
-bloodmagic:dungeon
-dimdoors:public_pockets

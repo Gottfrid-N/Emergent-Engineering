@@ -1,4 +1,0 @@
-#677 dimdoors:black_void
-#5A5 bloodmagic:none
-#3DC minecraft:plains
-#372 ae2:spatial_storage
