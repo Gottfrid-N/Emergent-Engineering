@@ -3,8 +3,15 @@
 console.info("Running \"item.js\"")
 
 StartupEvents.registry("item", event => {
+    function createMaterial(material, types) {
+        types.forEach((type, i) => {
+            event.create(material + "_" + type)
+        });
+    }
     event.create("test")
     event.create("item_unifier").unstackable().tooltip("Craft with a non-standard item to get back its standard item.")
+    createMaterial("iron", ["alchemical_catalyst", "coil"])
+    createMaterial("platinum", metalTypesExtended)
 })
 
 ItemEvents.modification(event => {

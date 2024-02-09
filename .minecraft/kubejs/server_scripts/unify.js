@@ -6,21 +6,18 @@ let unify = []
 
 ServerEvents.tags("item", event => {
     console.info("Event: \"tags\"")
-    let metalTypes = [
-        "forge:storage_blocks", "forge:ingots", "forge:nuggets",
-        "forge:dusts",
-        "forge:plates",
-        "forge:gears",]
+
+    let metalTypes = global["metalTagTypes"]
 
     let _unify = []
     
-    function addMaterialTags(material, types) {
-        console.info("Adding material: " + material + " with types: " + types.toString())
-        types.forEach(type => {
+    function addMaterialTags(material, tagTypes) {
+        console.info("Adding material: " + material + " with types: " + tagTypes.toString())
+        tagTypes.forEach(type => {
             let tag = type + "/" + material
             let tagItems = event.get(tag).getObjectIds().toArray().sort((a, b) => { // sorts alphabetically
                 if (a < b) { return 1; }; if (a > b) { return -1; }; return 0;});
-            _unify.push([tag, tagItems[0]])
+            _unify.push([tag, tagItems])
         })
     }
 
@@ -42,7 +39,11 @@ ServerEvents.tags("item", event => {
 
 ServerEvents.recipes(event => {
     console.info("Event: recipes")
-    unify.forEach(pair => {
-        event.shapeless(pair[1], ["kubejs:item_unifier", "#" + pair[0]])
+    unify.forEach(value => {
+        value[1].forEach(item => {
+            event.replaceInput({input: item}, item, value[1][0])
+            event.replaceOutput({output: item}, item, value[1][0])
+        });
+        event.shapeless(value[1][0], ["kubejs:item_unifier", "#" + value[0]])
     });
 })
