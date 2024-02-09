@@ -1,23 +1,27 @@
 // priority: 1
 
 StartupEvents.registry("item", event => {
-    function createMaterial(material, types) {
-        types.forEach((type) => {
-            event.create(material + "_" + type)
+    function createMaterial(material) {
+        let name = material[0]
+        let pairs = material[1][0]
+        console.log("Registring material: " + name)
+        pairs.forEach(pair => {
+            let type = pair[0]
+            let id = global["materialToId"](name, type)
+            console.log("Registring kubejs:" + id)
+            event.create(id)
         });
     }
+
     event.create("test")
     event.create("item_unifier").unstackable().tooltip("Craft with a non-standard item to get back its standard item.")
     event.create("immersive_steel").unstackable().tooltip("debug")
-    global["materials"].forEach(value => {
-        let material = value[0]
-        let itemTypes = value[0][0]
-        if (itemTypes != undefined) {
-            console.log("Registring material: " + material)
-            itemTypes.forEach(itemType => {
-                console.log("Registring " + material + " with itemType: " + itemType)
-                event.create(material + itemType)
-            })
+
+    global["materials"].forEach(material => {
+        try {
+            createMaterial(material)
+        } catch (error) {
+            console.warn(error)
         }
     })
 })

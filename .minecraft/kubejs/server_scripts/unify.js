@@ -3,14 +3,14 @@
 let unify = []
 
 ServerEvents.tags("item", event => {
-    console.info("Event: \"tags\"")
+    console.log("Event: \"tags\"")
 
     let metalTypes = global["metalTagTypes"]
 
     let _unify = []
     
     function addMaterialTags(material, tagTypes) {
-        console.info("Unifying material: " + material + " with types: " + tagTypes.toString())
+        console.log("Unifying material: " + material + " with types: " + tagTypes.toString())
         tagTypes.forEach(type => {
             let tag = type + "/" + material
             let tagItems = event.get(tag).getObjectIds().toArray().sort((a, b) => { // sorts alphabetically
@@ -38,7 +38,7 @@ ServerEvents.tags("item", event => {
 })
 
 ServerEvents.recipes(event => {
-    console.info("Event: recipes")
+    console.log("Event: recipes")
     unify.forEach(value => {
         value[1].forEach(item => {
             event.replaceInput({input: item}, item, value[1][0])

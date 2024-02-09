@@ -15,16 +15,25 @@
 ## Playtrough 1
 
 # Content
-- [ ] !!!!!!!!!!!!!!! Working material + type vault
-- [ ] ?. A Reactor mod (Extreme Reactors or Thorium Reactors)
+- [ ] %!!! Working material standard
+  - [ ] % item
+    - [x] itemStacks
+    - [x] itemTags
+    - [ ] itemRecipes
+  - [ ] block
+      - [ ] blockStacks
+      - [ ] blockTags
+      - [ ] blockRecipes
+  - [ ] fluid
+      - [ ] fluidStacks
+      - [ ] fluidTags
+      - [ ] fluidRecipes
 - [ ] ?.. [Fusion: Connected Textures](https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures) (Athena has connected textures maybe (havent tried))
 - [ ] ? [Relics](https:%%modrinth.com%mod%relics-mod)
 - [ ] ? [Waystones](https:%%modrinth.com%mod%waystones) or some other way of teleporting
 - [ ] ? [Origins](https:%%www.curseforge.com%minecraft%mc-mods%origins-forge) and%or [Vampirism](https:%%modrinth.com%mod%vampirism)
 - [ ] ? [DivineRPG](https://modrinth.com/mod/divinerpg) and/or ?? [AOA](https://modrinth.com/mod/adventofascension)
-
 ## Create Addons
-- [ ] ?!! [Create: New Age](https://modrinth.com/mod/create-new-age) (might replace Create: Crafts & Additions)
 - [ ] ?. [Create: Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry)
 - [ ] ? [Extended Cogwheels](https://modrinth.com/mod/extended-cogwheels) (broken D:)
 - [ ] ? [Create: Bells and Whistles](https://modrinth.com/mod/bellsandwhistles)
