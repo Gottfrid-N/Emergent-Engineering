@@ -96,10 +96,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"4E4A3D64807B6012"
-				"172C1053B540DDDE"
-			]
+			dependencies: ["172C1053B540DDDE"]
 			id: "2E8E77E94797F88F"
 			tasks: [{
 				id: "2ADEB617603E8100"
@@ -118,7 +115,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["0DE26646016BA006"]
+			dependencies: ["2C37AD6A46F2E5CD"]
 			id: "1EF22C6C84C84AE5"
 			tasks: [{
 				id: "19C1B94463DA9999"
@@ -126,7 +123,7 @@
 				type: "item"
 			}]
 			title: "Basic Oil Processing"
-			x: 0.5d
+			x: 1.5d
 			y: -2.5d
 		}
 		{
@@ -138,11 +135,14 @@
 				type: "item"
 			}]
 			title: "Excavator"
-			x: -0.5d
-			y: -2.5d
+			x: 0.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["465923199E19A3DB"]
+			dependencies: [
+				"465923199E19A3DB"
+				"75D3C0B6934E454B"
+			]
 			id: "172C1053B540DDDE"
 			tasks: [{
 				id: "4D259EAAB11F4E00"
@@ -154,11 +154,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"465923199E19A3DB"
-				"080DFEBAEFC103A1"
-			]
-			dependency_requirement: "one_completed"
+			dependencies: ["080DFEBAEFC103A1"]
 			id: "4C405D73D28F4211"
 			tasks: [{
 				id: "723CB4E5B95B0EA7"
@@ -336,7 +332,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["4E4A3D64807B6012"]
+			dependencies: [
+				"4E4A3D64807B6012"
+				"4C405D73D28F4211"
+			]
 			id: "465923199E19A3DB"
 			tasks: [{
 				id: "54C09E16ACCB577F"

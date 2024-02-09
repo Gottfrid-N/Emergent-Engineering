@@ -3,11 +3,11 @@ name = 'Project Expansion'
 side = 'both'
 
 [download]
-hash = '69df198fad8c8a27efa769f5b8a57ef2d89a5045'
-hash-format = 'sha1'
-mode = 'metadata:curseforge'
-url = ''
+hash = '584c62c3fd271fadcb145040994e88bad58f2925aed4afca2f7b76f1c0a9b2bea755e8feb1f468fcc91072cd6fe245a23b7360fa90de33fd53809b40e5dcb047'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/a7yNQPzW/versions/BJ7IBntb/ProjectExpansion-1.20.1-1.0.0.jar'
 
-[update.curseforge]
-file-id = 4895921
-project-id = 579177
+[update.modrinth]
+mod-id = 'a7yNQPzW'
+version = 'BJ7IBntb'

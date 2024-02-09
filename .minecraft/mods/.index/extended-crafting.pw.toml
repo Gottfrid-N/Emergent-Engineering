@@ -3,11 +3,11 @@ name = 'Extended Crafting'
 side = 'both'
 
 [download]
-hash = '4d59530b5926e442c03431124a0cea591e87b592'
-hash-format = 'sha1'
-mode = 'metadata:curseforge'
-url = ''
+hash = '0cdee9deaa6c160404cce6c4b9b8b2b6403c0d06622e8569826579302fc7e4c6a5860669e00c52c731056ccb1340d910f1170a7ac4ecd0b8212422ffc1abb06b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/5JMG1gql/versions/7lf1OA8b/ExtendedCrafting-1.20.1-6.0.5.jar'
 
-[update.curseforge]
-file-id = 4991290
-project-id = 268387
+[update.modrinth]
+mod-id = '5JMG1gql'
+version = '7lf1OA8b'

@@ -3,9 +3,16 @@
 	default_quest_shape: ""
 	filename: "theurgy"
 	group: "33F7677F8552D398"
+	icon: {
+		Count: 1b
+		id: "reliquary:mercy_cross"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "212CE51F8A4D9D0E"
 	order_index: 4
 	quest_links: [ ]
 	quests: [ ]
-	title: "Theurgy"
+	title: "&o&eTheurgy"
 }

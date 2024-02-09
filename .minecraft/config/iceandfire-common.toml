@@ -54,13 +54,13 @@
 	[Dragons.Attributes]
 		#How long it takes(in ticks) for a dragon egg to hatch
 		#Range: > 1
-		"Dragon Egg Hatch Time" = 7200
+		"Dragon Egg Hatch Time" = 24000
 		#Dragon Flap Noise Distance - Larger number, further away you can hear it
 		#Range: 0 ~ 10000
 		"Dragon Flap Noise Distance" = 4
 		#Dragon Flute Distance - how many chunks away is the dragon flute effective?
 		#Range: 0 ~ 10000
-		"Dragon Flute Distance" = 4
+		"Dragon Flute Distance" = 8
 		#Max dragon health. Health is scaled to this
 		#Range: 1.0 ~ 100000.0
 		"Dragon Health" = 500.0
@@ -88,7 +88,7 @@
 		"Max Dragon Flight Height" = 256
 		#How far away dragons will detect gold blocks being destroyed or chests being opened
 		#Range: 0 ~ 10000
-		"Dragon Gold Search Length" = 30
+		"Dragon Gold Search Length" = 64
 		#Whether the bite attack from a dragon heals them or not.
 		"Dragon Bite Heal" = true
 		#True if dragons can despawn. Note that if this is false there may be SERIOUS lag issues.
@@ -110,13 +110,13 @@
 		"Dragon Target Search Length" = 128
 		#How many blocks away can dragons wander from their defined "home" position.
 		#Range: 1 ~ 10000
-		"Dragon Wander From Home Distance" = 40
+		"Dragon Wander From Home Distance" = 32
 		#Every interval of this number in ticks, dragon hunger decreases.
 		#Range: 1 ~ 10000
-		"Dragon Hunger Tick Rate" = 3000
+		"Dragon Hunger Tick Rate" = 1200
 		#Every interval of this number in ticks, dragon allowed to break blocks.
 		#Range: 0 ~ 10000
-		"Dragon Block Break Cooldown" = 5
+		"Dragon Block Break Cooldown" = 1
 		#True if villagers should run away and hide from dragons and other hostile Ice and Fire mobs.
 		"Villagers Fear Dragons" = true
 		#True if animals should run away and hide from dragons and other hostile Ice and Fire mobs.

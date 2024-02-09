@@ -2,25 +2,25 @@
 #Range: 1 ~ 200
 tickDelay = 20
 #If EMC should be formatted as M/B/T/etc
-formatEMC = true
+formatEMC = false
 #If full number names (Million/Billion/Trillion) should be used instead of abbreviations
 fullNumberNames = true
 #Displays your current emc and gained emc per second in the top left corner.
-emcDisplay = true
+emcDisplay = false
 #Notify users when something is changed about them via commands.
-notifyCommandChanges = true
+notifyCommandChanges = false
 #Tell users the list of items they gained when using a knowledge book.
 notifyKnowledgeBookGains = true
 #If EMC Link Right-Click functionality should be Limited by Tier or Not.
 limitEmcLinkVendor = true
 #If fluid efficiency should be enabled.
-enableFluidEfficiency = true
+enableFluidEfficiency = false
 #The amount of items that the transmutation interface will report to have. Depending on your usage, you may want this to be a high value.
 #Range: > 1
 transmutationInterfaceItemCount = 2147483647
 #Multiplies the output of Collectors.
 #Range: 0.1 ~ 50.0
-collectorMultiplier = 1.0
+collectorMultiplier = 50
 #Multiplies the item limit of EMC Links.
 #Range: 0.1 ~ 50.0
 emcLinkItemLimitMultiplier = 1.0
@@ -32,10 +32,10 @@ emcLinkFluidLimitMultiplier = 1.0
 emcLinkEMCLimitMultiplier = 1.0
 #Multiplies the output of Power Flowers.
 #Range: 0.1 ~ 50.0
-powerflowerMultiplier = 1.0
+powerflowerMultiplier = 50
 #Multiplies the bonus of Relays.
 #Range: 0.1 ~ 50.0
-relayBonusMultiplier = 1.0
+relayBonusMultiplier = 0.1
 #Multiplies the transfer limit of Relays.
 #Range: 0.1 ~ 50.0
 relayTransferMultiplier = 1.0
@@ -51,7 +51,7 @@ infiniteSteakCost = 64
 #If ProjectE's processors.EnchantmentProcessor.persistent option should only include enchanted books.
 persistEnchantedBooksOnly = false
 #If a tooltip should be shown on items which can be learned, denoting if the item has been learned or not. Note: ProjectE's client.shiftEmcToolTips applies to this.
-enabledLearnedTooltip = true
+enabledLearnedTooltip = false
 #If a sound should be played when something is collected with Alchemical Collection.
 alchemicalCollectionSound = true
 #If players should be allowed to edit books bound to other players. A player is considered to be "OP" when they have an op level of 2 or greater. Allowed values: DISABLED, OP_ONLY, ENABLED

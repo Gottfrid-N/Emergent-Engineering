@@ -5,8 +5,8 @@
 - [ ] !! = More Important
 - [ ] !!! = etc.
 - [ ] . = Less Important
-- [ ] .. = Even Less Important
-- [ ] ... = etc.
+- [ ] .\. = Even Less Important
+- [ ] .\.. = etc.
 
 # Progression
 - [ ] % Basic Progression Outline
@@ -30,6 +30,7 @@
 # Resources
 - [ ] Metals
   - [ ] % Platinum
+- [ ] Singularities
 - [ ] Ores
   - [ ] New ore veins kinda like gregtech
   - [ ] Ore processing
@@ -55,6 +56,6 @@
   - [ ] RFTools
   - [ ] . Hostile Neural Networks
   - [ ] Extended Crafting
-  - [ ] .. AE2
+  - [ ] .\. AE2
 # "unify.js"
 - [ ] Recipe deduplication

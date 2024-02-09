@@ -3,11 +3,11 @@ name = 'Game Stages'
 side = 'both'
 
 [download]
-hash = 'f261ef0f241a2f1a50602437bca25f3d591fcd25'
-hash-format = 'sha1'
-mode = 'metadata:curseforge'
-url = ''
+hash = '92b0f89b0190ea9d2501fe5bdc68b60344389ad5c5b29a09a1e142bd9d5b18845b8fdccd9150549e1b8f05c55e62e64e1dc289f66cd1350e3b0435f5e0a148c8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/iAlZk5aS/versions/KTIYBB6X/GameStages-Forge-1.20.1-15.0.1.jar'
 
-[update.curseforge]
-file-id = 4648424
-project-id = 268655
+[update.modrinth]
+mod-id = 'iAlZk5aS'
+version = 'KTIYBB6X'

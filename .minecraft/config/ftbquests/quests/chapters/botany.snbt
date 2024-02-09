@@ -7,6 +7,17 @@
 	id: "21BC6DB89A2D8CD9"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
-	title: "Botany"
+	quests: [{
+		id: "7470D230CF55E3FD"
+		subtitle: "These quests will be mostly focused on Botania"
+		tasks: [{
+			id: "24E0635ED06486A6"
+			item: "botania:lexicon"
+			type: "item"
+		}]
+		title: "Getting Started with &o&2Botanics"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&o&2Botany"
 }

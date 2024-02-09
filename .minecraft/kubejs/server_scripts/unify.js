@@ -1,7 +1,5 @@
 // priority: 0
 
-console.info("Running \"unify.js\"")
-
 let unify = []
 
 ServerEvents.tags("item", event => {

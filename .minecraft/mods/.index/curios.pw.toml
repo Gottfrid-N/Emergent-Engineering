@@ -1,0 +1,13 @@
+filename = 'curios-forge-5.7.0+1.20.1.jar'
+name = 'Curios API'
+side = 'both'
+
+[download]
+hash = '61f565a3b8f57fc60a02e9155f84d512b2678880e03e95c737ecd9ee1bc2e07b478f3fffd4296043b136f2bf69328287f424742e74e0a089d956c9e81dc47593'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/vvuO3ImH/versions/PeTgKttm/curios-forge-5.7.0%2B1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'vvuO3ImH'
+version = 'PeTgKttm'

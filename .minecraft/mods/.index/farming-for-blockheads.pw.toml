@@ -3,11 +3,11 @@ name = 'Farming for Blockheads'
 side = 'both'
 
 [download]
-hash = '480ce3a712747f44e79fd8aa43c950456f5ee551'
-hash-format = 'sha1'
-mode = 'metadata:curseforge'
-url = ''
+hash = '31ca2774f395c8cb2b8d5be008319ff7eb95f3a2caf52fb991834e6349f7db149f1f73892d922e25f7bd1888eb4704d48d7684a656c61764efc751240c2ae5fc'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/4WJZr8JU/versions/d1MqlvJt/farmingforblockheads-forge-1.20.1-14.0.2.jar'
 
-[update.curseforge]
-file-id = 4749360
-project-id = 261924
+[update.modrinth]
+mod-id = '4WJZr8JU'
+version = 'd1MqlvJt'

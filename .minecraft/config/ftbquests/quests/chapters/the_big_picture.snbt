@@ -1,0 +1,53 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_big_picture"
+	group: ""
+	id: "35A6AFE85788AC30"
+	order_index: 1
+	quest_links: [
+		{
+			id: "54023F23E9FAA95B"
+			linked_quest: "4A0B77AB0E11848A"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			id: "20E4E63A3A7D0A58"
+			linked_quest: "7D15665F5F7708C1"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			id: "516D0486EFC01F4C"
+			linked_quest: "7470D230CF55E3FD"
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	quests: [
+		{
+			icon: "create:wrench"
+			id: "47C60C58DD9E68D0"
+			tasks: [{
+				id: "17562A0A5F8AB779"
+				type: "checkmark"
+			}]
+			title: "Welcome to &d&lEmergent Engineering&r!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47C60C58DD9E68D0"]
+			id: "76059D5224C0BDFC"
+			tasks: [{
+				id: "00E68D26C237D05D"
+				title: "Getting Started"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+	]
+	title: "&6&lThe Big Picture"
+}

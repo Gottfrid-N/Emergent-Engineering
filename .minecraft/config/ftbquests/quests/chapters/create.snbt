@@ -7,6 +7,17 @@
 	id: "78665BC8072574DD"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
-	title: "Create"
+	quests: [{
+		dependencies: ["76059D5224C0BDFC"]
+		id: "4A0B77AB0E11848A"
+		tasks: [{
+			id: "3B7E2C484DED8FE7"
+			item: "create:wrench"
+			type: "item"
+		}]
+		title: "&o&6Create&rful Endeavors"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&o&6Create"
 }

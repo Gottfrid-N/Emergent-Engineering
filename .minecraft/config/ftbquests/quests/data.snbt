@@ -18,6 +18,6 @@
 	}
 	pause_game: false
 	progression_mode: "flexible"
-	title: "Emergent Engineering"
+	title: "&d&lEmergent Engineering"
 	version: 13
 }

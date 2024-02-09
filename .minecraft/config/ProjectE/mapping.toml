@@ -27,19 +27,19 @@
 	#Set EMC=0 for everything in the forge:ores tag
 	OresBlacklistMapper = true
 	#Add Conversions for Crafting Recipes gathered from net.minecraft.item.crafting.RecipeManager
-	CraftingMapper = true
+	CraftingMapper = false
 	#Add Conversions for all lingering potions to arrow recipes
-	TippedArrowMapper = true
+	TippedArrowMapper = false
 	#Adds back and forth conversions of objects and their Tag variant. (EMC values assigned to tags will not behave properly if this mapper is disabled)
 	TagMapper = true
 	#Add Conversions for all weathered copper variants
-	WeatheredCopperMapper = true
+	WeatheredCopperMapper = false
 	#Add Conversions for Brewing Recipes
-	BrewingMapper = true
+	BrewingMapper = false
 	#Uses the `custom_emc.json` File to add EMC values.
 	CustomEMCMapper = true
 	#Loads json files within datapacks (data/<domain>/pe_custom_conversions/*.json) to add values and conversions
-	CustomConversionMapper = true
+	CustomConversionMapper = false
 	#Allows other mods to easily set EMC values using the ProjectEAPI
-	APICustomEMCMapper = true
+	APICustomEMCMapper = false
 

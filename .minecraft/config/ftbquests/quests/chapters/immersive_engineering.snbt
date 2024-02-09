@@ -13,6 +13,23 @@
 	id: "77BA1ACF902E05CE"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
-	title: "Immersive Engineering"
+	quests: [{
+		dependencies: ["76059D5224C0BDFC"]
+		id: "7D15665F5F7708C1"
+		tasks: [{
+			id: "5C2887EBD7C77298"
+			item: {
+				Count: 1b
+				id: "immersiveengineering:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			type: "item"
+		}]
+		title: "So &o&dImmersive&r!"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&o&dImmersive Engineering"
 }

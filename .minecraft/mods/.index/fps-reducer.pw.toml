@@ -1,13 +1,13 @@
 filename = 'FpsReducer2-forge-1.20-2.5.jar'
 name = 'FPS Reducer'
-side = 'both'
+side = 'client'
 
 [download]
-hash = 'd7d5af20faa2bd7012aa2d34b5804324aa273092'
-hash-format = 'sha1'
-mode = 'metadata:curseforge'
-url = ''
+hash = 'b4cc36c9510248757f3725beb4009fb66ff9daffef5695560b0fd46b9f4ec25ab54713ebae90a220a9a9bcae539c3dbeb3ead6203752e90164adccca29122cf0'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/iZ10HXDj/versions/XP4qT1Vo/FpsReducer2-forge-1.20-2.5.jar'
 
-[update.curseforge]
-file-id = 4586784
-project-id = 280294
+[update.modrinth]
+mod-id = 'iZ10HXDj'
+version = 'XP4qT1Vo'
