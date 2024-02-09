@@ -1,0 +1,20 @@
+{
+    "block.extendedcrafting.luminessence_block": "Block of Luminessence",
+
+    "block.extendedcrafting.black_iron_block": "Block of Black Iron",
+
+    "block.extendedcrafting.ender_ingot_block": "Block of Enderite",
+    "item.extendedcrafting.ender_ingot": "Enderite Ingot",
+    "item.extendedcrafting.ender_nugget": "Enderite Nugget",
+    "block.extendedcrafting.enhanced_ender_ingot_block": "Block of Enhanced Enderite",
+    "item.extendedcrafting.enhanced_ender_ingot": "Enhanced Enderite Ingot",
+    "item.extendedcrafting.enhanced_ender_nugget": "Enhanced Enderite Nugget",
+
+    "block.extendedcrafting.redstone_ingot_block": "Block of Redstone Alloy",
+    "item.extendedcrafting.redstone_ingot": "Redstone Alloy Ingot",
+    "item.extendedcrafting.redstone_nugget": "Redstone Alloy Nugget",
+
+    "block.extendedcrafting.enhanced_redstone_ingot_block": "Block of Enhanced Redstone Alloy",
+    "item.extendedcrafting.enhanced_redstone_ingot": "Enhanced Redstone Alloy Ingot",
+    "item.extendedcrafting.enhanced_redstone_nugget": "Enhanced Redstone Alloy Nugget"
+}

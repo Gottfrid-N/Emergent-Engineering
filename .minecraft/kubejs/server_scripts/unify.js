@@ -17,7 +17,9 @@ ServerEvents.tags("item", event => {
             let tag = type + "/" + material
             let tagItems = event.get(tag).getObjectIds().toArray().sort((a, b) => { // sorts alphabetically
                 if (a < b) { return 1; }; if (a > b) { return -1; }; return 0;});
-            _unify.push([tag, tagItems])
+            if (tagItems.length > 1) {
+                _unify.push([tag, tagItems])
+            }
         })
     }
 

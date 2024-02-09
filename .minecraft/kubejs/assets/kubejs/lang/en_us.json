@@ -1,3 +1,4 @@
 {
-    "item.kubejs.test": "This item has custom lang code!"
+    "item.kubejs.test": "This item has custom lang code!",
+    "item.kubejs.platinum_storage_block": "Block of Platinum"
 }

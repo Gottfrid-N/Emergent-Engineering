@@ -11,7 +11,7 @@ StartupEvents.registry("item", event => {
     event.create("test")
     event.create("item_unifier").unstackable().tooltip("Craft with a non-standard item to get back its standard item.")
     createMaterial("iron", ["alchemical_catalyst", "coil"])
-    createMaterial("platinum", metalTypesExtended)
+    createMaterial("platinum", global["metalTypesExtended"])
 })
 
 ItemEvents.modification(event => {

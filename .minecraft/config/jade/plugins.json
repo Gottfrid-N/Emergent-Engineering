@@ -1,7 +1,7 @@
 {
   "extendedcrafting": {
-    "ender_crafter": true,
     "elite_auto_table": true,
+    "ender_crafter": true,
     "basic_auto_table": true,
     "flux_crafter": true,
     "advanced_table": true,
@@ -21,8 +21,8 @@
     "animal_owner": true,
     "animal_owner.fetch_names": true,
     "harvest_tool.effective_tool": true,
-    "item_storage.normal_amount": 9,
     "item_storage": true,
+    "item_storage.normal_amount": 9,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -75,16 +75,11 @@
   "immersiveengineering": {
     "multiblock_icon": true
   },
-  "supplementaries": {
-    "hat_stand": true
-  },
-  "jade": {
-    "coordinates.rel": false,
-    "distance": false,
-    "block_face": false,
-    "coordinates": false,
-    "registry_name": "OFF",
-    "mod_name": true
+  "reliquary": {
+    "pedestal": true,
+    "altar": true,
+    "mortar": true,
+    "cauldron": true
   },
   "create": {
     "filter": true,
@@ -96,6 +91,17 @@
     "crafting_blueprint": true,
     "goggles.detailed": false,
     "placard": true
+  },
+  "supplementaries": {
+    "hat_stand": true
+  },
+  "jade": {
+    "coordinates.rel": false,
+    "distance": false,
+    "block_face": false,
+    "coordinates": false,
+    "registry_name": "OFF",
+    "mod_name": true
   },
   "mcjtylib": {
     "jadeaddons": true
