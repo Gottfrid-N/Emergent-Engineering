@@ -1,10 +1,7 @@
 // priority: 1
 
 ServerEvents.recipes(event => {
-    function replaceTag(tag, replacement) {
-        event.replaceInput({input: tag}, tag, replacement)
-    }
-    replaceTag("#createdeco:internal/plates/brass_plates", "#forge:plates/brass")
-    replaceTag("#createdeco:internal/plates/iron_plates", "#forge:plates/iron")
-    replaceTag("#createdeco:internal/plates/copper_plates", "#forge:plates/copper")
+    event.shapeless("kubejs:item_unifier", ["minecraft:stick"])
+    event.shapeless("kubejs:immersive_steel", ["kubejs:item_unifier", "minecraft:stick"])
+    event.replaceInput({input: "kubejs:obsidian_plate"}, "kubejs:obsidian_plate", "create:sturdy_sheet")
 })

@@ -39,6 +39,14 @@
 - [ ] ? [Create: Bells and Whistles](https://modrinth.com/mod/bellsandwhistles)
 - [ ] ? [Create: Interactive](https://modrinth.com/mod/interactive)
 
+# Performance
+- [ ] Configs
+  - [ ] Modernfix Mixins
+## Fix Chunk Loading
+potentially:
+- Better Chunk Loading
+- 
+
 # Resources
 - [ ] Metals
   - [ ] % Platinum

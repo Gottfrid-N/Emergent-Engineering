@@ -1,0 +1,13 @@
+filename = 'okzoomer-forge-1.20-3.0.1.jar'
+name = 'Ok Zoomer Forge'
+side = 'both'
+
+[download]
+hash = '6d4ca82545806195782e88196b5f21a6fbdbecb6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4715660
+project-id = 631278

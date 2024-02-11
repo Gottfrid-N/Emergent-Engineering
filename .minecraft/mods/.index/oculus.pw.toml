@@ -1,0 +1,13 @@
+filename = 'oculus-mc1.20.1-1.6.15.jar'
+name = 'Oculus'
+side = 'client'
+
+[download]
+hash = '655ed5428998fd2776b66f6a4aa82c9a64af14e57b53269374f7d3ff7d41b85446bdc0dd7c9ba9496ba37731d63d3e00f5b503ee9d9de8b94cb0d51908f34741'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/GchcoXML/versions/KexKV6k0/oculus-mc1.20.1-1.6.15.jar'
+
+[update.modrinth]
+mod-id = 'GchcoXML'
+version = 'KexKV6k0'

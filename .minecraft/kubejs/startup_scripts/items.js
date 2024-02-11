@@ -1,6 +1,8 @@
 // priority: 1
 
 StartupEvents.registry("item", event => {
+    let builders = {}
+
     function createMaterial(material) {
         let name = material[0]
         let pairs = material[1][0]
@@ -9,7 +11,8 @@ StartupEvents.registry("item", event => {
             let type = pair[0]
             let id = global["materialToId"](name, type)
             console.log("Registring kubejs:" + id)
-            event.create(id)
+            let item = event.create(id)
+            builders["kubejs:" + id] = item
         });
     }
 

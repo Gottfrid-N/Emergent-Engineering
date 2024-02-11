@@ -72,6 +72,9 @@
   "projecte": {
     "emc_provider": true
   },
+  "pipez": {
+    "pipe": true
+  },
   "immersiveengineering": {
     "multiblock_icon": true
   },

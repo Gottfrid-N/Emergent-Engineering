@@ -21,6 +21,13 @@ ServerEvents.tags("item", event => {
         })
     }
 
+    function linkTags(tag, linkTag) {
+        let tagItems = event.get(tag).getObjectIds().toArray()
+        tagItems.forEach(tagItem => {
+            event.add(linkTag, tagItem)
+        })
+    }
+
     addMaterialTags("iron", metalTypes)
     addMaterialTags("copper", metalTypes)
     addMaterialTags("gold", metalTypes)
@@ -33,6 +40,10 @@ ServerEvents.tags("item", event => {
     addMaterialTags("steel", metalTypes)
     addMaterialTags("electrum", metalTypes)
     addMaterialTags("constantan", metalTypes)
+
+    linkTags("forge:plates/brass", "createdeco:internal/plates/brass_plates")
+    linkTags("forge:plates/iron", "createdeco:internal/plates/iron_plates")
+    linkTags("forge:plates/copper", "createdeco:internal/plates/copper_plates")
 
     unify = _unify
 })

@@ -18,13 +18,7 @@
 		id: "7D15665F5F7708C1"
 		tasks: [{
 			id: "5C2887EBD7C77298"
-			item: {
-				Count: 1b
-				id: "immersiveengineering:hammer"
-				tag: {
-					Damage: 0
-				}
-			}
+			item: "immersiveengineering:manual"
 			type: "item"
 		}]
 		title: "So &o&dImmersive&r!"

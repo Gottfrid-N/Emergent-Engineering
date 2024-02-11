@@ -1,4 +1,14 @@
 {
-    "item.kubejs.test": "This item has custom lang code!",
-    "item.kubejs.platinum_storage_block": "Block of Platinum"
+    "item.kubejs.platinum_storage_block": "Block of Platinum",
+
+    "item.kubejs.thelykos_ousia": "Thēlykós Ousía",
+        "item.kubejs.aphrodite_ousia": "Aphrodítē Ousía",
+        "item.kubejs.ge_ousia": "Gē Ousía",
+    "item.kubejs.arsenikos_ousia": "Arsenikós Ousía",
+        "item.kubejs.ermes_ousia": "Ermḗs Ousía",
+        "item.kubejs.ares_ousia": "Árēs Ousía",
+        "item.kubejs.dias_ousia": "Días Ousía",
+        "item.kubejs.kronos_ousia": "Krónos Ousía",
+        "item.kubejs.ouranos_ousia": "Ouranós Ousía",
+        "item.kubejs.poseidonas_ousia": "Poseidṓnas Ousía"
 }

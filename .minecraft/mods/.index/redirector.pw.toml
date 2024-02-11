@@ -1,0 +1,13 @@
+filename = 'redirector-5.0.0.jar'
+name = 'Redirector'
+side = 'both'
+
+[download]
+hash = '5868bb4294e129e49ee22ce7a5e5f66f45f2aa8cd96f1898bada7f5a89d9f6f98e6153ad7fec6ee3933d6912167597b8eee553c811107b5c969e065ce9090df1'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/nzRWPE5v/versions/HLEQA98f/redirector-5.0.0.jar'
+
+[update.modrinth]
+mod-id = 'nzRWPE5v'
+version = 'HLEQA98f'

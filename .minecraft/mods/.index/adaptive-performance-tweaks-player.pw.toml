@@ -1,0 +1,13 @@
+filename = 'adaptive_performance_tweaks_player_1.20.1-11.0.0.jar'
+name = 'Adaptive Performance Tweaks: Player'
+side = 'server'
+
+[download]
+hash = 'a5510921267fe432cac95230ddba0691213f3d050bbaca5eec0b33d3e46e7e6adce1ba4e6663f6c387b8182164de150a2adaccda56afe0df3833566d593d1703'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/jr5nzfKv/versions/wMF0rT1Y/adaptive_performance_tweaks_player_1.20.1-11.0.0.jar'
+
+[update.modrinth]
+mod-id = 'jr5nzfKv'
+version = 'wMF0rT1Y'

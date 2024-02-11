@@ -15,18 +15,18 @@ ServerEvents.tags("item", event => {
         })
     }
 
-    function plateToSheet(plate, material) {
+    function plateToSheet(plate, name) {
         event.removeAllTagsFrom(plate)
-        event.add("ee:sheet/" + material, plate)
-        event.add("ee:sheet", plate)
+        event.add(global["materialToTag"](name, "kubejs:sheets"), plate)
+        event.add("kubejs:sheets", plate)
     }
     plateToSheet("create:iron_sheet", "iron")
     plateToSheet("create:gold_sheet", "gold")
     plateToSheet("create:brass_sheet", "brass")
     plateToSheet("create:copper_sheet", "copper")
-    plateToSheet("create:sturdy_sheet", "obsidian")
     plateToSheet("createaddition:electrum_sheet", "electrum")
     plateToSheet("createaddition:zinc_sheet", "zinc")
+    event.removeAllTagsFrom("create:sturdy_sheet")
 
     global["materials"].forEach(material => {
         try {
