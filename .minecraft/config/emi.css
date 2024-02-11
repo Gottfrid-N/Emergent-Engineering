@@ -251,7 +251,7 @@
 	/**
 	 * The pages in the bottom sidebar
 	 */
-	bottom-sidebar-pages: none;
+	bottom-sidebar-pages: craftables;
 
 	/**
 	 * The subpanels in the bottom sidebar

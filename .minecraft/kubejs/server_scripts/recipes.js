@@ -3,5 +3,13 @@
 ServerEvents.recipes(event => {
     event.shapeless("kubejs:item_unifier", ["minecraft:stick"])
     event.shapeless("kubejs:immersive_steel", ["kubejs:item_unifier", "minecraft:stick"])
+    event.shaped("minecraft:bundle", [
+        "SLS",
+        "L L",
+        "LLL"], {
+            S: "minecraft:string",
+            L: "#forge:leather"
+        })
+    event.smelting("minecraft:leather", "minecraft:rotten_flesh")
     event.replaceInput({input: "kubejs:obsidian_plate"}, "kubejs:obsidian_plate", "create:sturdy_sheet")
 })

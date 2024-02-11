@@ -16,7 +16,7 @@
 		fpsDisplayGravity = "LEFT"
 		#Shows GPU and memory usage onto FPS display
 		#Allowed Values: OFF, ON, GPU, RAM
-		fpsDisplaySystem = "OFF"
+		fpsDisplaySystem = "ON"
 		#Configure FPS Display margin
 		#Give some space between corner and text
 		#Range: 0 ~ 48
