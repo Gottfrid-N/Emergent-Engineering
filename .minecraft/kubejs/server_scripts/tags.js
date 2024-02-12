@@ -3,11 +3,11 @@
 ServerEvents.tags("item", event => {
     function materialTag(material) {
         let name = material[0]
-        let pairs = material[1][0]
+        let properties = material[1][0]
         console.log("Adding itemTags to material: " + name)
-        pairs.forEach(pair => {
-            let itemType = pair[0]
-            let itemTag = pair[1]
+        properties.forEach(property => {
+            let itemType = property[0]
+            let itemTag = property[1]
             let id = global["materialToRegisteredId"](name, itemType)
             console.log("Adding itemTag: " + itemTag + " to id: " + id)
             event.add(itemTag, id)

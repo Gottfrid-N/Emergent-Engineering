@@ -35,27 +35,27 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | remove | RecipeFilter |  | void | ✘ |
 | stage | RecipeFilter, String |  | void | ✘ |
+| countRecipes | RecipeFilter |  | int | ✘ |
 | custom | JsonObject |  | RecipeJS | ✘ |
-| printTypes |  |  | void | ✘ |
 | replaceOutput | RecipeFilter, ReplacementMatch, OutputReplacement |  | void | ✘ |
 | replaceInput | RecipeFilter, ReplacementMatch, InputReplacement |  | void | ✘ |
-| countRecipes | RecipeFilter |  | int | ✘ |
-| takeId | RecipeJS, String, String |  | ResourceLocation | ✘ |
-| customFilter | Predicate<RecipeKJS> |  | RecipeFilter | ✘ |
-| getRecipes |  |  | Map<String, Object> | ✘ |
-| addRecipe | RecipeJS, boolean |  | RecipeJS | ✘ |
-| handler$zdb000$injectRecipes | RecipeManager, Map, CallbackInfo |  | void | ✘ |
-| getRecipeFunction | String |  | RecipeTypeFunction | ✘ |
-| findRecipes | RecipeFilter |  | Collection<RecipeJS> | ✘ |
+| printTypes |  |  | void | ✘ |
+| handler$zge000$injectRecipes | RecipeManager, Map, CallbackInfo |  | void | ✘ |
 | runInParallel | Runnable |  | void | ✔ |
 | runInParallel | Callable<T> |  | T | ✔ |
 | recipeStream | RecipeFilter |  | Stream<RecipeJS> | ✘ |
-| forEachRecipe | RecipeFilter, Consumer<RecipeJS> |  | void | ✘ |
 | containsRecipe | RecipeFilter |  | boolean | ✘ |
-| setItemErrors | boolean |  | void | ✘ |
-| printAllTypes |  |  | void | ✘ |
-| printExamples | String |  | void | ✘ |
 | findRecipeIds | RecipeFilter |  | Collection<ResourceLocation> | ✘ |
+| forEachRecipe | RecipeFilter, Consumer<RecipeJS> |  | void | ✘ |
+| setItemErrors | boolean |  | void | ✘ |
+| printExamples | String |  | void | ✘ |
+| printAllTypes |  |  | void | ✘ |
+| takeId | RecipeJS, String, String |  | ResourceLocation | ✘ |
+| findRecipes | RecipeFilter |  | Collection<RecipeJS> | ✘ |
+| addRecipe | RecipeJS, boolean |  | RecipeJS | ✘ |
+| customFilter | Predicate<RecipeKJS> |  | RecipeFilter | ✘ |
+| getRecipes |  |  | Map<String, Object> | ✘ |
+| getRecipeFunction | String |  | RecipeTypeFunction | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

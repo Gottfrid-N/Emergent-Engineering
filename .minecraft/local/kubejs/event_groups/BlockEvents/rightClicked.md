@@ -24,13 +24,13 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | getItem |  |  | ItemStack | ✘ |
-| getBlock |  |  | BlockContainerJS | ✘ |
 | getEntity |  |  | LivingEntity | ✘ |
 | getHand |  |  | InteractionHand | ✘ |
+| getBlock |  |  | BlockContainerJS | ✘ |
 | getFacing |  |  | Direction | ✘ |
-| getPlayer |  |  | Player | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
+| getPlayer |  |  | Player | ✘ |
 | removeGameStage | String |  | void | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
@@ -49,11 +49,6 @@ Note: Even if no fields are listed above, some methods are still available as fi
 The position of the block that was right clicked.
 ```
 
-- `BlockContainerJS getBlock()`
-```
-The block that was right clicked.
-```
-
 - `LivingEntity getEntity()`
 ```
 The player that right clicked the block.
@@ -62,6 +57,11 @@ The player that right clicked the block.
 - `InteractionHand getHand()`
 ```
 The hand that was used to right click the block.
+```
+
+- `BlockContainerJS getBlock()`
+```
+The block that was right clicked.
 ```
 
 - `Direction getFacing()`

@@ -1,20 +1,17 @@
-# ClientEvents.lang
+# GameStageEvents.stageRemoved
 
 ## Basic info
 
-- Valid script types: [CLIENT]
+- Valid script types: [SERVER, CLIENT]
 
 - Has result? ✘
 
-- Event class: [LangEventJS](https://github.com/KubeJS-Mods/KubeJS/tree/2001/common/src/main/java/dev/latvian/mods/kubejs/client/LangEventJS.java)
+- Event class: [GameStageEventJS](https://github.com/KubeJS-Mods/KubeJS/tree/2001/common/src/main/java/dev/latvian/mods/kubejs/integration/forge/gamestages/GameStageEventJS.java)
 
 ### Available fields:
 
 | Name | Type | Static? |
 | ---- | ---- | ------- |
-| PATTERN | Pattern | ✔ |
-| lang | String | ✘ |
-| map | Map<Key, String> | ✘ |
 
 Note: Even if no fields are listed above, some methods are still available as fields through *beans*.
 
@@ -22,14 +19,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| add | String, String, String |  | void | ✘ |
-| add | String, String |  | void | ✘ |
-| addAll | Map<String, String> |  | void | ✘ |
-| addAll | String, Map<String, String> |  | void | ✘ |
-| renameEntity | ResourceLocation, String |  | void | ✘ |
-| renameItem | ItemStack, String |  | void | ✘ |
-| renameBlock | Block, String |  | void | ✘ |
-| renameBiome | ResourceLocation, String |  | void | ✘ |
+| getEntity |  |  | LivingEntity | ✘ |
+| getStage |  |  | String | ✘ |
+| hasGameStage | String |  | boolean | ✘ |
+| addGameStage | String |  | void | ✘ |
+| getPlayer |  |  | Player | ✘ |
+| removeGameStage | String |  | void | ✘ |
+| getLevel |  |  | Level | ✘ |
+| getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |
@@ -39,6 +36,33 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 
 ### Documented members:
+
+- `boolean hasGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Checks if the player has the specified game stage
+```
+
+- `void addGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Adds the specified game stage to the player
+```
+
+- `void removeGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Removes the specified game stage from the player
+```
 
 - `Object exit(Object var0)`
 
@@ -99,7 +123,7 @@ Cancels the event with default exit value. Execution will be stopped **immediate
 ### Example script:
 
 ```js
-ClientEvents.lang(extra_id, (event) => {
+GameStageEvents.stageRemoved(/* extra_id (optional), */ (event) => {
 	// This space (un)intentionally left blank
 });
 ```

@@ -24,8 +24,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | getLevel |  |  | Level | ✘ |
-| getBlock |  |  | BlockContainerJS | ✘ |
 | getEntity |  |  | Entity | ✘ |
+| getBlock |  |  | BlockContainerJS | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
@@ -43,14 +43,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 The level of the block that was placed.
 ```
 
-- `BlockContainerJS getBlock()`
-```
-The block that is placed.
-```
-
 - `Entity getEntity()`
 ```
 The entity that placed the block. Can be `null`, e.g. when a block is placed by a dispenser.
+```
+
+- `BlockContainerJS getBlock()`
+```
+The block that is placed.
 ```
 
 - `Object exit(Object var0)`

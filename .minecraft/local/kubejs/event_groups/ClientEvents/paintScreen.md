@@ -37,14 +37,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | scale | float |  | void | ✘ |
 | text | Component, int, int, int, boolean |  | void | ✘ |
 | translate | double, double |  | void | ✘ |
+| rectangle | float, float, float, float, float, int, float, float, float, float |  | void | ✘ |
+| rectangle | float, float, float, float, float, int |  | void | ✘ |
 | getVariables |  |  | VariableSet | ✘ |
-| rotateRad | float |  | void | ✘ |
-| alignY | float, float, AlignMode |  | float | ✘ |
+| rawText | FormattedCharSequence, int, int, int, boolean |  | void | ✘ |
 | rotateDeg | float |  | void | ✘ |
 | alignX | float, float, AlignMode |  | float | ✘ |
-| rawText | FormattedCharSequence, int, int, int, boolean |  | void | ✘ |
-| rectangle | float, float, float, float, float, int |  | void | ✘ |
-| rectangle | float, float, float, float, float, int, float, float, float, float |  | void | ✘ |
+| alignY | float, float, AlignMode |  | float | ✘ |
+| rotateRad | float |  | void | ✘ |
 | blend | boolean |  | void | ✘ |
 | scale | float, float, float |  | void | ✘ |
 | end |  |  | void | ✘ |
@@ -53,19 +53,19 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | push |  |  | void | ✘ |
 | pop |  |  | void | ✘ |
 | translate | double, double, double |  | void | ✘ |
+| bindTextureForSetup | ResourceLocation |  | void | ✘ |
 | setShaderColor | float, float, float, float |  | void | ✘ |
 | setShaderTexture | ResourceLocation |  | void | ✘ |
-| vertex | Matrix4f, float, float, float, int, float, float |  | void | ✘ |
 | vertex | Matrix4f, float, float, float, int |  | void | ✘ |
-| bindTextureForSetup | ResourceLocation |  | void | ✘ |
-| setShaderInstance | Supplier<ShaderInstance> |  | void | ✘ |
-| getMatrix |  |  | Matrix4f | ✘ |
-| beginQuads | VertexFormat |  | void | ✘ |
-| beginQuads | boolean |  | void | ✘ |
-| multiplyWithMatrix | Matrix4f |  | void | ✘ |
+| vertex | Matrix4f, float, float, float, int, float, float |  | void | ✘ |
 | setPositionColorTextureShader |  |  | void | ✘ |
 | setPositionColorShader |  |  | void | ✘ |
+| beginQuads | VertexFormat |  | void | ✘ |
+| beginQuads | boolean |  | void | ✘ |
 | resetShaderColor |  |  | void | ✘ |
+| setShaderInstance | Supplier<ShaderInstance> |  | void | ✘ |
+| getMatrix |  |  | Matrix4f | ✘ |
+| multiplyWithMatrix | Matrix4f |  | void | ✘ |
 | getEntity |  |  | Entity | ✘ |
 | getPlayer |  |  | LocalPlayer | ✘ |
 | hasGameStage | String |  | boolean | ✘ |

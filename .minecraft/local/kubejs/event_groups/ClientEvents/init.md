@@ -19,9 +19,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
+| registerMenuScreen | MenuType<?>, ScreenFactory |  | void | ✘ |
 | registerEntityRenderer | EntityType<?>, EntityRendererProvider |  | void | ✘ |
 | registerBlockEntityRenderer | BlockEntityType<?>, BlockEntityRendererProvider |  | void | ✘ |
-| registerMenuScreen | MenuType<?>, ScreenFactory |  | void | ✘ |
 | getEntity |  |  | Entity | ✘ |
 | getPlayer |  |  | LocalPlayer | ✘ |
 | hasGameStage | String |  | boolean | ✘ |

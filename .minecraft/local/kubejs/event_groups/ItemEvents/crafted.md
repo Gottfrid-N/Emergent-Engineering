@@ -26,9 +26,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | getItem |  |  | ItemStack | ✘ |
 | getEntity |  |  | LivingEntity | ✘ |
 | getInventory |  |  | InventoryKJS | ✘ |
-| getPlayer |  |  | Player | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
+| getPlayer |  |  | Player | ✘ |
 | removeGameStage | String |  | void | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |

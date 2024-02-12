@@ -20,22 +20,22 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | printFeaturesForType | GenerationStep$Decoration, BiomeFilter, boolean |  | void | ✘ |
-| removeFeatureById | GenerationStep$Decoration, ResourceLocation[] |  | void | ✘ |
-| removeFeatureById | BiomeFilter, GenerationStep$Decoration, ResourceLocation[] |  | void | ✘ |
-| removeOres | Consumer<RemoveOresProperties> |  | void | ✘ |
-| removeAllFeatures |  |  | void | ✘ |
 | removeAllFeatures | BiomeFilter, GenerationStep$Decoration |  | void | ✘ |
+| removeAllFeatures |  |  | void | ✘ |
 | removeAllFeatures | BiomeFilter |  | void | ✘ |
-| printFiltered |  |  | void | ✘ |
+| removeOres | Consumer<RemoveOresProperties> |  | void | ✘ |
 | printFiltered | GenerationStep$Decoration |  | void | ✘ |
+| printFiltered |  |  | void | ✘ |
 | printFiltered | GenerationStep$Decoration, BiomeFilter |  | void | ✘ |
 | printFeatures | GenerationStep$Decoration |  | void | ✘ |
-| printFeatures |  |  | void | ✘ |
 | printFeatures | GenerationStep$Decoration, BiomeFilter |  | void | ✘ |
-| printSpawns |  |  | void | ✘ |
+| printFeatures |  |  | void | ✘ |
 | printSpawns | MobCategory |  | void | ✘ |
-| removeAllSpawns |  |  | void | ✘ |
+| printSpawns |  |  | void | ✘ |
 | removeSpawns | Consumer<RemoveSpawnsProperties> |  | void | ✘ |
+| removeFeatureById | GenerationStep$Decoration, ResourceLocation[] |  | void | ✘ |
+| removeFeatureById | BiomeFilter, GenerationStep$Decoration, ResourceLocation[] |  | void | ✘ |
+| removeAllSpawns |  |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

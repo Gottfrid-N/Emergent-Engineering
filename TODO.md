@@ -12,8 +12,6 @@
 - [ ] % Basic Progression Outline
 - [ ] % Quests
 
-## Playtrough 1
-
 # Content
 - [ ] %!!! Working material standard
   - [ ] % item
@@ -28,12 +26,14 @@
       - [ ] fluidStacks
       - [ ] fluidTags
       - [ ] fluidRecipes
-- [ ] ?.. [Fusion: Connected Textures](https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures) (Athena has connected textures maybe (havent tried))
+- [ ] % Thaumaturgy
+- [ ] Astrology
+## Mods
 - [ ] ? [Relics](https:%%modrinth.com%mod%relics-mod)
 - [ ] ? [Waystones](https:%%modrinth.com%mod%waystones) or some other way of teleporting
 - [ ] ? [Origins](https:%%www.curseforge.com%minecraft%mc-mods%origins-forge) and%or [Vampirism](https:%%modrinth.com%mod%vampirism)
 - [ ] ? [DivineRPG](https://modrinth.com/mod/divinerpg) and/or ?? [AOA](https://modrinth.com/mod/adventofascension)
-## Create Addons
+### Create Addons
 - [ ] ?. [Create: Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry)
 - [ ] ? [Extended Cogwheels](https://modrinth.com/mod/extended-cogwheels) (broken D:)
 - [ ] ? [Create: Bells and Whistles](https://modrinth.com/mod/bellsandwhistles)
@@ -42,10 +42,6 @@
 # Performance
 - [ ] Configs
   - [ ] Modernfix Mixins
-## Fix Chunk Loading
-potentially:
-- Better Chunk Loading
-- 
 
 # Resources
 - [ ] Metals
@@ -66,6 +62,8 @@ potentially:
       - [ ] 9x
     - [ ] Gems
     - [ ] Dusts
+- [ ] Gems
+  - [ ] Gem Variants (like gregtech)
 
 # Style
 - [ ] % Change X Block to Block of X
@@ -77,5 +75,6 @@ potentially:
   - [ ] . Hostile Neural Networks
   - [ ] Extended Crafting
   - [ ] .\. AE2
+
 # "unify.js"
 - [ ] Recipe deduplication

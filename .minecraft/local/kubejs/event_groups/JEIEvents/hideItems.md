@@ -19,9 +19,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getAllIngredients |  |  | Collection<T> | ✘ |
 | hide | Object |  | void | ✘ |
 | hideAll |  |  | void | ✘ |
+| getAllIngredients |  |  | Collection<T> | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

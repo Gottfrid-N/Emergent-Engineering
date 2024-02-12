@@ -91,9 +91,34 @@ global["metalTagTypes"] = [
     "forge:wires"
 ];
 
+function craftingShaped(key, pattern, output) {
+    return {
+        type: "minecraft:crafting_shaped",
+        key: key,
+        pattern: pattern,
+        result: output
+    }
+}
+
+function craftingShapeless(ingredients, result) {
+    return {
+        type: "minecraft:crafting_shapeless",
+        ingredients: ingredients,
+        result: result
+      }
+}
+
 let storage_block = ["storage_block", "forge:storage_blocks"]
-let ingot = ["ingot", "forge:ingots"]
-let nugget = ["nugget", "forge:nuggets"]
+function ingot(name) {
+    let nugget = global["materialToRegisteredId"](name, "nugget")
+    let ingot = global["materialToRegisteredId"](name, "ingot")
+    return ["ingot", "forge:ingots", craftingShaped({N: {item: nugget}}, ["NNN", "NNN", "NNN"], ingot)]
+}
+function nugget(name) {
+    let nugget = global["materialToRegisteredId"](name, "nugget")
+    let ingot = global["materialToRegisteredId"](name, "ingot")
+    return ["nugget", "forge:nuggets", craftingShapeless([{item: ingot}], nugget)]
+}
 
 let plate = ["plate", "forge:plates"]
 let sheet = ["sheet", "kubejs:sheets"]
@@ -136,7 +161,7 @@ global["materials"] = [
     ["zinc", [[plate]]],
     ["obsidian", [[plate, sheet]]],
     // custom
-    ["platinum", [[ingot, nugget, plate, sheet], [storage_block]]],
+    ["platinum", [[ingot(name), nugget(name), plate, sheet], [storage_block]]],
     // ousia
     [ousiaFeminity[0], ousiaTypes],
         [ousiaVenus[0], ousiaTypes],

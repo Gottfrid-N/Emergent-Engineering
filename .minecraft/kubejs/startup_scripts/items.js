@@ -5,11 +5,11 @@ StartupEvents.registry("item", event => {
 
     function createMaterial(material) {
         let name = material[0]
-        let pairs = material[1][0]
+        let properties = material[1][0]
         console.log("Registring material: " + name)
-        pairs.forEach(pair => {
-            let type = pair[0]
-            let id = global["materialToId"](name, type)
+        properties.forEach(property => {
+            let itemType = property[0]
+            let id = global["materialToId"](name, itemType)
             console.log("Registring kubejs:" + id)
             let item = event.create(id)
             builders["kubejs:" + id] = item

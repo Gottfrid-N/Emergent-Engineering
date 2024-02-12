@@ -26,9 +26,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | getSlot |  |  | int | ✘ |
 | getItem |  |  | ItemStack | ✘ |
 | getEntity |  |  | Entity | ✘ |
-| getPlayer |  |  | Player | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
+| getPlayer |  |  | Player | ✘ |
 | removeGameStage | String |  | void | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
