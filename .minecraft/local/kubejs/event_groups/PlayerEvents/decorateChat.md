@@ -27,15 +27,15 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | getMessage |  |  | String | ✘ |
-| setMessage | Component |  | void | ✘ |
-| getEntity |  |  | Player | ✘ |
+| getEntity |  |  | Entity | ✘ |
 | getComponent |  |  | Component | ✘ |
-| getUsername |  |  | String | ✘ |
+| setMessage | Component |  | void | ✘ |
 | setComponent | Component |  | void | ✘ |
-| hasGameStage | String |  | boolean | ✘ |
+| getUsername |  |  | String | ✘ |
 | addGameStage | String |  | void | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | removeGameStage | String |  | void | ✘ |
+| hasGameStage | String |  | boolean | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
@@ -53,16 +53,7 @@ Note: Even if no fields are listed above, some methods are still available as fi
 Gets the message that the player sent.
 ```
 
-- `void setMessage(Component var0)`
-
-  Parameters:
-  - var0: Component
-
-```
-Sets the message that the player sent.
-```
-
-- `Player getEntity()`
+- `Entity getEntity()`
 ```
 Gets the player that sent the message.
 ```
@@ -72,9 +63,13 @@ Gets the player that sent the message.
 Gets the message that the player sent.
 ```
 
-- `String getUsername()`
+- `void setMessage(Component var0)`
+
+  Parameters:
+  - var0: Component
+
 ```
-Gets the username of the player that sent the message.
+Sets the message that the player sent.
 ```
 
 - `void setComponent(Component var0)`
@@ -86,13 +81,9 @@ Gets the username of the player that sent the message.
 Sets the message that the player sent.
 ```
 
-- `boolean hasGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
+- `String getUsername()`
 ```
-Checks if the player has the specified game stage
+Gets the username of the player that sent the message.
 ```
 
 - `void addGameStage(String var0)`
@@ -111,6 +102,15 @@ Adds the specified game stage to the player
 
 ```
 Removes the specified game stage from the player
+```
+
+- `boolean hasGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Checks if the player has the specified game stage
 ```
 
 - `Object exit(Object var0)`

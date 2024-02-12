@@ -20,8 +20,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | hide | Object |  | void | ✘ |
-| hideAll |  |  | void | ✘ |
 | getAllIngredients |  |  | Collection<T> | ✘ |
+| hideAll |  |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

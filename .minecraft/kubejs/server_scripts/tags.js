@@ -3,7 +3,7 @@
 ServerEvents.tags("item", event => {
     function plateToSheet(plate, name) {
         event.removeAllTagsFrom(plate)
-        event.add(global["materialToTag"](name, "kubejs:sheets"), plate)
+        event.add("kubejs:sheets/" + name, plate);
         event.add("kubejs:sheets", plate)
     }
     plateToSheet("create:iron_sheet", "iron")

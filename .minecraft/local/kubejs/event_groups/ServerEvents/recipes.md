@@ -35,26 +35,26 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | remove | RecipeFilter |  | void | ✘ |
 | stage | RecipeFilter, String |  | void | ✘ |
-| countRecipes | RecipeFilter |  | int | ✘ |
-| custom | JsonObject |  | RecipeJS | ✘ |
-| replaceOutput | RecipeFilter, ReplacementMatch, OutputReplacement |  | void | ✘ |
-| replaceInput | RecipeFilter, ReplacementMatch, InputReplacement |  | void | ✘ |
 | printTypes |  |  | void | ✘ |
-| handler$zge000$injectRecipes | RecipeManager, Map, CallbackInfo |  | void | ✘ |
-| runInParallel | Runnable |  | void | ✔ |
-| runInParallel | Callable<T> |  | T | ✔ |
-| recipeStream | RecipeFilter |  | Stream<RecipeJS> | ✘ |
-| containsRecipe | RecipeFilter |  | boolean | ✘ |
-| findRecipeIds | RecipeFilter |  | Collection<ResourceLocation> | ✘ |
-| forEachRecipe | RecipeFilter, Consumer<RecipeJS> |  | void | ✘ |
-| setItemErrors | boolean |  | void | ✘ |
-| printExamples | String |  | void | ✘ |
-| printAllTypes |  |  | void | ✘ |
-| takeId | RecipeJS, String, String |  | ResourceLocation | ✘ |
 | findRecipes | RecipeFilter |  | Collection<RecipeJS> | ✘ |
+| custom | JsonObject |  | RecipeJS | ✘ |
+| getRecipes |  |  | Map<String, Object> | ✘ |
+| countRecipes | RecipeFilter |  | int | ✘ |
 | addRecipe | RecipeJS, boolean |  | RecipeJS | ✘ |
 | customFilter | Predicate<RecipeKJS> |  | RecipeFilter | ✘ |
-| getRecipes |  |  | Map<String, Object> | ✘ |
+| runInParallel | Callable<T> |  | T | ✔ |
+| runInParallel | Runnable |  | void | ✔ |
+| recipeStream | RecipeFilter |  | Stream<RecipeJS> | ✘ |
+| findRecipeIds | RecipeFilter |  | Collection<ResourceLocation> | ✘ |
+| forEachRecipe | RecipeFilter, Consumer<RecipeJS> |  | void | ✘ |
+| printAllTypes |  |  | void | ✘ |
+| printExamples | String |  | void | ✘ |
+| containsRecipe | RecipeFilter |  | boolean | ✘ |
+| setItemErrors | boolean |  | void | ✘ |
+| replaceInput | RecipeFilter, ReplacementMatch, InputReplacement |  | void | ✘ |
+| replaceOutput | RecipeFilter, ReplacementMatch, OutputReplacement |  | void | ✘ |
+| takeId | RecipeJS, String, String |  | ResourceLocation | ✘ |
+| handler$ceb000$injectRecipes | RecipeManager, Map, CallbackInfo |  | void | ✘ |
 | getRecipeFunction | String |  | RecipeTypeFunction | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |

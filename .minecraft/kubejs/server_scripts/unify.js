@@ -5,7 +5,7 @@ let unify = []
 ServerEvents.tags("item", event => {
     console.log("Event: \"tags\"")
 
-    let metalTypes = global["metalTagTypes"]
+    let metalTypes = global.metalTagTypes
 
     let _unify = []
     

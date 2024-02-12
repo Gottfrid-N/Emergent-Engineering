@@ -67,6 +67,15 @@ console.log("         .-----------------.",
             "        | '--------------' |",
             "         '----------------' ");
 
+
+global.metalTagTypes = [
+    "forge:storage_blocks", "forge:ingots", "forge:nuggets",
+    "forge:dusts",
+    "forge:plates",
+    "forge:gears",
+    "forge:wires"
+];
+
 let ousia = ["ousia", "Ουσία", "Ousía"];
 let ousiaFeminity = ["thelykos", "Θηλυκός", "Thēlykós"];
 	let ousiaVenus = ["aphrodite", "Αφροδίτη", "Aphrodítē"];
@@ -85,10 +94,10 @@ let ousiaTypes = [ousiaItemTypes];
 /**
  * @type {itemProperties[]}
  */
-global.items = [];
-global.blocks = [];
-global.fluids = [];
-global.recipes = [];
+let items = [];
+let blocks = [];
+let fluids = [];
+let recipes = [];
 
 /**
  * 
@@ -139,7 +148,9 @@ function craftingShaped(keys, pattern, output) {
  * @param {String[]} tags 
  */
 function newItem(id, displayName, tags) {
-    global.items.push(itemProperties(id, displayName, tags));
+    let item = itemProperties(id, displayName, tags)
+    console.log("Pushing item: " + item)
+    items.push(item);
 }
 
 function newBlock(id, displayName, tags) {
@@ -150,8 +161,13 @@ function newFluid(id, displayName, tags) {
 
 }
 
+/**
+ * 
+ * @param {Internal.JsonObject} recipe 
+ */
 function newRecipe(recipe) {
-    global.recipes.push(recipe);
+    console.log("Pushing recipe: " + recipe)
+    recipes.push(recipe);
 }
 
 function compress9x9(input, output) {
@@ -185,10 +201,19 @@ function nugget(materialId, materialName) {
     let id = materialId + "_nugget";
     let displayName = materialName + " Nugget";
 
-    newItem(id, displayName, "forge:nuggets/" + materialId);
+    newItem(id, displayName, ["forge:nuggets/" + materialId]);
     newRecipe(decompress9x9(ingotRid(materialId), nuggetRid(materialId)));
 }
 
-storageBlock("platinum", "Platinum")
-ingot("platinum", "Platinum")
-nugget("platinum", "Platinum")
+storageBlock("platinum", "Platinum");
+ingot("platinum", "Platinum");
+nugget("platinum", "Platinum");
+
+console.log(items);
+global.items = items;
+console.log(blocks);
+global.blocks = blocks;
+console.log(fluids);
+global.fluids = fluids;
+console.log(recipes);
+global.recipes = recipes;

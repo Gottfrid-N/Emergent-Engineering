@@ -13,17 +13,7 @@ ServerEvents.recipes(event => {
             })
         })
     }
-
     event.replaceInput({input: "kubejs:obsidian_plate"}, "kubejs:obsidian_plate", "create:sturdy_sheet")
-
-    global["materials"].forEach(material => {
-        try {
-            materialRecipe(material)
-        } catch (error) {
-            console.warn(error)
-        }
-    })
-
     event.shapeless("kubejs:item_unifier", ["minecraft:stick"])
     event.shapeless("kubejs:immersive_steel", ["kubejs:item_unifier", "minecraft:stick"])
     event.shaped("minecraft:bundle", [

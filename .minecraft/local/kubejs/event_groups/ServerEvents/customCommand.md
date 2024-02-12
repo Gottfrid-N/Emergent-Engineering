@@ -19,10 +19,10 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
+| getBlock |  |  | BlockContainerJS | ✘ |
 | getId |  |  | String | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getEntity |  |  | Entity | ✘ |
-| getBlock |  |  | BlockContainerJS | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
