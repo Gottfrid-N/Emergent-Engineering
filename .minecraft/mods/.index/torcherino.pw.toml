@@ -1,0 +1,13 @@
+filename = 'Torcherino-forge-1.20.1-20.0.0.jar'
+name = 'Torcherino'
+side = 'both'
+
+[download]
+hash = '2eb0ab5205e13b32af5ae6190561aaf382a30c642e22b0f875db7d26cfb2d627de7709330b88710a2c53437e9f7f6a614336cb84e27de19ab3607476d76a9b2d'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/BUIMWY7q/versions/wawVsjXv/Torcherino-forge-1.20.1-20.0.0.jar'
+
+[update.modrinth]
+mod-id = 'BUIMWY7q'
+version = 'wawVsjXv'
