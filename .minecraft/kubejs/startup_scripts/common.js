@@ -77,15 +77,15 @@ global.metalTagTypes = [
 ];
 
 /**
- * @type {Internal.JsonObject[]}
+ * @type {ItemProperties[]}
  */
 let items = [];
 /**
- * @type {Internal.JsonObject[]}
+ * @type {BlockProperties[]}
  */
 let blocks = [];
 /**
- * @type {Internal.JsonObject[]}
+ * @type {FluidProperties[]}
  */
 let fluids = [];
 /**
@@ -99,31 +99,64 @@ let recipes = [];
  * @param {String} displayName 
  * @param {String[]} tags 
  */
+function ItemProperties(id, displayName, tags) {
+    this.id = id;
+    this.displayName = displayName;
+    this.tags = tags
+}
+
+/**
+ * 
+ * @param {String} id
+ * @param {String} displayName 
+ * @param {String[]} tags 
+ */
+function BlockProperties(id, displayName, tags) {
+    this.id = id;
+    this.displayName = displayName;
+    this.tags = tags
+}
+
+/**
+ * 
+ * @param {String} id
+ * @param {String} displayName 
+ * @param {String[]} tags 
+ */
+function FluidProperties(id, displayName, tags) {
+    this.id = id;
+    this.displayName = displayName;
+    this.tags = tags
+}
+
+/**
+ * 
+ * @param {String} id
+ * @param {String} displayName 
+ * @param {String[]} tags 
+ */
 function newItem(id, displayName, tags) {
-    let item = {
-        id: id, 
-        displayName: displayName, 
-        tags: tags
-    }
-    items.push(item);
+    items.push(new ItemProperties(id, displayName, tags));
 }
 
+/**
+ * 
+ * @param {String} id
+ * @param {String} displayName 
+ * @param {String[]} tags 
+ */
 function newBlock(id, displayName, tags) {
-    let block = {
-        id: id, 
-        displayName: displayName, 
-        tags: tags
-    }
-    blocks.push(block)
+    blocks.push(new BlockProperties(id, displayName, tags))
 }
 
+/**
+ * 
+ * @param {String} id
+ * @param {String} displayName 
+ * @param {String[]} tags 
+ */
 function newFluid(id, displayName, tags) {
-    let fluid = {
-        id: id, 
-        displayName: displayName, 
-        tags: tags
-    }
-    fluids.push(fluid)
+    fluids.push(new FluidProperties(id, displayName, tags))
 }
 
 /**
@@ -249,11 +282,11 @@ newOusia(ousiaSaturn);
 newOusia(ousiaUranus);
 newOusia(ousiaNeptune);
 
-console.log("items: " + items);
+console.log("Items: " + items);
 global.items = items;
-console.log("blocks: " + blocks);
+console.log("Blocks: " + blocks);
 global.blocks = blocks;
-console.log("fluids: " + fluids);
+console.log("Fluids: " + fluids);
 global.fluids = fluids;
-console.log("recipes: " + recipes);
+console.log("Recipes: " + recipes);
 global.recipes = recipes;

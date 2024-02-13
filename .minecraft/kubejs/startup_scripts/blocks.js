@@ -3,7 +3,7 @@ StartupEvents.registry("block", event => {
 
         /**
      * 
-     * @param {Internal.JsonObject} blockProperties 
+     * @param {BlockProperties} blockProperties 
      */
     function registerBlockProperties(blockProperties) {
         console.log("Registering block: " + blockProperties);

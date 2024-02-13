@@ -7,7 +7,7 @@ StartupEvents.registry("item", event => {
 
     /**
      * 
-     * @param {Internal.JsonObject} itemProperties 
+     * @param {ItemProperties} itemProperties 
      */
     function registerItemProperties(itemProperties) {
         console.log("Registering item: " + itemProperties)
