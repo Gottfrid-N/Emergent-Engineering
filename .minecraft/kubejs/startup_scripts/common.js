@@ -67,15 +67,6 @@ console.log("         .-----------------.",
             "        | '--------------' |",
             "         '----------------' ");
 
-
-global.metalTagTypes = [
-    "forge:storage_blocks", "forge:ingots", "forge:nuggets",
-    "forge:dusts",
-    "forge:plates",
-    "forge:gears",
-    "forge:wires"
-];
-
 /**
  * @type {ItemProperties[]}
  */
@@ -235,6 +226,9 @@ function newNugget(materialId, materialName) {
 newStorageBlock("platinum", "Platinum");
 newIngot("platinum", "Platinum");
 newNugget("platinum", "Platinum");
+newItem("granite_alloy", "Granite Alloy", "forge:ingots/granite");
+newItem("diorite_alloy", "Diorite Alloy", "forge:ingots/diorite");
+newItem("gad_alloy", "G.A.D Alloy", "forge:ingots/gad")
 
 let ousia ={id: "ousia", 
             name: {greek: "Ουσία", transliteral: "Ousía"}};

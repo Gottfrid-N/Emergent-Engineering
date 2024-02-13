@@ -5,9 +5,14 @@ let unify = []
 ServerEvents.tags("item", event => {
     console.log("Event: \"tags\"")
 
-    let metalTypes = global.metalTagTypes
+    let metalTypes = [
+        "forge:storage_blocks", "forge:ingots", "forge:nuggets",
+        "forge:dusts",
+        "forge:plates",
+        "forge:gears",
+        "forge:wires"];
 
-    let _unify = []
+    let _unify = [];
     
     function addMaterialTags(material, tagTypes) {
         console.log("Unifying material: " + material + " with types: " + tagTypes.toString())
@@ -22,24 +27,28 @@ ServerEvents.tags("item", event => {
     }
 
     function linkTags(tag, linkTag) {
-        let tagItems = event.get(tag).getObjectIds().toArray()
+        let tagItems = event.get(tag).getObjectIds().toArray();
         tagItems.forEach(tagItem => {
-            event.add(linkTag, tagItem)
-        })
+            event.add(linkTag, tagItem);
+        });
     }
 
-    addMaterialTags("iron", metalTypes)
-    addMaterialTags("copper", metalTypes)
-    addMaterialTags("gold", metalTypes)
-    addMaterialTags("netherite", metalTypes)
-    addMaterialTags("silver", metalTypes)
-    addMaterialTags("tin", metalTypes)
-    addMaterialTags("lead", metalTypes)
-    addMaterialTags("nickel", metalTypes)
+    addMaterialTags("iron", metalTypes);
+    addMaterialTags("copper", metalTypes);
+    addMaterialTags("gold", metalTypes);
+    addMaterialTags("netherite", metalTypes);
+    addMaterialTags("silver", metalTypes);
+    addMaterialTags("tin", metalTypes);
+    addMaterialTags("lead", metalTypes);
+    addMaterialTags("nickel", metalTypes);
     
-    addMaterialTags("steel", metalTypes)
-    addMaterialTags("electrum", metalTypes)
-    addMaterialTags("constantan", metalTypes)
+    addMaterialTags("steel", metalTypes);
+    addMaterialTags("electrum", metalTypes);
+    addMaterialTags("constantan", metalTypes);
+
+    let seed = ["forge:seeds", "forge:fiber", "forge:crops"];
+
+    addMaterialTags("flax", seed);
 
     linkTags("forge:plates/brass", "createdeco:internal/plates/brass_plates")
     linkTags("forge:plates/iron", "createdeco:internal/plates/iron_plates")

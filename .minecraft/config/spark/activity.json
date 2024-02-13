@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Gottfrid_N",
+      "uniqueId": "bb2d0351-fd0f-43fb-a84a-c291b43e6b9e"
+    },
+    "time": 1707843970074,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/t5VuOHR74W"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Gottfrid_N",
+      "uniqueId": "bb2d0351-fd0f-43fb-a84a-c291b43e6b9e"
+    },
+    "time": 1707843966236,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/rfjxlEsI8r"
+    }
+  }
+]

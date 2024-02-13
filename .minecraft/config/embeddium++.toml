@@ -28,7 +28,7 @@
 	[embeddiumplus.quality]
 		#Toggle fog feature
 		#Fog was a vanilla feature, toggling off may increases performance
-		fog = true
+		fog = false
 		#Raise clouds
 		#Modify clouds height perfect for a adaptative world experience
 		#Range: 0 ~ 512

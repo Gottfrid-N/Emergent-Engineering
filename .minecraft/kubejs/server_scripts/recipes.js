@@ -19,6 +19,8 @@ ServerEvents.recipes(event => {
             R: "minecraft:rabbit_hide"
         });
     event.smelting("minecraft:leather", "minecraft:rotten_flesh");
+    event.remove({input:"minecraft:coal", output:"bigreactors:graphite_ingot"});
+    event.remove({input:"minecraft:charcoal", output:"bigreactors:graphite_ingot"});
 
     global.recipes.forEach(recipe => {
         console.log("Registering recipe: " + recipe);

@@ -1,0 +1,13 @@
+filename = 'and_there_was_only_one_bed-1.20.1-1.0.jar'
+name = 'And There Was Only One Bed'
+side = 'both'
+
+[download]
+hash = '97853a8d68e75bcaffbb1579f57b0124c88b3db5566d3b452d64596ddfb72060d1c9fd2ada7644de61cb04ec7b4047044bdbd8b056262eb626ddbdfd628c900c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/iEOEWNV5/versions/7BmEMRTa/and_there_was_only_one_bed-1.20.1-1.0.jar'
+
+[update.modrinth]
+mod-id = 'iEOEWNV5'
+version = '7BmEMRTa'
