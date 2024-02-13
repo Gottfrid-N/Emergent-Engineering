@@ -226,6 +226,8 @@ function newNugget(materialId, materialName) {
 newStorageBlock("platinum", "Platinum");
 newIngot("platinum", "Platinum");
 newNugget("platinum", "Platinum");
+
+newRecipe(decompress9x9("create:andesite_alloy_block", "create:andesite_alloy"))
 newItem("granite_alloy", "Granite Alloy", "forge:ingots/granite");
 newItem("diorite_alloy", "Diorite Alloy", "forge:ingots/diorite");
 newItem("gad_alloy", "G.A.D Alloy", "forge:ingots/gad")
