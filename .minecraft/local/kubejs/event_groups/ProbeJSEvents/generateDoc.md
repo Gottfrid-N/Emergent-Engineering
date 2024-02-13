@@ -20,14 +20,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | getProperty | JsonObject |  | AbstractProperty<?> | ✘ |
-| transformDocument | Class<?>, Consumer<DocumentClass> |  | DocGenerationEventJS | ✘ |
-| transformByName | String, Consumer<DocumentClass> |  | DocGenerationEventJS | ✘ |
-| customSnippet | String, List<String>, List<Object>, String |  | DocGenerationEventJS | ✘ |
-| customSnippet | String, List<String>, List<Object> |  | DocGenerationEventJS | ✘ |
-| addSnippet | String, List<Object>, String |  | DocGenerationEventJS | ✘ |
-| addSnippet | String, List<Object> |  | DocGenerationEventJS | ✘ |
 | getJavaClass | Class<?> |  | DocumentClass | ✘ |
 | specialType | String, List<Object> |  | DocGenerationEventJS | ✘ |
+| transformByName | String, Consumer<DocumentClass> |  | DocGenerationEventJS | ✘ |
+| addSnippet | String, List<Object>, String |  | DocGenerationEventJS | ✘ |
+| addSnippet | String, List<Object> |  | DocGenerationEventJS | ✘ |
+| transformDocument | Class<?>, Consumer<DocumentClass> |  | DocGenerationEventJS | ✘ |
+| customSnippet | String, List<String>, List<Object>, String |  | DocGenerationEventJS | ✘ |
+| customSnippet | String, List<String>, List<Object> |  | DocGenerationEventJS | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

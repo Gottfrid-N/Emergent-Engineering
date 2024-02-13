@@ -21,8 +21,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | remove | ResourceLocation[] |  | void | ✘ |
 | removeIf | Predicate<IRecipeCategory<?>> |  | void | ✘ |
-| getCategories |  |  | Collection<IRecipeCategory<?>> | ✘ |
 | getCategoryIds |  |  | Collection<ResourceLocation> | ✘ |
+| getCategories |  |  | Collection<IRecipeCategory<?>> | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

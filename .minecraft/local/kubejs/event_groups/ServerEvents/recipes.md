@@ -36,26 +36,26 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | remove | RecipeFilter |  | void | ✘ |
 | stage | RecipeFilter, String |  | void | ✘ |
 | printTypes |  |  | void | ✘ |
-| findRecipes | RecipeFilter |  | Collection<RecipeJS> | ✘ |
-| custom | JsonObject |  | RecipeJS | ✘ |
-| getRecipes |  |  | Map<String, Object> | ✘ |
-| countRecipes | RecipeFilter |  | int | ✘ |
-| addRecipe | RecipeJS, boolean |  | RecipeJS | ✘ |
 | customFilter | Predicate<RecipeKJS> |  | RecipeFilter | ✘ |
-| runInParallel | Callable<T> |  | T | ✔ |
-| runInParallel | Runnable |  | void | ✔ |
-| recipeStream | RecipeFilter |  | Stream<RecipeJS> | ✘ |
-| findRecipeIds | RecipeFilter |  | Collection<ResourceLocation> | ✘ |
-| forEachRecipe | RecipeFilter, Consumer<RecipeJS> |  | void | ✘ |
-| printAllTypes |  |  | void | ✘ |
-| printExamples | String |  | void | ✘ |
-| containsRecipe | RecipeFilter |  | boolean | ✘ |
-| setItemErrors | boolean |  | void | ✘ |
+| custom | JsonObject |  | RecipeJS | ✘ |
 | replaceInput | RecipeFilter, ReplacementMatch, InputReplacement |  | void | ✘ |
 | replaceOutput | RecipeFilter, ReplacementMatch, OutputReplacement |  | void | ✘ |
+| addRecipe | RecipeJS, boolean |  | RecipeJS | ✘ |
+| getRecipes |  |  | Map<String, Object> | ✘ |
+| findRecipes | RecipeFilter |  | Collection<RecipeJS> | ✘ |
 | takeId | RecipeJS, String, String |  | ResourceLocation | ✘ |
-| handler$ceb000$injectRecipes | RecipeManager, Map, CallbackInfo |  | void | ✘ |
+| countRecipes | RecipeFilter |  | int | ✘ |
+| printAllTypes |  |  | void | ✘ |
+| printExamples | String |  | void | ✘ |
+| setItemErrors | boolean |  | void | ✘ |
+| containsRecipe | RecipeFilter |  | boolean | ✘ |
+| findRecipeIds | RecipeFilter |  | Collection<ResourceLocation> | ✘ |
+| forEachRecipe | RecipeFilter, Consumer<RecipeJS> |  | void | ✘ |
+| recipeStream | RecipeFilter |  | Stream<RecipeJS> | ✘ |
+| runInParallel | Callable<T> |  | T | ✔ |
+| runInParallel | Runnable |  | void | ✔ |
 | getRecipeFunction | String |  | RecipeTypeFunction | ✘ |
+| handler$efh000$injectRecipes | RecipeManager, Map, CallbackInfo |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

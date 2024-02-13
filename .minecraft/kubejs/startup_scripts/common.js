@@ -92,11 +92,20 @@ let ousiaItemTypes = [[ousia[0], "kubejs:ousia"]];
 let ousiaTypes = [ousiaItemTypes];
 
 /**
- * @type {itemProperties[]}
+ * @type {Internal.JsonObject[]}
  */
 let items = [];
+/**
+ * @type {Internal.JsonObject[]}
+ */
 let blocks = [];
+/**
+ * @type {Internal.JsonObject[]}
+ */
 let fluids = [];
+/**
+ * @type {Internal.JsonObject[]}
+ */
 let recipes = [];
 
 /**
@@ -105,10 +114,39 @@ let recipes = [];
  * @param {String} displayName 
  * @param {String[]} tags 
  */
-function itemProperties(id, displayName, tags) {
-    this.id = id;
-    this.displayName = displayName;
-    this.tags = tags;
+function newItem(id, displayName, tags) {
+    let item = {
+        id: id, 
+        displayName: displayName, 
+        tags: tags
+    }
+    items.push(item);
+}
+
+function newBlock(id, displayName, tags) {
+    let block = {
+        id: id, 
+        displayName: displayName, 
+        tags: tags
+    }
+    blocks.push(block)
+}
+
+function newFluid(id, displayName, tags) {
+    let fluid = {
+        id: id, 
+        displayName: displayName, 
+        tags: tags
+    }
+    fluids.push(fluid)
+}
+
+/**
+ * 
+ * @param {Internal.JsonObject} recipe 
+ */
+function newRecipe(recipe) {
+    recipes.push(recipe);
 }
 
 /**
@@ -135,46 +173,17 @@ function craftingShapeless(ingredients, output) {
 function craftingShaped(keys, pattern, output) {
     return {
         type: "minecraft:crafting_shaped",
-        keys: keys,
+        key: keys,
         pattern: pattern,
         result: output
     }
 }
 
-/**
- * 
- * @param {String} id
- * @param {String} displayName 
- * @param {String[]} tags 
- */
-function newItem(id, displayName, tags) {
-    let item = itemProperties(id, displayName, tags)
-    console.log("Pushing item: " + item)
-    items.push(item);
-}
-
-function newBlock(id, displayName, tags) {
-
-}
-
-function newFluid(id, displayName, tags) {
-
-}
-
-/**
- * 
- * @param {Internal.JsonObject} recipe 
- */
-function newRecipe(recipe) {
-    console.log("Pushing recipe: " + recipe)
-    recipes.push(recipe);
-}
-
 function compress9x9(input, output) {
-    return craftingShaped({I: input}, ["III", "III", "III"], {item: output});
+    return craftingShaped({I: input}, ["III", "III", "III"], {count:1, item: output});
 }
 function decompress9x9(input, output) {
-    return craftingShapeless([{item: input}], {item: output, count: 9});
+    return craftingShapeless([{count: 1, item: input}], {count: 9, item: output});
 }
 
 function storageBlockRid(materialId) {return "kubejs:" + materialId + "_block"}
@@ -183,7 +192,7 @@ function storageBlock(materialId, materialDisplayName) {
     let displayName = "Block of " + materialDisplayName;
 
     newBlock(id, displayName, ["forge:storage_blocks/" + materialId]);
-    newRecipe(compress9x9(ingotRid(materialId), ingotRid(materialId)));
+    newRecipe(compress9x9(ingotRid(materialId), storageBlockRid(materialId)));
 }
 
 function ingotRid(materialId) {return "kubejs:" + materialId + "_ingot"}
@@ -209,11 +218,11 @@ storageBlock("platinum", "Platinum");
 ingot("platinum", "Platinum");
 nugget("platinum", "Platinum");
 
-console.log(items);
+console.log("items: " + items);
 global.items = items;
-console.log(blocks);
+console.log("blocks: " + blocks);
 global.blocks = blocks;
-console.log(fluids);
+console.log("fluids: " + fluids);
 global.fluids = fluids;
-console.log(recipes);
+console.log("recipes: " + recipes);
 global.recipes = recipes;

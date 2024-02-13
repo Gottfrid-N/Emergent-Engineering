@@ -20,8 +20,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | remove | ResourceLocation, ResourceLocation[] |  | void | ✘ |
-| getCategories |  |  | Collection<IRecipeCategory> | ✘ |
 | getCategoryIds |  |  | Collection<ResourceLocation> | ✘ |
+| getCategories |  |  | Collection<IRecipeCategory> | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

@@ -25,17 +25,17 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | getAffectedBlocks |  |  | List<BlockContainerJS> | ✘ |
 | getAffectedEntities |  |  | EntityArrayList | ✘ |
-| removeKnockback |  |  | void | ✘ |
-| removeAffectedEntity | Entity |  | void | ✘ |
 | removeAllAffectedEntities |  |  | void | ✘ |
-| removeAffectedBlock | BlockContainerJS |  | void | ✘ |
 | removeAllAffectedBlocks |  |  | void | ✘ |
-| getPosition |  |  | Vec3 | ✘ |
-| getBlock |  |  | BlockContainerJS | ✘ |
-| getY |  |  | double | ✘ |
+| removeAffectedBlock | BlockContainerJS |  | void | ✘ |
+| removeAffectedEntity | Entity |  | void | ✘ |
+| removeKnockback |  |  | void | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getX |  |  | double | ✘ |
 | getZ |  |  | double | ✘ |
+| getPosition |  |  | Vec3 | ✘ |
+| getBlock |  |  | BlockContainerJS | ✘ |
+| getY |  |  | double | ✘ |
 | getExploder |  |  | LivingEntity | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
@@ -58,23 +58,14 @@ Gets a list of all blocks affected by the explosion.
 Gets a list of all entities affected by the explosion.
 ```
 
-- `void removeKnockback()`
-```
-Remove all knockback from all affected *players*.
-```
-
-- `void removeAffectedEntity(Entity var0)`
-
-  Parameters:
-  - var0: Entity
-
-```
-Remove an entity from the list of affected entities.
-```
-
 - `void removeAllAffectedEntities()`
 ```
 Remove all entities from the list of affected entities.
+```
+
+- `void removeAllAffectedBlocks()`
+```
+Remove all blocks from the list of affected blocks.
 ```
 
 - `void removeAffectedBlock(BlockContainerJS var0)`
@@ -86,9 +77,18 @@ Remove all entities from the list of affected entities.
 Remove a block from the list of affected blocks.
 ```
 
-- `void removeAllAffectedBlocks()`
+- `void removeAffectedEntity(Entity var0)`
+
+  Parameters:
+  - var0: Entity
+
 ```
-Remove all blocks from the list of affected blocks.
+Remove an entity from the list of affected entities.
+```
+
+- `void removeKnockback()`
+```
+Remove all knockback from all affected *players*.
 ```
 
 - `Object exit(Object var0)`
