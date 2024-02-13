@@ -76,21 +76,6 @@ global.metalTagTypes = [
     "forge:wires"
 ];
 
-let ousia = ["ousia", "Ουσία", "Ousía"];
-let ousiaFeminity = ["thelykos", "Θηλυκός", "Thēlykós"];
-	let ousiaVenus = ["aphrodite", "Αφροδίτη", "Aphrodítē"];
-	let ousiaEarth = ["ge", "Γη", "Gē"];
-let ousiaMasculinity = ["arsenikos", "Αρσενικό", "Arsenikós"];
-	let ousiaMercury = ["ermes", "Ερμής", "Ermḗs"];
-	let ousiaMars = ["ares", "Άρης", "Árēs"];
-	let ousiaJupiter = ["dias", "Δίας", "Días"];
-	let ousiaSaturn = ["kronos", "Κρόνος", "Krónos"];
-	let ousiaUranus = ["ouranos", "Ουρανός", "Ouranós"];
-	let ousiaNeptune = ["poseidonas", "Ποσειδώνας", "Poseidṓnas"];
-
-let ousiaItemTypes = [[ousia[0], "kubejs:ousia"]];
-let ousiaTypes = [ousiaItemTypes];
-
 /**
  * @type {Internal.JsonObject[]}
  */
@@ -187,7 +172,7 @@ function decompress9x9(input, output) {
 }
 
 function storageBlockRid(materialId) {return "kubejs:" + materialId + "_block"}
-function storageBlock(materialId, materialDisplayName) {
+function newStorageBlock(materialId, materialDisplayName) {
     let id = materialId + "_block";
     let displayName = "Block of " + materialDisplayName;
 
@@ -196,7 +181,7 @@ function storageBlock(materialId, materialDisplayName) {
 }
 
 function ingotRid(materialId) {return "kubejs:" + materialId + "_ingot"}
-function ingot(materialId, materialDisplayName) {
+function newIngot(materialId, materialDisplayName) {
     let id = materialId + "_ingot";
     let displayName = materialDisplayName + " Ingot";
 
@@ -206,7 +191,7 @@ function ingot(materialId, materialDisplayName) {
 }
 
 function nuggetRid(materialId) {return "kubejs:" + materialId + "_nugget"}
-function nugget(materialId, materialName) {
+function newNugget(materialId, materialName) {
     let id = materialId + "_nugget";
     let displayName = materialName + " Nugget";
 
@@ -214,9 +199,55 @@ function nugget(materialId, materialName) {
     newRecipe(decompress9x9(ingotRid(materialId), nuggetRid(materialId)));
 }
 
-storageBlock("platinum", "Platinum");
-ingot("platinum", "Platinum");
-nugget("platinum", "Platinum");
+newStorageBlock("platinum", "Platinum");
+newIngot("platinum", "Platinum");
+newNugget("platinum", "Platinum");
+
+let ousia ={id: "ousia", 
+            name: {greek: "Ουσία", transliteral: "Ousía"}};
+let ousiaFeminity =    {id: "thelykos", 
+                        name: {greek: "Θηλυκός", transliteral: "Thēlykós"}};
+    let ousiaVenus =   {id: "aphrodite", 
+                        name: {greek: "Αφροδίτη", transliteral: "Aphrodítē"}};
+    let ousiaEarth =   {id: "ge", 
+                        name: {greek: "Γη", transliteral: "Gē"}};
+let ousiaMasculinity = {id: "arsenikos", 
+                        name: {greek: "Αρσενικό", transliteral: "Arsenikós"}};
+    let ousiaMercury = {id: "ermes", 
+                        name: {greek: "Ερμής", transliteral: "Ermḗs"}};
+    let ousiaMars =    {id: "ares", 
+                        name: {greek: "Άρης", transliteral: "Árēs"}};
+    let ousiaJupiter = {id: "dias", 
+                        name: {greek: "Δίας", transliteral: "Días"}};
+    let ousiaSaturn =  {id: "kronos", 
+                        name: {greek: "Κρόνος", transliteral: "Krónos"}};
+    let ousiaUranus =  {id: "ouranos", 
+                        name: {greek: "Ουρανός", transliteral: "Ouranós"}};
+    let ousiaNeptune = {id: "poseidonas", 
+                        name: {greek: "Ποσειδώνας", transliteral: "Poseidṓnas"}};
+
+/**
+ * 
+ * @param {{id: String, name: {greek: String, transliteral: String}}} ousiaAspect 
+ */
+function newOusia(ousiaAspect) {
+    let id = ousiaAspect.id + "_" + ousia.id;
+    let transliteralName = ousiaAspect.name.transliteral + " " + ousia.name.transliteral;
+    let greekName = ousiaAspect.name.greek + " " +  ousia.name.greek;
+
+    newItem(id, transliteralName)
+}
+
+newOusia(ousiaFeminity);
+newOusia(ousiaVenus);
+newOusia(ousiaEarth);
+newOusia(ousiaMasculinity);
+newOusia(ousiaMercury);
+newOusia(ousiaMars);
+newOusia(ousiaJupiter);
+newOusia(ousiaSaturn);
+newOusia(ousiaUranus);
+newOusia(ousiaNeptune);
 
 console.log("items: " + items);
 global.items = items;
