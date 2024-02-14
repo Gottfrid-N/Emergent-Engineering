@@ -1,13 +1,21 @@
+// priority: 1
+
 StartupEvents.registry("block", event => {
     event.create("test_block");
 
-        /**
-     * 
-     * @param {BlockProperties} blockProperties 
+    /**
+     * @type {Map<String, Internal.BuilderBase<Internal.Block>>}
      */
-    function registerBlockProperties(blockProperties) {
-        console.log("Registering block: " + blockProperties);
-        event.create(blockProperties.id).displayName(blockProperties.displayName);
+    let builders = new Map();
+
+    /**
+     * 
+     * @param {BuilderProperties} material 
+     */
+    function registerBlockProperties(material) {
+        console.log("Registering block: " + global.builderPropertiesToString(material))
+        let builder = event.create(material.id, material.builderType).displayName(material.displayName);
+        builders.set(material.id, builder);
     }
 
     global.blocks.forEach(block => {

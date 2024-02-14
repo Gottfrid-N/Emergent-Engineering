@@ -67,6 +67,8 @@
 
 # Style
 - [ ] % Change X Block to Block of X
+- [ ] Change Alloy Blend to Alloy Grit
+- [ ] Change Flux-infused to Flux-infused Electrum
 - [ ] New Immersive Engineering Textures
 - [ ] Immersified textures
   - [ ] Create

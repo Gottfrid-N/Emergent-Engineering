@@ -58,25 +58,25 @@ console.log("         .----------------. ",
 console.log("         .-----------------.",
             "        | .--------------. |",
             "        | | ____  _____  | |",
-            "        | ||_   \|_   _| | |",
-            "        | |  |   \ | |   | |",
-            "        | |  | |\ \| |   | |",
-            "        | | _| |_\   |_  | |",
-            "        | ||_____|\____| | |",
+            "        | ||_   \\|_   _| | |",
+            "        | |  |   \\ | |   | |",
+            "        | |  | |\\ \\| |   | |",
+            "        | | _| |_\\   |_  | |",
+            "        | ||_____|\\____| | |",
             "        | |              | |",
             "        | '--------------' |",
             "         '----------------' ");
 
 /**
- * @type {ItemProperties[]}
+ * @type {BuilderProperties[]}
  */
 let items = [];
 /**
- * @type {BlockProperties[]}
+ * @type {BuilderProperties[]}
  */
 let blocks = [];
 /**
- * @type {FluidProperties[]}
+ * @type {BuilderProperties[]}
  */
 let fluids = [];
 /**
@@ -87,13 +87,36 @@ let recipes = [];
 /**
  * 
  * @param {String} id
+ * @param {String} builderType
  * @param {String} displayName 
  * @param {String[]} tags 
  */
-function ItemProperties(id, displayName, tags) {
+function BuilderProperties(id, builderType, displayName, tags) {
     this.id = id;
+    this.builderType = builderType;
     this.displayName = displayName;
     this.tags = tags
+    this.toString = function() { }
+}
+
+/**
+ * 
+ * @param {BuilderProperties} builderProperties 
+ */
+global.builderPropertiesToString = (builderProperties) => {
+    return "[" + "<" + builderProperties.id + ", " + builderProperties.displayName + ">, " + builderProperties.builderType + ", " + "[" + builderProperties.tags.join(", ") + "]";
+}
+
+/**
+ * 
+ * @param {String} id
+ * @param {String} builderType
+ * @param {String} displayName 
+ * @param {String[]} tags 
+ */
+function newItem(id, builderType, displayName, tags) {
+    items.push(new BuilderProperties(id, builderType, displayName, tags));
+    return "kubejs:" + id;
 }
 
 /**
@@ -102,10 +125,20 @@ function ItemProperties(id, displayName, tags) {
  * @param {String} displayName 
  * @param {String[]} tags 
  */
-function BlockProperties(id, displayName, tags) {
-    this.id = id;
-    this.displayName = displayName;
-    this.tags = tags
+function newBasicItem(id, displayName, tags) {
+    return newItem(id, "basic", displayName, tags);
+}
+
+/**
+ * 
+ * @param {String} id
+ * @param {String} builderType
+ * @param {String} displayName 
+ * @param {String[]} tags 
+ */
+function newBlock(id, builderType, displayName, tags) {
+    blocks.push(new BuilderProperties(id, builderType, displayName, tags));
+    return "kubejs:" + id;
 }
 
 /**
@@ -114,10 +147,20 @@ function BlockProperties(id, displayName, tags) {
  * @param {String} displayName 
  * @param {String[]} tags 
  */
-function FluidProperties(id, displayName, tags) {
-    this.id = id;
-    this.displayName = displayName;
-    this.tags = tags
+function newBasicBlock(id, displayName, tags) {
+    return newBlock(id, "basic", displayName, tags);
+}
+
+/**
+ * 
+ * @param {String} id
+ * @param {String} builderType
+ * @param {String} displayName 
+ * @param {String[]} tags 
+ */
+function newFluid(id, builderType, displayName, tags) {
+    fluids.push(new BuilderProperties(id, builderType, displayName, tags));
+    return "kubejs:" + id;
 }
 
 /**
@@ -126,28 +169,8 @@ function FluidProperties(id, displayName, tags) {
  * @param {String} displayName 
  * @param {String[]} tags 
  */
-function newItem(id, displayName, tags) {
-    items.push(new ItemProperties(id, displayName, tags));
-}
-
-/**
- * 
- * @param {String} id
- * @param {String} displayName 
- * @param {String[]} tags 
- */
-function newBlock(id, displayName, tags) {
-    blocks.push(new BlockProperties(id, displayName, tags))
-}
-
-/**
- * 
- * @param {String} id
- * @param {String} displayName 
- * @param {String[]} tags 
- */
-function newFluid(id, displayName, tags) {
-    fluids.push(new FluidProperties(id, displayName, tags))
+function newBasicFluid(id, displayName, tags) {
+    return newFluid(id, "basic", displayName, tags)
 }
 
 /**
@@ -177,7 +200,6 @@ function craftingShapeless(ingredients, output) {
  * @param {Internal.JsonObject} keys 
  * @param {String[]} pattern 
  * @param {Internal.JsonObject} output
- * @returns 
  */
 function craftingShaped(keys, pattern, output) {
     return {
@@ -188,101 +210,257 @@ function craftingShaped(keys, pattern, output) {
     }
 }
 
-function compress9x9(input, output) {
-    return craftingShaped({I: input}, ["III", "III", "III"], {count:1, item: output});
+/**
+ * 
+ * @param {Internal.JsonObject} input 
+ * @param {String} outputItem 
+ * @param {Number} time 
+ * @param {Number} xp 
+ */
+function furnace(input, outputItem, time, xp) {
+    return {
+        type: "minecraft:smelting",
+        cookingtime: time,
+        experience: xp,
+        ingredient: input,
+        result: outputItem
+    }
 }
-function decompress9x9(input, output) {
-    return craftingShapeless([{count: 1, item: input}], {count: 9, item: output});
-}
-
-function storageBlockRid(materialId) {return "kubejs:" + materialId + "_block"}
-function newStorageBlock(materialId, materialDisplayName) {
-    let id = materialId + "_block";
-    let displayName = "Block of " + materialDisplayName;
-
-    newBlock(id, displayName, ["forge:storage_blocks/" + materialId]);
-    newRecipe(compress9x9(ingotRid(materialId), storageBlockRid(materialId)));
-}
-
-function ingotRid(materialId) {return "kubejs:" + materialId + "_ingot"}
-function newIngot(materialId, materialDisplayName) {
-    let id = materialId + "_ingot";
-    let displayName = materialDisplayName + " Ingot";
-
-    newItem(id, displayName, ["forge:ingots/" + materialId]);
-    newRecipe(compress9x9(nuggetRid(materialId), ingotRid(materialId)));
-    newRecipe(decompress9x9(storageBlockRid(materialId), ingotRid(materialId)))
-}
-
-function nuggetRid(materialId) {return "kubejs:" + materialId + "_nugget"}
-function newNugget(materialId, materialName) {
-    let id = materialId + "_nugget";
-    let displayName = materialName + " Nugget";
-
-    newItem(id, displayName, ["forge:nuggets/" + materialId]);
-    newRecipe(decompress9x9(ingotRid(materialId), nuggetRid(materialId)));
-}
-
-newStorageBlock("platinum", "Platinum");
-newIngot("platinum", "Platinum");
-newNugget("platinum", "Platinum");
-
-newRecipe(decompress9x9("create:andesite_alloy_block", "create:andesite_alloy"))
-newItem("granite_alloy", "Granite Alloy", "forge:ingots/granite");
-newItem("diorite_alloy", "Diorite Alloy", "forge:ingots/diorite");
-newItem("gad_alloy", "G.A.D Alloy", "forge:ingots/gad")
-
-let ousia ={id: "ousia", 
-            name: {greek: "Ουσία", transliteral: "Ousía"}};
-let ousiaFeminity =    {id: "thelykos", 
-                        name: {greek: "Θηλυκός", transliteral: "Thēlykós"}};
-    let ousiaVenus =   {id: "aphrodite", 
-                        name: {greek: "Αφροδίτη", transliteral: "Aphrodítē"}};
-    let ousiaEarth =   {id: "ge", 
-                        name: {greek: "Γη", transliteral: "Gē"}};
-let ousiaMasculinity = {id: "arsenikos", 
-                        name: {greek: "Αρσενικό", transliteral: "Arsenikós"}};
-    let ousiaMercury = {id: "ermes", 
-                        name: {greek: "Ερμής", transliteral: "Ermḗs"}};
-    let ousiaMars =    {id: "ares", 
-                        name: {greek: "Άρης", transliteral: "Árēs"}};
-    let ousiaJupiter = {id: "dias", 
-                        name: {greek: "Δίας", transliteral: "Días"}};
-    let ousiaSaturn =  {id: "kronos", 
-                        name: {greek: "Κρόνος", transliteral: "Krónos"}};
-    let ousiaUranus =  {id: "ouranos", 
-                        name: {greek: "Ουρανός", transliteral: "Ouranós"}};
-    let ousiaNeptune = {id: "poseidonas", 
-                        name: {greek: "Ποσειδώνας", transliteral: "Poseidṓnas"}};
 
 /**
  * 
- * @param {{id: String, name: {greek: String, transliteral: String}}} ousiaAspect 
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject[]} outputs 
+ * @param {Number} time 
+ * @returns 
  */
-function newOusia(ousiaAspect) {
-    let id = ousiaAspect.id + "_" + ousia.id;
-    let transliteralName = ousiaAspect.name.transliteral + " " + ousia.name.transliteral;
-    let greekName = ousiaAspect.name.greek + " " +  ousia.name.greek;
-
-    newItem(id, transliteralName)
+function milling(inputs, outputs, time) {
+    return {
+        type: "create:milling",
+        ingredients: inputs,
+        results: outputs,
+        processingTime: time
+    }
 }
 
-newOusia(ousiaFeminity);
-newOusia(ousiaVenus);
-newOusia(ousiaEarth);
-newOusia(ousiaMasculinity);
-newOusia(ousiaMercury);
-newOusia(ousiaMars);
-newOusia(ousiaJupiter);
-newOusia(ousiaSaturn);
-newOusia(ousiaUranus);
-newOusia(ousiaNeptune);
+/**
+ * 
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject[]} outputs 
+ * @param {Number} time 
+ * @returns 
+ */
+function crushingWheel(inputs, outputs, time) {
+    return {
+        type: "create:crushing",
+        ingredients: inputs,
+        results: outputs,
+        processingTime: time
+    }
+}
 
-console.log("Items: " + items);
+/**
+ * 
+ * @param {Internal.JsonObject} input 
+ * @param {[{count: Number, base_ingredient: Internal.JsonObject}]} result 
+ * @param {{chance: Number, output: Internal.JsonObject}} secondaries 
+ * @param {Number} energy 
+ */
+function crusher(input, result, secondaries, energy) {
+    return {
+        type: "immersiveengineering:crusher",
+        secondaries: secondaries,
+        result: result,
+        input: input,
+        energy: energy
+    }
+}
+
+/**
+ * 
+ * @param {String} inputItem 
+ * @param {String} outputItem 
+ */
+function compress9x9(inputItem, outputItem) {
+    return craftingShaped({I: inputItem}, ["III", "III", "III"], {count:1, item: outputItem});
+}
+
+/**
+ * 
+ * @param {String} inputItem 
+ * @param {String} outputItem 
+ */
+function decompress9x9(inputItem, outputItem) {
+    return craftingShapeless([{count: 1, item: inputItem}], {count: 9, item: outputItem});
+}
+
+/**
+ * 
+ * @param {String} craftItem 
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject} output 
+ * @returns 
+ */
+function craftWith(craftItem, inputs, output) {
+    return craftingShapeless([{count: 1, item: craftItem}].concat(inputs), output);
+}
+
+/**
+ * 
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject} output 
+ */
+function crushWithMortar(inputs, output) {
+    return craftWith(tools.mortar, inputs, output);
+}
+
+
+function extendedSmelting(input, outputItem, time, xp) {
+    newRecipe(furnace(input, outputItem, time, xp));
+}
+
+function newStorageBlock(materialId, materialDisplayName) {
+    const id = materialId + "_block";
+    const displayName = "Block of " + materialDisplayName;
+
+    return newBasicBlock(id, displayName, ["forge:storage_blocks/", "forge:storage_blocks/" + materialId]);
+}
+
+function newIngot(materialId, materialDisplayName) {
+    const id = materialId + "_ingot";
+    const displayName = materialDisplayName + " Ingot";
+
+    return newBasicItem(id, displayName, ["forge:ingots/", "forge:ingots/" + materialId]);
+}
+
+function newNugget(materialId, materialName) {
+    const id = materialId + "_nugget";
+    const displayName = materialName + " Nugget";
+
+    return newBasicItem(id, displayName, ["forge:nuggets/", "forge:nuggets/" + materialId]);
+}
+
+function newDust(materialId, materialName) {
+    const id = materialId + "_dust";
+    const displayName = materialName + " Dust";
+
+    return newBasicItem(id, displayName, ["forge:dusts/", "forge:dusts/" + materialId]);
+}
+
+function newGravel(materialId, materialName) {
+    const id = materialId + "_gravel";
+    const displayName = materialName + " Gravel";
+
+    return newBasicItem(id, displayName, ["forge:gravels/", "forge:gravels/" + id]);
+}
+
+function newSand(materialId, materialName) {
+    const id = materialId + "_sand";
+    const displayName = materialName + " Sand";
+
+    return newBasicItem(id, displayName, ["forge:sands", "forge:sands" + id]);
+}
+
+function newMetal(materialId, materialName, recipes) {
+    const storageBlock = newStorageBlock(materialId, materialName);
+    const ingot = newIngot(materialId, materialName);
+    const nugget = newNugget(materialId, materialName);
+    const dust = newDust(materialId, materialName);
+
+    if (recipes) {
+        newRecipe(compress9x9(ingot, storageBlock));
+        newRecipe(compress9x9(nugget, ingot));
+        newRecipe(decompress9x9(storageBlock, ingot));
+        newRecipe(decompress9x9(ingot, nugget));
+
+        extendedSmelting({item: dust, count: 1}, ingot);
+    }
+
+    return {storageBlock: storageBlock, ingot: ingot, nugget: nugget, dust: dust};
+}
+
+function stoneCrushing(stone, gravel, sand, dust) {
+    newRecipe(craftWith(tools.hammer, [{item: stone}], {item: gravel}));
+    newRecipe(milling([{item: stone}], [{item: gravel}], 250));
+
+    newRecipe(craftWith(tools.hammer, [{item: gravel}], {item: sand}));
+    newRecipe(craftWith(tools.earthCharge, [{item: stone}], {item: sand}));
+    newRecipe(milling([{item: gravel}], [{item: sand}, 250]));
+
+    newRecipe(craftWith(tools.earthCharge, [{item: gravel}], {item: dust, count: 4}));
+}
+
+const tools = {
+    mortar: newBasicItem("mortar", "Mortar", ["kubejs:tools", "kubejs:tools/mortar"]),
+    hammer: "immersiveengineering:hammer",
+    earthCharge: "thermal:earth_charge"
+}
+
+/**
+ * @type {{storageBlock: String, ingot: String, nugget: String, dust: String}}
+ */
+const platinum = newMetal("platinum", "Platinum", true);
+
+const andesite = {
+    storageBlock: "minecraft:andesite",
+    gravel: newGravel("andesite", "Andesite"),
+    sand: newSand("andesite", "Andesite"),
+    dust: newDust("andesite", "Andesite"),
+    ingot: "create:andesite_alloy"
+}
+newRecipe(decompress9x9("create:andesite_alloy_block", andesite.ingot));
+stoneCrushing(andesite.storageBlock, andesite.gravel, andesite.sand, andesite.dust);
+
+const granite = {
+    storageBlock: "minecraft:granite",
+    gravel: newGravel("granite", "Granite"),
+    sand: newSand("granite", "Granite"),
+    dust: newDust("granite", "Granite"),
+    ingot: newBasicItem("granite_alloy", "Granite Alloy", ["forge:ingots", "forge:ingots/granite"])
+}
+stoneCrushing(granite.storageBlock, granite.gravel, granite.sand, granite.dust);
+
+const diorite = {
+    storageBlock: "minecraft:diorite",
+    gravel: newGravel("diorite", "Diorite"),
+    sand: newSand("diorite", "Diorite"),
+    dust: newDust("diorite", "Diorite"),
+    ingot: newBasicItem("diorite_alloy", "Diorite Alloy", ["forge:ingots", "forge:ingots/diorite"])
+}
+stoneCrushing(diorite.storageBlock, diorite.gravel, diorite.sand, diorite.dust);
+
+const gad = {
+    ingot: newBasicItem("gad_alloy", "G.A.D Alloy", ["forge:ingots", "forge:ingots/gad"])
+}
+
+const ousia = {id: "ousia", name: {greek: "Ουσία", transliteral: "Ousía"}};
+const ousiaAspect = {
+    feminity   : newOusiaAspect({id: "thelykos", name: {greek: "Θηλυκός", transliteral: "Thēlykós"}}),
+        venus  : newOusiaAspect({id: "aphrodite", name: {greek: "Αφροδίτη", transliteral: "Aphrodítē"}}),
+        earth  : newOusiaAspect({id: "ge", name: {greek: "Γη", transliteral: "Gē"}}),
+    masculinity: newOusiaAspect({id: "arsenikos", name: {greek: "Αρσενικό", transliteral: "Arsenikós"}}),
+        mercury: newOusiaAspect({id: "ermes", name: {greek: "Ερμής", transliteral: "Ermḗs"}}),
+        mars   : newOusiaAspect({id: "ares", name: {greek: "Άρης", transliteral: "Árēs"}}),
+        jupiter: newOusiaAspect({id: "dias", name: {greek: "Δίας", transliteral: "Días"}}),
+        saturn : newOusiaAspect({id: "kronos", name: {greek: "Κρόνος", transliteral: "Krónos"}}),
+        uranus : newOusiaAspect({id: "ouranos", name: {greek: "Ουρανός", transliteral: "Ouranós"}}),
+        neptune: newOusiaAspect({id: "poseidonas", name: {greek: "Ποσειδώνας", transliteral: "Poseidṓnas"}})
+}
+
+/**
+ * 
+ * @param {{id: String, name: {greek: String, transliteral: String}}} aspect 
+ */
+function newOusiaAspect(aspect) {
+    const id = aspect.id + "_" + ousia.id;
+    const transliteralName = aspect.name.transliteral + " " + ousia.name.transliteral;
+    const greekName = aspect.name.greek + " " +  ousia.name.greek;
+    const tags = ["kubejs:ousia", "kubejs:ousia/" + id];
+
+    return newBasicItem(id, transliteralName, tags);
+}
+
 global.items = items;
-console.log("Blocks: " + blocks);
 global.blocks = blocks;
-console.log("Fluids: " + fluids);
 global.fluids = fluids;
-console.log("Recipes: " + recipes);
 global.recipes = recipes;

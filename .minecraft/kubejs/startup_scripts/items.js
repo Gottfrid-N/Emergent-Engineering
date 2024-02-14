@@ -6,16 +6,22 @@ StartupEvents.registry("item", event => {
     event.create("immersive_steel").unstackable().tooltip("debug");
 
     /**
-     * 
-     * @param {ItemProperties} itemProperties 
+     * @type {Map<String, Internal.BuilderBase<Internal.Item>>}
      */
-    function registerItemProperties(itemProperties) {
-        console.log("Registering item: " + itemProperties)
-        event.create(itemProperties.id).displayName(itemProperties.displayName);
+    let builders = new Map();
+
+    /**
+     * 
+     * @param {BuilderProperties} material 
+     */
+    function registerProperties(material) {
+        console.log("Registering item: " + global.builderPropertiesToString(material));
+        let builder = event.create(material.id, material.builderType).displayName(material.displayName);
+        builders.set(material.id, builder);
     }
 
     global.items.forEach(item => {
-        registerItemProperties(item)
+        registerProperties(item)
     });
 });
 
