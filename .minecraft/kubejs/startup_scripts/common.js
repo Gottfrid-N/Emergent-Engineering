@@ -1,72 +1,5 @@
 // priority: 10
 
-console.log("          .----------------. ",
-            "         | .--------------. |",
-            "         | |     ______   | |",
-            "         | |   .' ___  |  | |",
-            "         | |  / .'   \\_|  | |",
-            "         | |  | |         | |",
-            "         | |  \\ `.___.'\\  | |",
-            "         | |   `._____.'  | |",
-            "         | |              | |",
-            "         | '--------------' |",
-            "          '----------------' ");
-console.log("         .----------------. ",
-            "        | .--------------. |",
-            "        | |     ____     | |",
-            "        | |   .'    `.   | |",
-            "        | |  /  .--.  \\  | |",
-            "        | |  | |    | |  | |",
-            "        | |  \\  `--'  /  | |",
-            "        | |   `.____.'   | |",
-            "        | |              | |",
-            "        | '--------------' |",
-            "         '----------------' ");
-console.log("         .----------------. ",
-            "        | .--------------. |",
-            "        | | ____    ____ | |",
-            "        | ||_   \\  /   _|| |",
-            "        | |  |   \\/   |  | |",
-            "        | |  | |\\  /| |  | |",
-            "        | | _| |_\\/_| |_ | |",
-            "        | ||_____||_____|| |",
-            "        | |              | |",
-            "        | '--------------' |",
-            "         '----------------' ");
-console.log("         .----------------. ",
-            "        | .--------------. |",
-            "        | | ____    ____ | |",
-            "        | ||_   \\  /   _|| |",
-            "        | |  |   \\/   |  | |",
-            "        | |  | |\\  /| |  | |",
-            "        | | _| |_\\/_| |_ | |",
-            "        | ||_____||_____|| |",
-            "        | |              | |",
-            "        | '--------------' |",
-            "         '----------------' ");
-console.log("         .----------------. ",
-            "        | .--------------. |",
-            "        | |     ____     | |",
-            "        | |   .'    `.   | |",
-            "        | |  /  .--.  \\  | |",
-            "        | |  | |    | |  | |",
-            "        | |  \\  `--'  /  | |",
-            "        | |   `.____.'   | |",
-            "        | |              | |",
-            "        | '--------------' |",
-            "         '----------------' ");
-console.log("         .-----------------.",
-            "        | .--------------. |",
-            "        | | ____  _____  | |",
-            "        | ||_   \\|_   _| | |",
-            "        | |  |   \\ | |   | |",
-            "        | |  | |\\ \\| |   | |",
-            "        | | _| |_\\   |_  | |",
-            "        | ||_____|\\____| | |",
-            "        | |              | |",
-            "        | '--------------' |",
-            "         '----------------' ");
-
 /**
  * @type {BuilderProperties[]}
  */
@@ -96,15 +29,6 @@ function BuilderProperties(id, builderType, displayName, tags) {
     this.builderType = builderType;
     this.displayName = displayName;
     this.tags = tags
-    this.toString = function() { }
-}
-
-/**
- * 
- * @param {BuilderProperties} builderProperties 
- */
-global.builderPropertiesToString = (builderProperties) => {
-    return "[" + "<" + builderProperties.id + ", " + builderProperties.displayName + ">, " + builderProperties.builderType + ", " + "[" + builderProperties.tags.join(", ") + "]";
 }
 
 /**
@@ -314,7 +238,13 @@ function crushWithMortar(inputs, output) {
     return craftWith(tools.mortar, inputs, output);
 }
 
-
+/**
+ * 
+ * @param {Internal.JsonObject} input 
+ * @param {Internal.JsonObject} outputItem 
+ * @param {Number} time 
+ * @param {Number} xp 
+ */
 function extendedSmelting(input, outputItem, time, xp) {
     newRecipe(furnace(input, outputItem, time, xp));
 }
@@ -351,32 +281,36 @@ function newGravel(materialId, materialName) {
     const id = materialId + "_gravel";
     const displayName = materialName + " Gravel";
 
-    return newBasicItem(id, displayName, ["forge:gravels/", "forge:gravels/" + id]);
+    return newBasicBlock(id, displayName, ["forge:gravels/", "forge:gravels/" + id]);
 }
 
 function newSand(materialId, materialName) {
     const id = materialId + "_sand";
     const displayName = materialName + " Sand";
 
-    return newBasicItem(id, displayName, ["forge:sands", "forge:sands" + id]);
+    return newBasicBlock(id, displayName, ["forge:sands", "forge:sands" + id]);
 }
 
+/**
+ * 
+ * @returns {{storageBlock: String, ingot: String, nugget: String, dust: String}}
+ */
 function newMetal(materialId, materialName, recipes) {
-    const storageBlock = newStorageBlock(materialId, materialName);
-    const ingot = newIngot(materialId, materialName);
-    const nugget = newNugget(materialId, materialName);
-    const dust = newDust(materialId, materialName);
-
-    if (recipes) {
-        newRecipe(compress9x9(ingot, storageBlock));
-        newRecipe(compress9x9(nugget, ingot));
-        newRecipe(decompress9x9(storageBlock, ingot));
-        newRecipe(decompress9x9(ingot, nugget));
-
-        extendedSmelting({item: dust, count: 1}, ingot);
+    const items = {    
+        storageBlock: newStorageBlock(materialId, materialName),
+        ingot: newIngot(materialId, materialName),
+        nugget: newNugget(materialId, materialName),
+        dust: newDust(materialId, materialName)
     }
+    if (recipes) {
+        newRecipe(compress9x9(items.ingot, items.storageBlock));
+        newRecipe(compress9x9(items.nugget, items.ingot));
+        newRecipe(decompress9x9(items.storageBlock, items.ingot));
+        newRecipe(decompress9x9(items.ingot, items.nugget));
 
-    return {storageBlock: storageBlock, ingot: ingot, nugget: nugget, dust: dust};
+        extendedSmelting({item: items.dust, count: 1}, items.ingot, 200, 1.0);
+    }
+    return items;
 }
 
 function stoneCrushing(stone, gravel, sand, dust) {
@@ -385,20 +319,17 @@ function stoneCrushing(stone, gravel, sand, dust) {
 
     newRecipe(craftWith(tools.hammer, [{item: gravel}], {item: sand}));
     newRecipe(craftWith(tools.earthCharge, [{item: stone}], {item: sand}));
-    newRecipe(milling([{item: gravel}], [{item: sand}, 250]));
+    newRecipe(milling([{item: gravel}], [{item: sand}], 250));
 
     newRecipe(craftWith(tools.earthCharge, [{item: gravel}], {item: dust, count: 4}));
 }
 
 const tools = {
-    mortar: newBasicItem("mortar", "Mortar", ["kubejs:tools", "kubejs:tools/mortar"]),
+    mortar: newBasicItem("mortar", "Mortar", ["forge:tools", "forge:tools/mortar"]),
     hammer: "immersiveengineering:hammer",
     earthCharge: "thermal:earth_charge"
 }
 
-/**
- * @type {{storageBlock: String, ingot: String, nugget: String, dust: String}}
- */
 const platinum = newMetal("platinum", "Platinum", true);
 
 const andesite = {
@@ -433,6 +364,19 @@ const gad = {
     ingot: newBasicItem("gad_alloy", "G.A.D Alloy", ["forge:ingots", "forge:ingots/gad"])
 }
 
+/**
+ * 
+ * @param {{id: String, name: {greek: String, transliteral: String}}} aspect 
+ */
+function newOusiaAspect(aspect) {
+    const id = aspect.id + "_" + ousia.id;
+    const transliteralName = aspect.name.transliteral + " " + ousia.name.transliteral;
+    const greekName = aspect.name.greek + " " +  ousia.name.greek;
+    const tags = ["kubejs:ousia", "kubejs:ousia/" + id];
+
+    return newBasicItem(id, transliteralName, tags);
+}
+
 const ousia = {id: "ousia", name: {greek: "Ουσία", transliteral: "Ousía"}};
 const ousiaAspect = {
     feminity   : newOusiaAspect({id: "thelykos", name: {greek: "Θηλυκός", transliteral: "Thēlykós"}}),
@@ -445,19 +389,6 @@ const ousiaAspect = {
         saturn : newOusiaAspect({id: "kronos", name: {greek: "Κρόνος", transliteral: "Krónos"}}),
         uranus : newOusiaAspect({id: "ouranos", name: {greek: "Ουρανός", transliteral: "Ouranós"}}),
         neptune: newOusiaAspect({id: "poseidonas", name: {greek: "Ποσειδώνας", transliteral: "Poseidṓnas"}})
-}
-
-/**
- * 
- * @param {{id: String, name: {greek: String, transliteral: String}}} aspect 
- */
-function newOusiaAspect(aspect) {
-    const id = aspect.id + "_" + ousia.id;
-    const transliteralName = aspect.name.transliteral + " " + ousia.name.transliteral;
-    const greekName = aspect.name.greek + " " +  ousia.name.greek;
-    const tags = ["kubejs:ousia", "kubejs:ousia/" + id];
-
-    return newBasicItem(id, transliteralName, tags);
 }
 
 global.items = items;

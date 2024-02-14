@@ -12,13 +12,17 @@ StartupEvents.registry("block", event => {
      * 
      * @param {BuilderProperties} material 
      */
-    function registerBlockProperties(material) {
-        console.log("Registering block: " + global.builderPropertiesToString(material))
-        let builder = event.create(material.id, material.builderType).displayName(material.displayName);
-        builders.set(material.id, builder);
+    function registerBuilder(material) {
+        console.log("Registering block: " + JSON.stringify(material))
+        try { 
+            let builder = event.create(material.id, material.builderType).displayName(material.displayName);
+            builders.set(material.id, builder);
+        } catch (error) { 
+            console.error(error);
+        }
     }
 
     global.blocks.forEach(block => {
-        registerBlockProperties(block)
+        registerBuilder(block);
     });
 });

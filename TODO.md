@@ -77,6 +77,23 @@
   - [ ] . Hostile Neural Networks
   - [ ] Extended Crafting
   - [ ] .\. AE2
+## Custom Textures
+- [ ] Block: Andesite Gravel
+- [ ] Block: Andesite Sand
+- [ ] Item: Andesite Dust
+- [ ] Block: Granite Gravel
+- [ ] Block: Granite Sand
+- [ ] Item: Granite Dust
+- [ ] Block: Diorite Gravel
+- [ ] Block: Diorite Sand
+- [ ] Item: Diorite Dust
+- [ ] !! Item: Mortar
+- [ ] ! Item: G.A.D Alloy
+- [ ] .. Block Of Platinum
+- [ ] .. Platinum Ingot
+- [ ] .. Platinum Nugget
+- [ ] .. Platinum Dust
+- [ ] .. Platinum Ore
 
 # "unify.js"
 - [ ] Recipe deduplication

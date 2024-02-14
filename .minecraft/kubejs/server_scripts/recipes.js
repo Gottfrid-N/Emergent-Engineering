@@ -24,7 +24,11 @@ ServerEvents.recipes(event => {
     event.remove({output:"create:andesite_alloy"})
 
     global.recipes.forEach(recipe => {
-        console.log("Registering recipe: " + recipe);
-        event.custom(recipe);
+        console.log("Registering recipe: " + JSON.stringify(recipe));
+        try { 
+            event.custom(recipe); 
+        } catch (error) { 
+            console.error(error);
+        }
     })
 })

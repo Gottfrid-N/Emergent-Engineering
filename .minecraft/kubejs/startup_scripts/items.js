@@ -14,14 +14,18 @@ StartupEvents.registry("item", event => {
      * 
      * @param {BuilderProperties} material 
      */
-    function registerProperties(material) {
-        console.log("Registering item: " + global.builderPropertiesToString(material));
-        let builder = event.create(material.id, material.builderType).displayName(material.displayName);
-        builders.set(material.id, builder);
+    function registerBuilder(material) {
+        console.log("Registering item: " + JSON.stringify(material));
+        try {
+            let builder = event.create(material.id, material.builderType).displayName(material.displayName);
+            builders.set(material.id, builder);
+        } catch (error) {
+            console.error(error);
+        }
     }
 
     global.items.forEach(item => {
-        registerProperties(item)
+        registerBuilder(item);
     });
 });
 
