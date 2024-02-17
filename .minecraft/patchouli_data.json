@@ -1,5 +1,19 @@
 {
   "bookGuiScale": 0,
   "clickedVisualize": false,
-  "bookData": {}
+  "bookData": {
+    "thermal:guidebook": {
+      "viewedEntries": [
+        "thermal:equipment/tools/rf_potato",
+        "thermal:equipment/tools/flux_capacitor",
+        "thermal:technology/augments/rf_coil_xfer",
+        "thermal:technology/augments/integral_components",
+        "thermal:technology/65_items",
+        "thermal:storage_and_transport/dynamics",
+        "thermal:storage_and_transport/dynamics/energy_duct"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
 }

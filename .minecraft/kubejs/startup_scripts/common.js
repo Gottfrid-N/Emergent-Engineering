@@ -16,6 +16,14 @@ let fluids = [];
  * @type {Internal.JsonObject[]}
  */
 let recipes = [];
+/**
+ * @type {{item: {tag: String, ids: String[]}[], block: {tag: String, ids: String[]}[], fluid: {tag: String, ids: String[]}[]}}
+ */
+let tags = {
+    item: [],
+    block: [],
+    fluid: []
+}
 
 /**
  * 
@@ -107,11 +115,38 @@ function newRecipe(recipe) {
 
 /**
  * 
+ * @param {String} tag 
+ * @param {String[]} items
+ */
+function addItemTag(tag, items) {
+    tags.item.push({tag: tag, ids: items});
+}
+
+/**
+ * 
+ * @param {String} tag 
+ * @param {String[]} blocks
+ */
+function addBlockTag(tag, blocks) {
+    tags.block.push({tag: tag, ids: blocks});
+}
+
+/**
+ * 
+ * @param {String} tag 
+ * @param {String[]} fluids
+ */
+function addFluidTag(tag, fluids) {
+    tags.fluid.push({tag: tag, ids: fluids});
+}
+
+/**
+ * 
  * @param {Internal.JsonObject[]} ingredients 
  * @param {Internal.JsonObject} output 
  * @returns 
  */
-function craftingShapeless(ingredients, output) {
+function shapeless(ingredients, output) {
     return {
         type: "minecraft:crafting_shapeless",
         ingredients: ingredients,
@@ -125,7 +160,7 @@ function craftingShapeless(ingredients, output) {
  * @param {String[]} pattern 
  * @param {Internal.JsonObject} output
  */
-function craftingShaped(keys, pattern, output) {
+function shaped(keys, pattern, output) {
     return {
         type: "minecraft:crafting_shaped",
         key: keys,
@@ -137,17 +172,17 @@ function craftingShaped(keys, pattern, output) {
 /**
  * 
  * @param {Internal.JsonObject} input 
- * @param {String} outputItem 
+ * @param {Internal.JsonObject} output 
  * @param {Number} time 
  * @param {Number} xp 
  */
-function furnace(input, outputItem, time, xp) {
+function furnace(input, output, time, xp) {
     return {
         type: "minecraft:smelting",
         cookingtime: time,
         experience: xp,
         ingredient: input,
-        result: outputItem
+        result: output
     }
 }
 
@@ -206,7 +241,7 @@ function crusher(input, result, secondaries, energy) {
  * @param {String} outputItem 
  */
 function compress9x9(inputItem, outputItem) {
-    return craftingShaped({I: inputItem}, ["III", "III", "III"], {count:1, item: outputItem});
+    return shaped({I: inputItem}, ["III", "III", "III"], {count:1, item: outputItem});
 }
 
 /**
@@ -215,7 +250,7 @@ function compress9x9(inputItem, outputItem) {
  * @param {String} outputItem 
  */
 function decompress9x9(inputItem, outputItem) {
-    return craftingShapeless([{count: 1, item: inputItem}], {count: 9, item: outputItem});
+    return shapeless([{count: 1, item: inputItem}], {count: 9, item: outputItem});
 }
 
 /**
@@ -226,7 +261,7 @@ function decompress9x9(inputItem, outputItem) {
  * @returns 
  */
 function craftWith(craftItem, inputs, output) {
-    return craftingShapeless([{count: 1, item: craftItem}].concat(inputs), output);
+    return shapeless([{count: 1, item: craftItem}].concat(inputs), output);
 }
 
 /**
@@ -241,54 +276,54 @@ function crushWithMortar(inputs, output) {
 /**
  * 
  * @param {Internal.JsonObject} input 
- * @param {Internal.JsonObject} outputItem 
+ * @param {Internal.JsonObject} output 
  * @param {Number} time 
  * @param {Number} xp 
  */
-function extendedSmelting(input, outputItem, time, xp) {
-    newRecipe(furnace(input, outputItem, time, xp));
+function extendedSmelting(input, output, time, xp) {
+    newRecipe(furnace(input, output, time, xp));
 }
 
 function newStorageBlock(materialId, materialDisplayName) {
     const id = materialId + "_block";
     const displayName = "Block of " + materialDisplayName;
 
-    return newBasicBlock(id, displayName, ["forge:storage_blocks/", "forge:storage_blocks/" + materialId]);
+    return newBasicBlock(id, displayName, ["forge:storage_blocks", "forge:storage_blocks/" + materialId]);
 }
 
 function newIngot(materialId, materialDisplayName) {
     const id = materialId + "_ingot";
     const displayName = materialDisplayName + " Ingot";
 
-    return newBasicItem(id, displayName, ["forge:ingots/", "forge:ingots/" + materialId]);
+    return newBasicItem(id, displayName, ["forge:ingots", "forge:ingots/" + materialId]);
 }
 
 function newNugget(materialId, materialName) {
     const id = materialId + "_nugget";
     const displayName = materialName + " Nugget";
 
-    return newBasicItem(id, displayName, ["forge:nuggets/", "forge:nuggets/" + materialId]);
+    return newBasicItem(id, displayName, ["forge:nuggets", "forge:nuggets/" + materialId]);
 }
 
 function newDust(materialId, materialName) {
     const id = materialId + "_dust";
     const displayName = materialName + " Dust";
 
-    return newBasicItem(id, displayName, ["forge:dusts/", "forge:dusts/" + materialId]);
+    return newBasicItem(id, displayName, ["forge:dusts", "forge:dusts/" + materialId]);
 }
 
 function newGravel(materialId, materialName) {
     const id = materialId + "_gravel";
     const displayName = materialName + " Gravel";
 
-    return newBasicBlock(id, displayName, ["forge:gravels/", "forge:gravels/" + id]);
+    return newBasicBlock(id, displayName, ["forge:gravels", "forge:gravels/" + materialId]);
 }
 
 function newSand(materialId, materialName) {
     const id = materialId + "_sand";
     const displayName = materialName + " Sand";
 
-    return newBasicBlock(id, displayName, ["forge:sands", "forge:sands" + id]);
+    return newBasicBlock(id, displayName, ["forge:sands", "forge:sands/" + materialId]);
 }
 
 /**
@@ -307,6 +342,8 @@ function newMetal(materialId, materialName, recipes) {
         newRecipe(compress9x9(items.nugget, items.ingot));
         newRecipe(decompress9x9(items.storageBlock, items.ingot));
         newRecipe(decompress9x9(items.ingot, items.nugget));
+
+        newRecipe(craftWith(tools.mortar, [{item: items.ingot}], {item: items.dust}))
 
         extendedSmelting({item: items.dust, count: 1}, items.ingot, 200, 1.0);
     }
@@ -332,15 +369,21 @@ const tools = {
 
 const platinum = newMetal("platinum", "Platinum", true);
 
-const andesite = {
-    storageBlock: "minecraft:andesite",
-    gravel: newGravel("andesite", "Andesite"),
-    sand: newSand("andesite", "Andesite"),
-    dust: newDust("andesite", "Andesite"),
-    ingot: "create:andesite_alloy"
+const carbonatite = {
+    storageBlock: "minecraft:stone",
+    gravel: "minecraft:gravel",
+    sand: "minecraft:sand",
+    dust: newDust("carbonatite", "Stone")
 }
-newRecipe(decompress9x9("create:andesite_alloy_block", andesite.ingot));
-stoneCrushing(andesite.storageBlock, andesite.gravel, andesite.sand, andesite.dust);
+stoneCrushing(carbonatite.storageBlock, carbonatite.gravel, carbonatite.sand, carbonatite.dust);
+
+const gregoryite = {
+    storageBlock: newStorageBlock("gregoryite"),
+    gravel: newGravel("gregoryite", "Gregoryite"),
+    sand: newSand("gregoryite", "Gregoryite"),
+    dust: newDust("gregoryite", "Gregoryite")
+}
+stoneCrushing(gregoryite.storageBlock, gregoryite.gravel, gregoryite.sand, gregoryite.dust);
 
 const granite = {
     storageBlock: "minecraft:granite",
@@ -351,6 +394,14 @@ const granite = {
 }
 stoneCrushing(granite.storageBlock, granite.gravel, granite.sand, granite.dust);
 
+const rhyolite = {
+    storageBlock: newStorageBlock("rhyolite", "Rhyolite"),
+    gravel: newGravel("rhyolite", "Rhyolite"),
+    sand: newSand("rhyolite", "Rhyolite"),
+    dust: newDust("rhyolite", "Rhyolite"),
+}
+stoneCrushing(rhyolite.storageBlock, rhyolite.gravel, rhyolite.sand, rhyolite.dust);
+
 const diorite = {
     storageBlock: "minecraft:diorite",
     gravel: newGravel("diorite", "Diorite"),
@@ -360,10 +411,80 @@ const diorite = {
 }
 stoneCrushing(diorite.storageBlock, diorite.gravel, diorite.sand, diorite.dust);
 
+const andesite = {
+    storageBlock: "minecraft:andesite",
+    gravel: newGravel("andesite", "Andesite"),
+    sand: newSand("andesite", "Andesite"),
+    dust: newDust("andesite", "Andesite"),
+    ingot: "create:andesite_alloy"
+}
+newRecipe(decompress9x9("create:andesite_alloy_block", andesite.ingot));
+stoneCrushing(andesite.storageBlock, andesite.gravel, andesite.sand, andesite.dust);
+
+const gabbro = {
+    storageBlock: newStorageBlock("gabbro", "Gabbro"),
+    gravel: newGravel("gabbro", "Gabbro"),
+    sand: newSand("gabbro", "Gabbro"),
+    dust: newDust("gabbro", "Gabbro")
+}
+stoneCrushing(gabbro.storageBlock, gabbro.gravel, gabbro.sand, gabbro.dust);
+
+const peridotite = {
+    storageBlock: newStorageBlock("peridotite", "Peridotite"),
+    gravel: newGravel("peridotite", "Peridotite"),
+    sand: newSand("peridotite", "Peridotite"),
+    dust: newDust("peridotite", "Peridotite")
+}
+stoneCrushing(peridotite.storageBlock, peridotite.gravel, peridotite.sand, peridotite.dust);
+
+const komatiite = {
+    storageBlock: newStorageBlock("komatiite", "Komatiite"),
+    gravel: newGravel("komatiite", "Komatiite"),
+    sand: newSand("komatiite", "Komatiite"),
+    dust: newDust("komatiite", "Komatiite")
+}
+stoneCrushing(komatiite.storageBlock, komatiite.gravel, komatiite.sand, komatiite.dust);
+
 const gad = {
     ingot: newBasicItem("gad_alloy", "G.A.D Alloy", ["forge:ingots", "forge:ingots/gad"])
 }
 
+const dragonEggs = {
+    fire: {
+        red: "iceandfire:dragonegg_red",
+        emerald: "iceandfire:dragonegg_green",
+        bronze: "iceandfire:dragonegg_bronze",
+        gray: "iceandfire:dragonegg_gray"
+    },
+    ice: {
+        blue: "iceandfire:dragonegg_blue",
+        white: "iceandfire:dragonegg_white",
+        sapphire: "iceandfire:dragonegg_sapphire",
+        silver: "iceandfire:dragonegg_silver"
+    },
+    lightning: {
+        electric_blue: "iceandfire:dragonegg_electric",
+        amethyst: "iceandfire:dragonegg_amethyst",
+        copper: "iceandfire:dragonegg_copper",
+        black: "iceandfire:dragonegg_black"
+    }
+}
+
+for (let [type, object] in dragonEggs) {
+    console.log("type: " + JSON.stringify(type));
+    console.log("object: " + JSON.stringify(object));
+    for (let [color, id] in object) {
+        console.log("color: " + JSON.stringify(color));
+        console.log("id: " + JSON.stringify(id));
+        addItemTag("forge:eggs/dragon", [id]);
+        addItemTag("forge:eggs/dragon/" + type, [id]);
+        addItemTag("forge:eggs/dragon/" + type + "/" + color, [id]);
+    }
+}
+
+newRecipe(extendedSmelting({item: "minecraft:rotten_flesh"}, {item: "minecraft:leather"}, 200, 1.0));
+newRecipe(shaped({L: "minecraft:leather", S: "minecraft:string"}, ["SLS", "L L", "L L"], "minecraft:bundle"));
+newRecipe(shaped({H: "minecraft:rabbit_hide", S: "minecraft:string"}, ["SHS", "H H", "H H"], "minecraft:bundle"));
 /**
  * 
  * @param {{id: String, name: {greek: String, transliteral: String}}} aspect 
@@ -395,3 +516,4 @@ global.items = items;
 global.blocks = blocks;
 global.fluids = fluids;
 global.recipes = recipes;
+global.tags = tags;

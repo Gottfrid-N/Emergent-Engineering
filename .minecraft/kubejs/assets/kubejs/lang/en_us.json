@@ -10,5 +10,10 @@
         "item.kubejs.dias_ousia": "Días Ousía",
         "item.kubejs.kronos_ousia": "Krónos Ousía",
         "item.kubejs.ouranos_ousia": "Ouranós Ousía",
-        "item.kubejs.poseidonas_ousia": "Poseidṓnas Ousía"
+        "item.kubejs.poseidonas_ousia": "Poseidṓnas Ousía",
+    
+    "block.kubejs.rhyolite_block": "Rhyolite",
+    "block.kubejs.gabbro": "Gabbro",
+    "block.kubejs.peridotite": "Peridotite",
+    "block.kubejs.komatiite": "Komatiite"
 }

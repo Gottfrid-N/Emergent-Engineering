@@ -15,6 +15,19 @@ function addPropertiesTags(event, material) {
     });
 }
 
+/**
+ * 
+ * @param {{tag: String, ids: String[]}} tag
+ */
+function addTag(event, tag) {
+    console.log("Adding tag: " + tag.tag + " to id: " + tag.ids);
+    try {
+        event.add(tag.tag, tag.ids);
+    } catch (error) {
+        console.error(error);
+    }
+} 
+
 ServerEvents.tags("item", event => {
     function plateToSheet(plate, name) {
         event.removeAllTagsFrom(plate);
@@ -32,16 +45,28 @@ ServerEvents.tags("item", event => {
     global.items.forEach(item => {
         addPropertiesTags(event, item);
     });
+
+    global.tags.item.forEach(tag => {
+        addTag(tag);
+    });
 });
 
 ServerEvents.tags("block", event => {
     global.blocks.forEach(item => {
         addPropertiesTags(event, item);
     });
+
+    global.tags.block.forEach(tag => {
+        addTag(tag);
+    });
 });
 
 ServerEvents.tags("fluid", event => {
     global.fluids.forEach(item => {
         addPropertiesTags(event, item);
+    });
+
+    global.tags.fluid.forEach(tag => {
+        addTag(tag);
     });
 });
