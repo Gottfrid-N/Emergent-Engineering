@@ -16,13 +16,23 @@ let fluids = [];
  * @type {Internal.JsonObject[]}
  */
 let recipes = [];
-/**
- * @type {{item: {tag: String, ids: String[]}[], block: {tag: String, ids: String[]}[], fluid: {tag: String, ids: String[]}[]}}
- */
-let tags = {
-    item: [],
-    block: [],
-    fluid: []
+let itemTags = {
+    /**
+     * @type {{tag: Special.ItemTag, id: Special.Item[]}[]}
+     */
+    add: [],
+    /**
+     * @type {{tag: Special.ItemTag, id: Special.Item[]}[]}
+     */
+    remove: [],
+    /**
+     * @type {{tag: Special.ItemTag}[]}
+     */
+    removeAll: [],
+        /**
+     * @type {{id: Special.Item[]}[]}
+     */
+    removeAllTagsFrom: []
 }
 
 /**
@@ -111,33 +121,6 @@ function newBasicFluid(id, displayName, tags) {
  */
 function newRecipe(recipe) {
     recipes.push(recipe);
-}
-
-/**
- * 
- * @param {String} tag 
- * @param {String[]} items
- */
-function addItemTag(tag, items) {
-    tags.item.push({tag: tag, ids: items});
-}
-
-/**
- * 
- * @param {String} tag 
- * @param {String[]} blocks
- */
-function addBlockTag(tag, blocks) {
-    tags.block.push({tag: tag, ids: blocks});
-}
-
-/**
- * 
- * @param {String} tag 
- * @param {String[]} fluids
- */
-function addFluidTag(tag, fluids) {
-    tags.fluid.push({tag: tag, ids: fluids});
 }
 
 /**
@@ -467,18 +450,6 @@ const dragonEggs = {
         amethyst: "iceandfire:dragonegg_amethyst",
         copper: "iceandfire:dragonegg_copper",
         black: "iceandfire:dragonegg_black"
-    }
-}
-
-for (let [type, object] in dragonEggs) {
-    console.log("type: " + JSON.stringify(type));
-    console.log("object: " + JSON.stringify(object));
-    for (let [color, id] in object) {
-        console.log("color: " + JSON.stringify(color));
-        console.log("id: " + JSON.stringify(id));
-        addItemTag("forge:eggs/dragon", [id]);
-        addItemTag("forge:eggs/dragon/" + type, [id]);
-        addItemTag("forge:eggs/dragon/" + type + "/" + color, [id]);
     }
 }
 

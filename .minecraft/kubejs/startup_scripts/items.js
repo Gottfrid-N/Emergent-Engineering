@@ -6,7 +6,7 @@ StartupEvents.registry("item", event => {
     event.create("immersive_steel").unstackable().tooltip("debug");
 
     /**
-     * @type {Map<String, Internal.BuilderBase<Internal.Item>>}
+     * @type {Map<String, Internal.BasicItemJS$Builder>}
      */
     let builders = new Map();
 
@@ -27,6 +27,8 @@ StartupEvents.registry("item", event => {
     global.items.forEach(item => {
         registerBuilder(item);
     });
+
+    builders.get("mortar").maxDamage(250);
 });
 
 ItemEvents.modification(event => {
