@@ -461,26 +461,26 @@ newRecipe(shaped({H: "minecraft:rabbit_hide", S: "minecraft:string"}, ["SHS", "H
  * @param {{id: String, name: {greek: String, transliteral: String}}} aspect 
  */
 function newOusiaAspect(aspect) {
-    const id = aspect.id + "_" + ousia.id;
-    const transliteralName = aspect.name.transliteral + " " + ousia.name.transliteral;
-    const greekName = aspect.name.greek + " " +  ousia.name.greek;
-    const tags = ["kubejs:ousia", "kubejs:ousia/" + id];
+    const id = ousia.id + "." + aspect.id;
+    const transliteralName = "Oysίa toy " + ousia.name.transliteral;
+    const greekName = "Ουσία του " + aspect.name.greek;
 
-    return newBasicItem(id, transliteralName, tags);
+    return newBasicItem(id, transliteralName, ["kubejs:ousia", "kubejs:ousia/" + id]);
 }
 
-const ousia = {id: "ousia", name: {greek: "Ουσία", transliteral: "Ousía"}};
+const ousia = {id: "oysia", name: {greek: "Ουσία του", transliteral: "Ousía"}};
 const ousiaAspect = {
-    feminity   : newOusiaAspect({id: "thelykos", name: {greek: "Θηλυκός", transliteral: "Thēlykós"}}),
-        venus  : newOusiaAspect({id: "aphrodite", name: {greek: "Αφροδίτη", transliteral: "Aphrodítē"}}),
-        earth  : newOusiaAspect({id: "ge", name: {greek: "Γη", transliteral: "Gē"}}),
-    masculinity: newOusiaAspect({id: "arsenikos", name: {greek: "Αρσενικό", transliteral: "Arsenikós"}}),
-        mercury: newOusiaAspect({id: "ermes", name: {greek: "Ερμής", transliteral: "Ermḗs"}}),
-        mars   : newOusiaAspect({id: "ares", name: {greek: "Άρης", transliteral: "Árēs"}}),
-        jupiter: newOusiaAspect({id: "dias", name: {greek: "Δίας", transliteral: "Días"}}),
-        saturn : newOusiaAspect({id: "kronos", name: {greek: "Κρόνος", transliteral: "Krónos"}}),
-        uranus : newOusiaAspect({id: "ouranos", name: {greek: "Ουρανός", transliteral: "Ouranós"}}),
-        neptune: newOusiaAspect({id: "poseidonas", name: {greek: "Ποσειδώνας", transliteral: "Poseidṓnas"}})
+    // UN/ELOT transliteration
+    feminity   : newOusiaAspect({id: "thilykoc",    name: {greek: "Θηλυκός",    transliteral: "Thilykός"}}),
+        venus  : newOusiaAspect({id: "afroditi",    name: {greek: "Αφροδίτη",   transliteral: "Afrodίti"}}),
+        earth  : newOusiaAspect({id: "gi",          name: {greek: "Γη",         transliteral: "Gi"}}),
+    masculinity: newOusiaAspect({id: "arrenopoc",   name: {greek: "Αρρενωπός",  transliteral: "Arrenopός"}}),
+        mercury: newOusiaAspect({id: "ermnc",       name: {greek: "Ερμής",      transliteral: "Ermής"}}),
+        mars   : newOusiaAspect({id: "aric",        name: {greek: "Άρης",       transliteral: "Άriς"}}),
+        jupiter: newOusiaAspect({id: "diac",        name: {greek: "Δίας",       transliteral: "Dίaς"}}),
+        saturn : newOusiaAspect({id: "Kronoc",      name: {greek: "Κρόνος",     transliteral: "Krόnoς"}}),
+        uranus : newOusiaAspect({id: "oyranos",     name: {greek: "Ουρανός",    transliteral: "Oyranός"}}),
+        neptune: newOusiaAspect({id: "poseidwnac",  name: {greek: "Ποσειδώνας", transliteral: "Poseidώnaς"}})
 }
 
 global.items = items;
