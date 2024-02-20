@@ -16,23 +16,89 @@ let fluids = [];
  * @type {Internal.JsonObject[]}
  */
 let recipes = [];
+
 let itemTags = {
     /**
-     * @type {{tag: Special.ItemTag, id: Special.Item[]}[]}
+     * @type {TagsAdd[]}
      */
     add: [],
     /**
-     * @type {{tag: Special.ItemTag, id: Special.Item[]}[]}
+     * @type {TagsRemove[]}
      */
     remove: [],
     /**
-     * @type {{tag: Special.ItemTag}[]}
+     * @type {TagsRemoveAll[]}
      */
     removeAll: [],
-        /**
-     * @type {{id: Special.Item[]}[]}
+    /**
+     * @type {TagsRemoveAllFrom[]}
      */
-    removeAllTagsFrom: []
+    removeAllFrom: []
+}
+
+/**
+ * 
+ * @param {Internal.Tag} tag 
+ * @param {String[]} items
+ */
+function addTagToItems(tag, items) {
+    itemTags.add.push(new TagsAdd(tag, items));
+}
+
+let blockTags = {
+    /**
+     * @type {TagsAdd[]}
+     */
+    add: [],
+    /**
+     * @type {TagsRemove[]}
+     */
+    remove: [],
+    /**
+     * @type {TagsRemoveAll[]}
+     */
+    removeAll: [],
+    /**
+     * @type {TagsRemoveAllFrom[]}
+     */
+    removeAllFrom: []
+}
+
+/**
+ * 
+ * @param {Internal.Tag} tag 
+ * @param {String[]} blocks
+ */
+function addTagToBlocks(tag, blocks) {
+    blockTags.add.push(new TagsAdd(tag, blocks));
+}
+
+let fluidTags = {
+    /**
+     * @type {TagsAdd[]}
+     */
+    add: [],
+    /**
+     * @type {TagsRemove[]}
+     */
+    remove: [],
+    /**
+     * @type {TagsRemoveAll[]}
+     */
+    removeAll: [],
+    /**
+     * @type {TagsRemoveAllFrom[]}
+     */
+    removeAllFrom: []
+}
+
+/**
+ * 
+ * @param {Internal.Tag} tag 
+ * @param {String[]} fluids
+ */
+function addTagToFluids(tag, fluids) {
+    fluidTags.add.push(new TagsAdd(tag, fluids));
 }
 
 /**
@@ -40,13 +106,47 @@ let itemTags = {
  * @param {String} id
  * @param {String} builderType
  * @param {String} displayName 
- * @param {String[]} tags 
  */
-function BuilderProperties(id, builderType, displayName, tags) {
+function BuilderProperties(id, builderType, displayName) {
     this.id = id;
     this.builderType = builderType;
     this.displayName = displayName;
-    this.tags = tags
+}
+
+/**
+ * 
+ * @param {Internal.Tag} tag 
+ * @param {String[]} ids
+ */
+function TagsAdd(tag, ids) {
+    this.tag = tag;
+    this.ids = ids;
+}
+
+/**
+ * 
+ * @param {Internal.Tag} tag 
+ * @param {String[]} ids
+ */
+function TagsRemove(tag, ids) {
+    this.tag = tag;
+    this.ids = ids;
+}
+
+/**
+ * 
+ * @param {Internal.Tag} tag 
+ */
+function TagsRemoveAll(tag) {
+    this.tag = tag;
+}
+
+/**
+ * 
+ * @param {String[]} ids
+ */
+function TagsRemoveAllFrom(ids) {
+    this.ids = ids;
 }
 
 /**
@@ -54,10 +154,9 @@ function BuilderProperties(id, builderType, displayName, tags) {
  * @param {String} id
  * @param {String} builderType
  * @param {String} displayName 
- * @param {String[]} tags 
  */
-function newItem(id, builderType, displayName, tags) {
-    items.push(new BuilderProperties(id, builderType, displayName, tags));
+function newItem(id, builderType, displayName) {
+    items.push(new BuilderProperties(id, builderType, displayName));
     return "kubejs:" + id;
 }
 
@@ -65,10 +164,14 @@ function newItem(id, builderType, displayName, tags) {
  * 
  * @param {String} id
  * @param {String} displayName 
- * @param {String[]} tags 
+ * @param {Internal.Tag[]} tags 
  */
 function newBasicItem(id, displayName, tags) {
-    return newItem(id, "basic", displayName, tags);
+    const item = newItem(id, "basic", displayName);
+    tags.forEach(tag => {
+        addTagToItems(tag, [item]);
+    });
+    return item
 }
 
 /**
@@ -76,10 +179,10 @@ function newBasicItem(id, displayName, tags) {
  * @param {String} id
  * @param {String} builderType
  * @param {String} displayName 
- * @param {String[]} tags 
+ * @param {Internal.Tag[]} tags 
  */
-function newBlock(id, builderType, displayName, tags) {
-    blocks.push(new BuilderProperties(id, builderType, displayName, tags));
+function newBlock(id, builderType, displayName) {
+    blocks.push(new BuilderProperties(id, builderType, displayName));
     return "kubejs:" + id;
 }
 
@@ -87,10 +190,14 @@ function newBlock(id, builderType, displayName, tags) {
  * 
  * @param {String} id
  * @param {String} displayName 
- * @param {String[]} tags 
+ * @param {Internal.Tag[]} tags 
  */
 function newBasicBlock(id, displayName, tags) {
-    return newBlock(id, "basic", displayName, tags);
+    const block = newBlock(id, "basic", displayName);
+    tags.forEach(tag => {
+        addTagToBlocks(tag, [block]);
+    });
+    return block;
 }
 
 /**
@@ -98,10 +205,10 @@ function newBasicBlock(id, displayName, tags) {
  * @param {String} id
  * @param {String} builderType
  * @param {String} displayName 
- * @param {String[]} tags 
+ * @param {Internal.Tag[]} tags 
  */
-function newFluid(id, builderType, displayName, tags) {
-    fluids.push(new BuilderProperties(id, builderType, displayName, tags));
+function newFluid(id, builderType, displayName) {
+    fluids.push(new BuilderProperties(id, builderType, displayName));
     return "kubejs:" + id;
 }
 
@@ -109,10 +216,14 @@ function newFluid(id, builderType, displayName, tags) {
  * 
  * @param {String} id
  * @param {String} displayName 
- * @param {String[]} tags 
+ * @param {Internal.Tag[]} tags 
  */
 function newBasicFluid(id, displayName, tags) {
-    return newFluid(id, "basic", displayName, tags)
+    const fluid = newFluid(id, "basic", displayName);
+    tags.forEach(tag => {
+        addTagToFluids(tag, [fluid]);
+    });
+    return fluid;
 }
 
 /**
@@ -345,6 +456,8 @@ function stoneCrushing(stone, gravel, sand, dust) {
 }
 
 const tools = {
+    itemUnifier: newBasicItem("item_unifier", "Item Unifier", ["forge:tools", "forge:tools/unifier"]),
+    immersiveSteel: newBasicItem("immersive_steel", "Immersive Steel", ["forge:tools", "forge:tools/unifier"]),
     mortar: newBasicItem("mortar", "Mortar", ["forge:tools", "forge:tools/mortar"]),
     hammer: "immersiveengineering:hammer",
     earthCharge: "thermal:earth_charge"
@@ -432,7 +545,7 @@ const gad = {
     ingot: newBasicItem("gad_alloy", "G.A.D Alloy", ["forge:ingots", "forge:ingots/gad"])
 }
 
-const dragonEggs = {
+/* const dragonEgg = {
     fire: {
         red: "iceandfire:dragonegg_red",
         emerald: "iceandfire:dragonegg_green",
@@ -453,38 +566,27 @@ const dragonEggs = {
     }
 }
 
+for (const type in dragonEgg) {
+    console.log(JSON.stringify(type));
+    const colors = dragonEgg[type];
+    console.log(JSON.stringify(colors))
+    for (const color in colors) {
+        console.log(JSON.stringify(color));
+    };
+} */
+
 newRecipe(extendedSmelting({item: "minecraft:rotten_flesh"}, {item: "minecraft:leather"}, 200, 1.0));
 newRecipe(shaped({L: "minecraft:leather", S: "minecraft:string"}, ["SLS", "L L", "L L"], "minecraft:bundle"));
 newRecipe(shaped({H: "minecraft:rabbit_hide", S: "minecraft:string"}, ["SHS", "H H", "H H"], "minecraft:bundle"));
-/**
- * 
- * @param {{id: String, name: {greek: String, transliteral: String}}} aspect 
- */
-function newOusiaAspect(aspect) {
-    const id = ousia.id + "." + aspect.id;
-    const transliteralName = "Oysίa toy " + ousia.name.transliteral;
-    const greekName = "Ουσία του " + aspect.name.greek;
 
-    return newBasicItem(id, transliteralName, ["kubejs:ousia", "kubejs:ousia/" + id]);
-}
-
-const ousia = {id: "oysia", name: {greek: "Ουσία του", transliteral: "Ousía"}};
-const ousiaAspect = {
-    // UN/ELOT transliteration
-    feminity   : newOusiaAspect({id: "thilykoc",    name: {greek: "Θηλυκός",    transliteral: "Thilykός"}}),
-        venus  : newOusiaAspect({id: "afroditi",    name: {greek: "Αφροδίτη",   transliteral: "Afrodίti"}}),
-        earth  : newOusiaAspect({id: "gi",          name: {greek: "Γη",         transliteral: "Gi"}}),
-    masculinity: newOusiaAspect({id: "arrenopoc",   name: {greek: "Αρρενωπός",  transliteral: "Arrenopός"}}),
-        mercury: newOusiaAspect({id: "ermnc",       name: {greek: "Ερμής",      transliteral: "Ermής"}}),
-        mars   : newOusiaAspect({id: "aric",        name: {greek: "Άρης",       transliteral: "Άriς"}}),
-        jupiter: newOusiaAspect({id: "diac",        name: {greek: "Δίας",       transliteral: "Dίaς"}}),
-        saturn : newOusiaAspect({id: "Kronoc",      name: {greek: "Κρόνος",     transliteral: "Krόnoς"}}),
-        uranus : newOusiaAspect({id: "oyranos",     name: {greek: "Ουρανός",    transliteral: "Oyranός"}}),
-        neptune: newOusiaAspect({id: "poseidwnac",  name: {greek: "Ποσειδώνας", transliteral: "Poseidώnaς"}})
-}
+newRecipe(shapeless([{item: "minecraft:stick"}], {item: tools.itemUnifier}));
+newRecipe(shapeless([{item: "minecraft:stick"}, {item: tools.itemUnifier}], tools.immersiveSteel));
+newRecipe(craftWith(tools.immersiveSteel, [{tag: "forge:storage_blocks/steel"}], {item: "immersiveengineering:storage_steel"}));
 
 global.items = items;
 global.blocks = blocks;
 global.fluids = fluids;
 global.recipes = recipes;
-global.tags = tags;
+global.itemTags = itemTags;
+global.blockTags = blockTags;
+global.fluidTags = fluidTags;

@@ -1,13 +1,13 @@
 filename = 'architectury-9.1.13-forge.jar'
-name = 'Architectury API'
+name = 'Architectury API (Fabric/Forge/NeoForge)'
 side = 'both'
 
 [download]
-hash = '5f6eb62c7e0c25c02a7aeb8e963306118681a60b98046aea67c0040ea8841ba93c360beb549ff4552dbee78b6b87cf34d70284fffc2b95ebabbea7d6f4800c58'
-hash-format = 'sha512'
-mode = 'url'
-url = 'https://cdn.modrinth.com/data/lhGA9TYQ/versions/tBWqtdBO/architectury-9.1.13-forge.jar'
+hash = 'ef7558f149fc5db623f15aa7bf942f7ead5b8f0d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update.modrinth]
-mod-id = 'lhGA9TYQ'
-version = 'tBWqtdBO'
+[update.curseforge]
+file-id = 5084452
+project-id = 419699

@@ -2,8 +2,6 @@
 
 StartupEvents.registry("item", event => {
     event.create("test_item");
-    event.create("item_unifier").unstackable().tooltip("Craft with a non-standard item to get back its standard item.");
-    event.create("immersive_steel").unstackable().tooltip("debug");
 
     /**
      * @type {Map<String, Internal.BasicItemJS$Builder>}
@@ -28,6 +26,8 @@ StartupEvents.registry("item", event => {
         registerBuilder(item);
     });
 
+    builders.get("item_unifier").unstackable().tooltip("Craft with a non-standard item to get back its standard item.");
+    builders.get("immersive_steel").unstackable().tooltip("Craft with steel block to get immersive engineering steel block (for multiblocks)");
     builders.get("mortar").maxDamage(250);
 });
 

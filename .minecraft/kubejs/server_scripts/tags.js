@@ -2,17 +2,27 @@
 
 /**
  * 
- * @param {BuilderProperties} material 
+ * @param {{add: TagsAdd[], remove: TagsRemove[], removeAll: TagsRemoveAll[], removeAllFrom: TagsRemoveAllFrom[]}} tags 
  */
-function addPropertiesTags(event, material) {
-    material.tags.forEach(tag => {
-        console.log("Adding tag: " + tag + " to id: " + material.id)
-        try {
-            event.add(tag, "kubejs:" + material.id);
-        } catch (error) {
-            console.error(error)
-        }
+function tags(event, tags) {
+    tags.add.forEach(tagsAdd => {
+        console.log("tagsAdd: " + JSON.stringify(tagsAdd));
+        event.add(tagsAdd.tag, tagsAdd.ids);
     });
+
+    tags.remove.forEach(tagsRemove => {
+        console.log("tagsRemove: " + JSON.stringify(tagsRemove));
+        event.remove(tagsRemove.tag, tagsRemove.ids);
+    });
+
+    tags.removeAll.forEach(tagsRemoveAll => {
+        console.log("tagsRemoveAll: " + JSON.stringify(tagsRemoveAll));
+        event.removeAll(tagsRemoveAll.tag);
+    });
+
+    tags.removeAllFrom.forEach(tagsRemoveAllFrom => {
+        console.log("tagsRemoveAllFrom: " + JSON.stringify(tags.removeAllFrom))
+    })
 }
 
 ServerEvents.tags("item", event => {
@@ -27,26 +37,19 @@ ServerEvents.tags("item", event => {
     plateToSheet("create:copper_sheet", "copper");
     plateToSheet("createaddition:electrum_sheet", "electrum");
     plateToSheet("createaddition:zinc_sheet", "zinc");
-    event.removeAllTagsFrom("create:sturdy_sheet");
 
     /*event.add
     event.remove
     event.removeAll
     event.removeAllTagsFrom*/
 
-    global.items.forEach(item => {
-        addPropertiesTags(event, item);
-    });
+    tags(event, global.itemTags);
 });
 
 ServerEvents.tags("block", event => {
-    global.blocks.forEach(block => {
-        addPropertiesTags(event, block);
-    });
+    tags(event, global.blockTags);
 });
 
 ServerEvents.tags("fluid", event => {
-    global.fluids.forEach(fluid => {
-        addPropertiesTags(event, fluid);
-    });
+    tags(event, global.fluidTags);
 });

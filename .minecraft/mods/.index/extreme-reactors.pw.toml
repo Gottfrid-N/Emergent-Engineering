@@ -1,0 +1,13 @@
+filename = 'ExtremeReactors2-1.20.1-2.0.75.jar'
+name = 'Extreme Reactors'
+side = 'both'
+
+[download]
+hash = '6692cae13b74b27ccbb28f4ad792d2d87b5bf3a6c168d7a2f5d5e43aea9069fa7a5fa71b69346dc849986825883962f95460220b7fc1bc2fe468180520fe2ed8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/idkvShUy/versions/5CYl80HP/ExtremeReactors2-1.20.1-2.0.75.jar'
+
+[update.modrinth]
+mod-id = 'idkvShUy'
+version = '5CYl80HP'
