@@ -1,6 +1,8 @@
 # Emergent Engineering
 Emergent Engineering is a modpack for 1.20.1 neoforge focusing on Create and Immersive Engineering (kinda).
 
+It will release on modrinth/curseforge version α0.10a.
+
 # Contributing
 - [ ] TODO
 ## Commit Versioning
