@@ -1,8 +1,6 @@
 // priority: 1
 
 StartupEvents.registry("block", event => {
-    event.create("test_block");
-
     /**
      * @type {Map<String, Internal.BuilderBase<Internal.Block>>}
      */

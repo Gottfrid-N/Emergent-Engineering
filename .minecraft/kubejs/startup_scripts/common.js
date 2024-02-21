@@ -331,6 +331,40 @@ function crusher(input, result, secondaries, energy) {
 
 /**
  * 
+ * @param {Internal.JsonObject} tool 
+ * @param {String} sound
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject[]} outputs 
+ * @returns 
+ */
+function cuttingBoard(tool, sound, inputs, outputs) {
+    return {
+        type: "farmersdelight:cutting",
+        ingredients: inputs,
+        tool: tool,
+        result: outputs,
+        sound: sound
+    }
+}
+
+/**
+ * 
+ * @param {Internal.JsonObject} tool 
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject[]} outputs 
+ * @returns 
+ */
+function cuttingBoardSilent(tool, inputs, outputs) {
+    return {
+        type: "farmersdelight:cutting",
+        ingredients: inputs,
+        tool: tool,
+        result: outputs
+    }
+}
+
+/**
+ * 
  * @param {String} inputItem 
  * @param {String} outputItem 
  */
@@ -365,6 +399,10 @@ function craftWith(craftItem, inputs, output) {
  */
 function crushWithMortar(inputs, output) {
     return craftWith(tools.mortar, inputs, output);
+}
+
+function cutting(inputs, outputs) {
+    newRecipe(cuttingBoardSilent({tag: tools.knife}, inputs, outputs));
 }
 
 /**
@@ -456,12 +494,40 @@ function stoneCrushing(stone, gravel, sand, dust) {
 }
 
 const tools = {
-    itemUnifier: newBasicItem("item_unifier", "Item Unifier", ["forge:tools", "forge:tools/unifier"]),
-    immersiveSteel: newBasicItem("immersive_steel", "Immersive Steel", ["forge:tools", "forge:tools/unifier"]),
-    mortar: newBasicItem("mortar", "Mortar", ["forge:tools", "forge:tools/mortar"]),
+    itemUnifier: newBasicItem("item_unifier", "Item Unifier", ["forge:tools", "forge:tool/unifier"]),
+    immersiveSteel: newBasicItem("immersive_steel", "Immersive Steel", ["forge:tools", "forge:tool/unifier"]),
+    mortar: newBasicItem("mortar", "Mortar", ["forge:tools", "forge:tool/mortar"]),
     hammer: "immersiveengineering:hammer",
-    earthCharge: "thermal:earth_charge"
+    earthCharge: "thermal:earth_charge",
+    bowl: {
+        normal: "minecraft:bowl"
+    },
+    knife: "forge:tool/knife"
 }
+
+const food = {
+    melon: {
+        storageBlock: "minecraft:melon",
+        slice: "minecraft:melon_slice",
+        cubes: newBasicItem("melon_cubes", "Melon Cubes", []),
+        salad: newBasicItem("melon_salad", "Melon Salad", [])
+    },
+    pasta: {
+        raw: "farmersdelight:raw_pasta",
+        salad: newBasicItem("pasta_salad", "Pasta Salad", [])
+    },
+    bread: {
+        slice: {
+            horizontal: newBasicItem("bread_slice_horizontal", "Horizontal Slice of Bread", ["forge:bread", "forge:bread/wheat"]),
+            vertical: newBasicItem("bread_slice", "Slice of Bread", ["forge:bread", "forge:bread/wheat"])
+        }
+    },
+    cheese: {
+        portSalut: {}
+    }
+}
+newRecipe(shapeless([{item: food.melon.cubes}, {item: food.melon.cubes}, {item: food.melon.cubes}, {item: tools.bowl.normal}], {item: food.melon.salad}));
+cutting([{item: food.melon.slice}], [{item: food.melon.cubes}]);
 
 const platinum = newMetal("platinum", "Platinum", true);
 
@@ -474,7 +540,7 @@ const carbonatite = {
 stoneCrushing(carbonatite.storageBlock, carbonatite.gravel, carbonatite.sand, carbonatite.dust);
 
 const gregoryite = {
-    storageBlock: newStorageBlock("gregoryite"),
+    storageBlock: newStorageBlock("gregoryite", "Gregoryite"),
     gravel: newGravel("gregoryite", "Gregoryite"),
     sand: newSand("gregoryite", "Gregoryite"),
     dust: newDust("gregoryite", "Gregoryite")
@@ -545,7 +611,13 @@ const gad = {
     ingot: newBasicItem("gad_alloy", "G.A.D Alloy", ["forge:ingots", "forge:ingots/gad"])
 }
 
-/* const dragonEgg = {
+function newEssence() {
+
+}
+
+function newQuintessence() {}
+
+const dragonEgg = {
     fire: {
         red: "iceandfire:dragonegg_red",
         emerald: "iceandfire:dragonegg_green",
@@ -573,11 +645,12 @@ for (const type in dragonEgg) {
     for (const color in colors) {
         console.log(JSON.stringify(color));
     };
-} */
+}
 
-newRecipe(extendedSmelting({item: "minecraft:rotten_flesh"}, {item: "minecraft:leather"}, 200, 1.0));
+extendedSmelting({item: "minecraft:rotten_flesh"}, {item: "minecraft:leather"}, 200, 1.0);
 newRecipe(shaped({L: "minecraft:leather", S: "minecraft:string"}, ["SLS", "L L", "L L"], "minecraft:bundle"));
 newRecipe(shaped({H: "minecraft:rabbit_hide", S: "minecraft:string"}, ["SHS", "H H", "H H"], "minecraft:bundle"));
+newRecipe(shaped({T: "dimdoors:world_thread", E: "minecraft:ender_pearl"}, ["   ", "TET", "   "], {item: "dimdoors:stable_fabric"}));
 
 newRecipe(shapeless([{item: "minecraft:stick"}], {item: tools.itemUnifier}));
 newRecipe(shapeless([{item: "minecraft:stick"}, {item: tools.itemUnifier}], tools.immersiveSteel));
