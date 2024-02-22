@@ -27,17 +27,15 @@ StartupEvents.registry("item", event => {
     builders.get("item_unifier").unstackable().tooltip("Craft with a non-standard item to get back its standard item.");
     builders.get("immersive_steel").unstackable().tooltip("Craft with steel block to get immersive engineering steel block (for multiblocks)");
     builders.get("mortar").maxDamage(250);
+    builders.get("iron_bread_knife").maxDamage(250);
 
-    builders.get("melon_cubes").food(food => {
-        food.hunger(2)
-            .saturation(0.5/2)
-            .fastToEat();
-    });
-
-    builders.get("melon_salad").maxStackSize(16).food(food => {
-        food.hunger(6)
-            .saturation(2.5/6);
-    });
+    global.foods.forEach(food => {
+        builders.get(food.id).maxStackSize(food.stackSize).food(consumer => {
+            consumer.hunger(food.hunger)
+                    .saturation(food.saturationModifier)
+                    .fastToEat(food.fastToEat)
+        })
+    })
 });
 
 ItemEvents.modification(event => {
@@ -48,6 +46,18 @@ ItemEvents.modification(event => {
         item.setCraftingRemainder("kubejs:immersive_steel");
     });
     event.modify("minecraft:bowl", item => {
-        item.setMaxStackSize(16)
+        item.setMaxStackSize(16);
+    });
+    event.modify("kubejs:large_bowl", item => {
+        item.setMaxStackSize(8);
+    });
+    event.modify("kubejs:huge_bowl", item => {
+        item.setMaxStackSize(4);
+    });
+    event.modify("kubejs:giant_bowl", item => {
+        item.setMaxStackSize(2);
+    });
+    event.modify("kubejs:gargantuan_bowl", item => {
+        item.setMaxStackSize(1);
     });
 });

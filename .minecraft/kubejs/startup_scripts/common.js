@@ -168,6 +168,7 @@ function newItem(id, builderType, displayName) {
  */
 function newBasicItem(id, displayName, tags) {
     const item = newItem(id, "basic", displayName);
+    console.log(item)
     tags.forEach(tag => {
         addTagToItems(tag, [item]);
     });
@@ -459,6 +460,29 @@ function newSand(materialId, materialName) {
 }
 
 /**
+ * @type {{id: String, stackSize: Number, hunger: Number, saturationModifier: Number, fastToEat: Boolean}[]}
+ */
+let foods = [];
+
+/**
+ * @param {String} id
+ * @param {String} displayName 
+ * @param {Internal.Tag[]} tags 
+ * @param {Number} stackSize
+ * @param {Number} hunger
+ * @param {Number} saturationModifier
+ * @param {Boolean} fastToEat
+ */
+function newFood(id, displayName, tags, stackSize, hunger, saturationModifier, fastToEat) {
+    const food = {id: id, stackSize: stackSize, hunger: hunger, saturationModifier: saturationModifier, fastToEat: fastToEat}
+    const foodId = newBasicItem(id, displayName, tags);
+
+    console.log(JSON.stringify(food));
+    foods.push(food);
+    return foodId
+}
+
+/**
  * 
  * @returns {{storageBlock: String, ingot: String, nugget: String, dust: String}}
  */
@@ -494,29 +518,39 @@ function stoneCrushing(stone, gravel, sand, dust) {
 }
 
 const tools = {
-    itemUnifier: newBasicItem("item_unifier", "Item Unifier", ["forge:tools", "forge:tool/unifier"]),
-    immersiveSteel: newBasicItem("immersive_steel", "Immersive Steel", ["forge:tools", "forge:tool/unifier"]),
-    mortar: newBasicItem("mortar", "Mortar", ["forge:tools", "forge:tool/mortar"]),
+    itemUnifier: newBasicItem("item_unifier", "Item Unifier", ["forge:tools", "forge:tools/unifier"]),
+    immersiveSteel: newBasicItem("immersive_steel", "Immersive Steel", ["forge:tools", "forge:tools/unifier"]),
+    mortar: newBasicItem("mortar", "Mortar", ["forge:tools", "forge:tools/mortar"]),
     hammer: "immersiveengineering:hammer",
     earthCharge: "thermal:earth_charge",
     bowl: {
-        normal: "minecraft:bowl"
+        normal: "minecraft:bowl",
+        large: newBasicItem("large_bowl", "Large Bowl", []),
+        huge: newBasicItem("huge_bowl", "Huge Bowl", []),
+        giant: newBasicItem("giant_bowl", "Giant Bowl", []),
+        gargantuan: newBasicItem("gargantuan_bowl", "Gargantuan Bowl", [])
     },
-    knife: "forge:tool/knife"
+    knife: "forge:tools/knife",
+    breadKnife: {
+        tag: "forge:tools/bread_knife",
+        iron: newBasicItem("iron_bread_knife", "Iron Bread Knife", ["forge:tools/bread_knife", "forge:tools/bread_knife/iron"])
+    }
 }
 
 const food = {
     melon: {
         storageBlock: "minecraft:melon",
         slice: "minecraft:melon_slice",
-        cubes: newBasicItem("melon_cubes", "Melon Cubes", []),
-        salad: newBasicItem("melon_salad", "Melon Salad", [])
+        cubes: newFood("melon_cubes", "Melon Cubes", [], 64, 2, 0.5/2, true),
+        salad: newFood("melon_salad", "Melon Salad", [], 16, 6, 2.5/6, false)
     },
     pasta: {
         raw: "farmersdelight:raw_pasta",
+        boiled: newFood("cooked_pasta", "Cooked Pasta", ["forge:pasta", "forge:pasta/boiled_pasta"], 64, 1, 0.5, true),
         salad: newBasicItem("pasta_salad", "Pasta Salad", [])
     },
     bread: {
+        loaf: "minecraft:bread",
         slice: {
             horizontal: newBasicItem("bread_slice_horizontal", "Horizontal Slice of Bread", ["forge:bread", "forge:bread/wheat"]),
             vertical: newBasicItem("bread_slice", "Slice of Bread", ["forge:bread", "forge:bread/wheat"])
@@ -524,15 +558,32 @@ const food = {
     },
     cheese: {
         portSalut: {}
+    },
+    sauce: {
+        nordstrom: newBasicItem("nordstrom_sauce", "Nordström Sauce", []),
+        turkishYogurt: newBasicItem("turkish_yogurt", "Turkish Yogurt", []),
+        cremeFraiche: newBasicItem("creme_fraiche", "Crème Fraîche", [])
+    },
+    onion: {
+        raw: "farmersdelight:onion",
+        cooked: newFood("cooked_onion", "Cooked Onion", [], 64, 1, 0, false),
+        cut: newFood("chopped_onion", "Chopped Onion", [], 64, 1, 0, true),
+        cookedCut: newFood("cooked_chopped_onion", "Cooked Chopped Onion", [], 64, 1, 0, true),
+        chives: {
+            raw: newFood("chive", "Chive", [], 64, 1, 0, true),
+            chopped: newFood("chopped_chive", "Chive", [], 64, 1, 0, true)
+        }
     }
 }
 newRecipe(shapeless([{item: food.melon.cubes}, {item: food.melon.cubes}, {item: food.melon.cubes}, {item: tools.bowl.normal}], {item: food.melon.salad}));
 cutting([{item: food.melon.slice}], [{item: food.melon.cubes}]);
+cuttingBoardSilent({item: tools.breadKnife.tag}, [{item: food.bread.loaf}], [{item: food.bread.slice.vertical, count: 9}]);
+cutting([{item: food.bread.loaf}], [{item: food.bread.slice.horizontal, count: 2}]);
 
 const platinum = newMetal("platinum", "Platinum", true);
 
 const carbonatite = {
-    storageBlock: "minecraft:stone",
+    storageBlock: "minecraft:stonele",
     gravel: "minecraft:gravel",
     sand: "minecraft:sand",
     dust: newDust("carbonatite", "Stone")
@@ -635,14 +686,20 @@ const dragonEgg = {
         amethyst: "iceandfire:dragonegg_amethyst",
         copper: "iceandfire:dragonegg_copper",
         black: "iceandfire:dragonegg_black"
+    },
+    ender: {
+        purple: "minecraft:dragon_egg"
     }
 }
 
-for (const type in dragonEgg) {
+for (let type in dragonEgg) {
     console.log(JSON.stringify(type));
-    const colors = dragonEgg[type];
+    let colors = dragonEgg[type];
     console.log(JSON.stringify(colors))
-    for (const color in colors) {
+    for (let [color, id] in colors) {
+        addTagToItems("forge:eggs/dragon", id);
+        addTagToItems("forge:eggs/dragon/" + type, id);
+        addTagToItems("forge:eggs/dragon/" + type + "/" + color, id);
         console.log(JSON.stringify(color));
     };
 }
@@ -663,3 +720,5 @@ global.recipes = recipes;
 global.itemTags = itemTags;
 global.blockTags = blockTags;
 global.fluidTags = fluidTags;
+
+global.foods = foods;

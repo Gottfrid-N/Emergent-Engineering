@@ -13,25 +13,12 @@
 - [ ] % Quests
 
 # Content
-- [ ] %!!! Working material standard
-  - [ ] % item
-    - [x] itemStacks
-    - [x] itemTags
-    - [ ] itemRecipes
-  - [ ] block
-      - [ ] blockStacks
-      - [ ] blockTags
-      - [ ] blockRecipes
-  - [ ] fluid
-      - [ ] fluidStacks
-      - [ ] fluidTags
-      - [ ] fluidRecipes
 - [ ] % Thaumaturgy
-- [ ] Astrology
+- [ ] % Astrology
 ## Mods
 - [ ] ? [Relics](https:%%modrinth.com%mod%relics-mod)
 - [ ] ? [Waystones](https:%%modrinth.com%mod%waystones) or some other way of teleporting
-- [ ] ? [Origins](https:%%www.curseforge.com%minecraft%mc-mods%origins-forge) and%or [Vampirism](https:%%modrinth.com%mod%vampirism)
+- [ ] % [Origins](https:%%www.curseforge.com%minecraft%mc-mods%origins-forge) and%or [Vampirism](https:%%modrinth.com%mod%vampirism)
 - [ ] ? [DivineRPG](https://modrinth.com/mod/divinerpg) and/or ?? [AOA](https://modrinth.com/mod/adventofascension)
 ### Create Addons
 - [ ] ?. [Create: Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry)
@@ -49,8 +36,8 @@
 - [ ] Singularities
 - [ ] Ores
   - [ ] New ore veins kinda like gregtech
-  - [ ] Ore processing
-    - [ ] Metals
+  - [ ] % Ore processing
+    - [ ] % Metals
       - [ ] 1x  
       - [ ] 2x
       - [ ] 3x
@@ -60,14 +47,13 @@
       - [ ] 7x
       - [ ] 8x
       - [ ] 9x
-    - [ ] Gems
+    - [ ] % Gems
     - [ ] Dusts
 - [ ] Gems
-  - [ ] Gem Variants (like gregtech)
+  - [ ] % Gem Variants (like gregtech)
 
 # Style
 - [ ] % Change X Block to Block of X
-- [ ] Change Alloy Blend to Alloy Grit
 - [ ] Change Flux-infused to Flux-infused Electrum
 - [ ] New Immersive Engineering Textures
 - [ ] Immersified textures
@@ -78,23 +64,6 @@
   - [ ] Extended Crafting
   - [ ] .\. AE2
 - [ ] Dragon -> Ender Dragon
-## Custom Textures
-- [ ] Block: Andesite Gravel
-- [ ] Block: Andesite Sand
-- [ ] Item: Andesite Dust
-- [ ] Block: Granite Gravel
-- [ ] Block: Granite Sand
-- [ ] Item: Granite Dust
-- [ ] Block: Diorite Gravel
-- [ ] Block: Diorite Sand
-- [ ] Item: Diorite Dust
-- [ ] !! Item: Mortar
-- [ ] ! Item: G.A.D Alloy
-- [ ] .. Block Of Platinum
-- [ ] .. Platinum Ingot
-- [ ] .. Platinum Nugget
-- [ ] .. Platinum Dust
-- [ ] .. Platinum Ore
 
 # "unify.js"
 - [ ] Recipe deduplication
