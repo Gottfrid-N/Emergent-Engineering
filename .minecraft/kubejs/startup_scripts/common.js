@@ -396,6 +396,24 @@ function cuttingBoardSilent(tool, inputs, outputs) {
 
 /**
  * 
+ * @param {Internal.JsonObject} input 
+ * @param {Internal.JsonObject} output 
+ * @param {Number} mana
+ * @param {{type: String, block: String}} catalyst 
+ * @returns 
+ */
+function manaInfusion(input, output, mana, catalyst) {
+    return {
+        type: "botania:mana_infusion",
+        catalyst: catalyst,
+        input: input,
+        mana: mana,
+        output: output
+    }
+}
+
+/**
+ * 
  * @param {String} inputItem 
  * @param {String} outputItem 
  */
@@ -649,9 +667,9 @@ const food = {
         cooked: newFood("cooked_onion", "Cooked Onion", [], 64, 1, 0, false),
         cut: newFood("chopped_onion", "Chopped Onion", [], 64, 1, 0, true),
         cookedCut: newFood("cooked_chopped_onion", "Cooked Chopped Onion", [], 64, 1, 0, true),
-        chives: {
+        chive: {
             raw: newFood("chive", "Chive", [], 64, 1, 0, true),
-            chopped: newFood("chopped_chive", "Chive", [], 64, 1, 0, true)
+            chopped: newFood("chopped_chive", "Chopped Chive", [], 64, 1, 0, true)
         }
     }
 }
@@ -659,8 +677,19 @@ newRecipe(shapeless([{item: food.melon.cubes}, {item: food.melon.cubes}, {item: 
 newCutting([{item: food.melon.slice}], [{item: food.melon.cubes}]);
 newRecipe(cuttingBoardSilent({tag: tools.breadKnife.tag}, [{item: food.bread.loaf}], [{item: food.bread.slice.vertical, count: 9}]));
 newCutting([{item: food.bread.loaf}], [{item: food.bread.slice.horizontal, count: 2}]);
+newCutting([{item: food.onion.chive.raw}], [{item: food.onion.chive.chopped}]);
 
 const metal = {
+    iron: {
+        storageBlock: "minecraft:iron_block",
+        ingot: "minecraft:iron_ingot",
+        nugget: "minecraft:iron_nugget",
+        dust: "thermal:iron_dust"
+    },
+    mithril: newMetal("mithril", "Mithril", true),
+    manasteel: {
+        ingot: "botania:manasteel_ingot"
+    },
     copper: {
         ingot: "minecraft:copper_ingot",
         dust: "thermal:copper_dust"
@@ -771,29 +800,74 @@ const gad = {
     ingot: newBasicItem("gad_alloy", "G.A.D Alloy", ["forge:ingots", "forge:ingots/gad"])
 }
 
+removeRecipe({type: "botania:mana_infusion"});
+
+const manaCatalyst = {
+    mana: newBasicBlock("mana_catalyst", "Mana Catalyst", []),
+    alchemy: "botania:alchemy_catalyst",
+    transmutation: newBasicBlock("transmutation_catalyst", "Transmutation Catalyst", []),
+    inversion: newBasicBlock("inversion_catalyst", "Inversion Catalyst", [])
+}
+
+const elemental = {
+    blaze: {
+        dust: "minecraft:blaze_powder",
+        rod: "minecraft:blaze_rod"
+    },
+    basalz: {
+        dust: "thermal:basalz_powder",
+        rod: "thermal:basalz_rod"
+    },
+    blitz: {
+        dust: "thermal:blitz_powder",
+        rod: "thermal:blitz_rod"
+    },
+    blizz: {
+        dust: "thermal:blizz_powder",
+        rod: "thermal:blizz_rod"
+    }
+}
+newRecipe(manaInfusion({item: elemental.blaze.dust}, {item: elemental.basalz.dust}, 4000, {type: "block", block: manaCatalyst.transmutation}));
+newRecipe(manaInfusion({item: elemental.basalz.dust}, {item: elemental.blaze.dust}, 4000, {type: "block", block: manaCatalyst.transmutation}));
+newRecipe(manaInfusion({item: elemental.blitz.dust}, {item: elemental.blizz.dust}, 4000, {type: "block", block: manaCatalyst.transmutation}));
+newRecipe(manaInfusion({item: elemental.blizz.dust}, {item: elemental.blitz.dust}, 4000, {type: "block", block: manaCatalyst.transmutation}));
+
+newRecipe(manaInfusion({item: elemental.blaze.dust}, {item: elemental.blizz.dust}, 4000, {type: "block", block: manaCatalyst.inversion}));
+newRecipe(manaInfusion({item: elemental.blizz.dust}, {item: elemental.blaze.dust}, 4000, {type: "block", block: manaCatalyst.inversion}));
+newRecipe(manaInfusion({item: elemental.basalz.dust}, {item: elemental.blitz.dust}, 4000, {type: "block", block: manaCatalyst.inversion}));
+newRecipe(manaInfusion({item: elemental.blitz.dust}, {item: elemental.basalz.dust}, 4000, {type: "block", block: manaCatalyst.inversion}));
+
 const brick = {
+    nether: {
+        ingot: "minecraft:nether_brick",
+        storageBlock: "minecraft:nether_bricks"
+    },
+    kiln: {
+        ingot: newBasicItem("kiln_brick", "Kiln Brick", ["forge:ingots", "forge:ingots/kiln_brick"]),
+        storageBlock: "immersiveengineering:alloybrick",
+        blend: newBasicItem("sandy_clay_blend", "Sandy Clay Blend", [])
+    },
     coke: {
-        ingot: newIngot("coke_brick", "Coke Brick"),
+        ingot: newBasicItem("coke_brick", "Coke Brick", ["forge:ingots", "forge:ingots/coke_brick"]),
         storageBlock: "immersiveengineering:cokebrick",
     },
     blast: {
-        ingot: newIngot("blast_brick", "Blast Brick"),
+        ingot: newBasicItem("blast_brick", "Blast Brick", ["forge:ingots", "forge:ingots/blast_brick"]),
         storageBlock: "immersiveengineering:blastbrick"
-    },
-    kiln: {
-        ingot: newIngot("kiln_brick", "Kiln Brick"),
-        storageBlock: "immersiveengineering:alloybrick",
-        blend: newBasicItem("sandy_clay_blend", "Sandy Clay Blend", [])
     }
 }
-removeRecipe({id: "immersiveengineering:crafting/cokebrick"});
-newAlloy([{item: clay.storageBlock}, {item: coal.dust}], {item: brick.coke.ingot}, 800);
-newRecipe(compress4x4(brick.coke.ingot, brick.coke.storageBlock));
-
 removeRecipe({id: "immersiveengineering:crafting/alloybrick"});
 newRecipe(shapeless([{item: clay.ball}, {item: carbonatite.sand}], {item: brick.kiln.blend}));
 newExtendedSmelting({item: brick.kiln.blend}, {item: brick.kiln.ingot}, 200, 1.0);
 newRecipe(compress4x4(brick.kiln.ingot, brick.kiln.storageBlock));
+
+removeRecipe({id: "immersiveengineering:crafting/cokebrick"});
+newAlloy([{item: clay.storageBlock}, {item: coal.dust}], {item: brick.coke.ingot}, 800);
+newRecipe(compress4x4(brick.coke.ingot, brick.coke.storageBlock));
+
+removeRecipe({id: "immersiveengineering:crafting/blastbrick"});
+newAlloy([{item: brick.nether.ingot}, {item: elemental.blaze.dust}], {item: brick.blast.ingot}, 1600);
+newRecipe(compress4x4(brick.blast.ingot, brick.blast.storageBlock));
 
 function newEssence() {
 
@@ -826,14 +900,11 @@ const dragonEgg = {
 }
 
 for (let type in dragonEgg) {
-    console.log(JSON.stringify(type));
     let colors = dragonEgg[type];
-    console.log(JSON.stringify(colors))
     for (let [color, id] in colors) {
         addTagToItems("forge:eggs/dragon", id);
         addTagToItems("forge:eggs/dragon/" + type, id);
         addTagToItems("forge:eggs/dragon/" + type + "/" + color, id);
-        console.log(JSON.stringify(color));
     };
 }
 
