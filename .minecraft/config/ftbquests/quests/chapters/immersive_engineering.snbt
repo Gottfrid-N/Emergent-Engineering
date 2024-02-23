@@ -13,17 +13,123 @@
 	id: "77BA1ACF902E05CE"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["76059D5224C0BDFC"]
-		id: "7D15665F5F7708C1"
-		tasks: [{
-			id: "5C2887EBD7C77298"
-			item: "immersiveengineering:manual"
-			type: "item"
-		}]
-		title: "So &o&dImmersive&r!"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["76059D5224C0BDFC"]
+			id: "7D15665F5F7708C1"
+			tasks: [{
+				id: "5C2887EBD7C77298"
+				item: "immersiveengineering:manual"
+				type: "item"
+			}]
+			title: "So &o&dImmersive&r!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D15665F5F7708C1"]
+			id: "46829DFBAD2B7B21"
+			tasks: [{
+				id: "0EE51185996AEC95"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "HAMMAH"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46829DFBAD2B7B21"]
+			description: ["Not the fastest, but it'll do for now"]
+			id: "3495295D908DCC1C"
+			rewards: [{
+				count: 16
+				id: "09583538B593AB9B"
+				item: "kubejs:melon_cubes"
+				type: "item"
+			}]
+			subtitle: "2x2 of Kiln Bricks"
+			tasks: [{
+				count: 8L
+				id: "66B41D9BB298118B"
+				item: "immersiveengineering:alloybrick"
+				title: "Alloy Kiln"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46829DFBAD2B7B21"]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 23
+					}
+				}
+				id: "immersiveengineering:toolbox"
+			}
+			id: "6B553BD582A60E9D"
+			tasks: [
+				{
+					id: "634696C8B6E5A2D7"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21497ABE5EC015F4"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "710BCB684CCCACD9"
+					item: "immersiveengineering:screwdriver"
+					type: "item"
+				}
+				{
+					id: "2592902762EB17E6"
+					item: "immersiveengineering:voltmeter"
+					type: "item"
+				}
+				{
+					id: "1905E505AEE024E3"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 23
+							}
+						}
+						id: "immersiveengineering:toolbox"
+					}
+					type: "item"
+				}
+			]
+			title: "&o&dEngineer&r Gaming"
+			x: 1.0d
+			y: -1.0d
+		}
+	]
 	title: "&o&dImmersive Engineering"
 }

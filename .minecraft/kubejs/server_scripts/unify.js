@@ -46,6 +46,8 @@ ServerEvents.tags("item", event => {
     addMaterialTags("electrum", metalTypes);
     addMaterialTags("constantan", metalTypes);
 
+    addMaterialTags("sulfur", ["forge:gems", "forge:dusts"]);
+
     let seed = ["forge:seeds", "forge:fiber", "forge:crops"];
 
     addMaterialTags("flax", seed);

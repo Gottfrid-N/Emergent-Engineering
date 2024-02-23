@@ -236,6 +236,19 @@ function newRecipe(recipe) {
 }
 
 /**
+ * @type {Internal.RecipeFilter_[]}
+ */
+let recipesRemove = []
+
+/**
+ * 
+ * @param {Internal.RecipeFilter_} filter 
+ */
+function removeRecipe(filter) {
+    recipesRemove.push(filter);
+}
+
+/**
  * 
  * @param {Internal.JsonObject[]} ingredients 
  * @param {Internal.JsonObject} output 
@@ -284,6 +297,23 @@ function furnace(input, output, time, xp) {
 /**
  * 
  * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject} output 
+ * @param {Number} time 
+ * @returns 
+ */
+function alloyFurnace(inputs, output, time) {
+    return {
+        type: "immersiveengineering:alloy",
+        time: time,
+        result: output,
+        input0: inputs[0],
+        input1: inputs[1]
+    }
+}
+
+/**
+ * 
+ * @param {Internal.JsonObject[]} inputs 
  * @param {Internal.JsonObject[]} outputs 
  * @param {Number} time 
  * @returns 
@@ -316,8 +346,8 @@ function crushingWheel(inputs, outputs, time) {
 /**
  * 
  * @param {Internal.JsonObject} input 
- * @param {[{count: Number, base_ingredient: Internal.JsonObject}]} result 
- * @param {{chance: Number, output: Internal.JsonObject}} secondaries 
+ * @param {Internal.JsonObject} result 
+ * @param {Internal.JsonObject[]} secondaries 
  * @param {Number} energy 
  */
 function crusher(input, result, secondaries, energy) {
@@ -384,6 +414,24 @@ function decompress9x9(inputItem, outputItem) {
 
 /**
  * 
+ * @param {String} inputItem 
+ * @param {String} outputItem 
+ */
+function compress4x4(inputItem, outputItem) {
+    return shaped({I: inputItem}, ["II", "II"], {count:1, item: outputItem});
+}
+
+/**
+ * 
+ * @param {String} inputItem 
+ * @param {String} outputItem 
+ */
+function decompress4x4(inputItem, outputItem) {
+    return shapeless([{count: 1, item: inputItem}], {count: 4, item: outputItem});
+}
+
+/**
+ * 
  * @param {String} craftItem 
  * @param {Internal.JsonObject[]} inputs 
  * @param {Internal.JsonObject} output 
@@ -402,8 +450,9 @@ function crushWithMortar(inputs, output) {
     return craftWith(tools.mortar, inputs, output);
 }
 
-function cutting(inputs, outputs) {
+function newCutting(inputs, outputs) {
     newRecipe(cuttingBoardSilent({tag: tools.knife}, inputs, outputs));
+    newRecipe(crushWithMortar(inputs, outputs[0]));
 }
 
 /**
@@ -413,8 +462,39 @@ function cutting(inputs, outputs) {
  * @param {Number} time 
  * @param {Number} xp 
  */
-function extendedSmelting(input, output, time, xp) {
+function newExtendedSmelting(input, output, time, xp) {
     newRecipe(furnace(input, output, time, xp));
+}
+
+/**
+ * 
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject[]} outputs 
+ * @param {Number} energy 
+ */
+function newExtendedCrushing(inputs, outputs, energy) {
+    newExtendedCrushingNoMortar(inputs, outputs, energy);
+    newRecipe(crushWithMortar(inputs, outputs[0]));
+}
+
+/**
+ * 
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject[]} outputs 
+ * @param {Number} energy 
+ */
+function newExtendedCrushingNoMortar(inputs, outputs, energy) {
+    newRecipe(crusher(inputs[0], outputs[0], outputs.slice(1), energy));
+}
+
+/**
+ * 
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject} output 
+ * @param {Number} time 
+ */
+function newAlloy(inputs, output, time) {
+    newRecipe(alloyFurnace(inputs, output, time));
 }
 
 function newStorageBlock(materialId, materialDisplayName) {
@@ -499,9 +579,9 @@ function newMetal(materialId, materialName, recipes) {
         newRecipe(decompress9x9(items.storageBlock, items.ingot));
         newRecipe(decompress9x9(items.ingot, items.nugget));
 
-        newRecipe(craftWith(tools.mortar, [{item: items.ingot}], {item: items.dust}))
+        newExtendedCrushing([{item: items.ingot}], [{item: items.dust}], 3000);
 
-        extendedSmelting({item: items.dust, count: 1}, items.ingot, 200, 1.0);
+        newExtendedSmelting({item: items.dust, count: 1}, items.ingot, 200, 1.0);
     }
     return items;
 }
@@ -530,10 +610,10 @@ const tools = {
         giant: newBasicItem("giant_bowl", "Giant Bowl", []),
         gargantuan: newBasicItem("gargantuan_bowl", "Gargantuan Bowl", [])
     },
-    knife: "forge:tools/knife",
+    knife: "forge:tools/knifes",
     breadKnife: {
-        tag: "forge:tools/bread_knife",
-        iron: newBasicItem("iron_bread_knife", "Iron Bread Knife", ["forge:tools/bread_knife", "forge:tools/bread_knife/iron"])
+        tag: "forge:tools/bread_knifes",
+        iron: newBasicItem("iron_bread_knife", "Iron Bread Knife", ["forge:tools/bread_knifes", "forge:tools/bread_knifes/iron"])
     }
 }
 
@@ -576,14 +656,39 @@ const food = {
     }
 }
 newRecipe(shapeless([{item: food.melon.cubes}, {item: food.melon.cubes}, {item: food.melon.cubes}, {item: tools.bowl.normal}], {item: food.melon.salad}));
-cutting([{item: food.melon.slice}], [{item: food.melon.cubes}]);
-cuttingBoardSilent({item: tools.breadKnife.tag}, [{item: food.bread.loaf}], [{item: food.bread.slice.vertical, count: 9}]);
-cutting([{item: food.bread.loaf}], [{item: food.bread.slice.horizontal, count: 2}]);
+newCutting([{item: food.melon.slice}], [{item: food.melon.cubes}]);
+newRecipe(cuttingBoardSilent({tag: tools.breadKnife.tag}, [{item: food.bread.loaf}], [{item: food.bread.slice.vertical, count: 9}]));
+newCutting([{item: food.bread.loaf}], [{item: food.bread.slice.horizontal, count: 2}]);
 
-const platinum = newMetal("platinum", "Platinum", true);
+const metal = {
+    copper: {
+        ingot: "minecraft:copper_ingot",
+        dust: "thermal:copper_dust"
+    },
+    platinum: newMetal("platinum", "Platinum", true)
+}
+
+newRecipe(crushWithMortar([{item: metal.copper.ingot}], {item: metal.copper.dust}));
+
+const clay = {
+    ball: "minecraft:clay_ball",
+    storageBlock: "minecraft:clay"
+}
+
+const sulfur = {
+    gem: "thermal:sulfur",
+    dust: "thermal:sulfur_dust"
+}
+
+const coal = {
+    gem: "minecraft:coal",
+    dust: newDust("coal", "Coal")
+}
+newExtendedCrushing([{item: coal.gem}], [{item: coal.dust}], 3000);
+removeRecipe({output: "bigreactors:graphite_ingot", not: {input: "bigreactors:graphite_dust"}});
 
 const carbonatite = {
-    storageBlock: "minecraft:stonele",
+    storageBlock: "minecraft:stone",
     gravel: "minecraft:gravel",
     sand: "minecraft:sand",
     dust: newDust("carbonatite", "Stone")
@@ -603,9 +708,13 @@ const granite = {
     gravel: newGravel("granite", "Granite"),
     sand: newSand("granite", "Granite"),
     dust: newDust("granite", "Granite"),
-    ingot: newBasicItem("granite_alloy", "Granite Alloy", ["forge:ingots", "forge:ingots/granite"])
+    ingot: newBasicItem("granite_alloy", "Granite Alloy", ["forge:ingots", "forge:ingots/granite"]),
+    shaft: "createcasing:glass_shaft"
 }
 stoneCrushing(granite.storageBlock, granite.gravel, granite.sand, granite.dust);
+newAlloy([{item: metal.copper.dust}, {item: granite.dust}], {item: granite.ingot}, 1600);
+removeRecipe({id: "createcasing:crafting/shafts/glass_shaft"});
+newRecipe(shaped({G: granite.ingot}, ["G", "G"], {item: granite.shaft, count: 4}));
 
 const rhyolite = {
     storageBlock: newStorageBlock("rhyolite", "Rhyolite"),
@@ -631,8 +740,8 @@ const andesite = {
     dust: newDust("andesite", "Andesite"),
     ingot: "create:andesite_alloy"
 }
-newRecipe(decompress9x9("create:andesite_alloy_block", andesite.ingot));
 stoneCrushing(andesite.storageBlock, andesite.gravel, andesite.sand, andesite.dust);
+removeRecipe({output: "create:andesite_alloy", not: {input: "create:andesite_alloy_block"}});
 
 const gabbro = {
     storageBlock: newStorageBlock("gabbro", "Gabbro"),
@@ -661,6 +770,30 @@ stoneCrushing(komatiite.storageBlock, komatiite.gravel, komatiite.sand, komatiit
 const gad = {
     ingot: newBasicItem("gad_alloy", "G.A.D Alloy", ["forge:ingots", "forge:ingots/gad"])
 }
+
+const brick = {
+    coke: {
+        ingot: newIngot("coke_brick", "Coke Brick"),
+        storageBlock: "immersiveengineering:cokebrick",
+    },
+    blast: {
+        ingot: newIngot("blast_brick", "Blast Brick"),
+        storageBlock: "immersiveengineering:blastbrick"
+    },
+    kiln: {
+        ingot: newIngot("kiln_brick", "Kiln Brick"),
+        storageBlock: "immersiveengineering:alloybrick",
+        blend: newBasicItem("sandy_clay_blend", "Sandy Clay Blend", [])
+    }
+}
+removeRecipe({id: "immersiveengineering:crafting/cokebrick"});
+newAlloy([{item: clay.storageBlock}, {item: coal.dust}], {item: brick.coke.ingot}, 800);
+newRecipe(compress4x4(brick.coke.ingot, brick.coke.storageBlock));
+
+removeRecipe({id: "immersiveengineering:crafting/alloybrick"});
+newRecipe(shapeless([{item: clay.ball}, {item: carbonatite.sand}], {item: brick.kiln.blend}));
+newExtendedSmelting({item: brick.kiln.blend}, {item: brick.kiln.ingot}, 200, 1.0);
+newRecipe(compress4x4(brick.kiln.ingot, brick.kiln.storageBlock));
 
 function newEssence() {
 
@@ -704,7 +837,7 @@ for (let type in dragonEgg) {
     };
 }
 
-extendedSmelting({item: "minecraft:rotten_flesh"}, {item: "minecraft:leather"}, 200, 1.0);
+newExtendedSmelting({item: "minecraft:rotten_flesh"}, {item: "minecraft:leather"}, 200, 1.0);
 newRecipe(shaped({L: "minecraft:leather", S: "minecraft:string"}, ["SLS", "L L", "L L"], "minecraft:bundle"));
 newRecipe(shaped({H: "minecraft:rabbit_hide", S: "minecraft:string"}, ["SHS", "H H", "H H"], "minecraft:bundle"));
 newRecipe(shaped({T: "dimdoors:world_thread", E: "minecraft:ender_pearl"}, ["   ", "TET", "   "], {item: "dimdoors:stable_fabric"}));
@@ -713,10 +846,16 @@ newRecipe(shapeless([{item: "minecraft:stick"}], {item: tools.itemUnifier}));
 newRecipe(shapeless([{item: "minecraft:stick"}, {item: tools.itemUnifier}], tools.immersiveSteel));
 newRecipe(craftWith(tools.immersiveSteel, [{tag: "forge:storage_blocks/steel"}], {item: "immersiveengineering:storage_steel"}));
 
+addTagToItems("forge:tools/knives", ["farmersdelight:iron_knife", "farmersdelight:golden_knife", "farmersdelight:diamond_knife", "farmersdelight:netherite_knife"]);
+
+removeRecipe({id: "minecraft:blast_furnace"});
+removeRecipe({id: "nethersdelight:blackstone_blast_furnace"});
+
 global.items = items;
 global.blocks = blocks;
 global.fluids = fluids;
 global.recipes = recipes;
+global.recipesRemove = recipesRemove;
 global.itemTags = itemTags;
 global.blockTags = blockTags;
 global.fluidTags = fluidTags;

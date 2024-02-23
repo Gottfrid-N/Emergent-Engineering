@@ -2,9 +2,11 @@
 
 ServerEvents.recipes(event => {
     event.replaceInput({input: "kubejs:obsidian_plate"}, "kubejs:obsidian_plate", "create:sturdy_sheet");
-    event.remove({input:"minecraft:coal", output:"bigreactors:graphite_ingot"});
-    event.remove({input:"minecraft:charcoal", output:"bigreactors:graphite_ingot"});
-    event.remove({output:"create:andesite_alloy"})
+
+    global.recipesRemove.forEach(filter => {
+        console.log("Removing recipes matching filter: " + JSON.stringify(filter));
+        event.remove(filter);
+    })
 
     global.recipes.forEach(recipe => {
         console.log("Registering recipe: " + JSON.stringify(recipe));
