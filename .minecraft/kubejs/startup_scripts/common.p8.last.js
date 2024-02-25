@@ -20,6 +20,8 @@ removeRecipe({id: "create:haunting/lapis_recycling"});
 removeRecipe({id: "projecte:philosophers_stone"});
 removeRecipe({id: "projecte:philosophers_stone_alt"});
 removeRecipe({id: "projecte:transmutation_table"});
+removeRecipe({id: "botania:lexicon"});
+newRecipe(petalApothecary([{item: "minecraft:book"}, {item: mystical.petal.green}], {item: "botania:lexicon"}, {tag: petalApothecaryReagent}));
 
 global.items = items;
 global.blocks = blocks;

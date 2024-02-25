@@ -7,17 +7,45 @@
 	id: "21BC6DB89A2D8CD9"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		id: "7470D230CF55E3FD"
-		subtitle: "These quests will be mostly focused on Botania"
-		tasks: [{
-			id: "24E0635ED06486A6"
-			item: "botania:lexicon"
-			type: "item"
-		}]
-		title: "Getting Started with &o&2Botanics"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: [
+				"4A0B77AB0E11848A"
+				"7D15665F5F7708C1"
+			]
+			id: "7470D230CF55E3FD"
+			subtitle: "These quests will be mostly focused on Botania"
+			tasks: [{
+				id: "24E0635ED06486A6"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			title: "Getting Started with &o&2Botanics"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7470D230CF55E3FD"]
+			id: "36B04686EB50EEE3"
+			tasks: [{
+				id: "4D84469A83D6A946"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36B04686EB50EEE3"]
+			id: "6C26965D24F94477"
+			tasks: [{
+				id: "1B97A750070962B8"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
 	title: "&o&2Botany"
 }

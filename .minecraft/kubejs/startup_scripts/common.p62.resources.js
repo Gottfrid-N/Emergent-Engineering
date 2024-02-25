@@ -7,7 +7,7 @@ const metal = {
         nugget: "minecraft:iron_nugget",
         dust: "thermal:iron_dust",
         black: {
-            ingot: "extendedcraftin:black_iron_ingot"
+            ingot: "extendedcrafting:black_iron_ingot"
         }
     },
     mithril: newMetal("mithril", "Mithril", true),
@@ -22,6 +22,9 @@ const metal = {
 }
 newRecipe(crushWithMortar([{item: metal.copper.ingot}], {item: metal.copper.dust}));
 
+removeRecipe({id: "extendedcrafting:black_iron_ingot"});
+newAlloy([{item: metal.iron.ingot}, {tag: "forge:dyes/black"}]);
+
 const gem = {
     sulfur: {
         gem: "thermal:sulfur",
@@ -35,6 +38,8 @@ const gem = {
 newExtendedCrushing([{item: gem.coal.gem}], [{item: gem.coal.dust}], 3000);
 crushWithMortar([{item: gem.coal.gem}], [{item: gem.coal.dust}]);
 removeRecipe({output: "bigreactors:graphite_ingot", not: {input: "bigreactors:graphite_dust"}});
+
+const livingrock = "botania:livingrock"
 
 const elemental = {
     blaze: {
@@ -54,15 +59,15 @@ const elemental = {
         rod: "thermal:blizz_rod"
     }
 }
-newRecipe(manaInfusion({item: elemental.blaze.dust}, {item: elemental.basalz.dust}, 4000, {type: "block", block: manaCatalyst.transmutation}));
-newRecipe(manaInfusion({item: elemental.basalz.dust}, {item: elemental.blaze.dust}, 4000, {type: "block", block: manaCatalyst.transmutation}));
-newRecipe(manaInfusion({item: elemental.blitz.dust}, {item: elemental.blizz.dust}, 4000, {type: "block", block: manaCatalyst.transmutation}));
-newRecipe(manaInfusion({item: elemental.blizz.dust}, {item: elemental.blitz.dust}, 4000, {type: "block", block: manaCatalyst.transmutation}));
+newRecipe(manaInfusion({item: elemental.blaze.dust}, {item: elemental.basalz.dust}, 4000, manaCatalyst.transmutation));
+newRecipe(manaInfusion({item: elemental.basalz.dust}, {item: elemental.blaze.dust}, 4000, manaCatalyst.transmutation));
+newRecipe(manaInfusion({item: elemental.blitz.dust}, {item: elemental.blizz.dust}, 4000, manaCatalyst.transmutation));
+newRecipe(manaInfusion({item: elemental.blizz.dust}, {item: elemental.blitz.dust}, 4000, manaCatalyst.transmutation));
 
-newRecipe(manaInfusion({item: elemental.blaze.dust}, {item: elemental.blizz.dust}, 4000, {type: "block", block: manaCatalyst.inversion}));
-newRecipe(manaInfusion({item: elemental.blizz.dust}, {item: elemental.blaze.dust}, 4000, {type: "block", block: manaCatalyst.inversion}));
-newRecipe(manaInfusion({item: elemental.basalz.dust}, {item: elemental.blitz.dust}, 4000, {type: "block", block: manaCatalyst.inversion}));
-newRecipe(manaInfusion({item: elemental.blitz.dust}, {item: elemental.basalz.dust}, 4000, {type: "block", block: manaCatalyst.inversion}));
+newRecipe(manaInfusion({item: elemental.blaze.dust}, {item: elemental.blizz.dust}, 4000, manaCatalyst.inversion));
+newRecipe(manaInfusion({item: elemental.blizz.dust}, {item: elemental.blaze.dust}, 4000, manaCatalyst.inversion));
+newRecipe(manaInfusion({item: elemental.basalz.dust}, {item: elemental.blitz.dust}, 4000, manaCatalyst.inversion));
+newRecipe(manaInfusion({item: elemental.blitz.dust}, {item: elemental.basalz.dust}, 4000, manaCatalyst.inversion));
 
 newRecipe(shaped({1: elemental.basalz.dust, 2: elemental.blitz.dust, I: metal.iron.ingot, C: metal.iron.black.ingot, P: {tag: "botania:petals"}, L: livingrock}, ["LIL", "1P2", "LCL"], {item: manaCatalyst.inversion}));
 newRecipe(shaped({1: elemental.basalz.dust, 2: elemental.blitz.dust, I: metal.iron.ingot, C: metal.iron.black.ingot, P: {tag: "botania:petals"}, L: livingrock}, ["LCL", "1P2", "LIL"], {item: manaCatalyst.inversion}));
@@ -86,7 +91,7 @@ newRecipe(shaped({1: elemental.basalz.dust, 2: elemental.blitz.dust, 3: elementa
 // ROCKS
 // ROCKS/MISC
 
-const carbonatite = { // aka. stone
+const carbonatite = { // aka stone
     storageBlock: "minecraft:stone",
     cobble: "minecraft:cobblestone",
     gravel: "minecraft:gravel",
@@ -100,7 +105,7 @@ const carbonatite = { // aka. stone
 removeRecipe({id: "create:compacting/andesite_from_flint"});
 removeRecipe({id: "create:compacting/diorite_from_flint"});
 removeRecipe({id: "create:compacting/granite_from_flint"});
-stoneCrushing(carbonatite.storageBlock, carbonatite.gravel, carbonatite.sand, carbonatite.dust);
+newStoneCrushing(carbonatite.storageBlock, carbonatite.gravel, carbonatite.sand, carbonatite.dust);
 
 const gregoryite = {
     storageBlock: newStorageBlock("gregoryite", "Gregoryite"),
@@ -108,9 +113,7 @@ const gregoryite = {
     sand: newSand("gregoryite", "Gregoryite"),
     dust: newDust("gregoryite", "Gregoryite")
 }
-stoneCrushing(gregoryite.storageBlock, gregoryite.gravel, gregoryite.sand, gregoryite.dust);
-
-const livingrock = "botania:livingrock"
+newStoneCrushing(gregoryite.storageBlock, gregoryite.gravel, gregoryite.sand, gregoryite.dust);
 
 // ROCKS/IGNEUS*
 // ROCKS/IGNEUS/FELSIC
@@ -122,7 +125,7 @@ const granite = {
     ingot: newBasicItem("granite_alloy", "Granite Alloy", ["forge:ingots", "forge:ingots/granite"]),
     shaft: "createcasing:glass_shaft"
 }
-stoneCrushing(granite.storageBlock, granite.gravel, granite.sand, granite.dust);
+newStoneCrushing(granite.storageBlock, granite.gravel, granite.sand, granite.dust);
 newAlloy([{item: metal.copper.dust}, {item: granite.dust}], {item: granite.ingot}, 1600);
 removeRecipe({id: "createcasing:crafting/shafts/glass_shaft"});
 newRecipe(shaped({G: granite.ingot}, ["G", "G"], {item: granite.shaft, count: 4}));
@@ -133,7 +136,7 @@ const rhyolite = {
     sand: newSand("rhyolite", "Rhyolite"),
     dust: newDust("rhyolite", "Rhyolite"),
 }
-stoneCrushing(rhyolite.storageBlock, rhyolite.gravel, rhyolite.sand, rhyolite.dust);
+newStoneCrushing(rhyolite.storageBlock, rhyolite.gravel, rhyolite.sand, rhyolite.dust);
 
 // ROCKS/IGNEUS/INTERMEDIATE
 const diorite = {
@@ -143,7 +146,8 @@ const diorite = {
     dust: newDust("diorite", "Diorite"),
     ingot: newBasicItem("diorite_alloy", "Diorite Alloy", ["forge:ingots", "forge:ingots/diorite"])
 }
-stoneCrushing(diorite.storageBlock, diorite.gravel, diorite.sand, diorite.dust);
+newStoneCrushing(diorite.storageBlock, diorite.gravel, diorite.sand, diorite.dust);
+newAlloy([{item: metal.iron.dust}, {item: diorite.dust}], {item: diorite.ingot}, 1600);
 
 const andesite = {
     storageBlock: "minecraft:andesite",
@@ -152,7 +156,7 @@ const andesite = {
     dust: newDust("andesite", "Andesite"),
     ingot: "create:andesite_alloy"
 }
-stoneCrushing(andesite.storageBlock, andesite.gravel, andesite.sand, andesite.dust);
+newStoneCrushing(andesite.storageBlock, andesite.gravel, andesite.sand, andesite.dust);
 removeRecipe({output: "create:andesite_alloy", not: {input: "create:andesite_alloy_block"}});
 
 // ROCKS/IGNEUS/MAFIC
@@ -162,7 +166,7 @@ const gabbro = {
     sand: newSand("gabbro", "Gabbro"),
     dust: newDust("gabbro", "Gabbro")
 }
-stoneCrushing(gabbro.storageBlock, gabbro.gravel, gabbro.sand, gabbro.dust);
+newStoneCrushing(gabbro.storageBlock, gabbro.gravel, gabbro.sand, gabbro.dust);
 
 // ROCKS/BASALT
 
@@ -173,7 +177,7 @@ const peridotite = {
     sand: newSand("peridotite", "Peridotite"),
     dust: newDust("peridotite", "Peridotite")
 }
-stoneCrushing(peridotite.storageBlock, peridotite.gravel, peridotite.sand, peridotite.dust);
+newStoneCrushing(peridotite.storageBlock, peridotite.gravel, peridotite.sand, peridotite.dust);
 
 const komatiite = {
     storageBlock: newStorageBlock("komatiite", "Komatiite"),
@@ -181,7 +185,7 @@ const komatiite = {
     sand: newSand("komatiite", "Komatiite"),
     dust: newDust("komatiite", "Komatiite")
 }
-stoneCrushing(komatiite.storageBlock, komatiite.gravel, komatiite.sand, komatiite.dust);
+newStoneCrushing(komatiite.storageBlock, komatiite.gravel, komatiite.sand, komatiite.dust);
 
 // ROCKS/IGNEUS/MISC
 
@@ -190,13 +194,16 @@ const gad = {
 }
 
 // ROCKS/NETHER
+const soulSand = "minecraft:soul_sand"
+newAddSoul({item: carbonatite.sand}, {item: soulSand});
+
 const netherrack = {
     storageBlock: "minecraft:netherrack",
     gravel: newGravel("netherrack", "Netherrack"),
     sand: newSand("netherrack", "Netherrack"),
     dust: newDust("netherrack", "Netherrack")
 }
-stoneCrushing(netherrack.storageBlock, netherrack.gravel, netherrack.sand, netherrack.dust);
+newStoneCrushing(netherrack.storageBlock, netherrack.gravel, netherrack.sand, netherrack.dust);
 newRecipe(shapeless([{item: soulSand}, {item: elemental.blaze.dust}], {item: netherrack.sand}));
 newRecipe(mixer([{item: soulSand}, {item: elemental.blaze.dust}], [{item: netherrack.sand}]));
 
@@ -207,9 +214,6 @@ const basalt = {
     dust: newDust("basalt", "Basalt")
 }
 newAddSoul({item: carbonatite.storageBlock}, {item: basalt.storageBlock});
-
-const soulSand = "minecraft:soul_sand"
-newAddSoul({item: carbonatite.sand}, {item: soulSand});
 
 const blackstone = {
     storageBlock: "minecraft:blackstone"

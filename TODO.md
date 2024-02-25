@@ -8,6 +8,8 @@
 - [ ] .\. = Even Less Important
 - [ ] .\.. = etc.
 
+- [ ] ? Switching from common.js to bismuth
+
 # Progression
 - [ ] % Basic Progression Outline
 - [ ] % Quests

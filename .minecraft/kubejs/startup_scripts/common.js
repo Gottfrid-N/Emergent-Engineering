@@ -45,6 +45,10 @@ function addTagToItems(tag, items) {
     itemTags.add.push(new TagsAdd(tag, items));
 }
 
+function removeItemsFromTag(tag, items) {
+    itemTags.remove.push(new TagsRemove(tag, items));
+}
+
 let blockTags = {
     /**
      * @type {TagsAdd[]}
@@ -455,6 +459,45 @@ function haunting(inputs, outputs) {
     }
 }
 
+removeRecipe({type: "botania:mana_infusion"});
+/**
+ * 
+ * @param {Internal.JsonObject} input 
+ * @param {Internal.JsonObject} output 
+ * @param {Number} mana
+ * @param {String} catalyst 
+ * @returns 
+ */
+function manaInfusion(input, output, mana, catalyst) {
+    return {
+        type: "botania:mana_infusion",
+        catalyst: {
+            type: "block",
+            block: catalyst
+        },
+        input: input,
+        mana: mana,
+        output: output
+    }
+}
+
+/**
+ * 
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject} output 
+ * @param {Internal.JsonObject} reagent 
+ * @returns 
+ */
+function petalApothecary(inputs, output, reagent) {
+    return {
+        type: "botania:petal_apothecary",
+        ingredients: inputs,
+        output: output,
+        reagent: reagent
+      }
+}
+const petalApothecaryReagent = "botania:seed_apothecary_reagent";
+
 /**
  * 
  * @param {String} inputItem 
@@ -616,27 +659,27 @@ function newFood(id, displayName, tags, stackSize, hunger, saturationModifier, f
  * @returns {{storageBlock: String, ingot: String, nugget: String, dust: String}}
  */
 function newMetal(materialId, materialName, recipes) {
-    const items = {    
+    const material = {    
         storageBlock: newStorageBlock(materialId, materialName),
         ingot: newIngot(materialId, materialName),
         nugget: newNugget(materialId, materialName),
         dust: newDust(materialId, materialName)
     }
     if (recipes) {
-        newRecipe(compress9x9(items.ingot, items.storageBlock));
-        newRecipe(compress9x9(items.nugget, items.ingot));
-        newRecipe(decompress9x9(items.storageBlock, items.ingot));
-        newRecipe(decompress9x9(items.ingot, items.nugget));
+        newRecipe(compress9x9(material.ingot, material.storageBlock));
+        newRecipe(compress9x9(material.nugget, material.ingot));
+        newRecipe(decompress9x9(material.storageBlock, material.ingot));
+        newRecipe(decompress9x9(material.ingot, material.nugget));
 
-        newExtendedCrushing([{item: items.ingot}], [{item: items.dust}], 3000);
-        crushWithMortar([{item: items.ingot}], [{item: items.dust}]);
+        newExtendedCrushing([{item: material.ingot}], [{item: material.dust}], 3000);
+        crushWithMortar([{item: material.ingot}], [{item: material.dust}]);
 
-        newExtendedSmelting({item: items.dust, count: 1}, items.ingot, 200, 1.0);
+        newExtendedSmelting({item: material.dust, count: 1}, material.ingot, 200, 1.0);
     }
-    return items;
+    return material;
 }
 
-function stoneCrushing(stone, gravel, sand, dust) {
+function newStoneCrushing(stone, gravel, sand, dust) {
     newRecipe(compacting([{item: gravel}, {fluid: "minecraft:lava", amount: 250}], [{item: stone}]));
     newRecipe(compacting([{item: sand}, {fluid: "minecraft:lava", amount: 100}], [{item: stone}]));
     newRecipe(compacting([{item: dust, count: 9}, {fluid: "minecraft:lava", amount: 250}], [{item: stone}]));
@@ -649,58 +692,6 @@ function stoneCrushing(stone, gravel, sand, dust) {
     newRecipe(milling([{item: gravel}], [{item: sand}], 250));
 
     newRecipe(craftWith(tools.earthCharge, [{item: gravel}], {item: dust, count: 4}));
-}
-
-const tools = {
-    itemUnifier: newBasicItem("item_unifier", "Item Unifier", ["forge:tools", "forge:tools/unifier"]),
-    immersiveSteel: newBasicItem("immersive_steel", "Immersive Steel", ["forge:tools", "forge:tools/unifier"]),
-    mortar: newBasicItem("mortar", "Mortar", ["forge:tools", "forge:tools/mortar"]),
-    hammer: "immersiveengineering:hammer",
-    earthCharge: "thermal:earth_charge",
-    bowl: {
-        normal: "minecraft:bowl",
-        large: newBasicItem("large_bowl", "Large Bowl", []),
-        huge: newBasicItem("huge_bowl", "Huge Bowl", []),
-        giant: newBasicItem("giant_bowl", "Giant Bowl", []),
-        gargantuan: newBasicItem("gargantuan_bowl", "Gargantuan Bowl", [])
-    },
-    knife: "forge:tools/knifes",
-    breadKnife: {
-        tag: "forge:tools/bread_knifes",
-        iron: newBasicItem("iron_bread_knife", "Iron Bread Knife", ["forge:tools/bread_knifes", "forge:tools/bread_knifes/iron"])
-    }
-}
-addTagToItems("forge:tools/knives", ["farmersdelight:iron_knife", "farmersdelight:golden_knife", "farmersdelight:diamond_knife", "farmersdelight:netherite_knife"]);
-
-const manaCatalyst = {
-    mana: newBasicBlock("mana_catalyst", "Mana Catalyst", ["botania:catalysts", "botania:catalysts/mana"]),
-    alchemy: "botania:alchemy_catalyst",
-    conjuration: "botania:conjuration_catalyst",
-    transmutation: newBasicBlock("transmutation_catalyst", "Transmutation Catalyst", ["botania:catalysts", "botania:catalysts/transmutation"]),
-    inversion: newBasicBlock("inversion_catalyst", "Inversion Catalyst", ["botania:catalysts", "botania:catalysts/inversion"]),
-    soul: newBasicBlock("soul_catalyst", "Soul Catalyst", ["botania:catalysts", "botania:catalysts/soul"])
-}
-addTagToItems("botania:catalysts", [manaCatalyst.alchemy, manaCatalyst.conjuration]);
-addTagToItems("botania:catalysts/alchemy", [manaCatalyst.alchemy]);
-addTagToItems("botania:catalysts/conjuration", [manaCatalyst.conjuration]);
-
-removeRecipe({type: "botania:mana_infusion"});
-/**
- * 
- * @param {Internal.JsonObject} input 
- * @param {Internal.JsonObject} output 
- * @param {Number} mana
- * @param {{type: "block", block: String}} catalyst 
- * @returns 
- */
-function manaInfusion(input, output, mana, catalyst) {
-    return {
-        type: "botania:mana_infusion",
-        catalyst: catalyst,
-        input: input,
-        mana: mana,
-        output: output
-    }
 }
 
 /**

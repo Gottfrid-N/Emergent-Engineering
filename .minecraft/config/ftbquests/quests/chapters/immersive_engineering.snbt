@@ -40,13 +40,14 @@
 				}
 				type: "item"
 			}]
-			title: "HAMMAH"
+			title: "HAMMAH!"
 			x: 1.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["46829DFBAD2B7B21"]
 			description: ["Not the fastest, but it'll do for now"]
+			icon: "immersiveengineering:alloy_smelter"
 			id: "3495295D908DCC1C"
 			rewards: [{
 				count: 16
@@ -129,6 +130,46 @@
 			title: "&o&dEngineer&r Gaming"
 			x: 1.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["3495295D908DCC1C"]
+			icon: "immersiveengineering:coke_oven"
+			id: "53AF03D8A941A8D9"
+			rewards: [{
+				count: 8
+				id: "174A09A332FA0E05"
+				item: "thermal:coal_coke"
+				type: "item"
+			}]
+			subtitle: "3x3 of Coke Bricks"
+			tasks: [{
+				count: 27L
+				id: "4B352B9746B38BA2"
+				item: { Count: 27b, id: "immersiveengineering:cokebrick" }
+				type: "item"
+			}]
+			title: "Coke Oven"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53AF03D8A941A8D9"]
+			id: "330DF5715017E2E4"
+			rewards: [{
+				id: "51FDC1B81C1339BA"
+				item: "farmersdelight:cake_slice"
+				type: "item"
+			}]
+			subtitle: "3x3 of Blast Bricks"
+			tasks: [{
+				count: 27L
+				id: "666457CBFC1BD7A1"
+				item: { Count: 27b, id: "immersiveengineering:blastbrick" }
+				type: "item"
+			}]
+			title: "Blast Furnace"
+			x: 4.0d
+			y: 0.0d
 		}
 	]
 	title: "&o&dImmersive Engineering"
