@@ -48,6 +48,10 @@ ServerEvents.tags("item", event => {
 
     addMaterialTags("sulfur", ["forge:gems", "forge:dusts"]);
 
+    let dough = ["forge:flour", "forge:dough"]
+
+    addMaterialTags("wheat", dough);
+
     let seed = ["forge:seeds", "forge:fiber", "forge:crops"];
 
     addMaterialTags("flax", seed);

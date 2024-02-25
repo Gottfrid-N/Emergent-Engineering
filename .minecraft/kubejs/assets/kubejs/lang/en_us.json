@@ -12,8 +12,11 @@
         "item.kubejs.ouranos_ousia": "Ouranós Ousía",
         "item.kubejs.poseidonas_ousia": "Poseidṓnas Ousía",
     
+    "block.kubejs.gregoryite_block": "Gregoryite",
     "block.kubejs.rhyolite_block": "Rhyolite",
-    "block.kubejs.gabbro": "Gabbro",
-    "block.kubejs.peridotite": "Peridotite",
-    "block.kubejs.komatiite": "Komatiite"
+    "block.kubejs.gabbro_block": "Gabbro",
+    "block.kubejs.peridotite_block": "Peridotite",
+    "block.kubejs.komatiite_block": "Komatiite",
+
+    "alias.kubejs.carbonatite": "Carbonatite"
 }

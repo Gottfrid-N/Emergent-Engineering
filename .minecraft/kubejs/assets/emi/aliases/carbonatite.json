@@ -1,0 +1,17 @@
+{
+    "aliases": [
+        {
+            "stacks": [
+                "item:minecraft:stone",
+                "item:minecraft:sand",
+                "item:minecraft:gravel",
+                "item:kubejs:carbonatite_dust",
+                "item:minecraft:deesplate",
+                "item:minecraft:cobbled_deepslate"
+            ],
+            "text": [
+                "alias.kubejs.carbonatite"
+            ]
+        }
+    ]
+}

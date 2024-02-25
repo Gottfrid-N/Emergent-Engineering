@@ -1,4 +1,4 @@
-// priority: 10
+// priority: 64
 
 /**
  * @type {BuilderProperties[]}
@@ -345,6 +345,52 @@ function crushingWheel(inputs, outputs, time) {
 
 /**
  * 
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject[]} outputs 
+ * @returns 
+ */
+function mixer(inputs, outputs) {
+    return {
+        type: "create:mixing",
+        ingredients: inputs,
+        results: outputs
+    }
+}
+
+/**
+ * 
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject[]} outputs 
+ * @param {"heated" | "superheated"} heatRequirement 
+ * @returns 
+ */
+function mixerHeated(inputs, outputs, heatRequirement) {
+    return {
+        type: "create:mixing",
+        heatRequirement: heatRequirement,
+        ingredients: inputs,
+        results: outputs
+    }
+}
+
+function pressing(inputs, outputs) {
+    return {
+        type: "create:pressing",
+        ingredients: inputs,
+        results: outputs
+    }
+}
+
+function compacting(inputs, outputs) {
+    return {
+        type: "create:compacting",
+        ingredients: inputs,
+        results: outputs
+    }
+}
+
+/**
+ * 
  * @param {Internal.JsonObject} input 
  * @param {Internal.JsonObject} result 
  * @param {Internal.JsonObject[]} secondaries 
@@ -394,21 +440,18 @@ function cuttingBoardSilent(tool, inputs, outputs) {
     }
 }
 
+removeRecipe({type: "create:haunting"});
 /**
  * 
- * @param {Internal.JsonObject} input 
- * @param {Internal.JsonObject} output 
- * @param {Number} mana
- * @param {{type: String, block: String}} catalyst 
+ * @param {Internal.JsonObject[]} inputs 
+ * @param {Internal.JsonObject[]} outputs 
  * @returns 
  */
-function manaInfusion(input, output, mana, catalyst) {
+function haunting(inputs, outputs) {
     return {
-        type: "botania:mana_infusion",
-        catalyst: catalyst,
-        input: input,
-        mana: mana,
-        output: output
+        type: "create:haunting",
+        ingredients: inputs,
+        results: outputs
     }
 }
 
@@ -470,7 +513,6 @@ function crushWithMortar(inputs, output) {
 
 function newCutting(inputs, outputs) {
     newRecipe(cuttingBoardSilent({tag: tools.knife}, inputs, outputs));
-    newRecipe(crushWithMortar(inputs, outputs[0]));
 }
 
 /**
@@ -491,17 +533,6 @@ function newExtendedSmelting(input, output, time, xp) {
  * @param {Number} energy 
  */
 function newExtendedCrushing(inputs, outputs, energy) {
-    newExtendedCrushingNoMortar(inputs, outputs, energy);
-    newRecipe(crushWithMortar(inputs, outputs[0]));
-}
-
-/**
- * 
- * @param {Internal.JsonObject[]} inputs 
- * @param {Internal.JsonObject[]} outputs 
- * @param {Number} energy 
- */
-function newExtendedCrushingNoMortar(inputs, outputs, energy) {
     newRecipe(crusher(inputs[0], outputs[0], outputs.slice(1), energy));
 }
 
@@ -598,6 +629,7 @@ function newMetal(materialId, materialName, recipes) {
         newRecipe(decompress9x9(items.ingot, items.nugget));
 
         newExtendedCrushing([{item: items.ingot}], [{item: items.dust}], 3000);
+        crushWithMortar([{item: items.ingot}], [{item: items.dust}]);
 
         newExtendedSmelting({item: items.dust, count: 1}, items.ingot, 200, 1.0);
     }
@@ -605,6 +637,10 @@ function newMetal(materialId, materialName, recipes) {
 }
 
 function stoneCrushing(stone, gravel, sand, dust) {
+    newRecipe(compacting([{item: gravel}, {fluid: "minecraft:lava", amount: 250}], [{item: stone}]));
+    newRecipe(compacting([{item: sand}, {fluid: "minecraft:lava", amount: 100}], [{item: stone}]));
+    newRecipe(compacting([{item: dust, count: 9}, {fluid: "minecraft:lava", amount: 250}], [{item: stone}]));
+
     newRecipe(craftWith(tools.hammer, [{item: stone}], {item: gravel}));
     newRecipe(milling([{item: stone}], [{item: gravel}], 250));
 
@@ -634,301 +670,45 @@ const tools = {
         iron: newBasicItem("iron_bread_knife", "Iron Bread Knife", ["forge:tools/bread_knifes", "forge:tools/bread_knifes/iron"])
     }
 }
-
-const food = {
-    melon: {
-        storageBlock: "minecraft:melon",
-        slice: "minecraft:melon_slice",
-        cubes: newFood("melon_cubes", "Melon Cubes", [], 64, 2, 0.5/2, true),
-        salad: newFood("melon_salad", "Melon Salad", [], 16, 6, 2.5/6, false)
-    },
-    pasta: {
-        raw: "farmersdelight:raw_pasta",
-        boiled: newFood("cooked_pasta", "Cooked Pasta", ["forge:pasta", "forge:pasta/boiled_pasta"], 64, 1, 0.5, true),
-        salad: newBasicItem("pasta_salad", "Pasta Salad", [])
-    },
-    bread: {
-        loaf: "minecraft:bread",
-        slice: {
-            horizontal: newBasicItem("bread_slice_horizontal", "Horizontal Slice of Bread", ["forge:bread", "forge:bread/wheat"]),
-            vertical: newBasicItem("bread_slice", "Slice of Bread", ["forge:bread", "forge:bread/wheat"])
-        }
-    },
-    cheese: {
-        portSalut: {}
-    },
-    sauce: {
-        nordstrom: newBasicItem("nordstrom_sauce", "Nordström Sauce", []),
-        turkishYogurt: newBasicItem("turkish_yogurt", "Turkish Yogurt", []),
-        cremeFraiche: newBasicItem("creme_fraiche", "Crème Fraîche", [])
-    },
-    onion: {
-        raw: "farmersdelight:onion",
-        cooked: newFood("cooked_onion", "Cooked Onion", [], 64, 1, 0, false),
-        cut: newFood("chopped_onion", "Chopped Onion", [], 64, 1, 0, true),
-        cookedCut: newFood("cooked_chopped_onion", "Cooked Chopped Onion", [], 64, 1, 0, true),
-        chive: {
-            raw: newFood("chive", "Chive", [], 64, 1, 0, true),
-            chopped: newFood("chopped_chive", "Chopped Chive", [], 64, 1, 0, true)
-        }
-    }
-}
-newRecipe(shapeless([{item: food.melon.cubes}, {item: food.melon.cubes}, {item: food.melon.cubes}, {item: tools.bowl.normal}], {item: food.melon.salad}));
-newCutting([{item: food.melon.slice}], [{item: food.melon.cubes}]);
-newRecipe(cuttingBoardSilent({tag: tools.breadKnife.tag}, [{item: food.bread.loaf}], [{item: food.bread.slice.vertical, count: 9}]));
-newCutting([{item: food.bread.loaf}], [{item: food.bread.slice.horizontal, count: 2}]);
-newCutting([{item: food.onion.chive.raw}], [{item: food.onion.chive.chopped}]);
-
-const metal = {
-    iron: {
-        storageBlock: "minecraft:iron_block",
-        ingot: "minecraft:iron_ingot",
-        nugget: "minecraft:iron_nugget",
-        dust: "thermal:iron_dust"
-    },
-    mithril: newMetal("mithril", "Mithril", true),
-    manasteel: {
-        ingot: "botania:manasteel_ingot"
-    },
-    copper: {
-        ingot: "minecraft:copper_ingot",
-        dust: "thermal:copper_dust"
-    },
-    platinum: newMetal("platinum", "Platinum", true)
-}
-
-newRecipe(crushWithMortar([{item: metal.copper.ingot}], {item: metal.copper.dust}));
-
-const clay = {
-    ball: "minecraft:clay_ball",
-    storageBlock: "minecraft:clay"
-}
-
-const sulfur = {
-    gem: "thermal:sulfur",
-    dust: "thermal:sulfur_dust"
-}
-
-const coal = {
-    gem: "minecraft:coal",
-    dust: newDust("coal", "Coal")
-}
-newExtendedCrushing([{item: coal.gem}], [{item: coal.dust}], 3000);
-removeRecipe({output: "bigreactors:graphite_ingot", not: {input: "bigreactors:graphite_dust"}});
-
-const carbonatite = {
-    storageBlock: "minecraft:stone",
-    gravel: "minecraft:gravel",
-    sand: "minecraft:sand",
-    dust: newDust("carbonatite", "Stone")
-}
-stoneCrushing(carbonatite.storageBlock, carbonatite.gravel, carbonatite.sand, carbonatite.dust);
-
-const gregoryite = {
-    storageBlock: newStorageBlock("gregoryite", "Gregoryite"),
-    gravel: newGravel("gregoryite", "Gregoryite"),
-    sand: newSand("gregoryite", "Gregoryite"),
-    dust: newDust("gregoryite", "Gregoryite")
-}
-stoneCrushing(gregoryite.storageBlock, gregoryite.gravel, gregoryite.sand, gregoryite.dust);
-
-const granite = {
-    storageBlock: "minecraft:granite",
-    gravel: newGravel("granite", "Granite"),
-    sand: newSand("granite", "Granite"),
-    dust: newDust("granite", "Granite"),
-    ingot: newBasicItem("granite_alloy", "Granite Alloy", ["forge:ingots", "forge:ingots/granite"]),
-    shaft: "createcasing:glass_shaft"
-}
-stoneCrushing(granite.storageBlock, granite.gravel, granite.sand, granite.dust);
-newAlloy([{item: metal.copper.dust}, {item: granite.dust}], {item: granite.ingot}, 1600);
-removeRecipe({id: "createcasing:crafting/shafts/glass_shaft"});
-newRecipe(shaped({G: granite.ingot}, ["G", "G"], {item: granite.shaft, count: 4}));
-
-const rhyolite = {
-    storageBlock: newStorageBlock("rhyolite", "Rhyolite"),
-    gravel: newGravel("rhyolite", "Rhyolite"),
-    sand: newSand("rhyolite", "Rhyolite"),
-    dust: newDust("rhyolite", "Rhyolite"),
-}
-stoneCrushing(rhyolite.storageBlock, rhyolite.gravel, rhyolite.sand, rhyolite.dust);
-
-const diorite = {
-    storageBlock: "minecraft:diorite",
-    gravel: newGravel("diorite", "Diorite"),
-    sand: newSand("diorite", "Diorite"),
-    dust: newDust("diorite", "Diorite"),
-    ingot: newBasicItem("diorite_alloy", "Diorite Alloy", ["forge:ingots", "forge:ingots/diorite"])
-}
-stoneCrushing(diorite.storageBlock, diorite.gravel, diorite.sand, diorite.dust);
-
-const andesite = {
-    storageBlock: "minecraft:andesite",
-    gravel: newGravel("andesite", "Andesite"),
-    sand: newSand("andesite", "Andesite"),
-    dust: newDust("andesite", "Andesite"),
-    ingot: "create:andesite_alloy"
-}
-stoneCrushing(andesite.storageBlock, andesite.gravel, andesite.sand, andesite.dust);
-removeRecipe({output: "create:andesite_alloy", not: {input: "create:andesite_alloy_block"}});
-
-const gabbro = {
-    storageBlock: newStorageBlock("gabbro", "Gabbro"),
-    gravel: newGravel("gabbro", "Gabbro"),
-    sand: newSand("gabbro", "Gabbro"),
-    dust: newDust("gabbro", "Gabbro")
-}
-stoneCrushing(gabbro.storageBlock, gabbro.gravel, gabbro.sand, gabbro.dust);
-
-const peridotite = {
-    storageBlock: newStorageBlock("peridotite", "Peridotite"),
-    gravel: newGravel("peridotite", "Peridotite"),
-    sand: newSand("peridotite", "Peridotite"),
-    dust: newDust("peridotite", "Peridotite")
-}
-stoneCrushing(peridotite.storageBlock, peridotite.gravel, peridotite.sand, peridotite.dust);
-
-const komatiite = {
-    storageBlock: newStorageBlock("komatiite", "Komatiite"),
-    gravel: newGravel("komatiite", "Komatiite"),
-    sand: newSand("komatiite", "Komatiite"),
-    dust: newDust("komatiite", "Komatiite")
-}
-stoneCrushing(komatiite.storageBlock, komatiite.gravel, komatiite.sand, komatiite.dust);
-
-const gad = {
-    ingot: newBasicItem("gad_alloy", "G.A.D Alloy", ["forge:ingots", "forge:ingots/gad"])
-}
-
-removeRecipe({type: "botania:mana_infusion"});
-
-const manaCatalyst = {
-    mana: newBasicBlock("mana_catalyst", "Mana Catalyst", []),
-    alchemy: "botania:alchemy_catalyst",
-    transmutation: newBasicBlock("transmutation_catalyst", "Transmutation Catalyst", []),
-    inversion: newBasicBlock("inversion_catalyst", "Inversion Catalyst", [])
-}
-
-const elemental = {
-    blaze: {
-        dust: "minecraft:blaze_powder",
-        rod: "minecraft:blaze_rod"
-    },
-    basalz: {
-        dust: "thermal:basalz_powder",
-        rod: "thermal:basalz_rod"
-    },
-    blitz: {
-        dust: "thermal:blitz_powder",
-        rod: "thermal:blitz_rod"
-    },
-    blizz: {
-        dust: "thermal:blizz_powder",
-        rod: "thermal:blizz_rod"
-    }
-}
-newRecipe(manaInfusion({item: elemental.blaze.dust}, {item: elemental.basalz.dust}, 4000, {type: "block", block: manaCatalyst.transmutation}));
-newRecipe(manaInfusion({item: elemental.basalz.dust}, {item: elemental.blaze.dust}, 4000, {type: "block", block: manaCatalyst.transmutation}));
-newRecipe(manaInfusion({item: elemental.blitz.dust}, {item: elemental.blizz.dust}, 4000, {type: "block", block: manaCatalyst.transmutation}));
-newRecipe(manaInfusion({item: elemental.blizz.dust}, {item: elemental.blitz.dust}, 4000, {type: "block", block: manaCatalyst.transmutation}));
-
-newRecipe(manaInfusion({item: elemental.blaze.dust}, {item: elemental.blizz.dust}, 4000, {type: "block", block: manaCatalyst.inversion}));
-newRecipe(manaInfusion({item: elemental.blizz.dust}, {item: elemental.blaze.dust}, 4000, {type: "block", block: manaCatalyst.inversion}));
-newRecipe(manaInfusion({item: elemental.basalz.dust}, {item: elemental.blitz.dust}, 4000, {type: "block", block: manaCatalyst.inversion}));
-newRecipe(manaInfusion({item: elemental.blitz.dust}, {item: elemental.basalz.dust}, 4000, {type: "block", block: manaCatalyst.inversion}));
-
-const brick = {
-    nether: {
-        ingot: "minecraft:nether_brick",
-        storageBlock: "minecraft:nether_bricks"
-    },
-    kiln: {
-        ingot: newBasicItem("kiln_brick", "Kiln Brick", ["forge:ingots", "forge:ingots/kiln_brick"]),
-        storageBlock: "immersiveengineering:alloybrick",
-        blend: newBasicItem("sandy_clay_blend", "Sandy Clay Blend", [])
-    },
-    coke: {
-        ingot: newBasicItem("coke_brick", "Coke Brick", ["forge:ingots", "forge:ingots/coke_brick"]),
-        storageBlock: "immersiveengineering:cokebrick",
-    },
-    blast: {
-        ingot: newBasicItem("blast_brick", "Blast Brick", ["forge:ingots", "forge:ingots/blast_brick"]),
-        storageBlock: "immersiveengineering:blastbrick"
-    }
-}
-removeRecipe({id: "immersiveengineering:crafting/alloybrick"});
-newRecipe(shapeless([{item: clay.ball}, {item: carbonatite.sand}], {item: brick.kiln.blend}));
-newExtendedSmelting({item: brick.kiln.blend}, {item: brick.kiln.ingot}, 200, 1.0);
-newRecipe(compress4x4(brick.kiln.ingot, brick.kiln.storageBlock));
-
-removeRecipe({id: "immersiveengineering:crafting/cokebrick"});
-newAlloy([{item: clay.storageBlock}, {item: coal.dust}], {item: brick.coke.ingot}, 800);
-newRecipe(compress4x4(brick.coke.ingot, brick.coke.storageBlock));
-
-removeRecipe({id: "immersiveengineering:crafting/blastbrick"});
-newAlloy([{item: brick.nether.ingot}, {item: elemental.blaze.dust}], {item: brick.blast.ingot}, 1600);
-newRecipe(compress4x4(brick.blast.ingot, brick.blast.storageBlock));
-
-function newEssence() {
-
-}
-
-function newQuintessence() {}
-
-const dragonEgg = {
-    fire: {
-        red: "iceandfire:dragonegg_red",
-        emerald: "iceandfire:dragonegg_green",
-        bronze: "iceandfire:dragonegg_bronze",
-        gray: "iceandfire:dragonegg_gray"
-    },
-    ice: {
-        blue: "iceandfire:dragonegg_blue",
-        white: "iceandfire:dragonegg_white",
-        sapphire: "iceandfire:dragonegg_sapphire",
-        silver: "iceandfire:dragonegg_silver"
-    },
-    lightning: {
-        electric_blue: "iceandfire:dragonegg_electric",
-        amethyst: "iceandfire:dragonegg_amethyst",
-        copper: "iceandfire:dragonegg_copper",
-        black: "iceandfire:dragonegg_black"
-    },
-    ender: {
-        purple: "minecraft:dragon_egg"
-    }
-}
-
-for (let type in dragonEgg) {
-    let colors = dragonEgg[type];
-    for (let [color, id] in colors) {
-        addTagToItems("forge:eggs/dragon", id);
-        addTagToItems("forge:eggs/dragon/" + type, id);
-        addTagToItems("forge:eggs/dragon/" + type + "/" + color, id);
-    };
-}
-
-newExtendedSmelting({item: "minecraft:rotten_flesh"}, {item: "minecraft:leather"}, 200, 1.0);
-newRecipe(shaped({L: "minecraft:leather", S: "minecraft:string"}, ["SLS", "L L", "L L"], "minecraft:bundle"));
-newRecipe(shaped({H: "minecraft:rabbit_hide", S: "minecraft:string"}, ["SHS", "H H", "H H"], "minecraft:bundle"));
-newRecipe(shaped({T: "dimdoors:world_thread", E: "minecraft:ender_pearl"}, ["   ", "TET", "   "], {item: "dimdoors:stable_fabric"}));
-
-newRecipe(shapeless([{item: "minecraft:stick"}], {item: tools.itemUnifier}));
-newRecipe(shapeless([{item: "minecraft:stick"}, {item: tools.itemUnifier}], tools.immersiveSteel));
-newRecipe(craftWith(tools.immersiveSteel, [{tag: "forge:storage_blocks/steel"}], {item: "immersiveengineering:storage_steel"}));
-
 addTagToItems("forge:tools/knives", ["farmersdelight:iron_knife", "farmersdelight:golden_knife", "farmersdelight:diamond_knife", "farmersdelight:netherite_knife"]);
 
-removeRecipe({id: "minecraft:blast_furnace"});
-removeRecipe({id: "nethersdelight:blackstone_blast_furnace"});
+const manaCatalyst = {
+    mana: newBasicBlock("mana_catalyst", "Mana Catalyst", ["botania:catalysts", "botania:catalysts/mana"]),
+    alchemy: "botania:alchemy_catalyst",
+    conjuration: "botania:conjuration_catalyst",
+    transmutation: newBasicBlock("transmutation_catalyst", "Transmutation Catalyst", ["botania:catalysts", "botania:catalysts/transmutation"]),
+    inversion: newBasicBlock("inversion_catalyst", "Inversion Catalyst", ["botania:catalysts", "botania:catalysts/inversion"]),
+    soul: newBasicBlock("soul_catalyst", "Soul Catalyst", ["botania:catalysts", "botania:catalysts/soul"])
+}
+addTagToItems("botania:catalysts", [manaCatalyst.alchemy, manaCatalyst.conjuration]);
+addTagToItems("botania:catalysts/alchemy", [manaCatalyst.alchemy]);
+addTagToItems("botania:catalysts/conjuration", [manaCatalyst.conjuration]);
 
-global.items = items;
-global.blocks = blocks;
-global.fluids = fluids;
-global.recipes = recipes;
-global.recipesRemove = recipesRemove;
-global.itemTags = itemTags;
-global.blockTags = blockTags;
-global.fluidTags = fluidTags;
+removeRecipe({type: "botania:mana_infusion"});
+/**
+ * 
+ * @param {Internal.JsonObject} input 
+ * @param {Internal.JsonObject} output 
+ * @param {Number} mana
+ * @param {{type: "block", block: String}} catalyst 
+ * @returns 
+ */
+function manaInfusion(input, output, mana, catalyst) {
+    return {
+        type: "botania:mana_infusion",
+        catalyst: catalyst,
+        input: input,
+        mana: mana,
+        output: output
+    }
+}
 
-global.foods = foods;
+/**
+ * 
+ * @param {Internal.JsonObject[]} input 
+ * @param {Internal.JsonObject[]} output 
+ */
+function newAddSoul(input, output) {
+    newRecipe(manaInfusion(input, output, 4000, manaCatalyst.soul));
+    newRecipe(haunting([input], [output]));
+}

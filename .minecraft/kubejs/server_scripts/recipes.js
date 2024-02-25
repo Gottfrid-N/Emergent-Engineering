@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     global.recipesRemove.forEach(filter => {
         console.log("Removing recipes matching filter: " + JSON.stringify(filter));
         event.remove(filter);
-    })
+    });
 
     global.recipes.forEach(recipe => {
         console.log("Registering recipe: " + JSON.stringify(recipe));
@@ -15,5 +15,5 @@ ServerEvents.recipes(event => {
         } catch (error) { 
             console.error(error);
         }
-    })
-})
+    });
+});
