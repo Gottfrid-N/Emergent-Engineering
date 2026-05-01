@@ -1,0 +1,29 @@
+filename = 'ProportionalDestructionParticles-1.12.2-1.2.4.jar'
+name = 'Proportional Destruction Particles'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ProportionalDestructionParticles-1.12.2-1.2.4.jar'
+
+[download]
+hash = '67f4a97730f5862566637cda03bf0c0ecb39dc7d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2632834
+project-id = 299080
+
+[[x-prismlauncher-dependencies]]
+addonId = '69162'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '231095'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '254441'
+type = 'OPTIONAL'

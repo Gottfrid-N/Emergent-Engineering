@@ -1,0 +1,25 @@
+filename = 'potiondescriptions-1.12.2-1.2.4.jar'
+name = 'Potion Descriptions (Forge)'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'potiondescriptions-1.12.2-1.2.4.jar'
+
+[download]
+hash = '8fd141799a05622e7d8a19aa73b272ee5e16f240'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3191544
+project-id = 403303
+
+[[x-prismlauncher-dependencies]]
+addonId = '241319'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '225643'
+type = 'OPTIONAL'

@@ -1,0 +1,25 @@
+filename = 'zenrecipereloading-1.4.5.jar'
+name = 'ZenRecipeReload'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'zenrecipereloading-1.4.5.jar'
+
+[download]
+hash = 'dece84febbf3d97b68421510e5037ba77b93e39b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6024502
+project-id = 911152
+
+[[x-prismlauncher-dependencies]]
+addonId = '401178'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '220954'
+type = 'REQUIRED'

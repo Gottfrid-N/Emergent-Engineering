@@ -1,0 +1,18 @@
+filename = 'RLTweaker-1.12.2-0.7.5.jar'
+name = 'RLTweaker2'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'RLTweaker-1.12.2-0.7.5.jar'
+
+[download]
+hash = '152a6884e6f1807be38e32030bede5d626fea854'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6518808
+project-id = 734347

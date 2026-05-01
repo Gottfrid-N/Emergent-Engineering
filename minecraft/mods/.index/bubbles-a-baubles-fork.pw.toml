@@ -1,0 +1,21 @@
+filename = 'Bubbles-2.4.10.jar'
+name = 'Bubbles'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'Bubbles-2.4.10.jar'
+
+[download]
+hash = '3e91a89f9196469c5c195ad8377696a3d6511f8b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7736064
+project-id = 995393
+
+[[x-prismlauncher-dependencies]]
+addonId = '1081085'
+type = 'OPTIONAL'

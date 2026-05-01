@@ -1,0 +1,17 @@
+[20:55:36] Ore cache exists, loading from file C:\Users\gottf\AppData\Roaming\PrismLauncher\instances\Modernized 1.12- The Golden Era\minecraft\dynaores_cache
+[20:55:36] Registered ore Gold
+[20:55:36] Registered ore Iron
+[20:55:36] Registered ore Copper
+[20:55:36] Loaded ore cache
+[20:55:39] Registering models
+[20:55:41] Stitching Textures
+[20:55:41] Registered item texture for gold
+[20:55:41] Registered item texture for iron
+[20:55:41] Registered item texture for copper
+[20:55:41] Registered block texture for copper
+[20:55:43] Loading model for dynaores:iron.raw_ore#normal
+[20:55:43] Loading model for dynaores:gold.raw_ore#normal
+[20:55:44] Loading model for dynaores:copper.raw_ore#normal
+[20:55:44] Loading model for dynaores:copper_block.raw_ore#normal
+[20:55:44] Loading model for dynaores:iron_block.raw_ore#normal
+[20:55:45] Loading model for dynaores:gold_block.raw_ore#normal

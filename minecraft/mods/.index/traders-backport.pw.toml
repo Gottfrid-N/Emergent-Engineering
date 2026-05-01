@@ -1,0 +1,37 @@
+filename = 'Traders-Backport-1.12.2-1.0.2.jar'
+name = 'Wandering Traders Backport'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Traders-Backport-1.12.2-1.0.2.jar'
+
+[download]
+hash = '6f03ff21bdddf9bbf2f627b82620962ab99de667'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7743810
+project-id = 1257940
+
+[[x-prismlauncher-dependencies]]
+addonId = '977633'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1087823'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '840576'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '310059'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '463826'
+type = 'REQUIRED'

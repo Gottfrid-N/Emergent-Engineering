@@ -1,0 +1,21 @@
+filename = 'elegant-networking-1.12-3.16.jar'
+name = 'ElegantNetworking'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'ElegantNetworking - 1.12.2 - 3.16'
+
+[download]
+hash = '5800d43af2806e5f264020a5d5fb1599a3f20bc9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3891722
+project-id = 433025
+
+[[x-prismlauncher-dependencies]]
+addonId = '242818'
+type = 'OPTIONAL'

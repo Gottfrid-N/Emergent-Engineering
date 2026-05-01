@@ -1,0 +1,18 @@
+filename = 'arrowharvest-1.12.2-1.0.3.jar'
+name = 'Arrow Harvest'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'arrowharvest-1.12.2-1.0.3.jar'
+
+[download]
+hash = 'a47a3090dd547ab9a3f68ef15df973868d81121f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2734234
+project-id = 320706

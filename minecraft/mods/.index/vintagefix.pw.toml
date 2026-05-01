@@ -1,0 +1,21 @@
+filename = 'vintagefix-0.6.2.jar'
+name = 'VintageFix'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'VintageFix 0.6.2'
+
+[download]
+hash = 'eb820c6e58a4d091b80311a28650c7a1b99a1b14'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6609247
+project-id = 871198
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'

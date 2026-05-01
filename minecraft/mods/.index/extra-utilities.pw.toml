@@ -1,0 +1,18 @@
+filename = 'extrautils2-1.12-1.9.9.jar'
+name = 'Extra Utilities'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Extra Utilities 2 - 1.12 - 1.9.9'
+
+[download]
+hash = '9f9a217b23626cb338cf229054ed490d913610dc'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2678374
+project-id = 225561

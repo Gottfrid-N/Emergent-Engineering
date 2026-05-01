@@ -1,0 +1,18 @@
+filename = 'teamsmod-1.12.2-Rfinal-fixed.jar'
+name = 'Teams'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'teamsmod-1.12.2-hotfix-2'
+
+[download]
+hash = '33a512d3b0c2cfec17a17710c49c3c28be0f713f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3036040
+project-id = 334854

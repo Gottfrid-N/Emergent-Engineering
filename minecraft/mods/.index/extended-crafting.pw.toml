@@ -1,0 +1,25 @@
+filename = 'ExtendedCrafting-1.12.2-1.5.6.jar'
+name = 'Extended Crafting'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ExtendedCrafting-1.12.2-1.5.6.jar'
+
+[download]
+hash = 'fa76962c44c0f445c6f0022ff539dc57d67db27d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2777071
+project-id = 268387
+
+[[x-prismlauncher-dependencies]]
+addonId = '239197'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '272335'
+type = 'REQUIRED'

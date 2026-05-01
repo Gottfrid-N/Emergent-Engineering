@@ -1,0 +1,18 @@
+filename = 'ChatFlow-1.4-7.jar'
+name = 'ChatFlow'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ChatFlow-1.4-7.jar'
+
+[download]
+hash = '784ed87b4cdf65ade9eafe434481aa109d1b7d34'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2436360
+project-id = 231453

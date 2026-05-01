@@ -1,0 +1,21 @@
+filename = 'fermiumasm-5.31.jar'
+name = 'FermiumASM'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'fermiumasm-5.31.jar'
+
+[download]
+hash = '382ed891484edc122f4d2d4e9e3bd5f2f2b15841'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7741058
+project-id = 971247
+
+[[x-prismlauncher-dependencies]]
+addonId = '968474'
+type = 'REQUIRED'

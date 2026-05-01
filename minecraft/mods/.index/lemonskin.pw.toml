@@ -1,0 +1,25 @@
+filename = 'lemonskin-4.0.0.jar'
+name = 'LemonSkin (AppleSkin Fork)'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'LemonSkin v4.0.0'
+
+[download]
+hash = 'a3445db181f0837da44d0434f4bef31ac34bd098'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7763338
+project-id = 1337144
+
+[[x-prismlauncher-dependencies]]
+addonId = '224472'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'

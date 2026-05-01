@@ -1,0 +1,845 @@
+2026-04-29 22:13:56 INFO RLFoliage Generated Resources Pack injected
+2026-04-29 22:19:44 INFO Beginning BlockMatchers refresh
+2026-04-29 22:19:44 WARN Invalid Block Class Name: biomesoplenty.common.block.BlockBOPLeaves
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.gildedgames.aether.common.blocks.natural.BlockAetherLeaves
+2026-04-29 22:19:44 WARN Invalid Block Class Name: shadows.plants2.block.BlockEnumLeaves
+2026-04-29 22:19:44 WARN Invalid Block Class Name: shadows.plants2.block.BlockEnumNetherLeaves
+2026-04-29 22:19:44 WARN Invalid Block Class Name: snownee.cuisine.blocks.BlockModLeaves
+2026-04-29 22:19:44 WARN Invalid Block Class Name: snownee.cuisine.blocks.BlockShearedLeaves
+2026-04-29 22:19:44 WARN Invalid Block Class Name: biomesoplenty.common.block.BlockBOPGrass
+2026-04-29 22:19:44 WARN Invalid Block Class Name: tconstruct.blocks.slime.SlimeGrass
+2026-04-29 22:19:44 WARN Invalid Block Class Name: enhancedbiomes.blocks.BlockGrassEB
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.bioxx.tfc.Blocks.Terrain.BlockGrass
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.shinoow.abyssalcraft.common.blocks.BlockDreadGrass
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.shinoow.abyssalcraft.common.blocks.BlockDarklandsgrass
+2026-04-29 22:19:44 WARN Invalid Block Class Name: nex.block.BlockMycelium
+2026-04-29 22:19:44 WARN Invalid Block Class Name: biomesoplenty.common.block.BlockBOPDirt
+2026-04-29 22:19:44 WARN Invalid Block Class Name: enhancedbiomes.blocks.BlockSoilEB
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.bioxx.tfc.Blocks.Terrain.BlockDirt
+2026-04-29 22:19:44 WARN Invalid Block Class Name: net.aetherteam.aether.blocks.natural.BlockAetherDirt
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.gildedgames.aether.common.blocks.natural.BlockAetherDirt
+2026-04-29 22:19:44 WARN Invalid Block Class Name: snownee.cuisine.blocks.BlockDoubleCrops
+2026-04-29 22:19:44 WARN Invalid Block Class Name: biomesoplenty.common.block.BlockBOPFlower
+2026-04-29 22:19:44 WARN Invalid Block Class Name: biomesoplenty.common.block.BlockBOPTurnip
+2026-04-29 22:19:44 WARN Invalid Block Class Name: biomesoplenty.common.block.BlockBOPPlant
+2026-04-29 22:19:44 WARN Invalid Block Class Name: tconstruct.blocks.slime.SlimeTallGrass
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockBerrybush
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockCrops
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockDesert
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockFern
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockFlowerMulti
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockFlowerSingle
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockForest
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockGrass
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockJungle
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockMountain
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockSavanna
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockShrub
+2026-04-29 22:19:44 WARN Invalid Block Class Name: plantmegapack.block.PMPBlockWetlands
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.pam.harvestcraft.BlockPamCrop
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.pam.harvestcraft.BlockPamDesertGarden
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.pam.harvestcraft.BlockPamNormalGarden
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.pam.harvestcraft.BlockPamWaterGarden
+2026-04-29 22:19:44 WARN Invalid Block Class Name: shadows.plants2.block.BlockEnumCrop
+2026-04-29 22:19:44 WARN Invalid Block Class Name: snownee.cuisine.blocks.BlockCuisineCrops
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.bioxx.tfc.Blocks.Terrain.BlockSand
+2026-04-29 22:19:44 WARN Invalid Block Class Name: biomesoplenty.common.block.BlockBOPLilypad
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.bioxx.tfc.Blocks.Vanilla.BlockCustomLilyPad
+2026-04-29 22:19:44 WARN Invalid Block Class Name: com.bioxx.tfc.Blocks.Vanilla.BlockCustomCactus
+2026-04-29 22:19:44 WARN Invalid Block Class Name: nex.block.BlockNetherrack
+2026-04-29 22:19:44 INFO Finished BlockMatchers refresh
+2026-04-29 22:19:46 INFO Optifine support is disabled
+2026-04-29 22:19:46 INFO RLFoliage Client initialized
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=6]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=8]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=2]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=1]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=13]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=11]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=15]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=14]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=7]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=4]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=12]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=9]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=5]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=3]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=10]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry: block state minecraft:cactus[age=0]
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       class net.minecraft.block.BlockCactus matches net.minecraft.block.BlockCactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       model minecraft:models/block/cactus matches minecraft:block/cactus
+2026-04-29 22:20:45 DEBUG StandardCactusRegistry:       textures [top=blocks/cactus_top, bottom=blocks/cactus_bottom, side=blocks/cactus_side]
+2026-04-29 22:20:47 DEBUG StandardGrassRegistry: block state minecraft:grass[snowy=false]
+2026-04-29 22:20:47 DEBUG StandardGrassRegistry:       class net.minecraft.block.BlockGrass matches net.minecraft.block.BlockGrass
+2026-04-29 22:20:47 DEBUG StandardGrassRegistry:       model minecraft:models/block/grass_normal matches minecraft:block/grass
+2026-04-29 22:20:47 DEBUG StandardGrassRegistry:       textures [top=blocks/grass_top, bottom=blocks/dirt]
+2026-04-29 22:20:47 DEBUG StandardGrassRegistry: block state minecraft:grass[snowy=true]
+2026-04-29 22:20:47 DEBUG StandardGrassRegistry:       class net.minecraft.block.BlockGrass matches net.minecraft.block.BlockGrass
+2026-04-29 22:20:47 DEBUG StandardGrassRegistry:       model minecraft:models/block/grass_snowed matches minecraft:block/cube_bottom_top
+2026-04-29 22:20:47 DEBUG StandardGrassRegistry:       textures [top=blocks/grass_top, bottom=blocks/dirt]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=true,decayable=false,variant=birch]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/birch_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_birch]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=false,decayable=true,variant=jungle]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/jungle_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_jungle]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=false,decayable=false,variant=birch]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/birch_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_birch]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=true,decayable=true,variant=birch]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/birch_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_birch]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=false,decayable=true,variant=spruce]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/spruce_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_spruce]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=true,decayable=true,variant=jungle]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/jungle_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_jungle]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=true,decayable=false,variant=spruce]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/spruce_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_spruce]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=true,decayable=true,variant=oak]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/oak_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=false,decayable=false,variant=spruce]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/spruce_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_spruce]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=false,decayable=true,variant=birch]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/birch_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_birch]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=false,decayable=true,variant=oak]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/oak_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=false,decayable=false,variant=oak]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/oak_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=true,decayable=false,variant=jungle]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/jungle_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_jungle]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=false,decayable=false,variant=jungle]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/jungle_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_jungle]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=true,decayable=true,variant=spruce]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/spruce_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_spruce]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves[check_decay=true,decayable=false,variant=oak]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockOldLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/oak_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves2[check_decay=false,decayable=true,variant=acacia]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockNewLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/acacia_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_acacia]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry: block state minecraft:leaves2[check_decay=true,decayable=true,variant=acacia]
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockNewLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       model minecraft:models/block/acacia_leaves matches minecraft:block/leaves
+2026-04-29 22:20:48 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_acacia]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state minecraft:leaves2[check_decay=false,decayable=false,variant=dark_oak]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockNewLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model minecraft:models/block/dark_oak_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_big_oak]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state minecraft:leaves2[check_decay=true,decayable=false,variant=acacia]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockNewLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model minecraft:models/block/acacia_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_acacia]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state minecraft:leaves2[check_decay=false,decayable=true,variant=dark_oak]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockNewLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model minecraft:models/block/dark_oak_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_big_oak]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state minecraft:leaves2[check_decay=false,decayable=false,variant=acacia]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockNewLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model minecraft:models/block/acacia_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_acacia]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state minecraft:leaves2[check_decay=true,decayable=true,variant=dark_oak]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockNewLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model minecraft:models/block/dark_oak_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_big_oak]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state minecraft:leaves2[check_decay=true,decayable=false,variant=dark_oak]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class net.minecraft.block.BlockNewLeaf matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model minecraft:models/block/dark_oak_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_big_oak]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state quark:variant_leaves[check_decay=false,decayable=true,variant=swamp_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class vazkii.quark.world.block.BlockVariantLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model quark:models/block/swamp_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=quark:blocks/swamp_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state quark:variant_leaves[check_decay=true,decayable=true,variant=sakura_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class vazkii.quark.world.block.BlockVariantLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model quark:models/block/sakura_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=quark:blocks/sakura_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state quark:variant_leaves[check_decay=true,decayable=true,variant=swamp_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class vazkii.quark.world.block.BlockVariantLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model quark:models/block/swamp_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=quark:blocks/swamp_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state quark:variant_leaves[check_decay=false,decayable=true,variant=sakura_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class vazkii.quark.world.block.BlockVariantLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model quark:models/block/sakura_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=quark:blocks/sakura_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state quark:variant_leaves[check_decay=false,decayable=false,variant=sakura_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class vazkii.quark.world.block.BlockVariantLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model quark:models/block/sakura_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=quark:blocks/sakura_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state quark:variant_leaves[check_decay=true,decayable=false,variant=swamp_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class vazkii.quark.world.block.BlockVariantLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model quark:models/block/swamp_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=quark:blocks/swamp_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state quark:variant_leaves[check_decay=true,decayable=false,variant=sakura_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class vazkii.quark.world.block.BlockVariantLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model quark:models/block/sakura_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=quark:blocks/sakura_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state quark:variant_leaves[check_decay=false,decayable=false,variant=swamp_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class vazkii.quark.world.block.BlockVariantLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model quark:models/block/swamp_leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=quark:blocks/swamp_leaves]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=false,decayable=false,variant=rainboak]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=false,decayable=false,variant=mangrove]
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:49 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_birch]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=false,decayable=false,variant=canopy]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_spruce]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=true,decayable=false,variant=rainboak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=false,decayable=true,variant=mangrove]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_birch]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=true,decayable=true,variant=mangrove]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_birch]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=true,decayable=true,variant=rainboak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=true,decayable=true,variant=oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=true,decayable=false,variant=mangrove]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_birch]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=true,decayable=true,variant=canopy]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_spruce]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=true,decayable=false,variant=canopy]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_spruce]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=false,decayable=false,variant=oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=false,decayable=true,variant=rainboak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=false,decayable=true,variant=canopy]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_spruce]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=false,decayable=true,variant=oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves[check_decay=true,decayable=false,variant=oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=false,decayable=false,variant=trans]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/trans_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=true,decayable=false,variant=time]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/time_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=false,decayable=true,variant=mine]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/time_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=true,decayable=false,variant=trans]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/trans_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=true,decayable=true,variant=sort]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/sort_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=true,decayable=true,variant=trans]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/trans_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=true,decayable=true,variant=time]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/time_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=true,decayable=true,variant=mine]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/time_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=false,decayable=true,variant=trans]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/trans_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=false,decayable=true,variant=sort]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/sort_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=true,decayable=false,variant=mine]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/time_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=false,decayable=false,variant=mine]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/time_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=false,decayable=false,variant=time]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/time_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=false,decayable=false,variant=sort]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/sort_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=true,decayable=false,variant=sort]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/sort_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:magic_leaves[check_decay=false,decayable=true,variant=time]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFMagicLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=twilightforest:blocks/time_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves_3[check_decay=true,decayable=false,variant=beanstalk]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves3 matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_spruce]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves_3[check_decay=false,decayable=false,variant=thorn]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves3 matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves_3[check_decay=true,decayable=false,variant=thorn]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves3 matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves_3[check_decay=false,decayable=true,variant=thorn]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves3 matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves_3[check_decay=false,decayable=false,variant=beanstalk]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves3 matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_spruce]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves_3[check_decay=true,decayable=true,variant=thorn]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves3 matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_oak]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves_3[check_decay=false,decayable=true,variant=beanstalk]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves3 matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_spruce]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state twilightforest:twilight_leaves_3[check_decay=true,decayable=true,variant=beanstalk]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class twilightforest.block.BlockTFLeaves3 matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=blocks/leaves_spruce]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state tconstruct:slime_leaves[check_decay=false,decayable=true,foliage=orange]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class slimeknights.tconstruct.world.block.BlockSlimeLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=tconstruct:blocks/slime/slimeleaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state tconstruct:slime_leaves[check_decay=true,decayable=false,foliage=purple]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class slimeknights.tconstruct.world.block.BlockSlimeLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=tconstruct:blocks/slime/slimeleaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state tconstruct:slime_leaves[check_decay=false,decayable=true,foliage=purple]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class slimeknights.tconstruct.world.block.BlockSlimeLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=tconstruct:blocks/slime/slimeleaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state tconstruct:slime_leaves[check_decay=false,decayable=true,foliage=blue]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class slimeknights.tconstruct.world.block.BlockSlimeLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=tconstruct:blocks/slime/slimeleaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state tconstruct:slime_leaves[check_decay=true,decayable=true,foliage=purple]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class slimeknights.tconstruct.world.block.BlockSlimeLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=tconstruct:blocks/slime/slimeleaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state tconstruct:slime_leaves[check_decay=false,decayable=false,foliage=purple]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class slimeknights.tconstruct.world.block.BlockSlimeLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=tconstruct:blocks/slime/slimeleaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state tconstruct:slime_leaves[check_decay=true,decayable=false,foliage=blue]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class slimeknights.tconstruct.world.block.BlockSlimeLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=tconstruct:blocks/slime/slimeleaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state tconstruct:slime_leaves[check_decay=true,decayable=true,foliage=orange]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class slimeknights.tconstruct.world.block.BlockSlimeLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=tconstruct:blocks/slime/slimeleaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state tconstruct:slime_leaves[check_decay=false,decayable=false,foliage=blue]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class slimeknights.tconstruct.world.block.BlockSlimeLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=tconstruct:blocks/slime/slimeleaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state tconstruct:slime_leaves[check_decay=true,decayable=false,foliage=orange]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class slimeknights.tconstruct.world.block.BlockSlimeLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=tconstruct:blocks/slime/slimeleaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state tconstruct:slime_leaves[check_decay=true,decayable=true,foliage=blue]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class slimeknights.tconstruct.world.block.BlockSlimeLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=tconstruct:blocks/slime/slimeleaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state tconstruct:slime_leaves[check_decay=false,decayable=false,foliage=orange]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class slimeknights.tconstruct.world.block.BlockSlimeLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model minecraft:models/block/leaves matches minecraft:block/leaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=tconstruct:blocks/slime/slimeleaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:aether_leaves[aether_leaves=green_leaves,check_decay=false,decayable=false]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockAetherLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/green_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/green_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:aether_leaves[aether_leaves=green_leaves,check_decay=false,decayable=true]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockAetherLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/green_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/green_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:aether_leaves[aether_leaves=golden_oak_leaves,check_decay=true,decayable=false]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockAetherLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/golden_oak_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/golden_oak_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:aether_leaves[aether_leaves=green_leaves,check_decay=true,decayable=false]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockAetherLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/green_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/green_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:aether_leaves[aether_leaves=golden_oak_leaves,check_decay=false,decayable=false]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockAetherLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/golden_oak_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/golden_oak_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:aether_leaves[aether_leaves=golden_oak_leaves,check_decay=false,decayable=true]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockAetherLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/golden_oak_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/golden_oak_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:aether_leaves[aether_leaves=golden_oak_leaves,check_decay=true,decayable=true]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockAetherLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/golden_oak_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/golden_oak_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:aether_leaves[aether_leaves=green_leaves,check_decay=true,decayable=true]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockAetherLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/green_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/green_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:crystal_leaves[check_decay=true,crystal_leaves=crystal_leaves,decayable=true]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockCrystalLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/crystal_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/crystal_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:crystal_leaves[check_decay=true,crystal_leaves=crystal_fruit_leaves,decayable=true]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockCrystalLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/crystal_fruit_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/crystal_fruit_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:crystal_leaves[check_decay=false,crystal_leaves=crystal_leaves,decayable=false]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockCrystalLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/crystal_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/crystal_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:crystal_leaves[check_decay=true,crystal_leaves=crystal_leaves,decayable=false]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockCrystalLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/crystal_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/crystal_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:crystal_leaves[check_decay=false,crystal_leaves=crystal_leaves,decayable=true]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockCrystalLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/crystal_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/crystal_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:crystal_leaves[check_decay=true,crystal_leaves=crystal_fruit_leaves,decayable=false]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockCrystalLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/crystal_fruit_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/crystal_fruit_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:crystal_leaves[check_decay=false,crystal_leaves=crystal_fruit_leaves,decayable=true]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockCrystalLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/crystal_fruit_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/crystal_fruit_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:crystal_leaves[check_decay=false,crystal_leaves=crystal_fruit_leaves,decayable=false]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockCrystalLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/crystal_fruit_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/crystal_fruit_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:holiday_leaves[check_decay=false,decayable=false,holiday_leaves=holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockHolidayLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/holiday_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:holiday_leaves[check_decay=true,decayable=true,holiday_leaves=decorated_holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockHolidayLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/decorated_holiday_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/decorated_holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:holiday_leaves[check_decay=true,decayable=false,holiday_leaves=holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockHolidayLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/holiday_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:holiday_leaves[check_decay=true,decayable=true,holiday_leaves=holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockHolidayLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/holiday_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:holiday_leaves[check_decay=false,decayable=true,holiday_leaves=decorated_holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockHolidayLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/decorated_holiday_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/decorated_holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:holiday_leaves[check_decay=true,decayable=false,holiday_leaves=decorated_holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockHolidayLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/decorated_holiday_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/decorated_holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:holiday_leaves[check_decay=false,decayable=true,holiday_leaves=holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockHolidayLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/holiday_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry: block state aether_legacy:holiday_leaves[check_decay=false,decayable=false,holiday_leaves=decorated_holiday_leaves]
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       class com.gildedgames.the_aether.blocks.natural.BlockHolidayLeaves matches net.minecraft.block.BlockLeaves
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       model aether_legacy:models/block/decorated_holiday_leaves matches minecraft:block/cube_all
+2026-04-29 22:20:50 DEBUG StandardLeafRegistry:       textures [all=aether_legacy:blocks/decorated_holiday_leaves]
+2026-04-29 22:20:59 INFO Registered 4 algae textures
+2026-04-29 22:20:59 INFO Registered 5 long grass textures
+2026-04-29 22:20:59 INFO Registered 3 short grass textures
+2026-04-29 22:20:59 INFO Registered 2 snowed grass textures
+2026-04-29 22:20:59 INFO Registered 2 cactus arm textures
+2026-04-29 22:20:59 INFO Registered 6 coral textures
+2026-04-29 22:20:59 INFO Registered 4 coral crust textures
+2026-04-29 22:20:59 INFO Registered 3 lilypad root textures
+2026-04-29 22:20:59 INFO Registered 2 lilypad flower textures
+2026-04-29 22:20:59 INFO Registered 4 mycelium textures
+2026-04-29 22:20:59 INFO Registered 4 snowed mycelium textures
+2026-04-29 22:20:59 INFO Registered 3 netherrack textures
+2026-04-29 22:20:59 INFO Registered 2 packed ice textures
+2026-04-29 22:20:59 INFO Registered 4 reed textures
+2026-04-29 22:20:59 INFO Registered 2 soul particle textures
+2026-04-29 22:21:01 DEBUG StandardGrassKey: grass texture top blocks/grass_top
+2026-04-29 22:21:01 DEBUG StandardGrassKey:               bottom blocks/dirt
+2026-04-29 22:21:01 DEBUG StandardGrassKey: grass texture top blocks/grass_top
+2026-04-29 22:21:01 DEBUG StandardGrassKey:               bottom blocks/dirt
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/golden_oak_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/golden_oak_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/decorated_holiday_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/decorated_holiday_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/decorated_holiday_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/time_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_birch
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture tconstruct:blocks/slime/slimeleaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_birch
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/decorated_holiday_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture quark:blocks/sakura_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture tconstruct:blocks/slime/slimeleaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture tconstruct:blocks/slime/slimeleaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture quark:blocks/sakura_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/time_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_birch
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/time_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/sort_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture tconstruct:blocks/slime/slimeleaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture tconstruct:blocks/slime/slimeleaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/time_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture tconstruct:blocks/slime/slimeleaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture tconstruct:blocks/slime/slimeleaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture tconstruct:blocks/slime/slimeleaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/trans_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/trans_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/sort_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/time_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/golden_oak_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/sort_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/time_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/golden_oak_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/sort_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_acacia
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/holiday_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_acacia
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/time_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/time_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_birch
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/holiday_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_big_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_birch
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle spruce
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/holiday_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_acacia
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_jungle
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle jungle
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_acacia
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/holiday_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_jungle
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle jungle
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_big_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_birch
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_jungle
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle jungle
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_birch
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_big_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture quark:blocks/swamp_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/trans_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/crystal_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_jungle
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle jungle
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture twilightforest:blocks/trans_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/crystal_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_big_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture quark:blocks/swamp_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture tconstruct:blocks/slime/slimeleaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_birch
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/crystal_fruit_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/crystal_fruit_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/crystal_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture quark:blocks/sakura_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture quark:blocks/swamp_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/green_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture quark:blocks/swamp_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/crystal_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture quark:blocks/sakura_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture tconstruct:blocks/slime/slimeleaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/green_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/crystal_fruit_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/crystal_fruit_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/green_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture tconstruct:blocks/slime/slimeleaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture aether_legacy:blocks/green_leaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture blocks/leaves_oak
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:01 DEBUG StandardLeafKey: leaf texture tconstruct:blocks/slime/slimeleaves
+2026-04-29 22:21:01 DEBUG StandardLeafKey:      particle default
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture top blocks/cactus_top
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture bottom blocks/cactus_bottom
+2026-04-29 22:21:58 DEBUG StandardCactusKey: texture side 2 blocks/cactus_side
+2026-04-29 22:21:58 DEBUG StandardGrassKey: texture top blocks/grass_top
+2026-04-29 22:21:58 DEBUG StandardGrassKey: texture bottom blocks/dirt
+2026-04-29 22:21:58 DEBUG StandardGrassKey:       saturation 0.0 < 0.1, using block color
+2026-04-29 22:21:58 DEBUG StandardGrassKey: texture top blocks/grass_top
+2026-04-29 22:21:58 DEBUG StandardGrassKey: texture bottom blocks/dirt
+2026-04-29 22:21:58 DEBUG StandardGrassKey:       saturation 0.0 < 0.1, using block color

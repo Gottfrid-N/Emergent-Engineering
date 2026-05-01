@@ -1,0 +1,29 @@
+filename = 'astralsorcery-1.12.2-1.10.27.jar'
+name = 'Astral Sorcery'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'AstralSorcery-1.12.2-1.10.27.jar'
+
+[download]
+hash = '9fa8c82a06e0a1320087f5fa4a5ac48b6ddb75c4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3044416
+project-id = 241721
+
+[[x-prismlauncher-dependencies]]
+addonId = '227083'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '267602'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223628'
+type = 'OPTIONAL'

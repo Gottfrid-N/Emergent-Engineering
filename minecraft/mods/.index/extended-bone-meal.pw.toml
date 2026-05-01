@@ -1,0 +1,21 @@
+filename = 'extendedbonemeal_1.12.2-1.3.jar'
+name = 'Extended Bone Meal'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'extendedbonemeal_1.12.2-1.3.jar'
+
+[download]
+hash = '7ea716f64674949aea8c3ed316a3d563002f7a79'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3220652
+project-id = 367534
+
+[[x-prismlauncher-dependencies]]
+addonId = '342584'
+type = 'REQUIRED'

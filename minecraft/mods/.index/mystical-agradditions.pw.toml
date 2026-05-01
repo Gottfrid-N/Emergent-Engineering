@@ -1,0 +1,25 @@
+filename = 'MysticalAgradditions-1.12.2-1.3.2.jar'
+name = 'Mystical Agradditions'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'MysticalAgradditions-1.12.2-1.3.2.jar'
+
+[download]
+hash = '7387a2976cafec35222e6549b3c447e7972dc4aa'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2704832
+project-id = 256247
+
+[[x-prismlauncher-dependencies]]
+addonId = '246640'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '272335'
+type = 'REQUIRED'

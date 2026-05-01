@@ -1,0 +1,25 @@
+filename = 'ThermalFoundation-1.12.2-2.6.7.1-universal.jar'
+name = 'Thermal Foundation'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ThermalFoundation-1.12.2-2.6.7.1-universal.jar'
+
+[download]
+hash = '6bd93897638fd68794cae17c9520b68a85fc97d0'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2926428
+project-id = 222880
+
+[[x-prismlauncher-dependencies]]
+addonId = '69162'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '271384'
+type = 'REQUIRED'

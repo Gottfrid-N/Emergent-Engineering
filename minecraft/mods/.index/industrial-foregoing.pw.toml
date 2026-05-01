@@ -1,0 +1,21 @@
+filename = 'industrialforegoing-1.12.2-1.12.13-237.jar'
+name = 'Industrial Foregoing'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'industrialforegoing-1.12.2-1.12.13-237.jar'
+
+[download]
+hash = '4f44934b392d7bf1713707a93b29006e98bd7cff'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2745321
+project-id = 266515
+
+[[x-prismlauncher-dependencies]]
+addonId = '254602'
+type = 'REQUIRED'

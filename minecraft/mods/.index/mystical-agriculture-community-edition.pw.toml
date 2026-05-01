@@ -1,0 +1,21 @@
+filename = 'mysticalagriculture-ce-1.8.3.jar'
+name = 'Mystical Agriculture Community Edition'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'mysticalagriculture-ce-1.8.3.jar'
+
+[download]
+hash = '283f9607b6db18e11c33e4bc520f8ab9b8478b34'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7476892
+project-id = 1417705
+
+[[x-prismlauncher-dependencies]]
+addonId = '272335'
+type = 'REQUIRED'

@@ -1,0 +1,18 @@
+filename = 'collective-1.12.2-3.0.jar'
+name = 'Collective'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'collective-1.12.2-3.0.jar'
+
+[download]
+hash = 'c4c9a362baf6404024d44cd63e673eb7a44494ba'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3533131
+project-id = 342584

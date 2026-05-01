@@ -1,0 +1,18 @@
+filename = 'splashlogofix-1.0.jar'
+name = 'Splash Logo Color Fix'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'splashlogofix-1.0.jar'
+
+[download]
+hash = 'e59bfb8ed9e9a0c8c3d49994118494ccdcc4b2ad'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2754640
+project-id = 333760

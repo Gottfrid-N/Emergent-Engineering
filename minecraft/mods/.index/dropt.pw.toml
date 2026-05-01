@@ -1,0 +1,21 @@
+filename = 'dropt-1.12.2-1.19.4.jar'
+name = 'Dropt'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'dropt-1.12.2-1.19.4.jar'
+
+[download]
+hash = '7e64ac572a30161b42d698aacfd5b842ab99d742'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5405050
+project-id = 284973
+
+[[x-prismlauncher-dependencies]]
+addonId = '284350'
+type = 'REQUIRED'

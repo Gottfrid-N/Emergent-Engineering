@@ -1,0 +1,25 @@
+filename = 'zspacket-0.0.1.jar'
+name = 'ZS Packet'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ZS-Packet-0.0.1-1.12.2.jar'
+
+[download]
+hash = '71405596d1b6b197957da8589f09584f85ffe445'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6613595
+project-id = 1279985
+
+[[x-prismlauncher-dependencies]]
+addonId = '870276'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'

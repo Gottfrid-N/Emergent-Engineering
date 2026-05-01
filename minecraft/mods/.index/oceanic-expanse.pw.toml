@@ -1,0 +1,21 @@
+filename = 'OceanicExpanse-1.2.2.jar'
+name = 'Oceanic Expanse'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'OceanicExpanse-1.2.2.jar'
+
+[download]
+hash = '86b6cd29e92179711dbe7931c0c3503f3dd949d3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7009970
+project-id = 840576
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'

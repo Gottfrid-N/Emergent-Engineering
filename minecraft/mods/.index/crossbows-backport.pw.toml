@@ -1,0 +1,18 @@
+filename = 'Crossbows-Backport-1.12.2-1.1.1.jar'
+name = 'Crossbows Backport'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Crossbows-Backport-1.12.2-1.1.1.jar'
+
+[download]
+hash = '815c912d446bbcbbfdf072846b0feb5575ab9385'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5749402
+project-id = 973881

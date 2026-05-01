@@ -1,0 +1,18 @@
+filename = 'mcmouser-1.12.2-forge-1.0.2.jar'
+name = 'McMouser'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'mcmouser-1.12.2-forge-1.0.2.jar'
+
+[download]
+hash = 'bb4077cd098e3c179dec443b42bcc52d58228895'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3698873
+project-id = 556331

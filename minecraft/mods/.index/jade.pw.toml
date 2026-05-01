@@ -1,0 +1,21 @@
+filename = 'Jade-0.1.0.jar'
+name = 'Jade 🔍'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Jade-0.1.0.jar'
+
+[download]
+hash = '6876a7399c604169d7acb06d441743eaac5dd615'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2735905
+project-id = 324717
+
+[[x-prismlauncher-dependencies]]
+addonId = '253449'
+type = 'REQUIRED'

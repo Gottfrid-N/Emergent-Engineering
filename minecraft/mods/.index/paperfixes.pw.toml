@@ -1,0 +1,25 @@
+filename = 'PaperFixes-2.0.1.jar'
+name = 'PaperFixes'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'PaperFixes 2.0.1'
+
+[download]
+hash = '2e96097f5c7ceefdeab9280a1250ab02120cbf10'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7096415
+project-id = 961366
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '870276'
+type = 'REQUIRED'

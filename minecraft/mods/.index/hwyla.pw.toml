@@ -1,0 +1,18 @@
+filename = 'Hwyla-1.8.26-B41_1.12.2.jar'
+name = 'Hwyla'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Hwyla-1.8.26-B41_1.12.2.jar'
+
+[download]
+hash = '7280d5c0dab42436549bcefc63ff64a1049e5501'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2568751
+project-id = 253449

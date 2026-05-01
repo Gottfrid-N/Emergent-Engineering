@@ -1,0 +1,18 @@
+filename = 'badwithernocookiereloaded-1.12.2-3.4.18.jar'
+name = 'Bad Wither No Cookie - Reloaded'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'badwithernocookiereloaded-1.12.2-3.4.18.jar'
+
+[download]
+hash = '11ab53b71d86a7da97e5fa1a1705b62aa8da2b9c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3045651
+project-id = 261251

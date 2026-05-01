@@ -1,0 +1,25 @@
+filename = 'RenderLib-1.12.2-1.4.5.jar'
+name = 'RenderLib'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'RenderLib-1.12.2-1.4.5.jar'
+
+[download]
+hash = 'da121ecfd63ea615de9a26276614bb0ab9306d95'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6461209
+project-id = 624967
+
+[[x-prismlauncher-dependencies]]
+addonId = '405327'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '357178'
+type = 'REQUIRED'

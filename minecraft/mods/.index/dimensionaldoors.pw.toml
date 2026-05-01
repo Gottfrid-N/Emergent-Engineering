@@ -1,0 +1,18 @@
+filename = 'Dimensional Doors-3.2.3.jar'
+name = 'DimensionalDoors'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Dimensional Doors - 3.2.3 - Forge'
+
+[download]
+hash = 'cc67f847ef171a822de012f1e8819b7e87ce5f1d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6386037
+project-id = 284876

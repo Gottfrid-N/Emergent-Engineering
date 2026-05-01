@@ -1,0 +1,52 @@
+filename = '!mod-director-launchwrapper-1.9.1.jar'
+name = 'File Director'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [
+    '1.7.2',
+    '1.7.3',
+    '1.7.4',
+    '1.7.5',
+    '1.7.6',
+    '1.7.7',
+    '1.7.8',
+    '1.7.9',
+    '1.7.10',
+    '1.8',
+    '1.8.1',
+    '1.8.2',
+    '1.8.3',
+    '1.8.4',
+    '1.8.5',
+    '1.8.6',
+    '1.8.7',
+    '1.8.8',
+    '1.8.9',
+    '1.9',
+    '1.9.1',
+    '1.9.2',
+    '1.9.3',
+    '1.9.4',
+    '1.10',
+    '1.10.1',
+    '1.10.2',
+    '1.11',
+    '1.11.1',
+    '1.11.2',
+    '1.12',
+    '1.12.1',
+    '1.12.2'
+]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.9.1'
+
+[download]
+hash = '13d7c102ae616f8fa74b4ce5f2d8cc26fc397026'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6436962
+project-id = 650242

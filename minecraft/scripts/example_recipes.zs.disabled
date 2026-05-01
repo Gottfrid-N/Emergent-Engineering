@@ -1,0 +1,172 @@
+/* 
+    Modernized 1.12 - Example Recipes Script
+    This script demonstrates various recipe manipulation techniques in CraftTweaker.
+    All examples can be uncommented and used directly in your modpack.
+
+    Relevant Documentation Links:
+    - Recipes Overview: https://docs.blamejared.com/1.12/en/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/
+    - JEI: https://docs.blamejared.com/1.12/en/Mods/JEI/JEI/
+    - Furnace: https://docs.blamejared.com/1.12/en/Vanilla/Recipes/Furnace/Recipes_Furnace/
+    - Ore Dictionary: https://docs.blamejared.com/1.12/en/Vanilla/OreDict/IOreDict/
+    - Item Conditions: https://docs.blamejared.com/1.12/en/Vanilla/Items/Item_Conditions/
+
+    To use this script, remove ".disabled" from the file name.
+*/
+
+#loader crafttweaker reloadable
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.data.IData;
+import crafttweaker.oredict.IOreDictEntry;
+import mods.jei.JEI;
+
+// ================ Recipe Removal ================
+
+/*
+    Bulk Recipe Removal via Regex
+    - Removes all items matching a pattern
+    - Useful for removing entire categories of items
+    - Can target specific mods or item types
+
+    Documentation:
+    - Recipes: https://docs.blamejared.com/1.12/en/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/
+    - JEI: https://docs.blamejared.com/1.12/en/Mods/JEI/JEI
+*/
+
+// Remove recipe by exact name (most precise method)
+// To find recipe names, use /ct recipes hand or /ct recipes all
+// You can also press F3 + T to enable IDs in tooltips, then hover over the recipe output in JEI
+recipes.removeByRecipeName("minecraft:wooden_pickaxe");
+recipes.removeByRecipeName("minecraft:furnace");
+
+// Remove by regex pattern
+function removeItemsByRegex(pattern as string) {
+    val items = itemUtils.getItemsByRegexRegistryName(pattern) as IItemStack[];
+    for item in items {
+        recipes.remove(item);
+        //JEI.removeAndHide(item);
+    }
+}
+
+// Example usage:
+removeItemsByRegex(":.*_hoe$"); // Removes all hoes
+//removeItemsByRegex("minecraft:wooden_.*"); // Removes all wooden tools/items
+
+/*
+    Category-Based Recipe Removal
+    - Removes groups of related items
+    - Maintains a clean, organized approach
+*/
+function removeItemCategory(items as IItemStack[]) {
+    for item in items {
+        recipes.remove(item);
+        //JEI.removeAndHide(item);
+    }
+}
+
+// Example categories:
+static redstoneItems as IItemStack[] = [
+    <minecraft:redstone>,
+    <minecraft:redstone_block>,
+    <minecraft:redstone_torch>,
+    <minecraft:repeater>,
+    <minecraft:comparator>,
+    <minecraft:redstone_lamp>
+] as IItemStack[];
+
+static toolItems as IItemStack[] = [
+    <minecraft:wooden_pickaxe>,
+    <minecraft:wooden_axe>,
+    <minecraft:wooden_shovel>,
+    <minecraft:wooden_hoe>,
+    <minecraft:wooden_sword>
+] as IItemStack[];
+
+removeItemCategory(redstoneItems);
+// removeItemCategory(toolItems);
+
+// ================ Recipe Addition ================
+
+/*
+    Shaped Recipe Examples
+    - Shows various recipe patterns and ingredient types
+    - Includes metadata handling
+    - Demonstrates OreDictionary usage
+    - Shows liquid handling in recipes
+
+    Documentation:
+    - Recipes: https://docs.blamejared.com/1.12/en/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/
+    - Ore Dictionary: https://docs.blamejared.com/1.12/en/Vanilla/OreDict/IOreDict/
+    - Liquids: https://docs.blamejared.com/1.12/en/Vanilla/Liquids/ILiquidStack/
+*/
+
+// Basic shaped recipe
+recipes.addShaped("custom_chest", <minecraft:chest>, [
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+    [<ore:plankWood>, <minecraft:iron_ingot>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]
+]);
+
+// Recipe with liquid ingredients
+// Note: Most tank blocks will accept this recipe
+recipes.addShapeless("craftable_obsidian", <minecraft:obsidian>, 
+    [<liquid:lava> * 1000, <liquid:water> * 1000]
+);
+
+/*
+    Shapeless Recipe Examples
+    - Demonstrates conversion recipes
+    - Shows how to handle quantities
+
+    Documentation:
+    - Item Conditions: https://docs.blamejared.com/1.12/en/Vanilla/Items/Item_Conditions/
+*/
+// Basic conversion recipe
+recipes.addShapeless("wool_to_string", <minecraft:string> * 4, [<minecraft:wool:*>]);
+
+// Multi-ingredient shapeless recipe
+recipes.addShapeless("custom_book", <minecraft:written_book>.withTag({author: "Server", title: "Guide", pages: ["Welcome to the server!"]}),
+    [<minecraft:book>, <minecraft:dye:0>]
+);
+
+// ================ Advanced Recipe Manipulation ================
+
+/*
+    Furnace Recipe Management
+    - Add and remove furnace recipes
+    - Control experience output
+
+    Documentation:
+    - Furnace Recipes: https://docs.blamejared.com/1.12/en/Vanilla/Recipes/Furnace/Recipes_Furnace/
+*/
+// Remove all furnace recipes for an item
+furnace.remove(<minecraft:iron_ingot>);
+
+// Add custom furnace recipe with experience
+// <input>, <output>, <experience>
+furnace.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 5.0);
+
+// Create custom fuel items
+// <fuel>, <burnTime>
+furnace.setFuel(<minecraft:stick>, 100); // 100 ticks (5 seconds)
+furnace.setFuel(<minecraft:coal:1>, 1600); // 1600 ticks (80 seconds)
+
+/*
+    OreDictionary Management
+    - Add/remove items from ore dictionary
+    - Create custom ore dictionary entries
+
+    Documentation:
+    - Ore Dictionary: https://docs.blamejared.com/1.12/en/Vanilla/OreDict/IOreDict/
+    - Ore Dictionary Entry: https://docs.blamejared.com/1.12/en/Vanilla/OreDict/IOreDictEntry/
+*/
+// Add item to existing ore dictionary
+//<ore:ingotCopper>.add(<thermalfoundation:material:128>);
+
+// Remove item from ore dictionary
+<ore:ingotIron>.remove(<minecraft:iron_ingot>);
+
+// Create new ore dictionary entry
+val myCustomOre = <ore:gemCustom>;
+myCustomOre.add(<minecraft:diamond>);
+myCustomOre.add(<minecraft:emerald>);

@@ -1,0 +1,33 @@
+filename = 'rftools-1.12-7.73.jar'
+name = 'RFTools'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'RFTools - 1.12-7.73'
+
+[download]
+hash = '16a4e8c1907bdaac546ab3fd56904d202da427f3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2861573
+project-id = 224641
+
+[[x-prismlauncher-dependencies]]
+addonId = '256287'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '245211'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '233105'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '270789'
+type = 'OPTIONAL'

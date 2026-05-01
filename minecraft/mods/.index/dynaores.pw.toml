@@ -1,0 +1,18 @@
+filename = 'Dynamic-Raw-Ores-1.12.2-1.0.4a.jar'
+name = 'Dynamic Raw Ores'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Dynamic-Raw-Ores-1.12.2-1.0.4a.jar'
+
+[download]
+hash = '5a78666b1431a0d1a05efb6f564d0bb64fd2a147'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6867589
+project-id = 1056043

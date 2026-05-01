@@ -1,0 +1,18 @@
+filename = '!!!CrashAssistant-forge-1.12.2-1.11.3.jar'
+name = 'Crash Assistant'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '!!!CrashAssistant-forge-1.12.2-1.11.3.jar'
+
+[download]
+hash = 'de1d18575feb221a4950b392eaa334dc35e39fe3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7769794
+project-id = 1154099

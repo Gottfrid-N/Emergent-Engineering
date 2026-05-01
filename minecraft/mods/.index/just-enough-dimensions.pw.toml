@@ -1,0 +1,18 @@
+filename = 'justenoughdimensions-1.12.2-1.6.0-dev.20211009.214847.jar'
+name = 'Just Enough Dimensions'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'justenoughdimensions-1.12.2-1.6.0-dev.20211009.214847.jar'
+
+[download]
+hash = '0536349d6672c30d0e86027e6eb803e5a07492fd'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3840727
+project-id = 254317

@@ -1,0 +1,18 @@
+filename = 'Forgelin-1.8.4.jar'
+name = "Shadowfacts' Forgelin"
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.9.4', '1.10.2', '1.11.2', '1.12.2', '1.13.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Forgelin-1.8.4.jar'
+
+[download]
+hash = '7a87553fcb808a45d9c7e03f113b355ac7fd10d7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2785465
+project-id = 248453

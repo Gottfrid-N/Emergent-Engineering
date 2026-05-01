@@ -1,0 +1,21 @@
+filename = 'GameStages-1.12.2-2.0.123.jar'
+name = 'Game Stages'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'GameStages-1.12.2-2.0.123.jar'
+
+[download]
+hash = '83b6e36d415f6679495b2c04ffe453817d43419e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2951840
+project-id = 268655
+
+[[x-prismlauncher-dependencies]]
+addonId = '228525'
+type = 'REQUIRED'

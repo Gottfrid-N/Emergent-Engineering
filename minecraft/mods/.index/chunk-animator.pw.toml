@@ -1,0 +1,18 @@
+filename = 'ChunkAnimator-1.12.2-1.2.1.jar'
+name = 'Chunk Animator'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ChunkAnimator-1.12.2-1.2.1.jar'
+
+[download]
+hash = 'c3906436c1f04aab656dd1627a9378b673e644fa'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3850023
+project-id = 236484

@@ -1,0 +1,50 @@
+-----------------------------------------------------------------------------------
+DateTime: 29.04.2026 22:28:00:856 +02:00; PID: 39256
+This file contains the stderr stream of the Minecraft process logged to a file.
+It does not include stdout or log (log4j) messages to avoid performance impact.
+-----------------------------------------------------------------------------------
+[22:28:05:520] [STDERR]: WARNING: A restricted method in java.lang.System has been called
+[22:28:05:521] [STDERR]: WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unnamed module (file:/C:/Users/gottf/.cleanroom/relauncher/libraries/net/java/dev/jna/jna/5.18.1/jna-5.18.1.jar)
+[22:28:05:522] [STDERR]: WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+[22:28:05:522] [STDERR]: WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+[22:28:05:522] [STDERR]: 
+[22:28:43:247] [STDERR]: java.lang.invoke.WrongMethodTypeException: handle's method type ()PrefixTrie but found (LaunchClassLoader)Set
+[22:28:43:248] [STDERR]: 	at java.base/java.lang.invoke.Invokers.newWrongMethodTypeException(Invokers.java:522)
+[22:28:43:248] [STDERR]: 	at java.base/java.lang.invoke.Invokers.checkExactType(Invokers.java:531)
+[22:28:43:248] [STDERR]: 	at mirror.normalasm.NormalReflector.<clinit>(NormalReflector.java:34)
+[22:28:43:248] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:28)
+[22:28:43:248] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:20)
+[22:28:43:248] [STDERR]: 	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:155)
+[22:28:43:249] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:107)
+[22:28:43:249] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:42)
+[22:28:43:250] [STDERR]: 	at com.cleanroommc.relauncher.wrapper.RelaunchMainWrapper.main(RelaunchMainWrapper.java:20)
+[22:28:43:252] [STDERR]: java.lang.IllegalAccessException: static final field has no write access: top.outlands.foundation.boot.ActualClassLoader.transformerExceptions/top.outlands.foundation.trie.PrefixTrie/putStatic, from class mirror.normalasm.NormalReflector (unnamed module @6ee660fb)
+[22:28:43:253] [STDERR]: 	at java.base/java.lang.invoke.MemberName.makeAccessException(MemberName.java:889)
+[22:28:43:253] [STDERR]: 	at java.base/java.lang.invoke.MethodHandles$Lookup.unreflectField(MethodHandles.java:3441)
+[22:28:43:253] [STDERR]: 	at java.base/java.lang.invoke.MethodHandles$Lookup.unreflectSetter(MethodHandles.java:3432)
+[22:28:43:253] [STDERR]: 	at mirror.normalasm.NormalReflector.resolveFieldSetter(NormalReflector.java:162)
+[22:28:43:253] [STDERR]: 	at mirror.normalasm.NormalReflector.<clinit>(NormalReflector.java:40)
+[22:28:43:253] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:28)
+[22:28:43:253] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:20)
+[22:28:43:253] [STDERR]: 	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:155)
+[22:28:43:253] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:107)
+[22:28:43:253] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:42)
+[22:28:43:253] [STDERR]: 	at com.cleanroommc.relauncher.wrapper.RelaunchMainWrapper.main(RelaunchMainWrapper.java:20)
+[22:28:43:254] [STDERR]: java.lang.NullPointerException: Cannot invoke "java.lang.invoke.MethodHandle.invoke(net.minecraft.launchwrapper.LaunchClassLoader, mirror.normalasm.api.datastructures.CaptureSet)" because the return value of "mirror.normalasm.NormalReflector.resolveFieldSetter(java.lang.Class, String)" is null
+[22:28:43:254] [STDERR]: 	at mirror.normalasm.NormalReflector.<clinit>(NormalReflector.java:40)
+[22:28:43:254] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:28)
+[22:28:43:254] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:20)
+[22:28:43:254] [STDERR]: 	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:155)
+[22:28:43:254] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:107)
+[22:28:43:254] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:42)
+[22:28:43:254] [STDERR]: 	at com.cleanroommc.relauncher.wrapper.RelaunchMainWrapper.main(RelaunchMainWrapper.java:20)
+[22:28:43:256] [STDERR]: java.lang.invoke.WrongMethodTypeException: handle's method type (ActualClassLoader,Map)void but found (LaunchClassLoader,Map)void
+[22:28:43:257] [STDERR]: 	at java.base/java.lang.invoke.Invokers.newWrongMethodTypeException(Invokers.java:522)
+[22:28:43:257] [STDERR]: 	at java.base/java.lang.invoke.Invokers.checkExactType(Invokers.java:531)
+[22:28:43:257] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:28)
+[22:28:43:257] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:20)
+[22:28:43:257] [STDERR]: 	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:155)
+[22:28:43:258] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:107)
+[22:28:43:258] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:42)
+[22:28:43:258] [STDERR]: 	at com.cleanroommc.relauncher.wrapper.RelaunchMainWrapper.main(RelaunchMainWrapper.java:20)
+[22:34:19:242] [STDERR]: 2026-04-29T20:34:19.240037700Z Client thread WARN found 3 argument placeholders, but provided 4 for pattern `Discarding sythetic bridge method {} in {} because existing method in {} is compatible`

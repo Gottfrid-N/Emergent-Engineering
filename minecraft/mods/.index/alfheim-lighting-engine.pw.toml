@@ -1,0 +1,29 @@
+filename = 'Alfheim-1.6.jar'
+name = 'Alfheim Lighting Engine'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Alfheim 1.6'
+
+[download]
+hash = '15aaa39a13e18ab2f29456b25fd9732da1949329'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6687458
+project-id = 910715
+
+[[x-prismlauncher-dependencies]]
+addonId = '873867'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '227874'
+type = 'OPTIONAL'

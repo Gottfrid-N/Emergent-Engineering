@@ -1,0 +1,25 @@
+filename = 'QuarkOddities-1.12.2.jar'
+name = 'Quark Oddities'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'QuarkOddities-1.12.2.jar'
+
+[download]
+hash = 'f2ba40e084e31a00e1a93c44dd01d07384bd1fcd'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2604798
+project-id = 301051
+
+[[x-prismlauncher-dependencies]]
+addonId = '243121'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '250363'
+type = 'REQUIRED'

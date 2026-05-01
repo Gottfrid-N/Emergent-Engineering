@@ -1,0 +1,10 @@
+{
+	"shown_reasons": {
+		"MixinApply": true
+	},
+	"analysis": {
+		"jdeps": {
+			"include_nested": true
+		}
+	}
+}

@@ -1,0 +1,18 @@
+filename = 'betterbiomeblend-1.2.0-1.12.2.jar'
+name = 'Betterer Biomer Blender'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'betterbiomeblend-1.2.0-1.12.2.jar'
+
+[download]
+hash = 'f169276095b3fc378f02aa4cf1c6553f0e5e2e90'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6776118
+project-id = 1308068

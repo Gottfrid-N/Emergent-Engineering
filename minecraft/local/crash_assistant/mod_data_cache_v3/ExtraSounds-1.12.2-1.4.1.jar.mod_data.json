@@ -1,0 +1,1 @@
+{"jarName":"ExtraSounds-1.12.2-1.4.1.jar","modId":"extrasounds","version":"1.12.2-1.4.1","mixinConfigs":["extrasounds.server.mixins.json","extrasounds.client.mixins.json","extrasounds.jei.mixins.json","extrasounds.tfc.mixins.json"],"jarJarMods":[],"curseForgeHash":4123246348,"modrinthHash":"dec0d57f19fe0296ed5c21fc4e04b6b64b35cc59"}

@@ -1,0 +1,25 @@
+filename = 'Wither-Config-1.2.1.jar'
+name = 'Wither Config'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Wither Config 1.2.1'
+
+[download]
+hash = '4aa877f3352c8e3e3ae1a178bd8c217a1ce7a0ea'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5499343
+project-id = 910358
+
+[[x-prismlauncher-dependencies]]
+addonId = '870276'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'

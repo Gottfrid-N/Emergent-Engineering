@@ -1,0 +1,21 @@
+filename = 'woot-1.12.2-1.4.11.jar'
+name = 'Woot'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'woot-1.12.2-1.4.11.jar'
+
+[download]
+hash = 'a7c14ec53bf4d5e61fead67c0a3184e7e917cca7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2712670
+project-id = 244049
+
+[[x-prismlauncher-dependencies]]
+addonId = '228832'
+type = 'REQUIRED'

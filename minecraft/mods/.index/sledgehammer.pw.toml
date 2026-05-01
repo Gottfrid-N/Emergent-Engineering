@@ -1,0 +1,18 @@
+filename = 'Sledgehammer-1.12.2-2.0.26.jar'
+name = 'Sledgehammer'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Sledgehammer-1.12.2-2.0.26.jar'
+
+[download]
+hash = 'bdd413df8203a1af255231d2026907fe62700e25'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5264329
+project-id = 319175

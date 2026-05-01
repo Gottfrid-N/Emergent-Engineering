@@ -1,0 +1,33 @@
+filename = 'ModularMachinery-Addons-1.2.4.jar'
+name = 'Modular Machinery Community Edition: Addons'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ModularMachinery-Addons-1.2.4'
+
+[download]
+hash = '7df9473b76f910ac047a96171f9b5d3e12ac5dd1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6996064
+project-id = 1236022
+
+[[x-prismlauncher-dependencies]]
+addonId = '817377'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223666'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '226254'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '224791'
+type = 'OPTIONAL'

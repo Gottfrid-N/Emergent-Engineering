@@ -1,0 +1,18 @@
+filename = 'Atlas-Lib-1.12.2-1.1.9.jar'
+name = 'Atlas Lib'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Atlas-Lib-1.12.2-1.1.9.jar'
+
+[download]
+hash = 'e7eefeb1c301b2e5de3b334d7456971a46af44ab'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6981112
+project-id = 463826

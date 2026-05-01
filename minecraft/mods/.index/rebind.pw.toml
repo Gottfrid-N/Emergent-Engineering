@@ -1,0 +1,18 @@
+filename = 'rebind-1.12.2-2.7.5-0.jar'
+name = 'ReBind'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'rebind-1.12.2-2.7.5-0.jar'
+
+[download]
+hash = '89a789e7af4bdb3b8120c5c3efc6a7f30779b7fb'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2677171
+project-id = 292730

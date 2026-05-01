@@ -1,0 +1,18 @@
+filename = 'twilightforest-1.12.2-3.15.1.jar'
+name = 'The Twilight Forest - Deforestation Edition'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.15.1 - Hotfix'
+
+[download]
+hash = '1dd68576a3a90ddf776f4463211620475534b038'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7846443
+project-id = 1063334

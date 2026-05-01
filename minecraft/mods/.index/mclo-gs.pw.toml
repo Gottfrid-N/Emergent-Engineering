@@ -1,0 +1,18 @@
+filename = 'Mclogs-forge-1.0.5-for-1.12.2.jar'
+name = 'Mclogs - mclo.gs'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'mclo.gs v1.0.5 for Forge 1.12.2'
+
+[download]
+hash = 'b29fa02b246fbba32c696b02c7b4db0e7b6a0c07'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3114167
+project-id = 420561

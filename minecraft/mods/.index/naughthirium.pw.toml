@@ -1,0 +1,33 @@
+filename = 'naughthirium-2.3.0.jar'
+name = 'Naughthirium'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'naughthirium-2.3.0.jar'
+
+[download]
+hash = '9280f1ece1bb509bb573de3b956d102152f06e6b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6473489
+project-id = 1153019
+
+[[x-prismlauncher-dependencies]]
+addonId = '624960'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '236484'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '460609'
+type = 'OPTIONAL'

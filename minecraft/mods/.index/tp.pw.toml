@@ -1,0 +1,18 @@
+filename = 'TP+-1.12.2-1.0.1.1.jar'
+name = 'TP+'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0.1.1'
+
+[download]
+hash = 'd5d6d5d0e128edd0db0458a74ceea919aea29c2c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2515952
+project-id = 281905

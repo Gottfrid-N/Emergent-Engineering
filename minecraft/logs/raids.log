@@ -1,0 +1,123 @@
+Registered condition and
+Registered condition nand
+Registered condition or
+Registered condition nor
+Registered condition xor
+Registered condition not
+Registered condition comparison
+Registered condition random
+Registered condition biome
+Registered condition local_difficulty
+Registered condition game_difficulty
+Registered condition is_bonus
+Registered condition advancement
+Registered condition gamestage
+Registered value tan
+Registered value bitwise_not
+Registered value log
+Registered value sinh
+Registered value cos
+Registered value arccos
+Registered value ceiling
+Registered value arctan
+Registered value cosh
+Registered value random
+Registered value tanh
+Registered value abs
+Registered value round
+Registered value truncate
+Registered value sin
+Registered value arcsin
+Registered value floor
+Registered value left_shift
+Registered value right_shift
+Registered value mod
+Registered value bitwise_and
+Registered value power
+Registered value multiply
+Registered value add
+Registered value bitwise_or
+Registered value minus
+Registered value bitwise_xor
+Registered value unsigned_right_shift
+Registered value divide
+Registered value conditional
+Registered value weighted_random
+Registered value level_nbt
+Registered value player_nbt
+Registered value wave
+Registered value number_spawned
+Registered value groups_spawned
+Registered value groups_for_difficulty
+Registered value omen_level
+Loaded raid table advanced.json
+Loaded raid table default.json
+Loaded gift 1xitem.bread@0 for career minecraft:farmer - farmer
+Loaded gift 1xitem.cookie@0 for career minecraft:farmer - farmer
+Loaded gift 1xitem.pumpkinPie@0 for career minecraft:farmer - farmer
+Loaded gifts for career minecraft:farmer - farmer
+Loaded gift 1xitem.fish@0 for career minecraft:farmer - fisherman
+Loaded gift 1xitem.fish@1 for career minecraft:farmer - fisherman
+Loaded gifts for career minecraft:farmer - fisherman
+Loaded gift 1xtile.cloth@0 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@1 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@2 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@3 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@4 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@5 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@6 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@7 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@8 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@9 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@10 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@11 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@12 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@13 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@14 for career minecraft:farmer - shepherd
+Loaded gift 1xtile.cloth@15 for career minecraft:farmer - shepherd
+Loaded gifts for career minecraft:farmer - shepherd
+Loaded gift 1xitem.arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gift 1xitem.tipped_arrow@0 for career minecraft:farmer - fletcher
+Loaded gifts for career minecraft:farmer - fletcher
+Loaded gift 1xitem.book@0 for career minecraft:librarian - librarian
+Loaded gifts for career minecraft:librarian - librarian
+Loaded gift 1xitem.emptyMap@0 for career minecraft:librarian - cartographer
+Loaded gift 1xitem.paper@0 for career minecraft:librarian - cartographer
+Loaded gifts for career minecraft:librarian - cartographer
+Loaded gift 1xitem.dyePowder@4 for career minecraft:priest - cleric
+Loaded gift 1xitem.redstone@0 for career minecraft:priest - cleric
+Loaded gifts for career minecraft:priest - cleric
+Loaded gift 1xitem.helmetChain@0 for career minecraft:smith - armor
+Loaded gift 1xitem.chestplateChain@0 for career minecraft:smith - armor
+Loaded gift 1xitem.leggingsChain@0 for career minecraft:smith - armor
+Loaded gift 1xitem.bootsChain@0 for career minecraft:smith - armor
+Loaded gifts for career minecraft:smith - armor
+Loaded gift 1xitem.hatchetStone@0 for career minecraft:smith - weapon
+Loaded gift 1xitem.hatchetGold@0 for career minecraft:smith - weapon
+Loaded gift 1xitem.hatchetIron@0 for career minecraft:smith - weapon
+Loaded gifts for career minecraft:smith - weapon
+Loaded gift 1xitem.hatchetStone@0 for career minecraft:smith - tool
+Loaded gift 1xitem.hoeStone@0 for career minecraft:smith - tool
+Loaded gift 1xitem.pickaxeStone@0 for career minecraft:smith - tool
+Loaded gift 1xitem.shovelStone@0 for career minecraft:smith - tool
+Loaded gifts for career minecraft:smith - tool
+Loaded gift 1xitem.chickenCooked@0 for career minecraft:butcher - butcher
+Loaded gift 1xitem.muttonCooked@0 for career minecraft:butcher - butcher
+Loaded gift 1xitem.porkchopCooked@0 for career minecraft:butcher - butcher
+Loaded gift 1xitem.rabbitCooked@0 for career minecraft:butcher - butcher
+Loaded gift 1xitem.beefCooked@0 for career minecraft:butcher - butcher
+Loaded gifts for career minecraft:butcher - butcher
+Loaded gift 1xitem.leather@0 for career minecraft:butcher - leather
+Loaded gifts for career minecraft:butcher - leather

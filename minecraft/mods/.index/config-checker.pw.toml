@@ -1,0 +1,18 @@
+filename = 'Modpack Configuration Checker-1.12.2-v1.9.5.jar'
+name = 'Modpack Configuration Checker'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Modpack Configuration Checker-1.12.2-v1.9.5.jar'
+
+[download]
+hash = '7a486d479baaeace95b7764b1d93939b3388764d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2976522
+project-id = 292992

@@ -1,0 +1,29 @@
+filename = 'botania-r1.10-372.jar'
+name = 'Botania CEu'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'Botania CEu r1.10-372'
+
+[download]
+hash = '98bfad8a161266df8cce803d6d700b79ba9034ed'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7925896
+project-id = 1179448
+
+[[x-prismlauncher-dependencies]]
+addonId = '687577'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '995393'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '557549'
+type = 'OPTIONAL'

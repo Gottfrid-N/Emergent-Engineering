@@ -1,0 +1,25 @@
+filename = 'HungerTweaker-1.12.2-1.3.0.jar'
+name = 'HungerTweaker'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'HungerTweaker-1.12.2-1.3.0.jar'
+
+[download]
+hash = 'ef42b5922d5fd62e73f0c368b776d3b58c8e12b5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2792370
+project-id = 321315
+
+[[x-prismlauncher-dependencies]]
+addonId = '224472'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '239197'
+type = 'REQUIRED'

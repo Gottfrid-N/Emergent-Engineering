@@ -1,0 +1,18 @@
+filename = 'JustEnoughEffects-1.0.3.jar'
+name = 'Just Enough Effects'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'JustEnoughEffects-1.0.3.jar'
+
+[download]
+hash = '5fe85d542f59b39a05cb10ec0645ed3d6ae78cba'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3122693
+project-id = 417121

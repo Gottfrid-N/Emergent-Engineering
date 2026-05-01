@@ -1,0 +1,1 @@
+{"jarName":"spark-unforged-1.11.140-forge.jar","modId":"spark","version":"1.11.2","mixinConfigs":["mixins.spark.main.json","mixins.spark.refmap.json","mixins.spark.accessors.json"],"jarJarMods":[],"curseForgeHash":3551899529,"modrinthHash":"015557681e5f865c2aa42c8822600e4a064c0467"}

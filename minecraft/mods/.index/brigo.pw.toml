@@ -1,0 +1,21 @@
+filename = 'brigo_forge-1.1.1+1.12.x.jar'
+name = 'Brigo'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Brigo Forge 1.1.1+1.12.x'
+
+[download]
+hash = 'd3869109e4a8ca8767429dcad89cd9953c61ad63'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6848271
+project-id = 1312795
+
+[[x-prismlauncher-dependencies]]
+addonId = '826970'
+type = 'REQUIRED'

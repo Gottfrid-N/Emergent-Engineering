@@ -1,0 +1,32 @@
+{
+    "url":
+    [
+        {
+            "url": "https://github.com/kappa-maintainer/Celeritas-auto-build/releases/download/release%2F2.4.0-dev.3-146-g7ead0b54-20260416T011650/celeritas-forge-mc12.2-2.4.0-dev.jar",
+            "fileName": "celeritas-forge-mc12.2-2.4.0-dev.jar",
+            "options": { "launchwrapperTweakerForceNext": true },
+            "metadata": {
+                "side": "CLIENT"
+            },
+            "installationPolicy": {
+                "description": "Downloads Celeritas from autobuilder github repo."
+            }
+        }
+    ],
+
+    "curse":
+	[
+		{
+			"addonId": 1336201,
+			"fileId": 7769030,
+			"metadata": {
+				"side": "CLIENT"
+			},
+			"installationPolicy": {
+				"description": "Optional but recommended! Downloads Improved Cleanroom Relauncher from CurseForge. This mod will automatically load the pack with Cleanroom Loader, a fork of Forge, allowing for Java 25 to be used instead of the outdated Java 8. For many, this will reduce memory usage and startup time, increase world generation speed, and other performance improvements.",
+				"optionalKey": "Performance",
+				"selectedByDefault": false
+			}
+		}
+	]
+}

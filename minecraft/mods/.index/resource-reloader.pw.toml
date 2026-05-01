@@ -1,0 +1,18 @@
+filename = 'ResourceReloader-1.0.2.5.jar'
+name = 'Resource Reloader'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ResourceReloader-1.0.2.5.jar'
+
+[download]
+hash = 'ad888f770d1c6e52bc4de2bbca22daf0801656d9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2623013
+project-id = 303876

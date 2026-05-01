@@ -1,0 +1,21 @@
+filename = 'FermiumMixins-1.0.12.jar'
+name = 'FermiumMixins'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'FermiumMixins-1.0.12.jar'
+
+[download]
+hash = 'b24dad80c935b5ee98d38154ea9bdd7fee98d2a6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7647104
+project-id = 1303863
+
+[[x-prismlauncher-dependencies]]
+addonId = '968474'
+type = 'REQUIRED'

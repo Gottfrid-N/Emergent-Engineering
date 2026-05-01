@@ -1,0 +1,18 @@
+filename = 'Scalar Legacy-1.0.1.jar'
+name = 'Scalar Legacy'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Scalar Legacy-1.0.1.jar'
+
+[download]
+hash = '5c5998c34798647802e14eab6660ba7afdf1a099'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6842491
+project-id = 1235372

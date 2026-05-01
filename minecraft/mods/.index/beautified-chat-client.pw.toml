@@ -1,0 +1,21 @@
+filename = 'beautifiedchatclient_1.12.2-1.0.jar'
+name = 'Beautified Chat [Client]'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'beautifiedchatclient_1.12.2-1.0.jar'
+
+[download]
+hash = '903992d34d04ef77ea1c6508839746ad39d4e4b8'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3423557
+project-id = 514797
+
+[[x-prismlauncher-dependencies]]
+addonId = '342584'
+type = 'REQUIRED'

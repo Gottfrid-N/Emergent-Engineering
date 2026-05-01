@@ -1,0 +1,18 @@
+filename = 'betterinvisibility-1.12.2-1.0.5.jar'
+name = 'Better Invisibility'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'BetterInvisibility-1.12.2-1.0.5'
+
+[download]
+hash = 'd6c1a042a6b7de8cd1b1808de1d06372018379f5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6262859
+project-id = 300639

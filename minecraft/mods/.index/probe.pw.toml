@@ -1,0 +1,25 @@
+filename = 'probe-0.1.24.jar'
+name = 'Probe'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'probe-0.1.24'
+
+[download]
+hash = '7cbb8bff4af2e3f18c6f58bf5ca25fbb64508680'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2984104
+project-id = 312683
+
+[[x-prismlauncher-dependencies]]
+addonId = '239197'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238222'
+type = 'REQUIRED'

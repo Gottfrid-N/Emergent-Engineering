@@ -1,0 +1,25 @@
+filename = 'TheAetherBaubles-2.0.1.jar'
+name = "The Aether's Baubles"
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'TheAetherBaubles-2.0.1.jar'
+
+[download]
+hash = '205a610470bbff957ef4f4673d039f8871674ae2'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5966798
+project-id = 940702
+
+[[x-prismlauncher-dependencies]]
+addonId = '255308'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '227083'
+type = 'REQUIRED'

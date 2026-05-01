@@ -1,0 +1,21 @@
+filename = 'enderio-1.12.2-5.4.2-all.jar'
+name = 'EnderIO Continuous'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Ender IO Continuous - 5.4.2'
+
+[download]
+hash = 'f20a9e43078d56f1f6198d62151ddb1ae28f47a8'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7798590
+project-id = 1300712
+
+[[x-prismlauncher-dependencies]]
+addonId = '231868'
+type = 'REQUIRED'

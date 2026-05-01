@@ -1,0 +1,18 @@
+filename = 'RedstoneFlux-1.12-2.1.1.1-universal.jar'
+name = 'Redstone Flux'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'RedstoneFlux-1.12-2.1.1.1-universal.jar'
+
+[download]
+hash = '7835c1dcc006e5d4a406a6b0615012b825e25044'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2920436
+project-id = 270789

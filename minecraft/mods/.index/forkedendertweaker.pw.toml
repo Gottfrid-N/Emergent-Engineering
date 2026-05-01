@@ -1,0 +1,18 @@
+filename = 'ForkedEnderTweaker-2.0.3.jar'
+name = 'ForkedEnderTweaker'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ForkedEnderTweaker 2.0.3'
+
+[download]
+hash = '8425bb0fd352e7e1aa2e73575fda00bfd3d49e32'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7787535
+project-id = 1475652
