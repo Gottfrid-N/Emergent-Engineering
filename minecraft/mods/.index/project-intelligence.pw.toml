@@ -1,0 +1,33 @@
+filename = 'ProjectIntelligence-1.12.2-1.0.9.28-universal.jar'
+name = 'Project Intelligence'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ProjectIntelligence-1.12.2-1.0.9.28-universal'
+
+[download]
+hash = 'd6424c4111913a48f9c983199d07140136a12ee1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2833640
+project-id = 306028
+
+[[x-prismlauncher-dependencies]]
+addonId = '242818'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '270789'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238222'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '231382'
+type = 'REQUIRED'

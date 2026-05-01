@@ -1,0 +1,21 @@
+filename = 'ProjectEX-1.2.0.40.jar'
+name = 'FTB ProjectEX'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ProjectEX-1.2.0.40.jar'
+
+[download]
+hash = '2b80464996b1c2af16739093abf5686f61ac6191'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3014173
+project-id = 311378
+
+[[x-prismlauncher-dependencies]]
+addonId = '226410'
+type = 'REQUIRED'

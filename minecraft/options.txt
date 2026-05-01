@@ -63,7 +63,7 @@ key_key.sneak:42:NONE:
 key_key.sprint:29:NONE:
 key_key.drop:16:NONE:
 key_key.inventory:18:NONE:
-key_key.chat:20:NONE:
+key_key.chat:54:NONE:
 key_key.playerlist:15:NONE:
 key_key.pickItem:-98:NONE:
 key_key.command:53:NONE:
@@ -87,6 +87,7 @@ key_key.hotbar.8:9:NONE:
 key_key.hotbar.9:10:NONE:
 key_ae2stuff.keybinding.adv_wireless_second:29:NONE:
 key_keybind.baublesinventory:48:NONE:
+key_quark.keybind.lockBuilding:37:NONE:
 key_quark.emote.no:0:NONE:
 key_quark.emote.yes:0:NONE:
 key_quark.emote.wave:0:NONE:
@@ -105,7 +106,6 @@ key_quark.emote.dab:0:NONE:
 key_quark.emote.jet:0:NONE:
 key_quark.emote.exorcist:0:NONE:
 key_quark.emote.zombie:0:NONE:
-key_quark.keybind.lockBuilding:37:NONE:
 key_quark.keybind.dropoff:0:NONE:
 key_quark.keybind.changeHotbar:44:NONE:
 key_quark.keybind.chestSort:0:NONE:
@@ -115,14 +115,17 @@ key_quark.keybind.chestRestock:0:NONE:
 key_quark.keybind.chestExtract:0:NONE:
 key_quark.keybind.toggleAutojump:48:NONE:
 key_ChatFlow:88:NONE:
-key_keybind.endermodpacktweaks.toggle:0:NONE:
-key_esm.key.open_muffler_gui:0:NONE:
-key_key.xu2.searchforitems:20:NONE:
+key_key.ftbutilities.nbt:49:ALT:56
+key_key.ftbutilities.trash:211:NONE:
 key_pe.key.armor_toggle:45:NONE:
 key_pe.key.charge:47:NONE:
 key_pe.key.extra_function:46:NONE:
 key_pe.key.fire_projectile:19:NONE:
 key_pe.key.mode:34:NONE:
+key_key.ftbquests.quests:184:NONE:
+key_keybind.endermodpacktweaks.toggle:0:NONE:
+key_esm.key.open_muffler_gui:0:NONE:
+key_key.xu2.searchforitems:0:NONE:
 key_Reload Default Sound Device:25:NONE:
 key_key.toggle_focus.desc:15:NONE:
 key_key.open_wireless_terminal.desc:20:SHIFT:42
@@ -130,7 +133,7 @@ key_key.open_wireless_crafting_terminal.desc:18:SHIFT:42
 key_key.open_wireless_pattern_terminal.desc:19:SHIFT:42
 key_key.open_wireless_fluid_terminal.desc:33:SHIFT:42
 key_key.open_wireless_interface_terminal.desc:23:SHIFT:42
-key_key.aether.accessory_menu:23:NONE:
+key_key.aether.accessory_menu:0:NONE:
 key_key.jei.toggleOverlay:24:CONTROL:219
 key_key.jei.focusSearch:33:CONTROL:219
 key_key.jei.toggleCheatMode:0:NONE:
@@ -176,6 +179,7 @@ key_key.performancemonitoringenhanc.toggleHud:35:NONE:
 key_key.performancemonitoringenhanc.openDragScreen:34:NONE:
 key_key.performancemonitoringenhanc.openSettings:37:NONE:
 key_key.performancemonitoringenhanc.toggleVerboseOverlay:47:NONE:
+key_key.projectex.focusSearchBar:15:NONE:
 key_key.quit:1:NONE:
 key_key.hideHUD:59:NONE:
 key_key.debugScreen:61:NONE:
@@ -219,9 +223,9 @@ key_enderio.keybind.fovplus:0:NONE:
 key_enderio.keybind.fovminus:0:NONE:
 key_enderio.keybind.fovplusfast:0:NONE:
 key_enderio.keybind.fovminusfast:0:NONE:
-key_key.swapHands:33:NONE:
 key_key.aether.accessory_menu:0:NONE:
 key_key.drop:16:NONE:
+key_key.swapHands:33:NONE:
 soundCategory_master:1.0
 soundCategory_music:0.2535211
 soundCategory_record:1.0

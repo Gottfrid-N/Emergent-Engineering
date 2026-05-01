@@ -1,0 +1,20 @@
+{
+	title: "Ore Processing",
+	x: 1.5d,
+	y: -1.5d,
+	shape: "diamond",
+	description: "Lots of byproducts",
+	text: [
+		"Ore processing has been heavily expanded in this pack, if you are familiar with gregtech all of this should make sense (altough it isn't based on gregtech ore processing"
+	],
+	dependencies: [
+		"105b7d27"
+	],
+	tasks: [{
+		uid: "ef41b15b",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ore"
+		}]
+	}]
+}

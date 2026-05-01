@@ -1,0 +1,13 @@
+{
+	x: 0.0d,
+	y: -3.0d,
+	shape: "gear",
+	dependencies: [
+		"b479d5f9"
+	],
+	tasks: [{
+		uid: "5845ef2e",
+		type: "checkmark",
+		title: "Informational Quests"
+	}]
+}

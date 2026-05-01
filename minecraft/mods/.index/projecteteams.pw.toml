@@ -1,0 +1,33 @@
+filename = 'peteams-1.12.2-1.4.0.jar'
+name = 'ProjectETeams'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'peteams-1.12.2-1.4.0.jar'
+
+[download]
+hash = '6502fe1f5738ab83cf0f9631308726106a4d665a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7229650
+project-id = 1090134
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '237167'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '311378'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '226410'
+type = 'REQUIRED'

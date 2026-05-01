@@ -1,0 +1,29 @@
+filename = 'FTBUtilities-5.4.1.131.jar'
+name = 'FTB Utilities (Forge)'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'FTBUtilities-5.4.1.131.jar'
+
+[download]
+hash = 'd1f6545ac58ad895f2c8bcd0d4963d92f14b1938'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3157548
+project-id = 237102
+
+[[x-prismlauncher-dependencies]]
+addonId = '237167'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '314904'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '32274'
+type = 'OPTIONAL'

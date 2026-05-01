@@ -1,0 +1,18 @@
+filename = 'zerocore-1.12.2-0.1.2.9.jar'
+name = 'ZeroCore 2'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'zerocore-1.12.2-0.1.2.9.jar'
+
+[download]
+hash = 'bc87c72b3aac54367b6641f9dbd41f6a218043cd'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3194743
+project-id = 247921

@@ -1,0 +1,16 @@
+{
+	title: "Humble Beginnings",
+	icon: "minecraft:crafting_table",
+	x: 0.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "a09b7807",
+		type: "item",
+		title: "Humble Beginnings",
+		icon: "minecraft:crafting_table",
+		items: [{
+			item: "minecraft:crafting_table"
+		}],
+		consume_items: 0b
+	}]
+}

@@ -2,7 +2,7 @@
 [PREINITIALIZATION][CLIENT][TRACE] Current loaders after merging: [[preinit]]
 [PREINITIALIZATION][CLIENT][INFO] Fast script loading enabled.
 [PREINITIALIZATION][CLIENT][INFO] Ignoring script {[0:crafttweaker]: modernized_backport.zs} due to the following #modloaded preprocessor settings: [{oe}, {quark}]
-[PREINITIALIZATION][CLIENT][TRACE] Collected script files and preprocessors. took 3ms
+[PREINITIALIZATION][CLIENT][TRACE] Collected script files and preprocessors. took 8ms
 [PREINITIALIZATION][CLIENT][INFO] Loading scripts for loader with names [preinit]
 [PREINITIALIZATION][CLIENT][TRACE] Completed script loading in: 0ms
 [PREINITIALIZATION][CLIENT][INFO] Hey! Here is ZenUtils.
@@ -27,5 +27,5 @@
 [INITIALIZATION][CLIENT][INFO] Added 2 conditions to pool 'drowned_rare_drop' of table 'oe:entities/drowned_captain'
 [INITIALIZATION][CLIENT][INFO] Queued item entry 'loottweaker#1' for addition to pool 'drowned_rare_drop' of table 'oe:entities/drowned_captain'
 [INITIALIZATION][CLIENT][TRACE] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker|reloadable]: modernized_backport.zs}
-[INITIALIZATION][CLIENT][TRACE] Completed script loading in: 610ms
+[INITIALIZATION][CLIENT][TRACE] Completed script loading in: 833ms
 [POSTINITIALIZATION][CLIENT][INFO] Removing recipes for various outputs

@@ -1,0 +1,73 @@
+filename = 'FTBQuests-1202.9.0.15.jar'
+name = 'FTB Quests (NeoForge)'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'FTBQuests-1202.9.0.15.jar'
+
+[download]
+hash = '03413411b820e0fb91f36013aa5954dde3bc85e9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3156637
+project-id = 289412
+
+[[x-prismlauncher-dependencies]]
+addonId = '309674'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238086'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '268655'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '221826'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '227083'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238222'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '225643'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '231305'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '237167'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '226410'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '242638'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '278398'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '237102'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '286382'
+type = 'OPTIONAL'

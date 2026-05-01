@@ -1,0 +1,21 @@
+{
+	title: "Into the mines!",
+	x: 1.5d,
+	y: 0.0d,
+	description: "☠ Minerals ☠",
+	text: [
+		"Ore generation has been heavily changed, it is really profitable too mine."
+	],
+	dependencies: [
+		"afcbae20"
+	],
+	tasks: [{
+		uid: "bbb544cc",
+		type: "item",
+		items: [{
+			item: "minecraft:stone_pickaxe"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	}]
+}

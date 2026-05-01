@@ -1,0 +1,41 @@
+filename = 'BloodArsenal-1.12.2-2.2.2-31.jar'
+name = 'Blood Arsenal'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'BloodArsenal-1.12.2-2.2.2-31.jar'
+
+[download]
+hash = 'b8b6696fa7b825349ff333ea30046078150e6ef9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2904183
+project-id = 228823
+
+[[x-prismlauncher-dependencies]]
+addonId = '228832'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238222'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '74072'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '73488'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '227083'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '224791'
+type = 'REQUIRED'

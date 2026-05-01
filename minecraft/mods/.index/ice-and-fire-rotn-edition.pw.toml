@@ -1,0 +1,18 @@
+filename = 'Ice and Fire-2.0.0.jar'
+name = 'Ice and Fire: RotN Edition'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'alpha'
+x-prismlauncher-version-number = 'IceAndFireRotN-2.0.0-0.6.1.jar'
+
+[download]
+hash = '958c5d8a7b8db647d4e6040ddef94211f0375eb6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7750007
+project-id = 457668

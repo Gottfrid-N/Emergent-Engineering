@@ -1,0 +1,17 @@
+{
+	title: "Side Quests",
+	x: 1.5d,
+	y: -3.0d,
+	shape: "diamond",
+	description: "Fun side content :)",
+	text: [
+		"Side Quests use a diamond icon and are not required for progression, some lines however wrap back to required content which means they become rqeuired later on."
+	],
+	dependencies: [
+		"b479d5f9"
+	],
+	tasks: [{
+		uid: "889c5640",
+		type: "checkmark"
+	}]
+}

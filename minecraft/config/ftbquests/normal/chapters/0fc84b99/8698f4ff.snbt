@@ -1,0 +1,17 @@
+{
+	title: "Progression Quests",
+	x: -1.5d,
+	y: -1.5d,
+	description: "Used to track progression in the pack.",
+	text: [
+		"Progression quests have a square icon and are used to track progression in the pack, the only required quests in the modpack are progression quests, but there are side quests that help progression too."
+	],
+	dependencies: [
+		"b479d5f9"
+	],
+	tasks: [{
+		uid: "810b9d14",
+		type: "checkmark",
+		title: "Progression Quests"
+	}]
+}

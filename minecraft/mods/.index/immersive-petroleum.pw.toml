@@ -1,0 +1,21 @@
+filename = 'immersivepetroleum-1.12.2-1.1.10.jar'
+name = 'Immersive Petroleum'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'immersivepetroleum-1.12.2-1.1.10.jar'
+
+[download]
+hash = 'dd0ec378fef19acc7cf649be13ced76aa72e42ac'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3382321
+project-id = 268250
+
+[[x-prismlauncher-dependencies]]
+addonId = '231951'
+type = 'REQUIRED'

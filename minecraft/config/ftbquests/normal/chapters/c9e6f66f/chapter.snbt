@@ -1,0 +1,7 @@
+{
+	title: "&5Emergent Engineering",
+	icon: "immersiveengineering:metal_decoration0 1 3",
+	always_invisible: 0b,
+	group: 0,
+	default_quest_shape: ""
+}

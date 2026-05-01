@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: -1.5d,
+	shape: "gear",
+	dependencies: [
+		"afcbae20"
+	],
+	tasks: [{
+		uid: "d5f91b66",
+		type: "checkmark",
+		title: "Questing",
+		icon: "ftbquests:book"
+	}],
+	rewards: [{
+		uid: "066d2989",
+		type: "item",
+		item: "minecraft:bread",
+		count: 6
+	}]
+}

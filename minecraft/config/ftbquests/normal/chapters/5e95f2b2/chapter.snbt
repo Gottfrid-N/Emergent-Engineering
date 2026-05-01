@@ -1,0 +1,6 @@
+{
+	title: "Gem Ore Processing",
+	always_invisible: 0b,
+	group: 2074730017,
+	default_quest_shape: ""
+}

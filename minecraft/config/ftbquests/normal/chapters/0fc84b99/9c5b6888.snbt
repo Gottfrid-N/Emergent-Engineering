@@ -1,0 +1,18 @@
+{
+	title: "Lore Quests",
+	x: -1.5d,
+	y: -3.0d,
+	shape: "circle",
+	description: "Sppoookkyyy~~~~",
+	text: [
+		"Lore quests have circle icons and are completely unecessary for progression, it is strictly for the lore of the modpack. You should only checkmark the quests you have read since they give nothing for progression."
+	],
+	dependencies: [
+		"b479d5f9"
+	],
+	tasks: [{
+		uid: "69ececa8",
+		type: "checkmark",
+		title: "Lore Quests"
+	}]
+}
