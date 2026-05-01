@@ -1,0 +1,1 @@
+{"jarName":"gnetum-1.4.1.jar","modId":"gnetum","name":"Gnetum","version":"1.4.1","mixinConfigs":["mixins.gnetum.refmap.json","mixins.gnetum.early.json","mixins.gnetum.late.json"],"jarJarMods":[],"curseForgeHash":1182997539,"modrinthHash":"35de412757467f508b5bafa90eff3a2bd736aea5"}

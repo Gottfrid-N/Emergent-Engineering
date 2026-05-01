@@ -1,19 +1,19 @@
-filename = 'esm-legacy-1.12.2-1.0.5.jar'
+filename = 'esm-legacy-1.12.2-1.0.9.jar'
 name = 'Extreme Sound Muffler: Legacy'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'esm-legacy-1.12.2-1.0.5.jar'
+x-prismlauncher-version-number = 'esm-legacy-1.12.2-1.0.9.jar'
 
 [download]
-hash = '42c3ca3cf5f250edb4f8218a93fbde3bfe1643d2'
+hash = 'abe71a5dfde129871a89d1fc0ab9aca103e8d3d1'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7026689
+file-id = 8015917
 project-id = 1052470
 
 [[x-prismlauncher-dependencies]]

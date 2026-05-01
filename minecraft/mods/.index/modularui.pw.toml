@@ -1,27 +1,27 @@
-filename = 'modularui-3.1.5.jar'
+filename = 'modularui-3.1.6.jar'
 name = 'ModularUI'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'ModularUI − 3.1.5'
+x-prismlauncher-version-number = 'ModularUI − 3.1.6'
 
 [download]
-hash = 'f03ffc6b97a6bcf4e3de920894db2142d48c63a9'
+hash = 'be2d067fe4e8815c5c025416019f9a8037d26be0'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7779814
+file-id = 7929464
 project-id = 624243
 
 [[x-prismlauncher-dependencies]]
-addonId = '238222'
+addonId = '632327'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '632327'
+addonId = '238222'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]

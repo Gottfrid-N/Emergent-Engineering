@@ -1,0 +1,27 @@
+{
+  "nuclearcraft:root": {
+    "criteria": {
+      "location": "2026-05-01 23:41:22 +0200"
+    },
+    "done": true
+  },
+  "astralsorcery:root": {
+    "criteria": {
+      "astralsorcery_present": "2026-05-01 23:41:22 +0200"
+    },
+    "done": true
+  },
+  "twilightforest:alt/compat/tconstruct": {
+    "criteria": {
+      "book": "2026-05-01 23:41:22 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "desert_hills": "2026-05-01 23:42:23 +0200",
+      "desert": "2026-05-01 23:41:22 +0200"
+    },
+    "done": false
+  }
+}

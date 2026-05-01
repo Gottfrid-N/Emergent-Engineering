@@ -1,5 +1,7 @@
 {
+	"high_system_load_check": true,
 	"shown_reasons": {
+		"ScriptedAnalysis": true,
 		"MixinApply": true
 	},
 	"analysis": {

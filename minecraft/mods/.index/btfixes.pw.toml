@@ -1,0 +1,18 @@
+filename = 'BTFixes-1.12.2-1.2.2.jar'
+name = 'Battle Towers Fixes'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.2.2'
+
+[download]
+hash = '5f2ad4a48ab73ea42e0019d61796c00f4a114ab7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5224386
+project-id = 657388

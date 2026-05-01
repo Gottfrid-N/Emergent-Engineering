@@ -1,0 +1,18 @@
+filename = 'BattleTowers-1.12.2.jar'
+name = "AtomicStryker's Battle Towers"
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = "AtomicStryker's Battle Towers"
+
+[download]
+hash = 'a67d73e74c211f0e958cab6f0acdec73d7d6236e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2817288
+project-id = 227877

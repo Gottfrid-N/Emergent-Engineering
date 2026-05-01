@@ -1,0 +1,1 @@
+{"jarName":"`FermiumBooter-1.4.1.jar","modId":"fermiumbooter","name":"FermiumBooter","version":"1.4.1","mixinConfigs":["mixins.fermiumbooter.crashreport.json","mixins.fermiumbooter.refmap.json","mixins.fermiumbooter.init.json"],"jarJarMods":[],"curseForgeHash":2016822378,"modrinthHash":"89547fd24ac5a22b4268b61c73b8e67da45d2753"}

@@ -1,19 +1,19 @@
-filename = 'gnetum-1.3.5.jar'
+filename = 'gnetum-1.4.1.jar'
 name = 'Gnetum'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'gnetum-1.3.5.jar'
+x-prismlauncher-version-number = 'gnetum-1.4.1.jar'
 
 [download]
-hash = '7587f73ed7066f09333acf2d349f3adfb11db87f'
+hash = '35de412757467f508b5bafa90eff3a2bd736aea5'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7603565
+file-id = 7947648
 project-id = 1220460
 
 [[x-prismlauncher-dependencies]]

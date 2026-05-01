@@ -1,0 +1,31 @@
+[PREINITIALIZATION][CLIENT][TRACE] Current loaders after merging: [[preinit]]
+[PREINITIALIZATION][CLIENT][TRACE] Current loaders after merging: [[preinit]]
+[PREINITIALIZATION][CLIENT][INFO] Fast script loading enabled.
+[PREINITIALIZATION][CLIENT][INFO] Ignoring script {[0:crafttweaker]: modernized_backport.zs} due to the following #modloaded preprocessor settings: [{oe}, {quark}]
+[PREINITIALIZATION][CLIENT][TRACE] Collected script files and preprocessors. took 3ms
+[PREINITIALIZATION][CLIENT][INFO] Loading scripts for loader with names [preinit]
+[PREINITIALIZATION][CLIENT][TRACE] Completed script loading in: 0ms
+[PREINITIALIZATION][CLIENT][INFO] Hey! Here is ZenUtils.
+[PREINITIALIZATION][CLIENT][TRACE] Current loaders after merging: [[preinit], [contenttweaker]]
+[PREINITIALIZATION][CLIENT][INFO] Loading scripts for loader with names [contenttweaker]
+[PREINITIALIZATION][CLIENT][TRACE] Completed script loading in: 0ms
+[INITIALIZATION][CLIENT][INFO] CraftTweaker: Building registry
+[INITIALIZATION][CLIENT][INFO] CraftTweaker: Successfully built item registry
+[INITIALIZATION][CLIENT][TRACE] Current loaders after merging: [[preinit], [contenttweaker], [recipeevent | crafttweaker]]
+[INITIALIZATION][CLIENT][INFO] Loading scripts for loader with names [crafttweaker | recipeevent]
+[INITIALIZATION][CLIENT][TRACE] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: example_mob_drops.zs}
+[INITIALIZATION][CLIENT][ERROR] No loot table with name oe:entities/drowned exists!
+[INITIALIZATION][CLIENT][INFO] Retrieved pool drowned_rare_drop from table oe:entities/drowned
+[INITIALIZATION][CLIENT][INFO] Queuing all conditions of pool 'drowned_rare_drop' of table 'oe:entities/drowned' for removal
+[INITIALIZATION][CLIENT][INFO] Added 2 conditions to pool 'drowned_rare_drop' of table 'oe:entities/drowned'
+[INITIALIZATION][CLIENT][INFO] Queuing all entries of pool 'drowned_rare_drop' of table 'oe:entities/drowned' for removal
+[INITIALIZATION][CLIENT][INFO] Queued item entry 'loottweaker#1' for addition to pool 'drowned_rare_drop' of table 'oe:entities/drowned'
+[INITIALIZATION][CLIENT][ERROR] No loot table with name oe:entities/drowned_captain exists!
+[INITIALIZATION][CLIENT][INFO] Retrieved pool drowned_rare_drop from table oe:entities/drowned_captain
+[INITIALIZATION][CLIENT][INFO] Queuing all conditions of pool 'drowned_rare_drop' of table 'oe:entities/drowned_captain' for removal
+[INITIALIZATION][CLIENT][INFO] Queuing all entries of pool 'drowned_rare_drop' of table 'oe:entities/drowned_captain' for removal
+[INITIALIZATION][CLIENT][INFO] Added 2 conditions to pool 'drowned_rare_drop' of table 'oe:entities/drowned_captain'
+[INITIALIZATION][CLIENT][INFO] Queued item entry 'loottweaker#1' for addition to pool 'drowned_rare_drop' of table 'oe:entities/drowned_captain'
+[INITIALIZATION][CLIENT][TRACE] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker|reloadable]: modernized_backport.zs}
+[INITIALIZATION][CLIENT][TRACE] Completed script loading in: 610ms
+[POSTINITIALIZATION][CLIENT][INFO] Removing recipes for various outputs

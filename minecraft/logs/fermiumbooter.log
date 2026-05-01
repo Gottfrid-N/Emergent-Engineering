@@ -1,16 +1,14 @@
 Fermium Config Warning:
+	 "BetterFoliage Whitelist/Blacklist Cache (BetterFoliage)" from fermiummixins disabled as incompatible without betterfoliage: Requires mod to properly function.
+Fermium Config Warning:
+	 "BetterFoliage Geometry Offset (BetterFoliage)" from fermiummixins disabled as incompatible without betterfoliage: Requires mod to properly function.
+Fermium Config Warning:
 	 "Excess Mineshaft Chunk Generation Fix (BetterMineshafts)" from fermiummixins disabled as incompatible without bettermineshafts: Requires mod to properly function.
 Fermium Config Warning:
 	 "Fix Disabled Biome Crash (NetherAPI/BetterNether)" from fermiummixins disabled as incompatible without betternether: Requires mod to properly function.
-Fermium Config Warning:
-	 "Remove Log Spam" from optifinecitpatch disabled as incompatible without optifine: Mod not needed without optifine, auto-disabling.
-Fermium Config Warning:
-	 "Only First Enchant" from optifinecitpatch disabled as incompatible without optifine: Mod not needed without optifine, auto-disabling.
-Fermium Config Warning:
-	 "Fix Missing Enchantment" from optifinecitpatch disabled as incompatible without optifine: Mod not needed without optifine, auto-disabling.
-Fermium Config Warning:
-	 "Reload CITs on Login" from optifinecitpatch disabled as incompatible without optifine: Mod not needed without optifine, auto-disabling.
-General Mixin Error ClassMetadataNotFoundException:
-	net.dries007.tfc.client.gui.GuiKnapping
 General Mixin Error InvalidInjectionException:
-	@At("INVOKE") on net/minecraft/client/renderer/RenderGlobal::utOverrideOpposingSideCheck with priority 1000 cannot inject into net/minecraft/client/renderer/RenderGlobal::func_174970_a(Lnet/minecraft/entity/Entity;DLnet/minecraft/client/renderer/culling/ICamera;IZ)V merged by org.taumc.celeritas.mixin.core.terrain.RenderGlobalMixin with priority 1000 [redirect$bbj000$unknown_owner$utOverrideOpposingSideCheck(Ljava/util/Set;)I -> Prepare ->  -> { target: func_174970_a(Lnet/minecraft/entity/Entity;DLnet/minecraft/client/renderer/culling/ICamera;IZ)V }]
+	@At("INVOKE") on net/minecraft/client/renderer/RenderGlobal::utSetupTerrain with priority 1000 cannot inject into net/minecraft/client/renderer/RenderGlobal::func_174970_a(Lnet/minecraft/entity/Entity;DLnet/minecraft/client/renderer/culling/ICamera;IZ)V merged by org.taumc.celeritas.mixin.core.terrain.RenderGlobalMixin with priority 1000 [redirect$znc000$unknown_owner$utSetupTerrain(Ljava/util/Set;)I -> Prepare ->  -> { target: func_174970_a(Lnet/minecraft/entity/Entity;DLnet/minecraft/client/renderer/culling/ICamera;IZ)V }]
+General Mixin Error InvalidMixinException:
+	@Shadow method consumeMana in mixins/mods/mixins.botania.json:UTPreventAlfheimChunkbanMixin from mod UniversalTweaks-1.12.2-1.19.1.jar was not located in the target class vazkii.botania.common.block.tile.TileAlfPortal. Using refmap universaltweaks.refmap.json
+General Mixin Error InvalidMixinException:
+	@Shadow method consumeMana in mixins.randomtweaker.mods.json:botania.MixinTileAlfPortal from mod unknown-owner was not located in the target class vazkii.botania.common.block.tile.TileAlfPortal. No refMap loaded.

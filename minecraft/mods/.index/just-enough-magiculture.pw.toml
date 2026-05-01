@@ -1,39 +1,27 @@
-filename = 'justenoughmagiculture-1.12.2-1.2.1.jar'
+filename = 'justenoughmagiculture-1.12.2-1.2.2.jar'
 name = 'Just Enough Magiculture'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'justenoughmagiculture-1.12.2-1.2.1.jar'
+x-prismlauncher-version-number = 'justenoughmagiculture-1.12.2-1.2.2.jar'
 
 [download]
-hash = '0bc62afe62df03faabe03b7837edfcd3f6c317c5'
+hash = 'f723a3e0a26881fadfab81aab6a71746f2cbea53'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5796192
+file-id = 8018292
 project-id = 940521
 
 [[x-prismlauncher-dependencies]]
-addonId = '363993'
+addonId = '840576'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '289347'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '220698'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '318872'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '361313'
+addonId = '413088'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -41,23 +29,7 @@ addonId = '303422'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '407632'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '439001'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '253775'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '256141'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '336272'
+addonId = '264231'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -65,23 +37,19 @@ addonId = '227639'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
+addonId = '221857'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '228948'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
 addonId = '59968'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '292056'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '64578'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '840576'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '250498'
+addonId = '253775'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -93,31 +61,31 @@ addonId = '310059'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '251767'
+addonId = '59621'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '265642'
+addonId = '336272'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '285439'
+addonId = '220698'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '302020'
+addonId = '64578'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '413088'
+addonId = '256141'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '266515'
+addonId = '243121'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '248039'
+addonId = '363993'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -129,19 +97,19 @@ addonId = '407657'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '264231'
+addonId = '285439'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '221857'
+addonId = '302020'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '243121'
+addonId = '361313'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '59621'
+addonId = '251767'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -149,5 +117,37 @@ addonId = '225643'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '228948'
+addonId = '318872'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '265642'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '266515'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '407632'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '248039'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '439001'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '289347'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '250498'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '292056'
 type = 'OPTIONAL'
