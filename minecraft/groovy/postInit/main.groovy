@@ -1,4 +1,23 @@
-// no_run
-/* IMPORTANT: REMOVE THE ABOVE LINE TO RUN THE SCRIPT */
+crafting.removeByOutput(item("immersiveengineering:stone_decoration:10"))
+crafting.shapedBuilder()
+    .output(item("immersiveengineering:stone_decoration:10"))
+    .row("BB")
+    .row("BB")
+    .key("B", item("emergentengineering:kiln_brick"))
+    .register()
 
-log.info('Hello World!')
+crafting.removeByOutput(item("immersiveengineering:stone_decoration:0"))
+crafting.shapedBuilder()
+    .output(item("immersiveengineering:stone_decoration:0"))
+    .row("BB")
+    .row("BB")
+    .key("B", item("emergentengineering:coke_brick"))
+    .register()
+
+crafting.removeByOutput(item("immersiveengineering:stone_decoration:1"))
+crafting.shapedBuilder()
+    .output(item("immersiveengineering:stone_decoration:1"))
+    .row("BB")
+    .row("BB")
+    .key("B", item("emergentengineering:blast_brick"))
+    .register()

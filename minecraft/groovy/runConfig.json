@@ -1,8 +1,8 @@
 {
-  "packName": "PlaceHolder name",
-  "packId": "placeholdername",
-  "author": "Placeholder, author",
-  "version": "1.0.0",
+  "packName": "Emergent Engineering",
+  "packId": "emergentengineering",
+  "author": "Gottfrid Nordström",
+  "version": "0.0.1",
   "debug": false,
   "loaders": {
     "preInit": [

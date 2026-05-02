@@ -4,6 +4,14 @@
   "java": "25",
   "index": [
     {
+      "name": "preInit.main",
+      "path": "preInit/main.groovy",
+      "lm": 1777761744209,
+      "inner": [
+        "preInit.main$_run_closure1"
+      ]
+    },
+    {
       "name": "postInit.generated.jei_generated",
       "path": "postInit/generated/jei_generated.groovy",
       "lm": 1777667819874,
@@ -14,10 +22,7 @@
     {
       "name": "postInit.main",
       "path": "postInit/main.groovy",
-      "lm": 1777667819875,
-      "preprocessors": [
-        "no_run"
-      ]
+      "lm": 1777762528191
     },
     {
       "name": "postInit.generated.minecraft_generated",

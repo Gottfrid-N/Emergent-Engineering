@@ -1,7 +1,18 @@
-============  GroovyLog  ====  02.05.2026  ============
+============  GroovyLog  ====  03.05.2026  ============
 GroovyScript version: 1.4.3
-[00:57:40] [CLIENT/INFO] [placeholdername]: Running scripts in loader 'preInit'
-[00:57:40] [CLIENT/INFO] [placeholdername]: Groovy scripts took 0ms to compile and 0ms to run in preInit.
-[00:58:21] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
-[00:58:27] [CLIENT/INFO] [placeholdername]: Running scripts in loader 'postInit'
-[00:58:27] [CLIENT/INFO] [placeholdername]: Groovy scripts took 0ms to compile and 0ms to run in postInit.
+[00:43:29] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
+[00:43:30] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
+[00:43:30] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 432ms to compile and 32ms to run in preInit.
+[00:43:57] [CLIENT/INFO] [groovyscript]: Starting Language server
+[00:44:03] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
+[00:44:09] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[00:44:09] [CLIENT/INFO] [emergentengineering]:  - running script postInit.main
+[00:44:09] [CLIENT/ERROR] [postInit.main]: Can't find item for name ee.kiln_brick!
+[00:44:09] [CLIENT/ERROR] [postInit.main]:  - reason: must contain a ':' to separate mod and path
+[00:44:09] [CLIENT/ERROR] [postInit.main]: Error adding Minecraft Shaped Crafting recipe 'emergentengineering:groovyscript_shaped_ffffffff': 
+[00:44:09] [CLIENT/ERROR] [postInit.main]:  - Matrix only contains empty ingredients!
+[00:44:09] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 15ms to compile and 27ms to run in postInit.
+[01:00:28] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[01:00:28] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[01:00:28] [SERVER/INFO] [emergentengineering]:  - running script postInit.main
+[01:00:28] [SERVER/INFO] [emergentengineering]: Groovy scripts took 55ms to compile and 121ms to run in postInit.
