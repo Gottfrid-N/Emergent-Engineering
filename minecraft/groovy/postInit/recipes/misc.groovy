@@ -1,0 +1,13 @@
+in_world_crafting.fluid_to_item.recipeBuilder()
+    .name("marine_clay_iw")
+    .input(item("minecraft:sand"))
+    .fluidInput(fluid("water"))
+    .output(item("emergentengineering:marine_clay"))
+    .register()
+
+mods.tconstruct.drying.recipeBuilder()
+    .name("drying_marine_clay")
+    .input(item("emergentengineering:marine_clay"))
+    .output(item("minecraft:clay_ball"))
+    .time(600)
+    .register()

@@ -12,9 +12,34 @@
       ]
     },
     {
-      "name": "postInit.main",
-      "path": "postInit/main.groovy",
-      "lm": 1777804358774
+      "name": "postInit.recipes.crafting_shaped",
+      "path": "postInit/recipes/crafting_shaped.groovy",
+      "lm": 1777843933100
+    },
+    {
+      "name": "postInit.recipes.alloy_kiln",
+      "path": "postInit/recipes/alloy_kiln.groovy",
+      "lm": 1777843877318
+    },
+    {
+      "name": "postInit.recipes.furnace",
+      "path": "postInit/recipes/furnace.groovy",
+      "lm": 1777843877319
+    },
+    {
+      "name": "postInit.oredict",
+      "path": "postInit/oredict.groovy",
+      "lm": 1777851113675
+    },
+    {
+      "name": "postInit.recipes.crafting_shapeless",
+      "path": "postInit/recipes/crafting_shapeless.groovy",
+      "lm": 1777843873682
+    },
+    {
+      "name": "postInit.recipes.misc",
+      "path": "postInit/recipes/misc.groovy",
+      "lm": 1777845289941
     }
   ]
 }

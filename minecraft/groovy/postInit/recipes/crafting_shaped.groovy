@@ -1,0 +1,40 @@
+crafting.removeByOutput(item("tconstruct:rack:1"))
+crafting.shapedBuilder()
+    .name("gated_drying_rack")
+    .output(item("tconstruct:rack:1"))
+    .row("SSS")
+    .row("N N")
+    .key("S", item("minecraft:wooden_slab"))
+    .key("N", item("thermalfoundation:material:227"))
+    .register()
+
+//3x3
+
+//2x2
+crafting.removeByOutput(item("immersiveengineering:stone_decoration:10"))
+crafting.shapedBuilder()
+    .name("kiln_bricks")
+    .output(item("immersiveengineering:stone_decoration:10"))
+    .row("BB")
+    .row("BB")
+    .key("B", item("emergentengineering:kiln_brick"))
+    .register()
+
+crafting.removeByOutput(item("immersiveengineering:stone_decoration:0"))
+crafting.shapedBuilder()
+    .name("coke_bricks")
+    .output(item("immersiveengineering:stone_decoration:0"))
+    .row("BB")
+    .row("BB")
+    .key("B", item("emergentengineering:coke_brick"))
+    .register()
+
+crafting.removeByOutput(item("immersiveengineering:stone_decoration:1"))
+crafting.shapedBuilder()
+    .name("blast_bricks")
+    .output(item("immersiveengineering:stone_decoration:1"))
+    .row("BB")
+    .row("BB")
+    .key("B", item("emergentengineering:blast_brick"))
+    .register()
+
