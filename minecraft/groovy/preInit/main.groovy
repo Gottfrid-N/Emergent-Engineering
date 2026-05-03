@@ -10,3 +10,6 @@ content.createItem("coke_brick")
 
 content.createItem("blast_brick")
     .register()
+
+content.createItem("marine_clay")
+    .register()

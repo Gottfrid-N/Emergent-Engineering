@@ -6,55 +6,15 @@
     {
       "name": "preInit.main",
       "path": "preInit/main.groovy",
-      "lm": 1777761744209,
+      "lm": 1777801558340,
       "inner": [
         "preInit.main$_run_closure1"
       ]
     },
     {
-      "name": "postInit.generated.jei_generated",
-      "path": "postInit/generated/jei_generated.groovy",
-      "lm": 1777667819874,
-      "preprocessors": [
-        "no_run"
-      ]
-    },
-    {
       "name": "postInit.main",
       "path": "postInit/main.groovy",
-      "lm": 1777762528191
-    },
-    {
-      "name": "postInit.generated.minecraft_generated",
-      "path": "postInit/generated/minecraft_generated.groovy",
-      "lm": 1777667819875,
-      "preprocessors": [
-        "no_run"
-      ]
-    },
-    {
-      "name": "postInit.generated.futuremc_generated",
-      "path": "postInit/generated/futuremc_generated.groovy",
-      "lm": 1777667819874,
-      "preprocessors": [
-        "no_run"
-      ]
-    },
-    {
-      "name": "postInit.generated.in_world_crafting_generated",
-      "path": "postInit/generated/in_world_crafting_generated.groovy",
-      "lm": 1777667819874,
-      "preprocessors": [
-        "no_run"
-      ]
-    },
-    {
-      "name": "preInit.generated.minecraft_generated",
-      "path": "preInit/generated/minecraft_generated.groovy",
-      "lm": 1777667819875,
-      "preprocessors": [
-        "no_run"
-      ]
+      "lm": 1777804358774
     }
   ]
 }

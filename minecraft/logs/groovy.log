@@ -1,18 +1,60 @@
 ============  GroovyLog  ====  03.05.2026  ============
 GroovyScript version: 1.4.3
-[00:43:29] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
-[00:43:30] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
-[00:43:30] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 432ms to compile and 32ms to run in preInit.
-[00:43:57] [CLIENT/INFO] [groovyscript]: Starting Language server
-[00:44:03] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
-[00:44:09] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[00:44:09] [CLIENT/INFO] [emergentengineering]:  - running script postInit.main
-[00:44:09] [CLIENT/ERROR] [postInit.main]: Can't find item for name ee.kiln_brick!
-[00:44:09] [CLIENT/ERROR] [postInit.main]:  - reason: must contain a ':' to separate mod and path
-[00:44:09] [CLIENT/ERROR] [postInit.main]: Error adding Minecraft Shaped Crafting recipe 'emergentengineering:groovyscript_shaped_ffffffff': 
-[00:44:09] [CLIENT/ERROR] [postInit.main]:  - Matrix only contains empty ingredients!
-[00:44:09] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 15ms to compile and 27ms to run in postInit.
-[01:00:28] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[01:00:28] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[01:00:28] [SERVER/INFO] [emergentengineering]:  - running script postInit.main
-[01:00:28] [SERVER/INFO] [emergentengineering]: Groovy scripts took 55ms to compile and 121ms to run in postInit.
+[12:08:18] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
+[12:08:18] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
+[12:08:18] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 430ms to compile and 32ms to run in preInit.
+[12:08:43] [CLIENT/INFO] [groovyscript]: Starting Language server
+[12:08:48] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
+[12:08:50] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[12:08:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.main
+[12:08:50] [CLIENT/ERROR] [postInit.main]: Can't find item for name emergent_engineering:sandy_clay_blend!
+[12:08:50] [CLIENT/ERROR] [postInit.main]: Error adding Minecraft Furnace recipe: - Must have exactly 1 item output, but found 0
+[12:08:50] [CLIENT/ERROR] [postInit.main]: Can't find item for name emergent_engineering:marine_clay!
+[12:08:50] [CLIENT/ERROR] [emergentengineering]: Script 'postInit.main' ran into an issue while executing. Look at latest.log for a full stacktrace:
+	groovy.lang.MissingMethodException: No signature of method: com.cleanroommc.groovyscript.compat.vanilla.CraftingRecipeBuilder$Shapeless.input() is applicable for argument types: (ArrayList, net.minecraft.item.ItemStack) values: [[1xitem.coal@0], 1xitem.immersiveengineering.tool@0]
+Possible solutions: input([Lcom.cleanroommc.groovyscript.api.IIngredient;), input(com.cleanroommc.groovyscript.api.IIngredient), input(java.util.Collection), inspect(), output(net.minecraft.item.ItemStack), wait()
+		at postInit.main.run(main.groovy:86)
+		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.runScript(GroovyScriptSandbox.java:154)
+		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.loadScripts(GroovyScriptSandbox.java:280)
+[12:08:50] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 47ms to compile and 0ms to run in postInit.
+[12:11:26] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[12:11:26] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[12:11:26] [SERVER/INFO] [emergentengineering]:  - running script postInit.main
+[12:11:26] [SERVER/ERROR] [postInit.main]: Error adding Minecraft Furnace recipe: - Must have exactly 1 item output, but found 0
+[12:11:26] [SERVER/ERROR] [emergentengineering]: Script 'postInit.main' ran into an issue while executing. Look at latest.log for a full stacktrace:
+	groovy.lang.MissingMethodException: No signature of method: com.cleanroommc.groovyscript.compat.vanilla.CraftingRecipeBuilder$Shapeless.input() is applicable for argument types: (ArrayList, net.minecraft.item.ItemStack) values: [[1xitem.coal@0], 1xitem.immersiveengineering.tool@0]
+Possible solutions: input([Lcom.cleanroommc.groovyscript.api.IIngredient;), input(com.cleanroommc.groovyscript.api.IIngredient), input(java.util.Collection), inspect(), output(net.minecraft.item.ItemStack), wait()
+		at postInit.main.run(main.groovy:86)
+		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.runScript(GroovyScriptSandbox.java:154)
+		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.loadScripts(GroovyScriptSandbox.java:280)
+[12:11:26] [SERVER/INFO] [emergentengineering]: Groovy scripts took 20ms to compile and 0ms to run in postInit.
+[12:13:43] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[12:13:43] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[12:13:43] [SERVER/INFO] [emergentengineering]:  - running script postInit.main
+[12:13:44] [SERVER/ERROR] [postInit.main]: Error adding Minecraft Furnace recipe: - Must have exactly 1 item output, but found 0
+[12:13:44] [SERVER/INFO] [emergentengineering]: Groovy scripts took 35ms to compile and 64ms to run in postInit.
+[12:15:47] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[12:15:47] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[12:15:47] [SERVER/INFO] [emergentengineering]:  - running script postInit.main
+[12:15:47] [SERVER/INFO] [emergentengineering]: Groovy scripts took 43ms to compile and 65ms to run in postInit.
+[12:24:42] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[12:24:43] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[12:24:43] [SERVER/INFO] [emergentengineering]:  - running script postInit.main
+[12:24:43] [SERVER/INFO] [emergentengineering]: Groovy scripts took 53ms to compile and 67ms to run in postInit.
+[12:25:35] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[12:25:35] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[12:25:35] [SERVER/INFO] [emergentengineering]:  - running script postInit.main
+[12:25:36] [SERVER/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 37ms to run in postInit.
+[12:26:19] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[12:26:19] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[12:26:19] [SERVER/INFO] [emergentengineering]:  - running script postInit.main
+[12:26:20] [SERVER/INFO] [emergentengineering]: Groovy scripts took 23ms to compile and 65ms to run in postInit.
+[12:32:24] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[12:32:24] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[12:32:24] [SERVER/INFO] [emergentengineering]:  - running script postInit.main
+[12:32:24] [SERVER/ERROR] [postInit.main]: Error removing Minecraft Crafting recipe: - No recipes found for 1xitem.tconstruct.materials@0
+[12:32:24] [SERVER/INFO] [emergentengineering]: Groovy scripts took 17ms to compile and 63ms to run in postInit.
+[12:32:40] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[12:32:41] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[12:32:41] [SERVER/INFO] [emergentengineering]:  - running script postInit.main
+[12:32:41] [SERVER/INFO] [emergentengineering]: Groovy scripts took 10ms to compile and 54ms to run in postInit.

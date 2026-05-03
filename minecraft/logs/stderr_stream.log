@@ -1,398 +1,566 @@
 -----------------------------------------------------------------------------------
-DateTime: 03.05.2026 00:43:13:387 +02:00; PID: 21841
+DateTime: 03.05.2026 12:08:02:275 +02:00; PID: 31602
 This file contains the stderr stream of the Minecraft process logged to a file.
 It does not include stdout or log (log4j) messages to avoid performance impact.
 -----------------------------------------------------------------------------------
-[00:43:13:559] [STDERR]: WARNING: A restricted method in java.lang.System has been called
-[00:43:13:559] [STDERR]: WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unnamed module (file:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application%20Support/PrismLauncher/libraries/net/java/dev/jna/jna/5.18.1/jna-5.18.1.jar)
-[00:43:13:559] [STDERR]: WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
-[00:43:13:559] [STDERR]: WARNING: Restricted methods will be blocked in a future release unless native access is enabled
-[00:43:13:559] [STDERR]: 
-[00:43:15:695] [STDERR]: java.lang.invoke.WrongMethodTypeException: handle's method type ()PrefixTrie but found (LaunchClassLoader)Set
-[00:43:15:695] [STDERR]: 	at java.base/java.lang.invoke.Invokers.newWrongMethodTypeException(Invokers.java:522)
-[00:43:15:695] [STDERR]: 	at java.base/java.lang.invoke.Invokers.checkExactType(Invokers.java:531)
-[00:43:15:695] [STDERR]: 	at mirror.normalasm.NormalReflector.<clinit>(NormalReflector.java:34)
-[00:43:15:695] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:28)
-[00:43:15:695] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:20)
-[00:43:15:695] [STDERR]: 	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:155)
-[00:43:15:695] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:107)
-[00:43:15:695] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
-[00:43:15:695] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
-[00:43:15:695] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
-[00:43:15:695] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
-[00:43:15:695] [STDERR]: java.lang.IllegalAccessException: static final field has no write access: top.outlands.foundation.boot.ActualClassLoader.transformerExceptions/top.outlands.foundation.trie.PrefixTrie/putStatic, from class mirror.normalasm.NormalReflector (unnamed module @e8df99a)
-[00:43:15:696] [STDERR]: 	at java.base/java.lang.invoke.MemberName.makeAccessException(MemberName.java:889)
-[00:43:15:696] [STDERR]: 	at java.base/java.lang.invoke.MethodHandles$Lookup.unreflectField(MethodHandles.java:3441)
-[00:43:15:696] [STDERR]: 	at java.base/java.lang.invoke.MethodHandles$Lookup.unreflectSetter(MethodHandles.java:3432)
-[00:43:15:696] [STDERR]: 	at mirror.normalasm.NormalReflector.resolveFieldSetter(NormalReflector.java:162)
-[00:43:15:696] [STDERR]: 	at mirror.normalasm.NormalReflector.<clinit>(NormalReflector.java:40)
-[00:43:15:696] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:28)
-[00:43:15:696] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:20)
-[00:43:15:696] [STDERR]: 	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:155)
-[00:43:15:696] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:107)
-[00:43:15:696] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
-[00:43:15:696] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
-[00:43:15:696] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
-[00:43:15:696] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
-[00:43:15:696] [STDERR]: java.lang.NullPointerException: Cannot invoke "java.lang.invoke.MethodHandle.invoke(net.minecraft.launchwrapper.LaunchClassLoader, mirror.normalasm.api.datastructures.CaptureSet)" because the return value of "mirror.normalasm.NormalReflector.resolveFieldSetter(java.lang.Class, String)" is null
-[00:43:15:696] [STDERR]: 	at mirror.normalasm.NormalReflector.<clinit>(NormalReflector.java:40)
-[00:43:15:696] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:28)
-[00:43:15:696] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:20)
-[00:43:15:696] [STDERR]: 	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:155)
-[00:43:15:696] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:107)
-[00:43:15:696] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
-[00:43:15:696] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
-[00:43:15:696] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
-[00:43:15:696] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
-[00:43:15:696] [STDERR]: java.lang.invoke.WrongMethodTypeException: handle's method type (ActualClassLoader,Map)void but found (LaunchClassLoader,Map)void
-[00:43:15:696] [STDERR]: 	at java.base/java.lang.invoke.Invokers.newWrongMethodTypeException(Invokers.java:522)
-[00:43:15:696] [STDERR]: 	at java.base/java.lang.invoke.Invokers.checkExactType(Invokers.java:531)
-[00:43:15:696] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:28)
-[00:43:15:696] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:20)
-[00:43:15:696] [STDERR]: 	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:155)
-[00:43:15:696] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:107)
-[00:43:15:696] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
-[00:43:15:696] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
-[00:43:15:696] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
-[00:43:15:696] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
-[00:43:15:788] [STDERR]: WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-[00:43:15:788] [STDERR]: WARNING: sun.misc.Unsafe::arrayBaseOffset has been called by com.esotericsoftware.kryo.unsafe.UnsafeUtil (jar:file:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application%20Support/PrismLauncher/instances/Emergent-Engineering/minecraft/mods/vintagefix-0.7.0.jar!/com/esotericsoftware/kryo/unsafe/UnsafeUtil.class)
-[00:43:15:788] [STDERR]: WARNING: Please consider reporting this to the maintainers of class com.esotericsoftware.kryo.unsafe.UnsafeUtil
-[00:43:15:788] [STDERR]: WARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release
-[00:43:27:446] [STDERR]: 2026-05-02T22:43:27.445458Z Client thread WARN found 3 argument placeholders, but provided 4 for pattern `Discarding sythetic bridge method {} in {} because existing method in {} is compatible`
-[00:43:38:910] [STDERR]: java.io.FileNotFoundException: https://raw.githubusercontent.com/ValkyrieofNight/ValkyrieLib/ValkyrieofNight-supporters/supporters.json
-[00:43:38:910] [STDERR]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1709)
-[00:43:38:910] [STDERR]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1305)
-[00:43:38:910] [STDERR]: 	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223)
-[00:43:38:910] [STDERR]: 	at java.base/java.net.URL.openStream(URL.java:1263)
-[00:43:38:910] [STDERR]: 	at com.valkyrieofnight.vlib.supporters.registry.JsonSupporterRegistry.download(JsonSupporterRegistry.java:60)
-[00:43:38:910] [STDERR]: 	at com.valkyrieofnight.vlib.supporters.registry.JsonSupporterRegistry.loadRegistryData(JsonSupporterRegistry.java:39)
-[00:43:38:910] [STDERR]: 	at com.valkyrieofnight.vlib.supporters.download.SupporterRegistryThread.run(SupporterRegistryThread.java:18)
-[00:43:40:609] [STDERR]: java.io.IOException: Connection blocked by Fugue!
-[00:43:40:609] [STDERR]: 	at com.cleanroommc.fugue.helper.HookHelper.openStream(HookHelper.java:95)
-[00:43:40:609] [STDERR]: 	at com.buuz135.industrial.proxy.CommonProxy.readUrl(CommonProxy.java:96)
-[00:43:40:609] [STDERR]: 	at com.buuz135.industrial.proxy.CommonProxy.preInit(CommonProxy.java:196)
-[00:43:40:609] [STDERR]: 	at com.buuz135.industrial.proxy.client.ClientProxy.preInit(ClientProxy.java:71)
-[00:43:40:609] [STDERR]: 	at com.buuz135.industrial.IndustrialForegoing.preInit(IndustrialForegoing.java:86)
-[00:43:40:609] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[00:43:40:609] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-[00:43:40:609] [STDERR]: 	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:663)
-[00:43:40:609] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[00:43:40:609] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-[00:43:40:609] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
-[00:43:40:609] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
-[00:43:40:609] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
-[00:43:40:609] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
-[00:43:40:609] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
-[00:43:40:609] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
-[00:43:40:609] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
-[00:43:40:609] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:318)
-[00:43:40:609] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:296)
-[00:43:40:609] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[00:43:40:609] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-[00:43:40:609] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
-[00:43:40:609] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
-[00:43:40:609] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
-[00:43:40:609] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
-[00:43:40:609] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
-[00:43:40:609] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
-[00:43:40:609] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
-[00:43:40:609] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:232)
-[00:43:40:609] [STDERR]: 	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:633)
-[00:43:40:609] [STDERR]: 	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:256)
-[00:43:40:609] [STDERR]: 	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:463)
-[00:43:40:609] [STDERR]: 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:12151)
-[00:43:40:609] [STDERR]: 	at net.minecraft.client.main.Main.main(SourceFile:123)
-[00:43:40:609] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:125)
-[00:43:40:609] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
-[00:43:40:609] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
-[00:43:40:609] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
-[00:43:40:609] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
-[00:43:42:876] [STDERR]: java.lang.RuntimeException: Error while loading entry deepmoblearning:1_machines/2_loot_fabricator
-[00:43:42:877] [STDERR]: 	at vazkii.patchouli.client.book.BookContents.lambda$reload$3(BookContents.java:149)
-[00:43:42:877] [STDERR]: 	at java.base/java.util.HashMap.forEach(HashMap.java:1430)
-[00:43:42:877] [STDERR]: 	at vazkii.patchouli.client.book.BookContents.reload(BookContents.java:145)
-[00:43:42:877] [STDERR]: 	at vazkii.patchouli.common.book.Book.reloadContents(Book.java:201)
-[00:43:42:877] [STDERR]: 	at java.base/java.util.HashMap$Values.forEach(HashMap.java:1074)
-[00:43:42:877] [STDERR]: 	at vazkii.patchouli.common.book.BookRegistry.reload(BookRegistry.java:87)
-[00:43:42:877] [STDERR]: 	at vazkii.patchouli.client.book.ClientBookRegistry.func_110549_a(ClientBookRegistry.java:94)
-[00:43:42:877] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110544_b(SimpleReloadableResourceManager.java:137)
-[00:43:42:877] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110541_a(SimpleReloadableResourceManager.java:116)
-[00:43:42:877] [STDERR]: 	at com.blakebr0.mysticalagriculture.util.resources.ExternalResourcePack.injectExternalResources(ExternalResourcePack.java:72)
-[00:43:42:877] [STDERR]: 	at com.blakebr0.mysticalagriculture.proxy.ClientProxy.preInit(ClientProxy.java:18)
-[00:43:42:877] [STDERR]: 	at com.blakebr0.mysticalagriculture.MysticalAgriculture.preInit(MysticalAgriculture.java:43)
-[00:43:42:877] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[00:43:42:877] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-[00:43:42:877] [STDERR]: 	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:663)
-[00:43:42:877] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[00:43:42:877] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-[00:43:42:877] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
-[00:43:42:877] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
-[00:43:42:877] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
-[00:43:42:877] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
-[00:43:42:877] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
-[00:43:42:877] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
-[00:43:42:877] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
-[00:43:42:877] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:318)
-[00:43:42:877] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:296)
-[00:43:42:877] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[00:43:42:877] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-[00:43:42:877] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
-[00:43:42:877] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
-[00:43:42:877] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
-[00:43:42:877] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
-[00:43:42:877] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
-[00:43:42:877] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
-[00:43:42:877] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
-[00:43:42:877] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:232)
-[00:43:42:877] [STDERR]: 	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:633)
-[00:43:42:877] [STDERR]: 	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:256)
-[00:43:42:877] [STDERR]: 	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:463)
-[00:43:42:877] [STDERR]: 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:12151)
-[00:43:42:877] [STDERR]: 	at net.minecraft.client.main.Main.main(SourceFile:123)
-[00:43:42:877] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:125)
-[00:43:42:877] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
-[00:43:42:877] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
-[00:43:42:877] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
-[00:43:42:877] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
-[00:43:42:877] [STDERR]: Caused by: java.lang.IllegalArgumentException: Template deepmoblearning:recipelookup does not exist
-[00:43:42:877] [STDERR]: 	at vazkii.patchouli.client.book.template.BookTemplate.createTemplate(BookTemplate.java:66)
-[00:43:42:877] [STDERR]: 	at vazkii.patchouli.client.book.page.PageTemplate.canAdd(PageTemplate.java:47)
-[00:43:42:877] [STDERR]: 	at vazkii.patchouli.client.book.BookEntry.build(BookEntry.java:177)
-[00:43:42:877] [STDERR]: 	at vazkii.patchouli.client.book.BookContents.lambda$reload$3(BookContents.java:147)
-[00:43:42:877] [STDERR]: 	... 45 more
-[00:43:42:889] [STDERR]: java.lang.RuntimeException: Error while loading entry twilightforest:bosses/ur_ghast
-[00:43:42:889] [STDERR]: 	at vazkii.patchouli.client.book.BookContents.lambda$reload$3(BookContents.java:149)
-[00:43:42:889] [STDERR]: 	at java.base/java.util.HashMap.forEach(HashMap.java:1430)
-[00:43:42:889] [STDERR]: 	at vazkii.patchouli.client.book.BookContents.reload(BookContents.java:145)
-[00:43:42:889] [STDERR]: 	at vazkii.patchouli.common.book.Book.reloadContents(Book.java:201)
-[00:43:42:889] [STDERR]: 	at java.base/java.util.HashMap$Values.forEach(HashMap.java:1074)
-[00:43:42:889] [STDERR]: 	at vazkii.patchouli.common.book.BookRegistry.reload(BookRegistry.java:87)
-[00:43:42:889] [STDERR]: 	at vazkii.patchouli.client.book.ClientBookRegistry.func_110549_a(ClientBookRegistry.java:94)
-[00:43:42:889] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110544_b(SimpleReloadableResourceManager.java:137)
-[00:43:42:889] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110541_a(SimpleReloadableResourceManager.java:116)
-[00:43:42:889] [STDERR]: 	at com.blakebr0.mysticalagriculture.util.resources.ExternalResourcePack.injectExternalResources(ExternalResourcePack.java:72)
-[00:43:42:889] [STDERR]: 	at com.blakebr0.mysticalagriculture.proxy.ClientProxy.preInit(ClientProxy.java:18)
-[00:43:42:889] [STDERR]: 	at com.blakebr0.mysticalagriculture.MysticalAgriculture.preInit(MysticalAgriculture.java:43)
-[00:43:42:889] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[00:43:42:889] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-[00:43:42:889] [STDERR]: 	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:663)
-[00:43:42:889] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[00:43:42:889] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-[00:43:42:889] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
-[00:43:42:889] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
-[00:43:42:889] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
-[00:43:42:889] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
-[00:43:42:889] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
-[00:43:42:889] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
-[00:43:42:889] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
-[00:43:42:889] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:318)
-[00:43:42:889] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:296)
-[00:43:42:889] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[00:43:42:889] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-[00:43:42:889] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
-[00:43:42:889] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
-[00:43:42:889] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
-[00:43:42:889] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
-[00:43:42:889] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
-[00:43:42:889] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
-[00:43:42:889] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
-[00:43:42:889] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:232)
-[00:43:42:889] [STDERR]: 	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:633)
-[00:43:42:889] [STDERR]: 	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:256)
-[00:43:42:889] [STDERR]: 	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:463)
-[00:43:42:889] [STDERR]: 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:12151)
-[00:43:42:889] [STDERR]: 	at net.minecraft.client.main.Main.main(SourceFile:123)
-[00:43:42:889] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:125)
-[00:43:42:890] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
-[00:43:42:890] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
-[00:43:42:890] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
-[00:43:42:890] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
-[00:43:42:890] [STDERR]: Caused by: java.lang.RuntimeException: Error while loading entry twilightforest:bosses/ur_ghast page 0
-[00:43:42:890] [STDERR]: 	at vazkii.patchouli.client.book.BookEntry.build(BookEntry.java:182)
-[00:43:42:890] [STDERR]: 	at vazkii.patchouli.client.book.BookContents.lambda$reload$3(BookContents.java:147)
-[00:43:42:890] [STDERR]: 	... 45 more
-[00:43:42:890] [STDERR]: Caused by: java.lang.NullPointerException: Cannot invoke "net.minecraftforge.fml.common.registry.EntityEntry.getEntityClass()" because the return value of "net.minecraftforge.registries.IForgeRegistry.getValue(net.minecraft.util.ResourceLocation)" is null
-[00:43:42:890] [STDERR]: 	at vazkii.patchouli.common.util.EntityUtil.loadEntity(EntityUtil.java:38)
-[00:43:42:890] [STDERR]: 	at vazkii.patchouli.client.book.page.PageEntity.build(PageEntity.java:43)
-[00:43:42:890] [STDERR]: 	at vazkii.patchouli.client.book.BookEntry.build(BookEntry.java:180)
-[00:43:42:890] [STDERR]: 	... 46 more
-[00:43:49:356] [STDERR]: java.io.IOException: Error loading metadata for location appliedenergistics2:textures/blocks/drive_cell_states_emissive.png
-[00:43:49:356] [STDERR]: 	at team.chisel.ctm.client.util.ResourceUtil.getMetadata(ResourceUtil.java:64)
-[00:43:49:356] [STDERR]: 	at team.chisel.ctm.client.util.TextureMetadataHandler.onTextureStitch(TextureMetadataHandler.java:63)
-[00:43:49:356] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:79)
-[00:43:49:356] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:204)
-[00:43:49:356] [STDERR]: 	at team.chisel.ctm.client.asm.CTMCoreMethods.onSpriteRegister(CTMCoreMethods.java:52)
-[00:43:49:356] [STDERR]: 	at net.minecraft.client.renderer.texture.TextureMap.func_174942_a(TextureMap.java:386)
-[00:43:49:356] [STDERR]: 	at net.minecraft.client.renderer.texture.TextureMap.registerSpriteWeak(TextureMap.java:2080)
-[00:43:49:356] [STDERR]: 	at org.embeddedt.vintagefix.VintageFixClient.registerSpriteSafe(VintageFixClient.java:60)
-[00:43:49:356] [STDERR]: 	at org.embeddedt.vintagefix.VintageFixClient.collectTextures(VintageFixClient.java:94)
-[00:43:49:356] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:79)
-[00:43:49:356] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:204)
-[00:43:49:356] [STDERR]: 	at net.minecraftforge.client.ForgeHooksClient.onTextureStitchedPre(ForgeHooksClient.java:214)
-[00:43:49:356] [STDERR]: 	at net.minecraft.client.renderer.texture.TextureMap.func_174943_a(TextureMap.java:83)
-[00:43:49:356] [STDERR]: 	at net.minecraft.client.renderer.block.model.ModelManager.func_110549_a(ModelManager.java:1237)
-[00:43:49:356] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110542_a(SimpleReloadableResourceManager.java:126)
-[00:43:49:356] [STDERR]: 	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:509)
-[00:43:49:356] [STDERR]: 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:12151)
-[00:43:49:356] [STDERR]: 	at net.minecraft.client.main.Main.main(SourceFile:123)
-[00:43:49:356] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:125)
-[00:43:49:356] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
-[00:43:49:356] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
-[00:43:49:356] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
-[00:43:49:356] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
-[00:43:49:356] [STDERR]: Caused by: com.google.gson.JsonParseException: Invalid block layer given: "BLOOM"
-[00:43:49:356] [STDERR]: 	at team.chisel.ctm.client.texture.IMetadataSectionCTM$V1.fromJson(IMetadataSectionCTM.java:120)
-[00:43:49:356] [STDERR]: 	at team.chisel.ctm.client.texture.IMetadataSectionCTM$Serializer.deserialize(IMetadataSectionCTM.java:157)
-[00:43:49:356] [STDERR]: 	at team.chisel.ctm.client.texture.IMetadataSectionCTM$Serializer.deserialize(IMetadataSectionCTM.java:146)
-[00:43:49:356] [STDERR]: 	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:95)
-[00:43:49:356] [STDERR]: 	at com.google.gson.Gson.fromJson(Gson.java:1358)
-[00:43:49:356] [STDERR]: 	at com.google.gson.Gson.fromJson(Gson.java:1471)
-[00:43:49:356] [STDERR]: 	at com.google.gson.Gson.fromJson(Gson.java:1442)
-[00:43:49:356] [STDERR]: 	at net.minecraft.client.resources.data.MetadataSerializer.func_110503_a(SourceFile:46)
-[00:43:49:356] [STDERR]: 	at net.minecraft.client.resources.SimpleResource.func_110526_a(SimpleResource.java:90)
-[00:43:49:356] [STDERR]: 	at team.chisel.ctm.client.util.ResourceUtil.getMetadata(ResourceUtil.java:60)
-[00:43:49:356] [STDERR]: 	... 22 more
-[00:43:56:176] [STDERR]: java.io.IOException: Connection blocked by Fugue!
-[00:43:56:176] [STDERR]: 	at com.cleanroommc.fugue.helper.HookHelper.openStream(HookHelper.java:95)
-[00:43:56:176] [STDERR]: 	at vazkii.quark.base.client.ContributorRewardHandler$ThreadContributorListLoader.run(ContributorRewardHandler.java:118)
-[00:43:57:191] [STDERR]: java.lang.UnsupportedOperationException: JsonNull
-[00:43:57:191] [STDERR]: 	at com.google.gson.JsonElement.getAsString(JsonElement.java:251)
-[00:43:57:191] [STDERR]: 	at codechicken.lib.internal.ModDescriptionEnhancer.parse(ModDescriptionEnhancer.java:103)
-[00:43:57:191] [STDERR]: 	at codechicken.lib.internal.ModDescriptionEnhancer.lambda$init$0(ModDescriptionEnhancer.java:82)
-[00:43:57:191] [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:1474)
-[00:44:00:655] [STDERR]: java.lang.RuntimeException: Error creating shader: ERROR: 0:1: '' :  version '130' is not supported
-[00:44:00:655] [STDERR]: 
-[00:44:00:656] [STDERR]: 	at flaxbeard.immersivepetroleum.client.ShaderUtil.createShader(ShaderUtil.java:101)
-[00:44:00:656] [STDERR]: 	at flaxbeard.immersivepetroleum.client.ShaderUtil.createShader(ShaderUtil.java:46)
-[00:44:00:656] [STDERR]: 	at flaxbeard.immersivepetroleum.client.ShaderUtil.init(ShaderUtil.java:22)
-[00:44:00:656] [STDERR]: 	at flaxbeard.immersivepetroleum.client.ClientProxy.init(ClientProxy.java:207)
-[00:44:00:656] [STDERR]: 	at flaxbeard.immersivepetroleum.ImmersivePetroleum.init(ImmersivePetroleum.java:103)
-[00:44:00:656] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[00:44:00:656] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-[00:44:00:656] [STDERR]: 	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:663)
-[00:44:00:656] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[00:44:00:656] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-[00:44:00:656] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
-[00:44:00:656] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
-[00:44:00:656] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
-[00:44:00:656] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
-[00:44:00:656] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
-[00:44:00:656] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
-[00:44:00:656] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
-[00:44:00:656] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:318)
-[00:44:00:656] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:296)
-[00:44:00:656] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-[00:44:00:656] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-[00:44:00:656] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
-[00:44:00:656] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
-[00:44:00:656] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
-[00:44:00:656] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
-[00:44:00:656] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
-[00:44:00:656] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
-[00:44:00:656] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
-[00:44:00:656] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:232)
-[00:44:00:656] [STDERR]: 	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:754)
-[00:44:00:656] [STDERR]: 	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:344)
-[00:44:00:656] [STDERR]: 	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:531)
-[00:44:00:656] [STDERR]: 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:12151)
-[00:44:00:656] [STDERR]: 	at net.minecraft.client.main.Main.main(SourceFile:123)
-[00:44:00:656] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:125)
-[00:44:00:656] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
-[00:44:00:656] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
-[00:44:00:656] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
-[00:44:00:656] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
-[00:55:39:507] [STDERR]: May 03, 2026 12:55:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
-[00:55:39:507] [STDERR]: WARNING: Unmatched cancel notification for request id 6
-[00:55:41:233] [STDERR]: May 03, 2026 12:55:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
-[00:55:41:233] [STDERR]: WARNING: Unmatched cancel notification for request id 18
-[00:55:47:175] [STDERR]: May 03, 2026 12:55:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
-[00:55:47:175] [STDERR]: WARNING: Unmatched cancel notification for request id 58
-[00:55:50:062] [STDERR]: May 03, 2026 12:55:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
-[00:55:50:062] [STDERR]: WARNING: Unmatched cancel notification for request id 60
-[00:55:51:724] [STDERR]: May 03, 2026 12:55:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
-[00:55:51:724] [STDERR]: WARNING: Unmatched cancel notification for request id 61
-[00:55:52:008] [STDERR]: May 03, 2026 12:55:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
-[00:55:52:008] [STDERR]: WARNING: Unmatched cancel notification for request id 64
-[00:56:22:968] [STDERR]: java.io.IOException: Error loading metadata for location appliedenergistics2:textures/blocks/drive_cell_states_emissive.png
-[00:56:22:968] [STDERR]: 	at team.chisel.ctm.client.util.ResourceUtil.getMetadata(ResourceUtil.java:64)
-[00:56:22:968] [STDERR]: 	at team.chisel.ctm.client.util.TextureMetadataHandler.onTextureStitch(TextureMetadataHandler.java:63)
-[00:56:22:968] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:79)
-[00:56:22:968] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:204)
-[00:56:22:968] [STDERR]: 	at team.chisel.ctm.client.asm.CTMCoreMethods.onSpriteRegister(CTMCoreMethods.java:52)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.renderer.texture.TextureMap.func_174942_a(TextureMap.java:386)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.renderer.texture.TextureMap.registerSpriteWeak(TextureMap.java:2080)
-[00:56:22:968] [STDERR]: 	at org.embeddedt.vintagefix.VintageFixClient.registerSpriteSafe(VintageFixClient.java:60)
-[00:56:22:968] [STDERR]: 	at org.embeddedt.vintagefix.VintageFixClient.collectTextures(VintageFixClient.java:94)
-[00:56:22:968] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:79)
-[00:56:22:968] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:204)
-[00:56:22:968] [STDERR]: 	at net.minecraftforge.client.ForgeHooksClient.onTextureStitchedPre(ForgeHooksClient.java:214)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.renderer.texture.TextureMap.func_174943_a(TextureMap.java:83)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.renderer.block.model.ModelManager.func_110549_a(ModelManager.java:1237)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110544_b(SimpleReloadableResourceManager.java:137)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110541_a(SimpleReloadableResourceManager.java:116)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.Minecraft.func_110436_a(Minecraft.java:787)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.Minecraft.func_184122_c(Minecraft.java:2126)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.Minecraft.func_184118_az(Minecraft.java:1981)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1820)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1088)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:12164)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.main.Main.main(SourceFile:123)
-[00:56:22:968] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:125)
-[00:56:22:968] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
-[00:56:22:968] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
-[00:56:22:968] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
-[00:56:22:968] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
-[00:56:22:968] [STDERR]: Caused by: com.google.gson.JsonParseException: Invalid block layer given: "BLOOM"
-[00:56:22:968] [STDERR]: 	at team.chisel.ctm.client.texture.IMetadataSectionCTM$V1.fromJson(IMetadataSectionCTM.java:120)
-[00:56:22:968] [STDERR]: 	at team.chisel.ctm.client.texture.IMetadataSectionCTM$Serializer.deserialize(IMetadataSectionCTM.java:157)
-[00:56:22:968] [STDERR]: 	at team.chisel.ctm.client.texture.IMetadataSectionCTM$Serializer.deserialize(IMetadataSectionCTM.java:146)
-[00:56:22:968] [STDERR]: 	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:95)
-[00:56:22:968] [STDERR]: 	at com.google.gson.Gson.fromJson(Gson.java:1358)
-[00:56:22:968] [STDERR]: 	at com.google.gson.Gson.fromJson(Gson.java:1471)
-[00:56:22:968] [STDERR]: 	at com.google.gson.Gson.fromJson(Gson.java:1442)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.resources.data.MetadataSerializer.func_110503_a(SourceFile:46)
-[00:56:22:968] [STDERR]: 	at net.minecraft.client.resources.SimpleResource.func_110526_a(SimpleResource.java:90)
-[00:56:22:968] [STDERR]: 	at team.chisel.ctm.client.util.ResourceUtil.getMetadata(ResourceUtil.java:60)
-[00:56:22:968] [STDERR]: 	... 27 more
-[00:57:14:517] [STDERR]: java.io.IOException: Error loading metadata for location appliedenergistics2:textures/blocks/drive_cell_states_emissive.png
-[00:57:14:517] [STDERR]: 	at team.chisel.ctm.client.util.ResourceUtil.getMetadata(ResourceUtil.java:64)
-[00:57:14:517] [STDERR]: 	at team.chisel.ctm.client.util.TextureMetadataHandler.onTextureStitch(TextureMetadataHandler.java:63)
-[00:57:14:517] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:79)
-[00:57:14:517] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:204)
-[00:57:14:517] [STDERR]: 	at team.chisel.ctm.client.asm.CTMCoreMethods.onSpriteRegister(CTMCoreMethods.java:52)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.renderer.texture.TextureMap.func_174942_a(TextureMap.java:386)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.renderer.texture.TextureMap.registerSpriteWeak(TextureMap.java:2080)
-[00:57:14:517] [STDERR]: 	at org.embeddedt.vintagefix.VintageFixClient.registerSpriteSafe(VintageFixClient.java:60)
-[00:57:14:517] [STDERR]: 	at org.embeddedt.vintagefix.VintageFixClient.collectTextures(VintageFixClient.java:94)
-[00:57:14:517] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:79)
-[00:57:14:517] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:204)
-[00:57:14:517] [STDERR]: 	at net.minecraftforge.client.ForgeHooksClient.onTextureStitchedPre(ForgeHooksClient.java:214)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.renderer.texture.TextureMap.func_174943_a(TextureMap.java:83)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.renderer.block.model.ModelManager.func_110549_a(ModelManager.java:1237)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110544_b(SimpleReloadableResourceManager.java:137)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110541_a(SimpleReloadableResourceManager.java:116)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.Minecraft.func_110436_a(Minecraft.java:787)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.Minecraft.func_184122_c(Minecraft.java:2126)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.Minecraft.func_184118_az(Minecraft.java:1981)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1820)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1088)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:12164)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.main.Main.main(SourceFile:123)
-[00:57:14:517] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:125)
-[00:57:14:517] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
-[00:57:14:517] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
-[00:57:14:517] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
-[00:57:14:517] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
-[00:57:14:517] [STDERR]: Caused by: com.google.gson.JsonParseException: Invalid block layer given: "BLOOM"
-[00:57:14:517] [STDERR]: 	at team.chisel.ctm.client.texture.IMetadataSectionCTM$V1.fromJson(IMetadataSectionCTM.java:120)
-[00:57:14:517] [STDERR]: 	at team.chisel.ctm.client.texture.IMetadataSectionCTM$Serializer.deserialize(IMetadataSectionCTM.java:157)
-[00:57:14:517] [STDERR]: 	at team.chisel.ctm.client.texture.IMetadataSectionCTM$Serializer.deserialize(IMetadataSectionCTM.java:146)
-[00:57:14:517] [STDERR]: 	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:95)
-[00:57:14:517] [STDERR]: 	at com.google.gson.Gson.fromJson(Gson.java:1358)
-[00:57:14:517] [STDERR]: 	at com.google.gson.Gson.fromJson(Gson.java:1471)
-[00:57:14:517] [STDERR]: 	at com.google.gson.Gson.fromJson(Gson.java:1442)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.resources.data.MetadataSerializer.func_110503_a(SourceFile:46)
-[00:57:14:517] [STDERR]: 	at net.minecraft.client.resources.SimpleResource.func_110526_a(SimpleResource.java:90)
-[00:57:14:517] [STDERR]: 	at team.chisel.ctm.client.util.ResourceUtil.getMetadata(ResourceUtil.java:60)
-[00:57:14:517] [STDERR]: 	... 27 more
+[12:08:02:444] [STDERR]: WARNING: A restricted method in java.lang.System has been called
+[12:08:02:444] [STDERR]: WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unnamed module (file:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application%20Support/PrismLauncher/libraries/net/java/dev/jna/jna/5.18.1/jna-5.18.1.jar)
+[12:08:02:444] [STDERR]: WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+[12:08:02:444] [STDERR]: WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+[12:08:02:444] [STDERR]: 
+[12:08:04:663] [STDERR]: java.lang.invoke.WrongMethodTypeException: handle's method type ()PrefixTrie but found (LaunchClassLoader)Set
+[12:08:04:663] [STDERR]: 	at java.base/java.lang.invoke.Invokers.newWrongMethodTypeException(Invokers.java:522)
+[12:08:04:663] [STDERR]: 	at java.base/java.lang.invoke.Invokers.checkExactType(Invokers.java:531)
+[12:08:04:663] [STDERR]: 	at mirror.normalasm.NormalReflector.<clinit>(NormalReflector.java:34)
+[12:08:04:663] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:28)
+[12:08:04:664] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:20)
+[12:08:04:664] [STDERR]: 	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:155)
+[12:08:04:664] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:107)
+[12:08:04:664] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
+[12:08:04:664] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
+[12:08:04:664] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+[12:08:04:664] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+[12:08:04:664] [STDERR]: java.lang.IllegalAccessException: static final field has no write access: top.outlands.foundation.boot.ActualClassLoader.transformerExceptions/top.outlands.foundation.trie.PrefixTrie/putStatic, from class mirror.normalasm.NormalReflector (unnamed module @e8df99a)
+[12:08:04:664] [STDERR]: 	at java.base/java.lang.invoke.MemberName.makeAccessException(MemberName.java:889)
+[12:08:04:664] [STDERR]: 	at java.base/java.lang.invoke.MethodHandles$Lookup.unreflectField(MethodHandles.java:3441)
+[12:08:04:664] [STDERR]: 	at java.base/java.lang.invoke.MethodHandles$Lookup.unreflectSetter(MethodHandles.java:3432)
+[12:08:04:664] [STDERR]: 	at mirror.normalasm.NormalReflector.resolveFieldSetter(NormalReflector.java:162)
+[12:08:04:664] [STDERR]: 	at mirror.normalasm.NormalReflector.<clinit>(NormalReflector.java:40)
+[12:08:04:664] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:28)
+[12:08:04:664] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:20)
+[12:08:04:664] [STDERR]: 	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:155)
+[12:08:04:664] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:107)
+[12:08:04:664] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
+[12:08:04:664] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
+[12:08:04:664] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+[12:08:04:664] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+[12:08:04:664] [STDERR]: java.lang.NullPointerException: Cannot invoke "java.lang.invoke.MethodHandle.invoke(net.minecraft.launchwrapper.LaunchClassLoader, mirror.normalasm.api.datastructures.CaptureSet)" because the return value of "mirror.normalasm.NormalReflector.resolveFieldSetter(java.lang.Class, String)" is null
+[12:08:04:664] [STDERR]: 	at mirror.normalasm.NormalReflector.<clinit>(NormalReflector.java:40)
+[12:08:04:664] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:28)
+[12:08:04:664] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:20)
+[12:08:04:664] [STDERR]: 	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:155)
+[12:08:04:664] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:107)
+[12:08:04:664] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
+[12:08:04:664] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
+[12:08:04:664] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+[12:08:04:664] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+[12:08:04:664] [STDERR]: java.lang.invoke.WrongMethodTypeException: handle's method type (ActualClassLoader,Map)void but found (LaunchClassLoader,Map)void
+[12:08:04:664] [STDERR]: 	at java.base/java.lang.invoke.Invokers.newWrongMethodTypeException(Invokers.java:522)
+[12:08:04:664] [STDERR]: 	at java.base/java.lang.invoke.Invokers.checkExactType(Invokers.java:531)
+[12:08:04:664] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:28)
+[12:08:04:664] [STDERR]: 	at mirror.normalasm.core.NormalFMLCallHook.call(NormalFMLCallHook.java:20)
+[12:08:04:664] [STDERR]: 	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:155)
+[12:08:04:664] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:107)
+[12:08:04:664] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
+[12:08:04:664] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
+[12:08:04:664] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+[12:08:04:664] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+[12:08:04:780] [STDERR]: WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[12:08:04:780] [STDERR]: WARNING: sun.misc.Unsafe::arrayBaseOffset has been called by com.esotericsoftware.kryo.unsafe.UnsafeUtil (jar:file:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application%20Support/PrismLauncher/instances/Emergent-Engineering/minecraft/mods/vintagefix-0.7.0.jar!/com/esotericsoftware/kryo/unsafe/UnsafeUtil.class)
+[12:08:04:780] [STDERR]: WARNING: Please consider reporting this to the maintainers of class com.esotericsoftware.kryo.unsafe.UnsafeUtil
+[12:08:04:780] [STDERR]: WARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release
+[12:08:15:672] [STDERR]: 2026-05-03T10:08:15.672213Z Client thread WARN found 3 argument placeholders, but provided 4 for pattern `Discarding sythetic bridge method {} in {} because existing method in {} is compatible`
+[12:08:27:051] [STDERR]: java.io.FileNotFoundException: https://raw.githubusercontent.com/ValkyrieofNight/ValkyrieLib/ValkyrieofNight-supporters/supporters.json
+[12:08:27:051] [STDERR]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1709)
+[12:08:27:051] [STDERR]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1305)
+[12:08:27:051] [STDERR]: 	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223)
+[12:08:27:051] [STDERR]: 	at java.base/java.net.URL.openStream(URL.java:1263)
+[12:08:27:051] [STDERR]: 	at com.valkyrieofnight.vlib.supporters.registry.JsonSupporterRegistry.download(JsonSupporterRegistry.java:60)
+[12:08:27:051] [STDERR]: 	at com.valkyrieofnight.vlib.supporters.registry.JsonSupporterRegistry.loadRegistryData(JsonSupporterRegistry.java:39)
+[12:08:27:051] [STDERR]: 	at com.valkyrieofnight.vlib.supporters.download.SupporterRegistryThread.run(SupporterRegistryThread.java:18)
+[12:08:28:696] [STDERR]: java.io.IOException: Connection blocked by Fugue!
+[12:08:28:696] [STDERR]: 	at com.cleanroommc.fugue.helper.HookHelper.openStream(HookHelper.java:95)
+[12:08:28:696] [STDERR]: 	at com.buuz135.industrial.proxy.CommonProxy.readUrl(CommonProxy.java:96)
+[12:08:28:696] [STDERR]: 	at com.buuz135.industrial.proxy.CommonProxy.preInit(CommonProxy.java:196)
+[12:08:28:696] [STDERR]: 	at com.buuz135.industrial.proxy.client.ClientProxy.preInit(ClientProxy.java:71)
+[12:08:28:696] [STDERR]: 	at com.buuz135.industrial.IndustrialForegoing.preInit(IndustrialForegoing.java:86)
+[12:08:28:696] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[12:08:28:696] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[12:08:28:696] [STDERR]: 	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:663)
+[12:08:28:696] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[12:08:28:696] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[12:08:28:696] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
+[12:08:28:696] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
+[12:08:28:696] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
+[12:08:28:696] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+[12:08:28:696] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
+[12:08:28:696] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
+[12:08:28:696] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
+[12:08:28:696] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:318)
+[12:08:28:696] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:296)
+[12:08:28:696] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[12:08:28:696] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[12:08:28:696] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
+[12:08:28:696] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
+[12:08:28:696] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
+[12:08:28:696] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+[12:08:28:696] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
+[12:08:28:696] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
+[12:08:28:696] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
+[12:08:28:696] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:232)
+[12:08:28:696] [STDERR]: 	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:633)
+[12:08:28:696] [STDERR]: 	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:256)
+[12:08:28:696] [STDERR]: 	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:463)
+[12:08:28:696] [STDERR]: 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:12151)
+[12:08:28:696] [STDERR]: 	at net.minecraft.client.main.Main.main(SourceFile:123)
+[12:08:28:696] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:125)
+[12:08:28:696] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
+[12:08:28:696] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
+[12:08:28:696] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+[12:08:28:696] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+[12:08:30:768] [STDERR]: java.lang.RuntimeException: Error while loading entry deepmoblearning:1_machines/2_loot_fabricator
+[12:08:30:768] [STDERR]: 	at vazkii.patchouli.client.book.BookContents.lambda$reload$3(BookContents.java:149)
+[12:08:30:768] [STDERR]: 	at java.base/java.util.HashMap.forEach(HashMap.java:1430)
+[12:08:30:768] [STDERR]: 	at vazkii.patchouli.client.book.BookContents.reload(BookContents.java:145)
+[12:08:30:768] [STDERR]: 	at vazkii.patchouli.common.book.Book.reloadContents(Book.java:201)
+[12:08:30:768] [STDERR]: 	at java.base/java.util.HashMap$Values.forEach(HashMap.java:1074)
+[12:08:30:768] [STDERR]: 	at vazkii.patchouli.common.book.BookRegistry.reload(BookRegistry.java:87)
+[12:08:30:768] [STDERR]: 	at vazkii.patchouli.client.book.ClientBookRegistry.func_110549_a(ClientBookRegistry.java:94)
+[12:08:30:768] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110544_b(SimpleReloadableResourceManager.java:137)
+[12:08:30:768] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110541_a(SimpleReloadableResourceManager.java:116)
+[12:08:30:768] [STDERR]: 	at com.blakebr0.mysticalagriculture.util.resources.ExternalResourcePack.injectExternalResources(ExternalResourcePack.java:72)
+[12:08:30:768] [STDERR]: 	at com.blakebr0.mysticalagriculture.proxy.ClientProxy.preInit(ClientProxy.java:18)
+[12:08:30:768] [STDERR]: 	at com.blakebr0.mysticalagriculture.MysticalAgriculture.preInit(MysticalAgriculture.java:43)
+[12:08:30:768] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[12:08:30:768] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[12:08:30:768] [STDERR]: 	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:663)
+[12:08:30:768] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[12:08:30:768] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[12:08:30:768] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
+[12:08:30:768] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
+[12:08:30:768] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
+[12:08:30:768] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+[12:08:30:768] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
+[12:08:30:768] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
+[12:08:30:768] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
+[12:08:30:768] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:318)
+[12:08:30:768] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:296)
+[12:08:30:768] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[12:08:30:768] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[12:08:30:768] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
+[12:08:30:768] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
+[12:08:30:768] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
+[12:08:30:768] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+[12:08:30:768] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
+[12:08:30:768] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
+[12:08:30:768] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
+[12:08:30:768] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:232)
+[12:08:30:768] [STDERR]: 	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:633)
+[12:08:30:768] [STDERR]: 	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:256)
+[12:08:30:768] [STDERR]: 	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:463)
+[12:08:30:768] [STDERR]: 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:12151)
+[12:08:30:768] [STDERR]: 	at net.minecraft.client.main.Main.main(SourceFile:123)
+[12:08:30:768] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:125)
+[12:08:30:768] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
+[12:08:30:768] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
+[12:08:30:768] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+[12:08:30:768] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+[12:08:30:768] [STDERR]: Caused by: java.lang.IllegalArgumentException: Template deepmoblearning:recipelookup does not exist
+[12:08:30:768] [STDERR]: 	at vazkii.patchouli.client.book.template.BookTemplate.createTemplate(BookTemplate.java:66)
+[12:08:30:768] [STDERR]: 	at vazkii.patchouli.client.book.page.PageTemplate.canAdd(PageTemplate.java:47)
+[12:08:30:768] [STDERR]: 	at vazkii.patchouli.client.book.BookEntry.build(BookEntry.java:177)
+[12:08:30:768] [STDERR]: 	at vazkii.patchouli.client.book.BookContents.lambda$reload$3(BookContents.java:147)
+[12:08:30:768] [STDERR]: 	... 45 more
+[12:08:30:778] [STDERR]: java.lang.RuntimeException: Error while loading entry twilightforest:bosses/ur_ghast
+[12:08:30:778] [STDERR]: 	at vazkii.patchouli.client.book.BookContents.lambda$reload$3(BookContents.java:149)
+[12:08:30:778] [STDERR]: 	at java.base/java.util.HashMap.forEach(HashMap.java:1430)
+[12:08:30:778] [STDERR]: 	at vazkii.patchouli.client.book.BookContents.reload(BookContents.java:145)
+[12:08:30:778] [STDERR]: 	at vazkii.patchouli.common.book.Book.reloadContents(Book.java:201)
+[12:08:30:778] [STDERR]: 	at java.base/java.util.HashMap$Values.forEach(HashMap.java:1074)
+[12:08:30:778] [STDERR]: 	at vazkii.patchouli.common.book.BookRegistry.reload(BookRegistry.java:87)
+[12:08:30:778] [STDERR]: 	at vazkii.patchouli.client.book.ClientBookRegistry.func_110549_a(ClientBookRegistry.java:94)
+[12:08:30:778] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110544_b(SimpleReloadableResourceManager.java:137)
+[12:08:30:778] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110541_a(SimpleReloadableResourceManager.java:116)
+[12:08:30:778] [STDERR]: 	at com.blakebr0.mysticalagriculture.util.resources.ExternalResourcePack.injectExternalResources(ExternalResourcePack.java:72)
+[12:08:30:778] [STDERR]: 	at com.blakebr0.mysticalagriculture.proxy.ClientProxy.preInit(ClientProxy.java:18)
+[12:08:30:778] [STDERR]: 	at com.blakebr0.mysticalagriculture.MysticalAgriculture.preInit(MysticalAgriculture.java:43)
+[12:08:30:778] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[12:08:30:778] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[12:08:30:778] [STDERR]: 	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:663)
+[12:08:30:778] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[12:08:30:778] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[12:08:30:778] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
+[12:08:30:778] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
+[12:08:30:778] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
+[12:08:30:778] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+[12:08:30:778] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
+[12:08:30:778] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
+[12:08:30:778] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
+[12:08:30:778] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:318)
+[12:08:30:778] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:296)
+[12:08:30:778] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[12:08:30:778] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[12:08:30:778] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
+[12:08:30:778] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
+[12:08:30:778] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
+[12:08:30:778] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+[12:08:30:778] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
+[12:08:30:778] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
+[12:08:30:778] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
+[12:08:30:778] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:232)
+[12:08:30:778] [STDERR]: 	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:633)
+[12:08:30:778] [STDERR]: 	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:256)
+[12:08:30:778] [STDERR]: 	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:463)
+[12:08:30:778] [STDERR]: 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:12151)
+[12:08:30:778] [STDERR]: 	at net.minecraft.client.main.Main.main(SourceFile:123)
+[12:08:30:778] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:125)
+[12:08:30:778] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
+[12:08:30:778] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
+[12:08:30:778] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+[12:08:30:778] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+[12:08:30:778] [STDERR]: Caused by: java.lang.RuntimeException: Error while loading entry twilightforest:bosses/ur_ghast page 0
+[12:08:30:778] [STDERR]: 	at vazkii.patchouli.client.book.BookEntry.build(BookEntry.java:182)
+[12:08:30:778] [STDERR]: 	at vazkii.patchouli.client.book.BookContents.lambda$reload$3(BookContents.java:147)
+[12:08:30:778] [STDERR]: 	... 45 more
+[12:08:30:778] [STDERR]: Caused by: java.lang.NullPointerException: Cannot invoke "net.minecraftforge.fml.common.registry.EntityEntry.getEntityClass()" because the return value of "net.minecraftforge.registries.IForgeRegistry.getValue(net.minecraft.util.ResourceLocation)" is null
+[12:08:30:778] [STDERR]: 	at vazkii.patchouli.common.util.EntityUtil.loadEntity(EntityUtil.java:38)
+[12:08:30:778] [STDERR]: 	at vazkii.patchouli.client.book.page.PageEntity.build(PageEntity.java:43)
+[12:08:30:778] [STDERR]: 	at vazkii.patchouli.client.book.BookEntry.build(BookEntry.java:180)
+[12:08:30:778] [STDERR]: 	... 46 more
+[12:08:35:925] [STDERR]: java.io.IOException: Error loading metadata for location appliedenergistics2:textures/blocks/drive_cell_states_emissive.png
+[12:08:35:925] [STDERR]: 	at team.chisel.ctm.client.util.ResourceUtil.getMetadata(ResourceUtil.java:64)
+[12:08:35:925] [STDERR]: 	at team.chisel.ctm.client.util.TextureMetadataHandler.onTextureStitch(TextureMetadataHandler.java:63)
+[12:08:35:925] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:79)
+[12:08:35:925] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:204)
+[12:08:35:925] [STDERR]: 	at team.chisel.ctm.client.asm.CTMCoreMethods.onSpriteRegister(CTMCoreMethods.java:52)
+[12:08:35:925] [STDERR]: 	at net.minecraft.client.renderer.texture.TextureMap.func_174942_a(TextureMap.java:386)
+[12:08:35:925] [STDERR]: 	at net.minecraft.client.renderer.texture.TextureMap.registerSpriteWeak(TextureMap.java:2080)
+[12:08:35:925] [STDERR]: 	at org.embeddedt.vintagefix.VintageFixClient.registerSpriteSafe(VintageFixClient.java:60)
+[12:08:35:925] [STDERR]: 	at org.embeddedt.vintagefix.VintageFixClient.collectTextures(VintageFixClient.java:94)
+[12:08:35:925] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:79)
+[12:08:35:925] [STDERR]: 	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:204)
+[12:08:35:925] [STDERR]: 	at net.minecraftforge.client.ForgeHooksClient.onTextureStitchedPre(ForgeHooksClient.java:214)
+[12:08:35:925] [STDERR]: 	at net.minecraft.client.renderer.texture.TextureMap.func_174943_a(TextureMap.java:83)
+[12:08:35:925] [STDERR]: 	at net.minecraft.client.renderer.block.model.ModelManager.func_110549_a(ModelManager.java:1237)
+[12:08:35:925] [STDERR]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110542_a(SimpleReloadableResourceManager.java:126)
+[12:08:35:925] [STDERR]: 	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:509)
+[12:08:35:925] [STDERR]: 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:12151)
+[12:08:35:925] [STDERR]: 	at net.minecraft.client.main.Main.main(SourceFile:123)
+[12:08:35:925] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:125)
+[12:08:35:925] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
+[12:08:35:925] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
+[12:08:35:925] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+[12:08:35:925] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+[12:08:35:925] [STDERR]: Caused by: com.google.gson.JsonParseException: Invalid block layer given: "BLOOM"
+[12:08:35:925] [STDERR]: 	at team.chisel.ctm.client.texture.IMetadataSectionCTM$V1.fromJson(IMetadataSectionCTM.java:120)
+[12:08:35:925] [STDERR]: 	at team.chisel.ctm.client.texture.IMetadataSectionCTM$Serializer.deserialize(IMetadataSectionCTM.java:157)
+[12:08:35:925] [STDERR]: 	at team.chisel.ctm.client.texture.IMetadataSectionCTM$Serializer.deserialize(IMetadataSectionCTM.java:146)
+[12:08:35:925] [STDERR]: 	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:95)
+[12:08:35:925] [STDERR]: 	at com.google.gson.Gson.fromJson(Gson.java:1358)
+[12:08:35:925] [STDERR]: 	at com.google.gson.Gson.fromJson(Gson.java:1471)
+[12:08:35:925] [STDERR]: 	at com.google.gson.Gson.fromJson(Gson.java:1442)
+[12:08:35:925] [STDERR]: 	at net.minecraft.client.resources.data.MetadataSerializer.func_110503_a(SourceFile:46)
+[12:08:35:925] [STDERR]: 	at net.minecraft.client.resources.SimpleResource.func_110526_a(SimpleResource.java:90)
+[12:08:35:925] [STDERR]: 	at team.chisel.ctm.client.util.ResourceUtil.getMetadata(ResourceUtil.java:60)
+[12:08:35:925] [STDERR]: 	... 22 more
+[12:08:42:106] [STDERR]: java.io.IOException: Connection blocked by Fugue!
+[12:08:42:106] [STDERR]: 	at com.cleanroommc.fugue.helper.HookHelper.openStream(HookHelper.java:95)
+[12:08:42:106] [STDERR]: 	at vazkii.quark.base.client.ContributorRewardHandler$ThreadContributorListLoader.run(ContributorRewardHandler.java:118)
+[12:08:43:057] [STDERR]: java.lang.UnsupportedOperationException: JsonNull
+[12:08:43:057] [STDERR]: 	at com.google.gson.JsonElement.getAsString(JsonElement.java:251)
+[12:08:43:057] [STDERR]: 	at codechicken.lib.internal.ModDescriptionEnhancer.parse(ModDescriptionEnhancer.java:103)
+[12:08:43:057] [STDERR]: 	at codechicken.lib.internal.ModDescriptionEnhancer.lambda$init$0(ModDescriptionEnhancer.java:82)
+[12:08:43:057] [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:1474)
+[12:08:45:699] [STDERR]: java.lang.RuntimeException: Error creating shader: ERROR: 0:1: '' :  version '130' is not supported
+[12:08:45:699] [STDERR]: 
+[12:08:45:699] [STDERR]: 	at flaxbeard.immersivepetroleum.client.ShaderUtil.createShader(ShaderUtil.java:101)
+[12:08:45:699] [STDERR]: 	at flaxbeard.immersivepetroleum.client.ShaderUtil.createShader(ShaderUtil.java:46)
+[12:08:45:699] [STDERR]: 	at flaxbeard.immersivepetroleum.client.ShaderUtil.init(ShaderUtil.java:22)
+[12:08:45:699] [STDERR]: 	at flaxbeard.immersivepetroleum.client.ClientProxy.init(ClientProxy.java:207)
+[12:08:45:699] [STDERR]: 	at flaxbeard.immersivepetroleum.ImmersivePetroleum.init(ImmersivePetroleum.java:103)
+[12:08:45:699] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[12:08:45:699] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[12:08:45:699] [STDERR]: 	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:663)
+[12:08:45:699] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[12:08:45:699] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[12:08:45:699] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
+[12:08:45:699] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
+[12:08:45:699] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
+[12:08:45:699] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+[12:08:45:699] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
+[12:08:45:699] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
+[12:08:45:699] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
+[12:08:45:699] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:318)
+[12:08:45:699] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:296)
+[12:08:45:699] [STDERR]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[12:08:45:699] [STDERR]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[12:08:45:699] [STDERR]: 	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:84)
+[12:08:45:699] [STDERR]: 	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:141)
+[12:08:45:699] [STDERR]: 	at com.google.common.eventbus.Subscriber.lambda$dispatchEvent$0(Subscriber.java:70)
+[12:08:45:699] [STDERR]: 	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+[12:08:45:699] [STDERR]: 	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67)
+[12:08:45:699] [STDERR]: 	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:112)
+[12:08:45:699] [STDERR]: 	at com.google.common.eventbus.EventBus.post(EventBus.java:262)
+[12:08:45:699] [STDERR]: 	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:232)
+[12:08:45:699] [STDERR]: 	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:754)
+[12:08:45:699] [STDERR]: 	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:344)
+[12:08:45:699] [STDERR]: 	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:531)
+[12:08:45:699] [STDERR]: 	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:12151)
+[12:08:45:699] [STDERR]: 	at net.minecraft.client.main.Main.main(SourceFile:123)
+[12:08:45:699] [STDERR]: 	at top.outlands.foundation.LaunchHandler.launch(LaunchHandler.java:125)
+[12:08:45:699] [STDERR]: 	at top.outlands.foundation.boot.Foundation.main(Foundation.java:43)
+[12:08:45:699] [STDERR]: 	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115)
+[12:08:45:699] [STDERR]: 	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+[12:08:45:699] [STDERR]: 	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+[12:30:05:155] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:155] [STDERR]: WARNING: Unmatched cancel notification for request id 19
+[12:30:05:270] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:270] [STDERR]: WARNING: Unmatched cancel notification for request id 20
+[12:30:05:272] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:272] [STDERR]: WARNING: Unmatched cancel notification for request id 21
+[12:30:05:385] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:385] [STDERR]: WARNING: Unmatched cancel notification for request id 22
+[12:30:05:388] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:388] [STDERR]: WARNING: Unmatched cancel notification for request id 23
+[12:30:05:511] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:511] [STDERR]: WARNING: Unmatched cancel notification for request id 24
+[12:30:05:519] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:519] [STDERR]: WARNING: Unmatched cancel notification for request id 25
+[12:30:05:645] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:645] [STDERR]: WARNING: Unmatched cancel notification for request id 26
+[12:30:05:647] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:647] [STDERR]: WARNING: Unmatched cancel notification for request id 27
+[12:30:05:759] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:759] [STDERR]: WARNING: Unmatched cancel notification for request id 28
+[12:30:05:765] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:765] [STDERR]: WARNING: Unmatched cancel notification for request id 29
+[12:30:05:861] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:861] [STDERR]: WARNING: Unmatched cancel notification for request id 30
+[12:30:05:867] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:867] [STDERR]: WARNING: Unmatched cancel notification for request id 31
+[12:30:05:959] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:959] [STDERR]: WARNING: Unmatched cancel notification for request id 32
+[12:30:05:969] [STDERR]: May 03, 2026 12:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:05:969] [STDERR]: WARNING: Unmatched cancel notification for request id 33
+[12:30:06:052] [STDERR]: May 03, 2026 12:30:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:06:052] [STDERR]: WARNING: Unmatched cancel notification for request id 34
+[12:30:06:059] [STDERR]: May 03, 2026 12:30:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:06:059] [STDERR]: WARNING: Unmatched cancel notification for request id 35
+[12:30:06:194] [STDERR]: May 03, 2026 12:30:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:06:194] [STDERR]: WARNING: Unmatched cancel notification for request id 36
+[12:30:06:195] [STDERR]: May 03, 2026 12:30:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:06:195] [STDERR]: WARNING: Unmatched cancel notification for request id 37
+[12:30:06:414] [STDERR]: May 03, 2026 12:30:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:06:414] [STDERR]: WARNING: Unmatched cancel notification for request id 40
+[12:30:06:414] [STDERR]: May 03, 2026 12:30:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:06:414] [STDERR]: WARNING: Unmatched cancel notification for request id 38
+[12:30:06:496] [STDERR]: May 03, 2026 12:30:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:06:496] [STDERR]: WARNING: Unmatched cancel notification for request id 39
+[12:30:06:496] [STDERR]: May 03, 2026 12:30:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:06:496] [STDERR]: WARNING: Unmatched cancel notification for request id 41
+[12:30:06:576] [STDERR]: May 03, 2026 12:30:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:06:576] [STDERR]: WARNING: Unmatched cancel notification for request id 42
+[12:30:06:778] [STDERR]: May 03, 2026 12:30:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:06:778] [STDERR]: WARNING: Unmatched cancel notification for request id 46
+[12:30:06:856] [STDERR]: May 03, 2026 12:30:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:06:856] [STDERR]: WARNING: Unmatched cancel notification for request id 47
+[12:30:06:932] [STDERR]: May 03, 2026 12:30:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:06:932] [STDERR]: WARNING: Unmatched cancel notification for request id 48
+[12:30:09:188] [STDERR]: May 03, 2026 12:30:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:09:188] [STDERR]: WARNING: Unmatched cancel notification for request id 60
+[12:30:11:195] [STDERR]: May 03, 2026 12:30:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:11:195] [STDERR]: WARNING: Unmatched cancel notification for request id 71
+[12:30:11:663] [STDERR]: May 03, 2026 12:30:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:11:663] [STDERR]: WARNING: Unmatched cancel notification for request id 74
+[12:30:15:941] [STDERR]: May 03, 2026 12:30:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:15:941] [STDERR]: WARNING: Unmatched cancel notification for request id 88
+[12:30:16:140] [STDERR]: May 03, 2026 12:30:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:16:140] [STDERR]: WARNING: Unmatched cancel notification for request id 90
+[12:30:18:801] [STDERR]: May 03, 2026 12:30:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:18:801] [STDERR]: WARNING: Unmatched cancel notification for request id 107
+[12:30:18:946] [STDERR]: May 03, 2026 12:30:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:18:946] [STDERR]: WARNING: Unmatched cancel notification for request id 108
+[12:30:19:067] [STDERR]: May 03, 2026 12:30:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:19:067] [STDERR]: WARNING: Unmatched cancel notification for request id 109
+[12:30:19:175] [STDERR]: May 03, 2026 12:30:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:19:175] [STDERR]: WARNING: Unmatched cancel notification for request id 110
+[12:30:19:337] [STDERR]: May 03, 2026 12:30:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:19:337] [STDERR]: WARNING: Unmatched cancel notification for request id 111
+[12:30:19:473] [STDERR]: May 03, 2026 12:30:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:19:473] [STDERR]: WARNING: Unmatched cancel notification for request id 112
+[12:30:19:820] [STDERR]: May 03, 2026 12:30:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:19:820] [STDERR]: WARNING: Unmatched cancel notification for request id 114
+[12:30:19:915] [STDERR]: May 03, 2026 12:30:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:19:915] [STDERR]: WARNING: Unmatched cancel notification for request id 116
+[12:30:19:915] [STDERR]: May 03, 2026 12:30:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:19:915] [STDERR]: WARNING: Unmatched cancel notification for request id 115
+[12:30:19:996] [STDERR]: May 03, 2026 12:30:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:19:996] [STDERR]: WARNING: Unmatched cancel notification for request id 117
+[12:30:20:079] [STDERR]: May 03, 2026 12:30:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:20:079] [STDERR]: WARNING: Unmatched cancel notification for request id 118
+[12:30:25:549] [STDERR]: May 03, 2026 12:30:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:25:549] [STDERR]: WARNING: Unmatched cancel notification for request id 129
+[12:30:26:207] [STDERR]: May 03, 2026 12:30:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:26:207] [STDERR]: WARNING: Unmatched cancel notification for request id 134
+[12:30:26:503] [STDERR]: May 03, 2026 12:30:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:26:503] [STDERR]: WARNING: Unmatched cancel notification for request id 135
+[12:30:30:054] [STDERR]: May 03, 2026 12:30:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:30:054] [STDERR]: WARNING: Unmatched cancel notification for request id 142
+[12:30:30:269] [STDERR]: May 03, 2026 12:30:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:30:269] [STDERR]: WARNING: Unmatched cancel notification for request id 143
+[12:30:30:390] [STDERR]: May 03, 2026 12:30:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:30:390] [STDERR]: WARNING: Unmatched cancel notification for request id 144
+[12:30:30:523] [STDERR]: May 03, 2026 12:30:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:30:523] [STDERR]: WARNING: Unmatched cancel notification for request id 145
+[12:30:30:945] [STDERR]: May 03, 2026 12:30:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:30:945] [STDERR]: WARNING: Unmatched cancel notification for request id 149
+[12:30:31:449] [STDERR]: May 03, 2026 12:30:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:31:449] [STDERR]: WARNING: Unmatched cancel notification for request id 151
+[12:30:31:549] [STDERR]: May 03, 2026 12:30:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:31:549] [STDERR]: WARNING: Unmatched cancel notification for request id 152
+[12:30:34:107] [STDERR]: May 03, 2026 12:30:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:34:107] [STDERR]: WARNING: Unmatched cancel notification for request id 164
+[12:30:34:239] [STDERR]: May 03, 2026 12:30:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:34:239] [STDERR]: WARNING: Unmatched cancel notification for request id 166
+[12:30:34:335] [STDERR]: May 03, 2026 12:30:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:34:335] [STDERR]: WARNING: Unmatched cancel notification for request id 167
+[12:30:34:439] [STDERR]: May 03, 2026 12:30:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:34:439] [STDERR]: WARNING: Unmatched cancel notification for request id 168
+[12:30:38:129] [STDERR]: May 03, 2026 12:30:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:38:129] [STDERR]: WARNING: Unmatched cancel notification for request id 188
+[12:30:38:221] [STDERR]: May 03, 2026 12:30:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:38:221] [STDERR]: WARNING: Unmatched cancel notification for request id 189
+[12:30:45:318] [STDERR]: May 03, 2026 12:30:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:45:318] [STDERR]: WARNING: Unmatched cancel notification for request id 206
+[12:30:45:416] [STDERR]: May 03, 2026 12:30:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:45:416] [STDERR]: WARNING: Unmatched cancel notification for request id 207
+[12:30:48:582] [STDERR]: May 03, 2026 12:30:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:48:582] [STDERR]: WARNING: Unmatched cancel notification for request id 220
+[12:30:48:848] [STDERR]: May 03, 2026 12:30:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:48:848] [STDERR]: WARNING: Unmatched cancel notification for request id 223
+[12:30:50:818] [STDERR]: May 03, 2026 12:30:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:50:818] [STDERR]: WARNING: Unmatched cancel notification for request id 230
+[12:30:53:051] [STDERR]: May 03, 2026 12:30:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:53:051] [STDERR]: WARNING: Unmatched cancel notification for request id 236
+[12:30:53:137] [STDERR]: May 03, 2026 12:30:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:53:137] [STDERR]: WARNING: Unmatched cancel notification for request id 237
+[12:30:53:137] [STDERR]: May 03, 2026 12:30:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:53:137] [STDERR]: WARNING: Unmatched cancel notification for request id 238
+[12:30:53:239] [STDERR]: May 03, 2026 12:30:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:53:239] [STDERR]: WARNING: Unmatched cancel notification for request id 239
+[12:30:53:342] [STDERR]: May 03, 2026 12:30:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:53:342] [STDERR]: WARNING: Unmatched cancel notification for request id 240
+[12:30:53:452] [STDERR]: May 03, 2026 12:30:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:53:452] [STDERR]: WARNING: Unmatched cancel notification for request id 241
+[12:30:53:603] [STDERR]: May 03, 2026 12:30:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:53:603] [STDERR]: WARNING: Unmatched cancel notification for request id 242
+[12:30:56:195] [STDERR]: May 03, 2026 12:30:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:56:195] [STDERR]: WARNING: Unmatched cancel notification for request id 255
+[12:30:56:298] [STDERR]: May 03, 2026 12:30:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:56:298] [STDERR]: WARNING: Unmatched cancel notification for request id 256
+[12:30:56:608] [STDERR]: May 03, 2026 12:30:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:56:608] [STDERR]: WARNING: Unmatched cancel notification for request id 259
+[12:30:58:832] [STDERR]: May 03, 2026 12:30:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:58:832] [STDERR]: WARNING: Unmatched cancel notification for request id 274
+[12:30:58:934] [STDERR]: May 03, 2026 12:30:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:58:934] [STDERR]: WARNING: Unmatched cancel notification for request id 275
+[12:30:59:019] [STDERR]: May 03, 2026 12:30:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:59:019] [STDERR]: WARNING: Unmatched cancel notification for request id 276
+[12:30:59:839] [STDERR]: May 03, 2026 12:30:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:30:59:839] [STDERR]: WARNING: Unmatched cancel notification for request id 279
+[12:31:00:019] [STDERR]: May 03, 2026 12:31:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:00:019] [STDERR]: WARNING: Unmatched cancel notification for request id 280
+[12:31:00:134] [STDERR]: May 03, 2026 12:31:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:00:134] [STDERR]: WARNING: Unmatched cancel notification for request id 281
+[12:31:00:789] [STDERR]: May 03, 2026 12:31:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:00:789] [STDERR]: WARNING: Unmatched cancel notification for request id 288
+[12:31:00:897] [STDERR]: May 03, 2026 12:31:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:00:897] [STDERR]: WARNING: Unmatched cancel notification for request id 289
+[12:31:01:007] [STDERR]: May 03, 2026 12:31:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:01:007] [STDERR]: WARNING: Unmatched cancel notification for request id 290
+[12:31:01:131] [STDERR]: May 03, 2026 12:31:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:01:131] [STDERR]: WARNING: Unmatched cancel notification for request id 291
+[12:31:01:266] [STDERR]: May 03, 2026 12:31:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:01:266] [STDERR]: WARNING: Unmatched cancel notification for request id 292
+[12:31:01:355] [STDERR]: May 03, 2026 12:31:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:01:355] [STDERR]: WARNING: Unmatched cancel notification for request id 293
+[12:31:01:448] [STDERR]: May 03, 2026 12:31:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:01:448] [STDERR]: WARNING: Unmatched cancel notification for request id 294
+[12:31:01:556] [STDERR]: May 03, 2026 12:31:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:01:556] [STDERR]: WARNING: Unmatched cancel notification for request id 295
+[12:31:01:654] [STDERR]: May 03, 2026 12:31:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:01:654] [STDERR]: WARNING: Unmatched cancel notification for request id 296
+[12:31:01:656] [STDERR]: May 03, 2026 12:31:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:01:656] [STDERR]: WARNING: Unmatched cancel notification for request id 297
+[12:31:01:736] [STDERR]: May 03, 2026 12:31:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:01:736] [STDERR]: WARNING: Unmatched cancel notification for request id 298
+[12:31:01:942] [STDERR]: May 03, 2026 12:31:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:01:942] [STDERR]: WARNING: Unmatched cancel notification for request id 300
+[12:31:01:942] [STDERR]: May 03, 2026 12:31:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:01:942] [STDERR]: WARNING: Unmatched cancel notification for request id 299
+[12:31:02:079] [STDERR]: May 03, 2026 12:31:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:02:079] [STDERR]: WARNING: Unmatched cancel notification for request id 301
+[12:31:02:181] [STDERR]: May 03, 2026 12:31:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:02:181] [STDERR]: WARNING: Unmatched cancel notification for request id 302
+[12:31:02:265] [STDERR]: May 03, 2026 12:31:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:02:265] [STDERR]: WARNING: Unmatched cancel notification for request id 303
+[12:31:02:364] [STDERR]: May 03, 2026 12:31:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:02:364] [STDERR]: WARNING: Unmatched cancel notification for request id 304
+[12:31:03:783] [STDERR]: May 03, 2026 12:31:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:03:783] [STDERR]: WARNING: Unmatched cancel notification for request id 314
+[12:31:04:049] [STDERR]: May 03, 2026 12:31:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:04:049] [STDERR]: WARNING: Unmatched cancel notification for request id 316
+[12:31:04:350] [STDERR]: May 03, 2026 12:31:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:04:350] [STDERR]: WARNING: Unmatched cancel notification for request id 318
+[12:31:04:930] [STDERR]: May 03, 2026 12:31:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:04:930] [STDERR]: WARNING: Unmatched cancel notification for request id 322
+[12:31:05:009] [STDERR]: May 03, 2026 12:31:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:05:009] [STDERR]: WARNING: Unmatched cancel notification for request id 323
+[12:31:05:208] [STDERR]: May 03, 2026 12:31:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:05:208] [STDERR]: WARNING: Unmatched cancel notification for request id 324
+[12:31:06:212] [STDERR]: May 03, 2026 12:31:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:06:212] [STDERR]: WARNING: Unmatched cancel notification for request id 330
+[12:31:06:342] [STDERR]: May 03, 2026 12:31:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:06:342] [STDERR]: WARNING: Unmatched cancel notification for request id 331
+[12:31:06:489] [STDERR]: May 03, 2026 12:31:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:06:489] [STDERR]: WARNING: Unmatched cancel notification for request id 332
+[12:31:06:656] [STDERR]: May 03, 2026 12:31:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:06:656] [STDERR]: WARNING: Unmatched cancel notification for request id 333
+[12:31:06:778] [STDERR]: May 03, 2026 12:31:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:06:778] [STDERR]: WARNING: Unmatched cancel notification for request id 334
+[12:31:06:905] [STDERR]: May 03, 2026 12:31:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:06:905] [STDERR]: WARNING: Unmatched cancel notification for request id 335
+[12:31:07:026] [STDERR]: May 03, 2026 12:31:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:07:026] [STDERR]: WARNING: Unmatched cancel notification for request id 336
+[12:31:07:158] [STDERR]: May 03, 2026 12:31:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:07:158] [STDERR]: WARNING: Unmatched cancel notification for request id 337
+[12:31:09:937] [STDERR]: May 03, 2026 12:31:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:09:937] [STDERR]: WARNING: Unmatched cancel notification for request id 353
+[12:31:18:035] [STDERR]: May 03, 2026 12:31:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:18:035] [STDERR]: WARNING: Unmatched cancel notification for request id 363
+[12:31:18:308] [STDERR]: May 03, 2026 12:31:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:18:308] [STDERR]: WARNING: Unmatched cancel notification for request id 365
+[12:31:19:096] [STDERR]: May 03, 2026 12:31:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:19:096] [STDERR]: WARNING: Unmatched cancel notification for request id 372
+[12:31:19:195] [STDERR]: May 03, 2026 12:31:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:19:195] [STDERR]: WARNING: Unmatched cancel notification for request id 373
+[12:31:22:723] [STDERR]: May 03, 2026 12:31:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:22:723] [STDERR]: WARNING: Unmatched cancel notification for request id 382
+[12:31:22:900] [STDERR]: May 03, 2026 12:31:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:22:900] [STDERR]: WARNING: Unmatched cancel notification for request id 383
+[12:31:22:997] [STDERR]: May 03, 2026 12:31:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:22:997] [STDERR]: WARNING: Unmatched cancel notification for request id 384
+[12:31:24:371] [STDERR]: May 03, 2026 12:31:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:24:371] [STDERR]: WARNING: Unmatched cancel notification for request id 389
+[12:31:24:461] [STDERR]: May 03, 2026 12:31:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:24:461] [STDERR]: WARNING: Unmatched cancel notification for request id 391
+[12:31:24:569] [STDERR]: May 03, 2026 12:31:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:31:24:569] [STDERR]: WARNING: Unmatched cancel notification for request id 392
+[12:32:13:718] [STDERR]: May 03, 2026 12:32:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:32:13:718] [STDERR]: WARNING: Unmatched cancel notification for request id 415
+[12:32:37:118] [STDERR]: May 03, 2026 12:32:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:32:37:118] [STDERR]: WARNING: Unmatched cancel notification for request id 427
+[12:32:37:271] [STDERR]: May 03, 2026 12:32:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:32:37:271] [STDERR]: WARNING: Unmatched cancel notification for request id 428
+[12:32:37:369] [STDERR]: May 03, 2026 12:32:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:32:37:369] [STDERR]: WARNING: Unmatched cancel notification for request id 430
+[12:32:37:458] [STDERR]: May 03, 2026 12:32:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:32:37:458] [STDERR]: WARNING: Unmatched cancel notification for request id 431
+[12:32:37:550] [STDERR]: May 03, 2026 12:32:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:32:37:550] [STDERR]: WARNING: Unmatched cancel notification for request id 432
+[12:32:37:645] [STDERR]: May 03, 2026 12:32:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:32:37:645] [STDERR]: WARNING: Unmatched cancel notification for request id 433
+[12:32:37:741] [STDERR]: May 03, 2026 12:32:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:32:37:741] [STDERR]: WARNING: Unmatched cancel notification for request id 434
+[12:32:38:928] [STDERR]: May 03, 2026 12:32:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+[12:32:38:928] [STDERR]: WARNING: Unmatched cancel notification for request id 438
