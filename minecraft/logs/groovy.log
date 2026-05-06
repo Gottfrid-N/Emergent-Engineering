@@ -1,50 +1,13 @@
-============  GroovyLog  ====  04.05.2026  ============
+============  GroovyLog  ====  06.05.2026  ============
 GroovyScript version: 1.4.3
-[01:25:50] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
-[01:25:50] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
-[01:25:50] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 40ms to run in preInit.
-[01:26:17] [CLIENT/INFO] [groovyscript]: Starting Language server
-[01:26:23] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
-[01:26:26] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[01:26:27] [CLIENT/INFO] [emergentengineering]:  - running script postInit.oredict
-[01:26:27] [CLIENT/ERROR] [postInit.oredict]: Error removing Minecraft Crafting recipe: - No recipes found for 1xtile.immersiveengineering.storage@8
-[01:26:27] [CLIENT/ERROR] [postInit.oredict]: Error removing Minecraft Crafting recipe: - No recipes found for 1xitem.immersiveengineering.metal@8
-[01:26:27] [CLIENT/ERROR] [postInit.oredict]: Error removing Minecraft Crafting recipe: - No recipes found for 1xitem.immersiveengineering.metal@28
-[01:26:27] [CLIENT/ERROR] [postInit.oredict]: Error adding Minecraft Shaped Crafting recipe 'emergentengineering:carbon_steel_scaffolding': 
-[01:26:27] [CLIENT/ERROR] [postInit.oredict]:  - Output must not be empty
-[01:26:27] [CLIENT/ERROR] [emergentengineering]: Script 'postInit.oredict' ran into an issue while executing. Look at latest.log for a full stacktrace:
-	org.codehaus.groovy.runtime.metaclass.MethodSelectionException: Could not find which method removeByOutput() to invoke from this list:
-  public void com.cleanroommc.groovyscript.compat.vanilla.Crafting#removeByOutput(com.cleanroommc.groovyscript.api.IIngredient)
-  public void com.cleanroommc.groovyscript.compat.vanilla.Crafting#removeByOutput(com.cleanroommc.groovyscript.api.IIngredient, boolean)
-		at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3350)
-		at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3290)
-		at groovy.lang.MetaClassImpl.getNormalMethodWithCaching(MetaClassImpl.java:1528)
-		at groovy.lang.MetaClassImpl.getMethodWithCaching(MetaClassImpl.java:1458)
-		at postInit.oredict.run(oredict.groovy:69)
+[18:20:42] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[18:20:42] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[18:20:42] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
+[18:20:42] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
+[18:20:42] [SERVER/INFO] [emergentengineering]:  - running script postInit.oredict
+[18:20:43] [SERVER/ERROR] [emergentengineering]: Script 'postInit.oredict' ran into an issue while executing. Look at latest.log for a full stacktrace:
+	groovy.lang.MissingMethodException: No signature of method: postInit.oredict.compact3x3() is applicable for argument types: (null, null, null) values: [null, null, null]
+		at postInit.oredict.run(oredict.groovy:16)
 		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.runScript(GroovyScriptSandbox.java:154)
 		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.loadScripts(GroovyScriptSandbox.java:280)
-[01:26:27] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 803ms to compile and 0ms to run in postInit.
-[01:30:25] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[01:30:26] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[01:30:26] [SERVER/INFO] [emergentengineering]:  - running script postInit.oredict
-[01:30:26] [SERVER/ERROR] [emergentengineering]: Script 'postInit.oredict' ran into an issue while executing. Look at latest.log for a full stacktrace:
-	org.codehaus.groovy.runtime.metaclass.MethodSelectionException: Could not find which method removeByOutput() to invoke from this list:
-  public void com.cleanroommc.groovyscript.compat.vanilla.Crafting#removeByOutput(com.cleanroommc.groovyscript.api.IIngredient)
-  public void com.cleanroommc.groovyscript.compat.vanilla.Crafting#removeByOutput(com.cleanroommc.groovyscript.api.IIngredient, boolean)
-		at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3350)
-		at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3290)
-		at groovy.lang.MetaClassImpl.getNormalMethodWithCaching(MetaClassImpl.java:1528)
-		at groovy.lang.MetaClassImpl.getMethodWithCaching(MetaClassImpl.java:1458)
-		at postInit.oredict.run(oredict.groovy:70)
-		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.runScript(GroovyScriptSandbox.java:154)
-		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.loadScripts(GroovyScriptSandbox.java:280)
-[01:30:26] [SERVER/INFO] [emergentengineering]: Groovy scripts took 32ms to compile and 0ms to run in postInit.
-[01:31:59] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[01:31:59] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[01:31:59] [SERVER/INFO] [emergentengineering]:  - running script postInit.oredict
-[01:31:59] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.alloy_kiln
-[01:31:59] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shaped
-[01:31:59] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shapeless
-[01:31:59] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.furnace
-[01:31:59] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
-[01:32:00] [SERVER/INFO] [emergentengineering]: Groovy scripts took 33ms to compile and 163ms to run in postInit.
+[18:20:43] [SERVER/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 1ms to run in postInit.

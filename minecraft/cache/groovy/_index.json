@@ -4,6 +4,11 @@
   "java": "25",
   "index": [
     {
+      "name": "postInit.recipes.alloy_kiln",
+      "path": "postInit/recipes/alloy_kiln.groovy",
+      "lm": 1777843877318
+    },
+    {
       "name": "preInit.main",
       "path": "preInit/main.groovy",
       "lm": 1777801558340,
@@ -17,9 +22,9 @@
       "lm": 1777843933100
     },
     {
-      "name": "postInit.recipes.alloy_kiln",
-      "path": "postInit/recipes/alloy_kiln.groovy",
-      "lm": 1777843877318
+      "name": "classes.function",
+      "path": "classes/function.groovy",
+      "lm": 1777889720037
     },
     {
       "name": "postInit.recipes.furnace",
@@ -27,9 +32,14 @@
       "lm": 1777843877319
     },
     {
+      "name": "classes.recipe",
+      "path": "classes/recipe.groovy",
+      "lm": 1778084207607
+    },
+    {
       "name": "postInit.oredict",
       "path": "postInit/oredict.groovy",
-      "lm": 1777851113675
+      "lm": 1778084428629
     },
     {
       "name": "postInit.recipes.crafting_shapeless",

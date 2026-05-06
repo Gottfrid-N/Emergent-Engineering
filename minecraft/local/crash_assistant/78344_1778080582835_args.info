@@ -1,9 +1,9 @@
 -jarPath
-local/crash_assistant/48012_1777850730076_app.jar
+local/crash_assistant/78344_1778080582835_app.jar
 -parentPID
-48012
+78344
 -parentStarted
-1777850730076
+1778080582835
 -platform
 FORGE
 -platformOwerridenData
@@ -23,7 +23,7 @@ L0FwcGxpY2F0aW9ucy9QcmlzbSBMYXVuY2hlci5hcHAvQ29udGVudHMvTWFjT1MvamFycy9OZXdMYXVu
 -crashAssistantModJarName
 !!!CrashAssistant-forge-1.12.2-1.11.8.jar
 -classPath
-local/crash_assistant/48012_1777850730076_app.jar:local/crash_assistant/48012_1777850730076_mod.jar:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application Support/PrismLauncher/libraries/com/github/oshi/oshi-core/6.11.0/oshi-core-6.11.0.jar:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application Support/PrismLauncher/libraries/net/java/dev/jna/jna/5.18.1/jna-5.18.1.jar:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application Support/PrismLauncher/libraries/net/java/dev/jna/jna-platform/5.18.1/jna-platform-5.18.1.jar:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application Support/PrismLauncher/libraries/commons-io/commons-io/2.21.0/commons-io-2.21.0.jar:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application Support/PrismLauncher/libraries/org/apache/logging/log4j/log4j-api/2.25.4/log4j-api-2.25.4.jar:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application Support/PrismLauncher/libraries/org/apache/logging/log4j/log4j-core/2.25.4/log4j-core-2.25.4.jar
+local/crash_assistant/78344_1778080582835_app.jar:local/crash_assistant/78344_1778080582835_mod.jar:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application Support/PrismLauncher/libraries/com/github/oshi/oshi-core/6.11.0/oshi-core-6.11.0.jar:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application Support/PrismLauncher/libraries/net/java/dev/jna/jna/5.18.1/jna-5.18.1.jar:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application Support/PrismLauncher/libraries/net/java/dev/jna/jna-platform/5.18.1/jna-platform-5.18.1.jar:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application Support/PrismLauncher/libraries/commons-io/commons-io/2.21.0/commons-io-2.21.0.jar:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application Support/PrismLauncher/libraries/org/apache/logging/log4j/log4j-api/2.25.4/log4j-api-2.25.4.jar:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application Support/PrismLauncher/libraries/org/apache/logging/log4j/log4j-core/2.25.4/log4j-core-2.25.4.jar
 -minecraftXms
 512m
 -minecraftXmx
@@ -31,13 +31,13 @@ local/crash_assistant/48012_1777850730076_app.jar:local/crash_assistant/48012_17
 -systemRAM
 16g
 -systemUsedRAMAtMinecraftLaunchMoment
-14.8g
+15.4g
 -systemSwapSpace
-20g
+16g
 -systemUsedSwapSpaceAtMinecraftLaunchMoment
-18.4g
+15.1g
 -systemDiskFreeSpaceAtMinecraftLaunchMoment
-5.1g
+9.0g
 -minecraftSunJavaCommand
 org.prismlauncher.EntryPoint
 -processor

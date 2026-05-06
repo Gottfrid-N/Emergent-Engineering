@@ -6,10 +6,10 @@
   "debug": false,
   "loaders": {
     "preInit": [
-      "classes/",
       "preInit/"
     ],
     "postInit": [
+      "classes/",
       "postInit/"
     ]
   },
