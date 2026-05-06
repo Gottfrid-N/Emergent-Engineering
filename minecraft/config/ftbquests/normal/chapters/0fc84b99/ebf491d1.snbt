@@ -1,0 +1,21 @@
+{
+	title: "Astral Sorcery",
+	x: 4.5d,
+	y: 3.0d,
+	shape: "diamond",
+	description: "Magic!",
+	text: [
+		""
+	],
+	dependencies: [
+		"c53c6347"
+	],
+	tasks: [{
+		uid: "c70c3bee",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockaltar"
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -6,10 +6,15 @@
 	description: "How did we get here?",
 	text: [
 		"...",
+		"",
 		"You wake up from what feels like an endless slumber, groggy as can be with nothing to your name.",
+		"",
 		"...",
-		"It feels like you've been here before, when you were stronger, bigger and &lbadder&l. Back when the world bent to your will.",
+		"",
+		"It feels like you've been here before, when you were stronger, bigger and badder. Back when the world bent to your will.",
+		"",
 		"...",
+		"",
 		"You yearn for that power, the boundless control over the infinite world you find yourself on, will you succumb to mother nature? Or will you find the true nature behind it all."
 	],
 	dependencies: [

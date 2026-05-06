@@ -1,0 +1,21 @@
+{
+	title: "Marine Clay",
+	x: 3.0d,
+	y: -1.5d,
+	shape: "diamond",
+	description: "EZ Clay",
+	text: [
+		"Drop a block of sand into the ocean and watch the magic unfold (thanks groovyscript!).",
+		"Dry it off on a drying rack (but not too long) and you've got yourself some renewable all-natural clay!"
+	],
+	dependencies: [
+		"c53c6347"
+	],
+	tasks: [{
+		uid: "6367ecb7",
+		type: "item",
+		items: [{
+			item: "emergentengineering:marine_clay"
+		}]
+	}]
+}

@@ -1,0 +1,18 @@
+furnace.recipeBuilder()
+    .name("kiln_brick")
+    .input(item("emergentengineering:sandy_clay_blend"))
+    .output(item("emergentengineering:kiln_brick"))
+    .register()
+
+furnace.removeByOutput(item("minecraft:brick"))
+furnace.recipeBuilder()
+    .name("brick_bad")
+    .input(item("minecraft:clay"))
+    .output(item("minecraft:brick"))
+    .register()
+
+furnace.recipeBuilder()
+    .name("unfired_fire_brick")
+    .input(item("emergentengineering:heat_resistant_clay_blend"))
+    .output(item("emergentengineering:unfired_fire_brick"))
+    .register()

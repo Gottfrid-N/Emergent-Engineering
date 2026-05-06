@@ -5,7 +5,7 @@
 	shape: "diamond",
 	description: "Fun side content :)",
 	text: [
-		"Side Quests use a diamond icon and are not required for progression, some lines however wrap back to required content which means they become rqeuired later on."
+		"Side Quests use a diamond icon and are not required for progression, some lines however wrap back to required content which means they become required later on."
 	],
 	dependencies: [
 		"b479d5f9"

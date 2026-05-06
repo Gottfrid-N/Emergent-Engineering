@@ -1,0 +1,19 @@
+{
+	title: "Extra Utilites 2",
+	x: 3.0d,
+	y: -3.0d,
+	shape: "diamond",
+	text: [
+		""
+	],
+	dependencies: [
+		"105b7d27"
+	],
+	tasks: [{
+		uid: "dcf58122",
+		type: "item",
+		items: [{
+			item: "extrautils2:ingredients"
+		}]
+	}]
+}

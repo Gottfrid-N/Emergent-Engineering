@@ -13,3 +13,12 @@ content.createItem("blast_brick")
 
 content.createItem("marine_clay")
     .register()
+
+content.createItem("heat_resistant_clay_blend")
+    .register()
+
+content.createItem("unfired_fire_brick")
+    .register()
+
+content.createItem("fire_brick")
+    .register()

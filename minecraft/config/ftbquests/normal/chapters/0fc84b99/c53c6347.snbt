@@ -1,0 +1,21 @@
+{
+	title: "Alloy Kiln",
+	x: 3.0d,
+	y: 0.0d,
+	description: "Primitve alloy furnace",
+	text: [
+		"Build a 2x2 square of kiln bricks and right click with an engineers hammer. Serves as a primitive alloy furnace and brick kiln.",
+		"Bricks are gated behind this multiblock (Check JEI!)"
+	],
+	dependencies: [
+		"105b7d27"
+	],
+	tasks: [{
+		uid: "2d7906c3",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 1 10"
+		}],
+		count: 8L
+	}]
+}

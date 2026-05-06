@@ -1,0 +1,18 @@
+{
+	title: "Immersive Engineering Multiblocks",
+	x: 3.0d,
+	y: 1.5d,
+	shape: "gear",
+	description: "HAMMAAAHHHH!!!!!",
+	text: [
+		"Immersive engineering multiblocks structure can be found in the engineers manual,",
+		"once assembled right click with an engineers hammer and voilà! Now your thinking with multiblocks."
+	],
+	dependencies: [
+		"c53c6347"
+	],
+	tasks: [{
+		uid: "8fb06625",
+		type: "checkmark"
+	}]
+}

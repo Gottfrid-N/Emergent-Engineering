@@ -1,0 +1,20 @@
+{
+	title: "Coke Oven",
+	x: 4.5d,
+	y: 0.0d,
+	description: "Used to produce coal coke",
+	text: [
+		"Build a 3x3 square of coke bricks and right click with an engineers hammer."
+	],
+	dependencies: [
+		"c53c6347"
+	],
+	tasks: [{
+		uid: "688f843d",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration"
+		}],
+		count: 27L
+	}]
+}

@@ -1,0 +1,23 @@
+crafting.shapelessBuilder()
+    .name("sandy_clay_blend")
+    .output(item("emergentengineering:sandy_clay_blend"))
+    .input([item("minecraft:clay_ball"),item("minecraft:sand")])
+    .register()
+
+crafting.shapelessBuilder()
+    .name("crush_coal_eh")
+    .input([item("minecraft:coal"),item("immersiveengineering:tool")])
+    .output(item("thermalfoundation:material:768"))
+    .register()
+
+crafting.shapelessBuilder()
+    .name("crush_charcoal_eh")
+    .input([item("minecraft:coal:1"),item("immersiveengineering:tool")])
+    .output(item("thermalfoundation:material:769"))
+    .register()
+
+crafting.shapelessBuilder()
+    .name("heat_resistant_clay_blend")
+    .input([item("minecraft:clay_ball"),ore("dustQuartz").or(ore("dustCertusQuartz")),ore("dustAluminum"),ore("dustCharcoal")])
+    .output(item("emergentengineering:heat_resistant_clay_blend"))
+    .register()
