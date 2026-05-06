@@ -1,13 +1,72 @@
 ============  GroovyLog  ====  06.05.2026  ============
 GroovyScript version: 1.4.3
-[18:20:42] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[18:20:42] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[18:20:42] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
-[18:20:42] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
-[18:20:42] [SERVER/INFO] [emergentengineering]:  - running script postInit.oredict
-[18:20:43] [SERVER/ERROR] [emergentengineering]: Script 'postInit.oredict' ran into an issue while executing. Look at latest.log for a full stacktrace:
-	groovy.lang.MissingMethodException: No signature of method: postInit.oredict.compact3x3() is applicable for argument types: (null, null, null) values: [null, null, null]
-		at postInit.oredict.run(oredict.groovy:16)
+[18:29:09] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
+[18:29:09] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
+[18:29:09] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 38ms to run in preInit.
+[18:29:36] [CLIENT/INFO] [groovyscript]: Starting Language server
+[18:29:40] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
+[18:29:43] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[18:29:43] [CLIENT/INFO] [emergentengineering]:  - loading class classes.function
+[18:29:44] [CLIENT/INFO] [emergentengineering]:  - loading class classes.recipe
+[18:29:44] [CLIENT/INFO] [emergentengineering]:  - running script postInit.oredict
+[18:29:44] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.alloy_kiln
+[18:29:44] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shaped
+[18:29:44] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shapeless
+[18:29:44] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.furnace
+[18:29:44] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.misc
+[18:29:44] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 655ms to compile and 87ms to run in postInit.
+[18:30:32] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[18:30:32] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[18:30:32] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
+[18:30:32] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
+[18:30:32] [SERVER/INFO] [emergentengineering]:  - running script postInit.oredict
+[18:30:32] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.alloy_kiln
+[18:30:32] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shaped
+[18:30:32] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shapeless
+[18:30:32] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.furnace
+[18:30:32] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
+[18:30:32] [SERVER/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 48ms to run in postInit.
+[18:30:49] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[18:30:49] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[18:30:49] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
+[18:30:49] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
+[18:30:49] [SERVER/INFO] [emergentengineering]:  - running script postInit.oredict
+[18:30:49] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.alloy_kiln
+[18:30:49] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shaped
+[18:30:49] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shapeless
+[18:30:49] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.furnace
+[18:30:49] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
+[18:30:49] [SERVER/INFO] [emergentengineering]: Groovy scripts took 26ms to compile and 55ms to run in postInit.
+[18:32:33] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[18:32:33] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[18:32:33] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
+[18:32:33] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
+[18:32:33] [SERVER/INFO] [emergentengineering]:  - running script postInit.oredict
+[18:32:33] [SERVER/ERROR] [emergentengineering]: Script 'postInit.oredict' ran into an issue while executing. Look at latest.log for a full stacktrace:
+	groovy.lang.MissingMethodException: No signature of method: postInit.oredict.compact3x3() is applicable for argument types: (String, c.c.g.h.i.OreDictIngredient, n.m.i.ItemStack) values: [carbon_steel_ingot_compact3x3, OreDictIngredient{ ingotCarbonSteel } * 1, 1xtile.immersiveengineering.storage@8]
+		at postInit.oredict.run(oredict.groovy:15)
 		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.runScript(GroovyScriptSandbox.java:154)
 		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.loadScripts(GroovyScriptSandbox.java:280)
-[18:20:43] [SERVER/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 1ms to run in postInit.
+[18:32:33] [SERVER/INFO] [emergentengineering]: Groovy scripts took 15ms to compile and 1ms to run in postInit.
+[18:32:49] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[18:32:49] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[18:32:49] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
+[18:32:49] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
+[18:32:49] [SERVER/INFO] [emergentengineering]:  - running script postInit.oredict
+[18:32:49] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.alloy_kiln
+[18:32:49] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shaped
+[18:32:49] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shapeless
+[18:32:49] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.furnace
+[18:32:49] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
+[18:32:49] [SERVER/INFO] [emergentengineering]: Groovy scripts took 14ms to compile and 46ms to run in postInit.
+[18:33:24] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[18:33:24] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[18:33:24] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
+[18:33:24] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
+[18:33:24] [SERVER/INFO] [emergentengineering]:  - running script postInit.oredict
+[18:33:24] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.alloy_kiln
+[18:33:24] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shaped
+[18:33:24] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shapeless
+[18:33:24] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.furnace
+[18:33:24] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
+[18:33:24] [SERVER/INFO] [emergentengineering]: Groovy scripts took 29ms to compile and 56ms to run in postInit.

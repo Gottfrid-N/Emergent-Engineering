@@ -1,7 +1,7 @@
 package classes
 
 public class recipe {
-    def compact3x3(String resource_name, IIngredient input, ItemStack output) {
+    static compact3x3(String resource_name, IIngredient input, ItemStack output) {
         crafting.shapedBuilder()
             .name(resource_name + "_compacting3x3")
             .output(output)
@@ -12,7 +12,7 @@ public class recipe {
             .register()
     }
 
-    static expandx9(String resource_name, ItemStack input, ItemStack output) {
+    static expandx9(String resource_name, IIngredient input, ItemStack output) {
         crafting.shapelessBuilder()
             .name(resource_name + "_expanding")
             .output(output.multiply(9))

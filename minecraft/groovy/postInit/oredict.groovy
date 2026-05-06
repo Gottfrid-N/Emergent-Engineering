@@ -3,6 +3,7 @@ import classes.recipe
 
 function.steel_to_carbon_steel("block", item("immersiveengineering:storage:8"))
 //crafting.removeByOutput(item("immersiveengineering:storage:8"))
+mods.nuclearcraft.
 
 function.steel_to_carbon_steel("ingot", item("immersiveengineering:metal:8"))
 //crafting.removeByOutput(item("immersiveengineering:metal:8"))
@@ -11,9 +12,7 @@ function.steel_to_carbon_steel("nugget", item("immersiveengineering:metal:28"))
 //crafting.removeByOutput(item("immersiveengineering:metal:28"))
 
 
-//recipe.metal_recipes("carbon_steel", "CarbonSteel")
-//compact3x3("carbon_steel_ingot_compact3x3", ore("ingotCarbonSteel"), ore("blockCarbonSteel").getFirst())
-compact3x3(null, null, null)
+
 function.steel_to_carbon_steel("slab", item("immersiveengineering:storage_slab:8"))
 function.steel_to_carbon_steel("blockSheetmetal", item("immersiveengineering:sheetmetal:8"))
 function.steel_to_carbon_steel("slabSheetmetal", item("immersiveengineering:sheetmetal_slab:8"))
@@ -43,6 +42,7 @@ crafting.shapedBuilder()
     .key("I", item("immersiveengineering:metal:8"))
     .register()
 
+recipe.metal_recipes("carbon_steel", "CarbonSteel")
 
 
 

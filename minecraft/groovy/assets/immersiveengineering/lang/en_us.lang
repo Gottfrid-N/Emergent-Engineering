@@ -1,4 +1,6 @@
 tile.immersiveengineering.storage.steel.name=Block of Carbon Steel
-tile.immersiveengineering.metal.ingot_steel.name=Carbon Steel Ingot
-tile.immersiveengineering.metal.nugget_steel.name=Carbon Steel Nugget
-tile.immersiveengineering.metal.dust_steel.name=Carbon Steel Dust
+tile.immersiveengineering.storage_slab.steel.name=Block of Carbon Steel
+item.immersiveengineering.metal.ingot_steel.name=Carbon Steel Ingot
+item.immersiveengineering.metal.nugget_steel.name=Carbon Steel Nugget
+item.immersiveengineering.metal.dust_steel.name=Carbon Steel Dust
+item.immersiveengineering.metal.plate_steel.name=Carbon Steel Plate
