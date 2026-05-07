@@ -20,10 +20,14 @@ public class recipe {
             .register()
     }
 
-    static metal_recipes(String resource_name, String oredict) {
-        compact3x3(resource_name + "_ingot", ore("ingot" + oredict), ore("block" + oredict).getFirst())
-        compact3x3(resource_name + "_nugget", ore("nugget" + oredict), ore("ingot" + oredict).getFirst())
-        expandx9(resource_name + "_block", ore("block" + oredict), ore("ingot" + oredict).getFirst())
-        expandx9(resource_name + "_ingot", ore("ingot" + oredict), ore("nugget" + oredict).getFirst())
+    static metal_recipes(String resource_name, block, ingot, nugget) {
+        if(ingot) {
+            log.info(resource_name + "_ingot not found! Not generting recipes that contain it")
+            compact3x3(resource_name + "_ingot", ingot, block)
+            compact3x3(resource_name + "_nugget", nugget, ingot)
+            expandx9(resource_name + "_block", block, ingot)
+            expandx9(resource_name + "_ingot", ingot, nugget)
+        }
+        
     }
 }

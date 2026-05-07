@@ -14,4 +14,7 @@ def addTooltip(ItemStack itemStack, String line) {
     tooltipMap[itemStack] = line // store item and line in map
 }
 
-addTooltip(item("emergentengineering:fire_brick"), "§cAlloy kiln recipe takes a while, go explore!")
+addTooltip(item("emergentengineering:fire_brick"), 
+"§cAlloy kiln recipe takes a while, go explore!")
+addTooltip(item("extrautils2:ingredients"),
+"§cDrops from redstone ore at a low rate")

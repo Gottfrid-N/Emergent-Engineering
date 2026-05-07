@@ -81,6 +81,7 @@
     "criteria": {
       "desert_hills": "2026-05-01 23:42:23 +0200",
       "savanna": "2026-05-02 01:34:32 +0200",
+      "plains": "2026-05-07 12:20:50 +0200",
       "savanna_rock": "2026-05-02 01:34:34 +0200",
       "river": "2026-05-02 17:34:37 +0200",
       "desert": "2026-05-01 23:41:22 +0200"
@@ -144,6 +145,12 @@
   "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "entered_water": "2026-05-03 12:34:26 +0200"
+    },
+    "done": true
+  },
+  "twilightforest:alt/treasures/ice_bomb": {
+    "criteria": {
+      "ice_bomb": "2026-05-07 13:14:49 +0200"
     },
     "done": true
   },

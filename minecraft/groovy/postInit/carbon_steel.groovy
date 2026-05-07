@@ -49,7 +49,9 @@ crafting.shapedBuilder()
     .key("I", item("immersiveengineering:metal:8"))
     .register()
 
-recipe.metal_recipes("carbon_steel", "CarbonSteel")
+recipe.metal_recipes("carbon_steel", item("immersiveengineering:storage:8"),
+ null,
+ item("immersiveengineering:metal:28"))
 
 
 

@@ -1,0 +1,15 @@
+{
+	x: 3.0d,
+	y: 3.0d,
+	shape: "diamond",
+	dependencies: [
+		"855a67c9"
+	],
+	tasks: [{
+		uid: "e42bdb03",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared_furnace_controller"
+		}]
+	}]
+}

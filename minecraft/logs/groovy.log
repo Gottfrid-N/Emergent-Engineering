@@ -1,19 +1,91 @@
 ============  GroovyLog  ====  07.05.2026  ============
 GroovyScript version: 1.4.3
-[10:08:59] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
-[10:08:59] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
-[10:08:59] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 40ms to run in preInit.
-[10:09:27] [CLIENT/INFO] [groovyscript]: Starting Language server
-[10:09:32] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
-[10:09:35] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[10:09:35] [CLIENT/INFO] [emergentengineering]:  - loading class classes.function
-[10:09:35] [CLIENT/INFO] [emergentengineering]:  - loading class classes.recipe
-[10:09:35] [CLIENT/INFO] [emergentengineering]:  - running script postInit.carbon_steel
-[10:09:35] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln
-[10:09:36] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace
-[10:09:36] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped
-[10:09:36] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless
-[10:09:36] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace
-[10:09:36] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.misc
-[10:09:36] [CLIENT/INFO] [emergentengineering]:  - running script postInit.tooltips
-[10:09:36] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 580ms to compile and 149ms to run in postInit.
+[13:12:26] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
+[13:12:26] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
+[13:12:26] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 39ms to run in preInit.
+[13:12:56] [CLIENT/INFO] [groovyscript]: Starting Language server
+[13:13:03] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
+[13:13:07] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[13:13:07] [CLIENT/INFO] [emergentengineering]:  - loading class classes.function
+[13:13:07] [CLIENT/INFO] [emergentengineering]:  - loading class classes.recipe
+[13:13:07] [CLIENT/INFO] [emergentengineering]:  - running script postInit.carbon_steel
+[13:13:07] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln
+[13:13:07] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace
+[13:13:07] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped
+[13:13:07] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless
+[13:13:07] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace
+[13:13:07] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.misc
+[13:13:07] [CLIENT/INFO] [emergentengineering]:  - running script postInit.tooltips
+[13:13:07] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 179ms to run in postInit.
+[13:29:53] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[13:29:53] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[13:29:53] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
+[13:29:53] [SERVER/ERROR] [emergentengineering]: An error occurred while trying to compile script class classes/recipe.groovy Look at latest.log for a full stacktrace:
+	org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application%20Support/PrismLauncher/instances/Emergent-Engineering/minecraft/groovy/classes/recipe.groovy: 23: unable to resolve class Itemstack
+ @ line 23, column 93.
+   , ItemStack ingot, ItemStack, Itemstack 
+                                 ^
+
+1 error
+
+		at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292)
+		at org.codehaus.groovy.control.CompilationUnit$ISourceUnitOperation.doPhaseOperation(CompilationUnit.java:878)
+		at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:660)
+		at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:634)
+		at com.cleanroommc.groovyscript.sandbox.GroovyScriptClassLoader.doParseClass(GroovyScriptClassLoader.java:129)
+		at com.cleanroommc.groovyscript.sandbox.GroovyScriptClassLoader.parseClass(GroovyScriptClassLoader.java:102)
+		at com.cleanroommc.groovyscript.sandbox.CustomGroovyScriptEngine$ScriptClassLoader.doParseClass(CustomGroovyScriptEngine.java:572)
+		at com.cleanroommc.groovyscript.sandbox.CustomGroovyScriptEngine$ScriptClassLoader.parseClassRaw(CustomGroovyScriptEngine.java:550)
+		at com.cleanroommc.groovyscript.sandbox.CustomGroovyScriptEngine$ScriptClassLoader.parseClassRaw(CustomGroovyScriptEngine.java:561)
+		at com.cleanroommc.groovyscript.sandbox.CustomGroovyScriptEngine.parseDynamicScript(CustomGroovyScriptEngine.java:313)
+		at com.cleanroommc.groovyscript.sandbox.CustomGroovyScriptEngine.loadScriptClassInternal(CustomGroovyScriptEngine.java:266)
+		at com.cleanroommc.groovyscript.sandbox.CustomGroovyScriptEngine.loadScript(CustomGroovyScriptEngine.java:193)
+		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.loadScripts(GroovyScriptSandbox.java:255)
+[13:29:53] [SERVER/ERROR] [emergentengineering]: Class for classes/recipe.groovy was loaded, but didn't receive class created callback!
+[13:29:53] [SERVER/ERROR] [emergentengineering]: Error loading script classes/recipe.groovy
+[13:29:53] [SERVER/ERROR] [emergentengineering]: An error occurred while trying to compile script class postInit/carbon_steel.groovy Look at latest.log for a full stacktrace:
+	org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/gottfrid.nordstrom@live.vasteras.se/Library/Application%20Support/PrismLauncher/instances/Emergent-Engineering/minecraft/groovy/classes/recipe.groovy: 23: unable to resolve class Itemstack
+ @ line 23, column 93.
+   , ItemStack ingot, ItemStack, Itemstack 
+                                 ^
+
+1 error
+
+		at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292)
+		at org.codehaus.groovy.control.CompilationUnit$ISourceUnitOperation.doPhaseOperation(CompilationUnit.java:878)
+		at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:660)
+		at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:634)
+		at com.cleanroommc.groovyscript.sandbox.GroovyScriptClassLoader.doParseClass(GroovyScriptClassLoader.java:129)
+		at com.cleanroommc.groovyscript.sandbox.GroovyScriptClassLoader.parseClass(GroovyScriptClassLoader.java:102)
+		at com.cleanroommc.groovyscript.sandbox.CustomGroovyScriptEngine$ScriptClassLoader.doParseClass(CustomGroovyScriptEngine.java:572)
+		at com.cleanroommc.groovyscript.sandbox.CustomGroovyScriptEngine$ScriptClassLoader.parseClassRaw(CustomGroovyScriptEngine.java:550)
+		at com.cleanroommc.groovyscript.sandbox.CustomGroovyScriptEngine$ScriptClassLoader.parseClassRaw(CustomGroovyScriptEngine.java:561)
+		at com.cleanroommc.groovyscript.sandbox.CustomGroovyScriptEngine.parseDynamicScript(CustomGroovyScriptEngine.java:313)
+		at com.cleanroommc.groovyscript.sandbox.CustomGroovyScriptEngine.loadScriptClassInternal(CustomGroovyScriptEngine.java:266)
+		at com.cleanroommc.groovyscript.sandbox.CustomGroovyScriptEngine.loadScript(CustomGroovyScriptEngine.java:193)
+		at com.cleanroommc.groovyscript.sandbox.GroovyScriptSandbox.loadScripts(GroovyScriptSandbox.java:255)
+[13:29:53] [SERVER/ERROR] [emergentengineering]: Class for postInit/carbon_steel.groovy was loaded, but didn't receive class created callback!
+[13:29:53] [SERVER/ERROR] [emergentengineering]: Error loading script postInit/carbon_steel.groovy
+[13:29:53] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln
+[13:29:53] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace
+[13:29:53] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped
+[13:29:53] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless
+[13:29:53] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace
+[13:29:53] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
+[13:29:53] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltips
+[13:29:53] [SERVER/INFO] [emergentengineering]: Groovy scripts took 70ms to compile and 69ms to run in postInit.
+[13:30:27] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[13:30:27] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[13:30:27] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
+[13:30:27] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
+[13:30:27] [SERVER/INFO] [emergentengineering]:  - running script postInit.carbon_steel
+[13:30:27] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln
+[13:30:27] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace
+[13:30:27] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped
+[13:30:27] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless
+[13:30:27] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace
+[13:30:27] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
+[13:30:27] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltips
+[13:30:27] [SERVER/INFO] [emergentengineering]: Groovy scripts took 290ms to compile and 99ms to run in postInit.

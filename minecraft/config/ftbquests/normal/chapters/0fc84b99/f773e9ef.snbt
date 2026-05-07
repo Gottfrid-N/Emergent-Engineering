@@ -1,0 +1,49 @@
+{
+	title: "Tinker's Construct",
+	x: 1.5d,
+	y: 1.5d,
+	shape: "diamond",
+	description: "Tools and more!",
+	text: [
+		"Tinker's construct is a very useful mod, you should take a look at it!"
+	],
+	dependencies: [
+		"afcbae20"
+	],
+	tasks: [{
+		uid: "244410f7",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables"
+		}]
+	},
+	{
+		uid: "0cbb820f",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 3"
+		}]
+	},
+	{
+		uid: "b189d90e",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			Damage: 2s,
+			tag: {
+				textureBlock: {
+					id: "minecraft:log",
+					Count: 1,
+					Damage: 0s
+				}
+			}
+		}]
+	},
+	{
+		uid: "390a3d7a",
+		type: "item",
+		items: [{
+			item: "tconstruct:pattern"
+		}]
+	}]
+}
