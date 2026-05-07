@@ -1,92 +1,19 @@
-============  GroovyLog  ====  06.05.2026  ============
+============  GroovyLog  ====  07.05.2026  ============
 GroovyScript version: 1.4.3
-[23:04:04] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
-[23:04:04] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
-[23:04:04] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 34ms to run in preInit.
-[23:04:31] [CLIENT/INFO] [groovyscript]: Starting Language server
-[23:04:37] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
-[23:04:39] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[23:04:39] [CLIENT/INFO] [emergentengineering]:  - loading class classes.function
-[23:04:39] [CLIENT/INFO] [emergentengineering]:  - loading class classes.recipe
-[23:04:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.carbon_steel
-[23:04:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.alloy_kiln
-[23:04:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shaped
-[23:04:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shapeless
-[23:04:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.furnace
-[23:04:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.misc
-[23:04:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.tooltips
-[23:04:40] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 816ms to compile and 126ms to run in postInit.
-[23:05:06] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[23:05:06] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[23:05:06] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
-[23:05:06] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
-[23:05:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.carbon_steel
-[23:05:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.alloy_kiln
-[23:05:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shaped
-[23:05:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shapeless
-[23:05:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.furnace
-[23:05:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
-[23:05:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltips
-[23:05:06] [SERVER/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 70ms to run in postInit.
-[23:06:35] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[23:06:35] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[23:06:35] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
-[23:06:35] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
-[23:06:35] [SERVER/INFO] [emergentengineering]:  - running script postInit.carbon_steel
-[23:06:35] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.alloy_kiln
-[23:06:35] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shaped
-[23:06:35] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shapeless
-[23:06:35] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.furnace
-[23:06:35] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
-[23:06:35] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltips
-[23:06:35] [SERVER/INFO] [emergentengineering]: Groovy scripts took 16ms to compile and 82ms to run in postInit.
-[23:07:50] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[23:07:50] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[23:07:50] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
-[23:07:50] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
-[23:07:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.carbon_steel
-[23:07:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.alloy_kiln
-[23:07:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shaped
-[23:07:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shapeless
-[23:07:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.furnace
-[23:07:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
-[23:07:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltips
-[23:07:51] [SERVER/INFO] [emergentengineering]: Groovy scripts took 9ms to compile and 47ms to run in postInit.
-[23:12:50] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[23:12:50] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[23:12:50] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
-[23:12:50] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
-[23:12:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.carbon_steel
-[23:12:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.alloy_kiln
-[23:12:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shaped
-[23:12:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crafting_shapeless
-[23:12:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.furnace
-[23:12:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
-[23:12:50] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltips
-[23:12:50] [SERVER/INFO] [emergentengineering]: Groovy scripts took 67ms to compile and 135ms to run in postInit.
-[23:30:33] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[23:30:33] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[23:30:33] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
-[23:30:33] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
-[23:30:33] [SERVER/INFO] [emergentengineering]:  - running script postInit.carbon_steel
-[23:30:33] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln
-[23:30:33] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace
-[23:30:33] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped
-[23:30:33] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless
-[23:30:33] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace
-[23:30:33] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
-[23:30:33] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltips
-[23:30:34] [SERVER/INFO] [emergentengineering]: Groovy scripts took 89ms to compile and 218ms to run in postInit.
-[23:32:51] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[23:32:51] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[23:32:51] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
-[23:32:51] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
-[23:32:51] [SERVER/INFO] [emergentengineering]:  - running script postInit.carbon_steel
-[23:32:51] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln
-[23:32:51] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace
-[23:32:51] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped
-[23:32:51] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless
-[23:32:51] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace
-[23:32:51] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc
-[23:32:51] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltips
-[23:32:51] [SERVER/INFO] [emergentengineering]: Groovy scripts took 11ms to compile and 71ms to run in postInit.
+[10:08:59] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
+[10:08:59] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
+[10:08:59] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 40ms to run in preInit.
+[10:09:27] [CLIENT/INFO] [groovyscript]: Starting Language server
+[10:09:32] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
+[10:09:35] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[10:09:35] [CLIENT/INFO] [emergentengineering]:  - loading class classes.function
+[10:09:35] [CLIENT/INFO] [emergentengineering]:  - loading class classes.recipe
+[10:09:35] [CLIENT/INFO] [emergentengineering]:  - running script postInit.carbon_steel
+[10:09:35] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln
+[10:09:36] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace
+[10:09:36] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped
+[10:09:36] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless
+[10:09:36] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace
+[10:09:36] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.misc
+[10:09:36] [CLIENT/INFO] [emergentengineering]:  - running script postInit.tooltips
+[10:09:36] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 580ms to compile and 149ms to run in postInit.

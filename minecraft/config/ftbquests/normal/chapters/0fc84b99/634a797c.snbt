@@ -1,0 +1,26 @@
+{
+	title: "Blast Furnace",
+	x: 6.0d,
+	y: 0.0d,
+	description: "Crude carbon steel production",
+	text: [
+		"Build a 3x3 of blast bricks and right click with an engineers hammer, put some coal coke (coal and charcoal doesn't work) and wait."
+	],
+	dependencies: [
+		"f4f2820e"
+	],
+	tasks: [{
+		uid: "b04bf909",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 1 1"
+		}]
+	},
+	{
+		uid: "63adf877",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal 1 8"
+		}]
+	}]
+}

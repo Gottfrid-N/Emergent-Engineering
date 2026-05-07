@@ -1,0 +1,19 @@
+{
+	title: "Steel Types",
+	x: 6.0d,
+	y: 1.5d,
+	shape: "gear",
+	description: "Carbon, Alloy, Stainless????",
+	text: [
+		"Steel has been heavily changed in this pack, immersive engineering steel has been changed to carbon steel, which is used for more primitive machines.",
+		"Thermal foundation steel's recipe has been changed to reflect in real life alloy steel production.",
+		"Theres a later alloy called stainless steel which is used for mid-game machines such as nuclearcraft."
+	],
+	dependencies: [
+		"634a797c"
+	],
+	tasks: [{
+		uid: "20ce0e2b",
+		type: "checkmark"
+	}]
+}

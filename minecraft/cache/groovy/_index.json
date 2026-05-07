@@ -4,16 +4,6 @@
   "java": "25",
   "index": [
     {
-      "name": "postInit.recipes.minecraft.furnace",
-      "path": "postInit/recipes/minecraft/furnace.groovy",
-      "lm": 1778100386901
-    },
-    {
-      "name": "postInit.recipes.alloy_kiln",
-      "path": "postInit/recipes/alloy_kiln.groovy",
-      "lm": 1778101915312
-    },
-    {
       "name": "preInit.main",
       "path": "preInit/main.groovy",
       "lm": 1778099802693,
@@ -22,19 +12,9 @@
       ]
     },
     {
-      "name": "postInit.recipes.crafting_shaped",
-      "path": "postInit/recipes/crafting_shaped.groovy",
-      "lm": 1777843933100
-    },
-    {
       "name": "classes.function",
       "path": "classes/function.groovy",
       "lm": 1777889720037
-    },
-    {
-      "name": "postInit.recipes.furnace",
-      "path": "postInit/recipes/furnace.groovy",
-      "lm": 1778100386901
     },
     {
       "name": "classes.recipe",
@@ -42,9 +22,14 @@
       "lm": 1778085188557
     },
     {
+      "name": "postInit.recipes.minecraft.furnace",
+      "path": "postInit/recipes/minecraft/furnace.groovy",
+      "lm": 1778100386901
+    },
+    {
       "name": "postInit.recipes.immersiveengineering.blast_furnace",
       "path": "postInit/recipes/immersiveengineering/blast_furnace.groovy",
-      "lm": 1778103162213
+      "lm": 1778103597142
     },
     {
       "name": "postInit.recipes.minecraft.crafting_shaped",
@@ -62,27 +47,22 @@
       "lm": 1778090087411
     },
     {
-      "name": "postInit.recipes.minecraft.crafting_shapeless",
-      "path": "postInit/recipes/minecraft/crafting_shapeless.groovy",
-      "lm": 1778099927946
-    },
-    {
-      "name": "postInit.recipes.crafting_shapeless",
-      "path": "postInit/recipes/crafting_shapeless.groovy",
-      "lm": 1778099927946
-    },
-    {
-      "name": "postInit.recipes.misc",
-      "path": "postInit/recipes/misc.groovy",
-      "lm": 1777845289941
-    },
-    {
       "name": "postInit.tooltips",
       "path": "postInit/tooltips.groovy",
       "lm": 1778101966575,
       "inner": [
         "postInit.tooltips$_run_closure1"
       ]
+    },
+    {
+      "name": "postInit.recipes.minecraft.crafting_shapeless",
+      "path": "postInit/recipes/minecraft/crafting_shapeless.groovy",
+      "lm": 1778099927946
+    },
+    {
+      "name": "postInit.recipes.misc",
+      "path": "postInit/recipes/misc.groovy",
+      "lm": 1777845289941
     }
   ]
 }

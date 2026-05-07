@@ -20,5 +20,5 @@
 [INITIALIZATION][CLIENT][INFO] Ignoring script {[0:crafttweaker]: modernized_backport.zs} due to the following #modloaded preprocessor settings: [{oe}, {quark}]
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker]: example_mob_drops.zs}
 [INITIALIZATION][CLIENT][INFO] [crafttweaker | SIDE_CLIENT]: Loading Script: {[0:crafttweaker|reloadable]: modernized_backport.zs}
-[INITIALIZATION][CLIENT][INFO] Completed script loading in: 8ms
+[INITIALIZATION][CLIENT][INFO] Completed script loading in: 4ms
 [POSTINITIALIZATION][CLIENT][INFO] Removing recipes for various outputs
