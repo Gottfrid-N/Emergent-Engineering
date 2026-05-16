@@ -24,17 +24,17 @@
     {
       "name": "classes.recipe",
       "path": "classes/recipe.groovy",
-      "lm": 1778901972758
-    },
-    {
-      "name": "postInit.recipes.immersiveengineering.engineers_workbench_recipes",
-      "path": "postInit/recipes/immersiveengineering/engineers_workbench_recipes.groovy",
-      "lm": 1778889372105
+      "lm": 1778929164975
     },
     {
       "name": "postInit.recipes.minecraft.crafting_shapeless_recipes",
       "path": "postInit/recipes/minecraft/crafting_shapeless_recipes.groovy",
       "lm": 1778899905643
+    },
+    {
+      "name": "postInit.recipes.immersiveengineering.engineers_workbench_recipes",
+      "path": "postInit/recipes/immersiveengineering/engineers_workbench_recipes.groovy",
+      "lm": 1778889372105
     },
     {
       "name": "postInit.recipes.immersiveengineering.blast_furnace_recipes",
@@ -52,9 +52,9 @@
       "lm": 1778885420584
     },
     {
-      "name": "classes.Metal",
-      "path": "classes/Metal.groovy",
-      "lm": 1778901252845
+      "name": "postInit.recipes.mixing_recipes",
+      "path": "postInit/recipes/mixing_recipes.groovy",
+      "lm": 1778872411925
     },
     {
       "name": "postInit.carbon_steel",
@@ -62,14 +62,9 @@
       "lm": 1778901260710
     },
     {
-      "name": "postInit.recipes.mixing_recipes",
-      "path": "postInit/recipes/mixing_recipes.groovy",
-      "lm": 1778872411925
-    },
-    {
       "name": "classes.Recipe",
       "path": "classes/Recipe.groovy",
-      "lm": 1778901809448
+      "lm": 1778929164975
     },
     {
       "name": "postInit.recipes.crushing_recipes",
@@ -93,11 +88,6 @@
       "inner": [
         "postInit.tooltips$_run_closure1"
       ]
-    },
-    {
-      "name": "classes.metal",
-      "path": "classes/metal.groovy",
-      "lm": 1778901668646
     }
   ]
 }

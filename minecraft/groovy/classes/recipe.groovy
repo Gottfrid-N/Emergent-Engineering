@@ -67,7 +67,7 @@ public class Recipe {
             .register()
     }
 
-    public class Metal {
+    /*public class Metal {
         static all_recipes(String resource_name) {
             to_ingot(resource_name)
             to_nugget(resource_name)
@@ -101,6 +101,6 @@ public class Recipe {
         static to_gear(String resource_name) {
             Recipe.crafting_gear(resource_name, ore("ingot" + resource_name), ore("gear" + resource_name).getFirst())
         }
-    }
+    }*/
 }
 
