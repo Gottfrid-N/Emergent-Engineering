@@ -16,5 +16,9 @@ def addTooltip(ItemStack itemStack, String line) {
 
 addTooltip(item("emergentengineering:fire_brick"), 
 "§cAlloy kiln recipe takes a while, go explore!")
+addTooltip(item("emergentengineering:blast_brick"), 
+"§cAlloy kiln recipe takes a while, go explore!")
 addTooltip(item("extrautils2:ingredients"),
 "§cDrops from redstone ore at a low rate")
+addTooltip(item("appliedenergistics2:grindstone"),
+"§cDISABLED")

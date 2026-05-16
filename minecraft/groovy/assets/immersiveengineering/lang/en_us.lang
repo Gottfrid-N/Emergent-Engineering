@@ -4,3 +4,12 @@ item.immersiveengineering.metal.ingot_steel.name=Carbon Steel Ingot
 item.immersiveengineering.metal.nugget_steel.name=Carbon Steel Nugget
 item.immersiveengineering.metal.dust_steel.name=Carbon Steel Dust
 item.immersiveengineering.metal.plate_steel.name=Carbon Steel Plate
+item.immersiveengineering.material.component_steel.name=Carbon Steel Mechanical Component
+tile.immersiveengineering.sheetmetal.steel.name=Carbon Steel Sheetmetal
+
+tile.immersiveengineering.stone_decoration.alloybrick.name=Kiln Bricks
+tile.immersiveengineering.stone_decoration.cokebrick.name=Coke Bricks
+tile.immersiveengineering.stone_decoration.blastbrick.name=Blast Bricks
+
+desc.immersiveengineering.info.blueprint.basic=Basic Crafting
+desc.immersiveengineering.info.blueprint.advanced=Advanced Crafting

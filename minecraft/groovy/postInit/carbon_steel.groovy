@@ -1,5 +1,6 @@
 import classes.function
-import classes.recipe
+import classes.Recipe
+import classes.Metal
 
 function.steel_to_carbon_steel("block", item("immersiveengineering:storage:8"))
 //crafting.removeByOutput(item("immersiveengineering:storage:8"))
@@ -17,8 +18,13 @@ function.steel_to_carbon_steel("plate", item("immersiveengineering:metal:38"))
 function.steel_to_carbon_steel("nugget", item("immersiveengineering:metal:28"))
 //crafting.removeByOutput(item("immersiveengineering:metal:28"))
 
+function.steel_to_carbon_steel("stick", item("immersiveengineering:material:2"))
+
+ore_dict.add("gearCarbonSteel", item("emergentengineering:carbon_steel_gear"))
+
 function.steel_to_carbon_steel("blockSheetmetal", item("immersiveengineering:sheetmetal:8"))
 function.steel_to_carbon_steel("slabSheetmetal", item("immersiveengineering:sheetmetal_slab:8"))
+
 function.steel_to_carbon_steel("fence", item("immersiveengineering:metal_decoration1"))
 
 function.steel_to_carbon_steel("blockSheetmetal", item("immersiveengineering:sheetmetal:8"))
@@ -49,9 +55,7 @@ crafting.shapedBuilder()
     .key("I", item("immersiveengineering:metal:8"))
     .register()
 
-recipe.metal_recipes("carbon_steel", item("immersiveengineering:storage:8"),
- null,
- item("immersiveengineering:metal:28"))
+//Metal.all_recipes("CarbonSteel")
 
 
 

@@ -22,3 +22,27 @@ content.createItem("unfired_fire_brick")
 
 content.createItem("fire_brick")
     .register()
+
+content.createItem("nethengenic_blend")
+    .register()
+
+content.createItem("blazing_powder")
+    .register()
+
+content.createItem("red_coal_dust")
+    .register()
+
+content.createItem("checkmark")
+    .register()
+
+content.createItem("questionmark")
+    .register()
+
+content.createItem("information")
+    .register()
+
+content.createItem("warning")
+    .register()
+
+content.createItem("carbon_steel_gear")
+    .register()

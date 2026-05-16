@@ -5,6 +5,4 @@ public class function {
         ore_dict.remove(oredict + "Steel", item)
         ore_dict.add(oredict + "CarbonSteel", item) 
     }
-
-
 }

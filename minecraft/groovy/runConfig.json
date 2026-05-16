@@ -3,7 +3,7 @@
   "packId": "emergentengineering",
   "author": "Gottfrid Nordström",
   "version": "0.0.1",
-  "debug": false,
+  "debug": true,
   "loaders": {
     "preInit": [
       "preInit/"

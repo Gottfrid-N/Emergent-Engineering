@@ -1,0 +1,18 @@
+filename = 'BetterQuestingUnofficial-4.3.1.jar'
+name = 'Better Questing Unofficial'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'BetterQuestingUnofficial-4.3.1.jar'
+
+[download]
+hash = '8ec8bec44c390b2b6ee7853e9ea390367586ea78'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7859791
+project-id = 629629

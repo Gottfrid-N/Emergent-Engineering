@@ -1,0 +1,1141 @@
+{
+  "build:8": "4.3.1",
+  "format:8": "2.1.0",
+  "questDatabase:9": {
+    "0:10": {
+      "preRequisites:11": [
+        18
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Steel has been heavily changed in this pack, immersive engineering steel has been changed to carbon steel, which is used for more primitive machines.\nThermal foundation steel\u0027s recipe has been changed to reflect in real life alloy steel production.\nTheres a later alloy called stainless steel which is used for mid-game machines such as nuclearcraft.",
+          "frame:8": "GEAR",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "emergentengineering:information"
+          },
+          "name:8": "Steel Types",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 0,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "1:10": {
+      "preRequisites:11": [
+        4,
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "frame:8": "DIAMOND",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "tconstruct:smeltery_controller"
+          },
+          "name:8": "Smeltery Controller",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 1,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "tconstruct:smeltery_controller"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "2:10": {
+      "preRequisites:11": [
+        12
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Side Quests use a diamond icon and are not required for progression, some lines however wrap back to required content which means they become required later on.",
+          "frame:8": "DIAMOND",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:nether_star"
+          },
+          "name:8": "Side Quests",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 2,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "3:10": {
+      "preRequisites:11": [
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "frame:8": "DIAMOND",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "astralsorcery:blockaltar"
+          },
+          "name:8": "Astral Sorcery",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 3,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "astralsorcery:blockaltar"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "4:10": {
+      "preRequisites:11": [
+        11
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Tinker\u0027s construct is a very useful mod, you should take a look at it!",
+          "frame:8": "DIAMOND",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "tconstruct:tooltables"
+          },
+          "name:8": "Tinker\u0027s Construct",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 4,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "tconstruct:tooltables"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 3,
+              "id:8": "tconstruct:tooltables"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "index:3": 2,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "id:8": "tconstruct:tooltables",
+              "tag:10": {
+                "textureBlock:10": {
+                  "Count:3": 1,
+                  "Damage:2": 0,
+                  "id:8": "minecraft:log"
+                }
+              }
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "3:10": {
+          "index:3": 3,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "tconstruct:pattern"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "5:10": {
+      "preRequisites:11": [
+        1
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "frame:8": "DIAMOND",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "tconstruct:seared_furnace_controller"
+          },
+          "name:8": "Seared Furnace Controller",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 5,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "tconstruct:seared_furnace_controller"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "6:10": {
+      "preRequisites:11": [
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Build a 3x3 square of coke bricks and right click with an engineers hammer.",
+          "frame:8": "SQUARE",
+          "icon:10": {
+            "Count:3": 27,
+            "id:8": "immersiveengineering:stone_decoration"
+          },
+          "ismain:1": 1,
+          "name:8": "Coke Oven",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 6,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 27,
+              "id:8": "immersiveengineering:stone_decoration"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "7:10": {
+      "preRequisites:11": [
+        11
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "...\n\nYou wake up from what feels like an endless slumber, groggy as can be with nothing to your name.\n\n...\n\nIt feels like you\u0027ve been here before, when you were stronger, bigger and badder. Back when the world bent to your will.\n\n...\n\nYou yearn for that power, the boundless control over the infinite world you find yourself on, will you succumb to mother nature? Or will you find the true nature behind it all.",
+          "frame:8": "CIRCLE",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:writable_book"
+          },
+          "name:8": "A Cyclical Hell",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 7,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "8:10": {
+      "preRequisites:11": [
+        12
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Progression quests have a square icon and are used to track progression in the pack, the only required quests in the modpack are progression quests, but there are side quests that help progression too.",
+          "frame:8": "SQUARE",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "emergentengineering:checkmark"
+          },
+          "name:8": "Progression Quests",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 8,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "9:10": {
+      "preRequisites:11": [
+        15
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Build a 2x2 square of kiln bricks and right click with an engineers hammer. Serves as a primitive alloy furnace and brick kiln.\nBricks are gated behind this multiblock (Check JEI!)",
+          "frame:8": "SQUARE",
+          "icon:10": {
+            "Count:3": 8,
+            "Damage:2": 10,
+            "id:8": "immersiveengineering:stone_decoration"
+          },
+          "ismain:1": 1,
+          "name:8": "Alloy Kiln",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 9,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 8,
+              "Damage:2": 10,
+              "id:8": "immersiveengineering:stone_decoration"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "10:10": {
+      "preRequisites:11": [
+        12
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Lore quests have circle icons and are completely unecessary for progression, it is strictly for the lore of the modpack. You should only checkmark the quests you have read since they give nothing for progression.",
+          "frame:8": "CIRCLE",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:writable_book"
+          },
+          "name:8": "Lore Quests",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 10,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "11:10": {
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "frame:8": "DIAGONAL_STAR4_ON_HEXAGON90",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:crafting_table"
+          },
+          "ismain:1": 1,
+          "name:8": "Humble Beginnings",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 11,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "minecraft:crafting_table"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "12:10": {
+      "preRequisites:11": [
+        11
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "frame:8": "GEAR",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "emergentengineering:questionmark"
+          },
+          "name:8": "Questing",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 12,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "minecraft:bread"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "13:10": {
+      "preRequisites:11": [
+        15
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Ore processing has been heavily expanded in this pack, if you are familiar with gregtech all of this should make sense (altough it isn\u0027t based on gregtech ore processing",
+          "frame:8": "DIAMOND",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:iron_ore"
+          },
+          "name:8": "Ore Processing",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 14,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "minecraft:iron_ore"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "14:10": {
+      "preRequisites:11": [
+        11
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Ore generation has been heavily changed, it is really profitable too mine.",
+          "frame:8": "SQUARE",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:stone_pickaxe"
+          },
+          "ismain:1": 1,
+          "name:8": "Into the mines!",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 15,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "minecraft:stone_pickaxe"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "15:10": {
+      "preRequisites:11": [
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Drop a block of sand into the ocean and watch the magic unfold (thanks groovyscript!).\nDry it off on a drying rack (but not too long) and you\u0027ve got yourself some renewable all-natural clay!",
+          "frame:8": "DIAMOND",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "emergentengineering:marine_clay"
+          },
+          "name:8": "Marine Clay",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 16,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "emergentengineering:marine_clay"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "16:10": {
+      "preRequisites:11": [
+        12
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "frame:8": "GEAR",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "emergentengineering:information"
+          },
+          "name:8": "Informational Quests",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 17,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "17:10": {
+      "preRequisites:11": [
+        6
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Build a 3x3 of blast bricks and right click with an engineers hammer, put some coal coke (coal and charcoal doesn\u0027t work) and wait.",
+          "frame:8": "SQUARE",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 1,
+            "id:8": "immersiveengineering:stone_decoration"
+          },
+          "ismain:1": 1,
+          "name:8": "Blast Furnace",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 18,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "id:8": "immersiveengineering:stone_decoration"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "emergentengineering:red_coal_dust"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "id:8": "extrautils2:ingredients"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        }
+      }
+    },
+    "18:10": {
+      "preRequisites:11": [
+        15
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "frame:8": "DIAMOND",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "extrautils2:ingredients"
+          },
+          "name:8": "Extra Utilites 2",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 19,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "extrautils2:ingredients"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "19:10": {
+      "preRequisites:11": [
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Immersive engineering multiblocks structure can be found in the engineers manual,\nonce assembled right click with an engineers hammer and voilà! Now your thinking with multiblocks.",
+          "frame:8": "GEAR",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "emergentengineering:information"
+          },
+          "name:8": "Immersive Engineering Multiblocks",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 20,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "20:10": {
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:nether_star"
+          },
+          "name:8": "Improved Blast Furnace"
+        }
+      },
+      "questID:3": 100964397,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 27,
+              "Damage:2": 2,
+              "id:8": "immersiveengineering:stone_decoration"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "id:8": "minecraft:hopper"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "immersiveengineering:metal_device1"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        }
+      }
+    },
+    "21:10": {
+      "preRequisites:11": [
+        1063407773
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "frame:8": "DIAMOND_ON_CIRCLE",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 1,
+          "name:8": "New Quest"
+        }
+      },
+      "questID:3": 280251705,
+      "tasks:9": {}
+    },
+    "22:10": {
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:nether_star"
+          },
+          "name:8": "New Quest"
+        }
+      },
+      "questID:3": 352375834,
+      "tasks:9": {}
+    },
+    "23:10": {
+      "preRequisites:11": [
+        19
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "Easy resonant crystals",
+          "frame:8": "DIAMOND",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "extrautils2:resonator"
+          },
+          "name:8": "Resonator"
+        }
+      },
+      "questID:3": 631219583,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "extrautils2:resonator"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "24:10": {
+      "preRequisites:11": [
+        280251705
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "frame:8": "DIAMOND_ON_CIRCLE",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 1,
+          "name:8": "New Quest"
+        }
+      },
+      "questID:3": 1052923234,
+      "tasks:9": {}
+    },
+    "25:10": {
+      "preRequisites:11": [
+        1233630848
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "frame:8": "DIAMOND_ON_CIRCLE",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 1,
+          "name:8": "Chapter 2: Applied Energistics 2"
+        }
+      },
+      "questID:3": 1063407773,
+      "tasks:9": {}
+    },
+    "26:10": {
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "frame:8": "DIAMOND_ON_CIRCLE",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:nether_star"
+          },
+          "ismain:1": 1,
+          "name:8": "Chapter 1: Thermal Foundation"
+        }
+      },
+      "questID:3": 1233630848,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    }
+  },
+  "questLines:9": {
+    "0:10": {
+      "lineID:3": 24989134,
+      "order:3": 9,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:book"
+          },
+          "name:8": "Astral Sorcery"
+        }
+      },
+      "quests:9": {}
+    },
+    "1:10": {
+      "lineID:3": 341002466,
+      "order:3": 3,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "icon:10": {
+            "Count:3": 0,
+            "id:8": "minecraft:air"
+          },
+          "name:8": "Chapter 4: Draconic Evolution"
+        }
+      },
+      "quests:9": {}
+    },
+    "2:10": {
+      "lineID:3": 516256065,
+      "order:3": 0,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "thermalexpansion:frame"
+          },
+          "name:8": "Chapter 1: Thermal Foundation"
+        }
+      },
+      "quests:9": {
+        "0:10": {
+          "id:3": 0,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 180,
+          "y:3": 36
+        },
+        "1:10": {
+          "id:3": 1,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 84,
+          "y:3": 48
+        },
+        "2:10": {
+          "id:3": 2,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 48,
+          "y:3": -96
+        },
+        "3:10": {
+          "id:3": 3,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 132,
+          "y:3": 96
+        },
+        "4:10": {
+          "id:3": 4,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 36,
+          "y:3": 48
+        },
+        "5:10": {
+          "id:3": 5,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 84,
+          "y:3": 96
+        },
+        "6:10": {
+          "id:3": 6,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 132,
+          "y:3": 0
+        },
+        "7:10": {
+          "id:3": 7,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 0,
+          "y:3": 36
+        },
+        "8:10": {
+          "id:3": 8,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -48,
+          "y:3": -48
+        },
+        "9:10": {
+          "id:3": 9,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 84,
+          "y:3": 0
+        },
+        "10:10": {
+          "id:3": 10,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -48,
+          "y:3": -96
+        },
+        "11:10": {
+          "id:3": 11,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 0,
+          "y:3": 0
+        },
+        "12:10": {
+          "id:3": 12,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 0,
+          "y:3": -48
+        },
+        "13:10": {
+          "id:3": 14,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 36,
+          "y:3": -36
+        },
+        "14:10": {
+          "id:3": 15,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 36,
+          "y:3": 0
+        },
+        "15:10": {
+          "id:3": 16,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 84,
+          "y:3": -36
+        },
+        "16:10": {
+          "id:3": 17,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 0,
+          "y:3": -96
+        },
+        "17:10": {
+          "id:3": 18,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 180,
+          "y:3": 0
+        },
+        "18:10": {
+          "id:3": 19,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 84,
+          "y:3": -96
+        },
+        "19:10": {
+          "id:3": 20,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 132,
+          "y:3": 36
+        },
+        "20:10": {
+          "id:3": 100964397,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 228,
+          "y:3": -36
+        },
+        "21:10": {
+          "id:3": 352375834,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 228,
+          "y:3": 0
+        },
+        "22:10": {
+          "id:3": 631219583,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 132,
+          "y:3": -96
+        }
+      }
+    },
+    "3:10": {
+      "lineID:3": 615579936,
+      "order:3": 2,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "icon:10": {
+            "Count:3": 0,
+            "id:8": "minecraft:air"
+          },
+          "name:8": "Chapter 3: Nuclearcraft"
+        }
+      },
+      "quests:9": {}
+    },
+    "4:10": {
+      "lineID:3": 1269091119,
+      "order:3": 10,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:book"
+          },
+          "name:8": "Blood Magic"
+        }
+      },
+      "quests:9": {}
+    },
+    "5:10": {
+      "lineID:3": 1552475268,
+      "order:3": 5,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "icon:10": {
+            "Count:3": 0,
+            "id:8": "minecraft:air"
+          },
+          "name:8": "Metal Ore Processing"
+        }
+      },
+      "quests:9": {}
+    },
+    "6:10": {
+      "lineID:3": 1633746691,
+      "order:3": 11,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:book"
+          },
+          "name:8": "Category: Dimension Compendium"
+        }
+      },
+      "quests:9": {}
+    },
+    "7:10": {
+      "lineID:3": 1683512388,
+      "order:3": 4,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "thermalexpansion:frame"
+          },
+          "name:8": "Category: Encyclopedia Fabrico"
+        }
+      },
+      "quests:9": {}
+    },
+    "8:10": {
+      "lineID:3": 1691847123,
+      "order:3": 1,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "icon:10": {
+            "Count:3": 0,
+            "id:8": "minecraft:air"
+          },
+          "name:8": "Chapter 2: Applied Energistics"
+        }
+      },
+      "quests:9": {}
+    },
+    "9:10": {
+      "lineID:3": 1758003481,
+      "order:3": 8,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "minecraft:book"
+          },
+          "name:8": "Botania"
+        }
+      },
+      "quests:9": {}
+    },
+    "10:10": {
+      "lineID:3": 1837604759,
+      "order:3": 6,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "icon:10": {
+            "Count:3": 0,
+            "id:8": "minecraft:air"
+          },
+          "name:8": "Gem Ore Processing"
+        }
+      },
+      "quests:9": {}
+    },
+    "11:10": {
+      "lineID:3": 2061164154,
+      "order:3": 7,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "botania:lexicon",
+            "tag:10": {
+              "knowledge.alfheim:1": 1,
+              "knowledge.minecraft:1": 1,
+              "knowledge.relic:1": 1
+            }
+          },
+          "name:8": "Category: Ars Magicia"
+        }
+      },
+      "quests:9": {}
+    }
+  },
+  "questSettings:10": {}
+}

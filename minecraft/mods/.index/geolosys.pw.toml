@@ -1,0 +1,18 @@
+filename = 'Geolosys-1.12.2-3.0.12.jar'
+name = 'Geolosys'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Geolosys 1.12.2 3.0.12'
+
+[download]
+hash = '589080f389534a77c3a32064b148c5315f40862d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6228868
+project-id = 271856

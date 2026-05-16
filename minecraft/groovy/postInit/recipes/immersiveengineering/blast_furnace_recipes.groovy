@@ -1,0 +1,28 @@
+
+mods.ie.blast_furnace_fuel.removeByInput(item("minecraft:coal:1"))
+mods.ie.blast_furnace_fuel.removeByInput(item("thermalfoundation:storage_resource"))
+mods.ie.blast_furnace.removeAll()
+
+mods.ie.blast_furnace.recipeBuilder()
+    .name("blast_furnace_steel_ingot")
+    .input(item("minecraft:iron_ingot"))
+    .output(item("immersiveengineering:metal:8"))
+    .slag(item("thermalfoundation:material:864"))
+    .time(1200)
+    .register()
+
+mods.ie.blast_furnace.recipeBuilder()
+    .name("blast_furnace_steel_ingot")
+    .input(item("minecraft:iron_block"))
+    .output(item("immersiveengineering:storage:8"))
+    .slag(item("thermalfoundation:material:864"))
+    .time(1200*9)
+    .register()
+
+mods.ie.blast_furnace.recipeBuilder()
+    .name("blast_furnace_fire_brick")
+    .input(item("emergentengineering:unfired_fire_brick"))
+    .output(item("emergentengineering:fire_brick"))
+    .slag(item("thermalfoundation:material:864"))
+    .time(100)
+    .register()

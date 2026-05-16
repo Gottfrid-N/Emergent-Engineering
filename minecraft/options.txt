@@ -105,6 +105,7 @@ key_quark.emote.dab:0:NONE:
 key_quark.emote.jet:0:NONE:
 key_quark.emote.exorcist:0:NONE:
 key_quark.emote.zombie:0:NONE:
+key_quark.keybind.lockBuilding:37:NONE:
 key_quark.keybind.dropoff:0:NONE:
 key_quark.keybind.changeHotbar:44:NONE:
 key_quark.keybind.chestSort:0:NONE:
@@ -113,7 +114,8 @@ key_quark.keybind.chestMerge:0:NONE:
 key_quark.keybind.chestRestock:0:NONE:
 key_quark.keybind.chestExtract:0:NONE:
 key_quark.keybind.toggleAutojump:48:NONE:
-key_quark.keybind.lockBuilding:37:NONE:
+key_key.betterquesting.quests:184:NONE:
+key_key.betterquesting.back:14:NONE:
 key_bloodmagic.keybind.open_holding:35:NONE:
 key_bloodmagic.keybind.cycle_holding_pos:13:SHIFT:42
 key_bloodmagic.keybind.cycle_holding_neg:12:SHIFT:42
@@ -128,7 +130,6 @@ key_pe.key.charge:47:NONE:
 key_pe.key.extra_function:46:NONE:
 key_pe.key.fire_projectile:19:NONE:
 key_pe.key.mode:34:NONE:
-key_key.ftbquests.quests:184:NONE:
 key_Reload Default Sound Device:25:NONE:
 key_key.toggle_focus.desc:15:NONE:
 key_key.open_wireless_terminal.desc:20:SHIFT:42
@@ -169,6 +170,8 @@ key_key.clienttweaks.hide_offhand_item:0:NONE:
 key_key.ae2fc.open_wireless_fluid_pattern_terminal.desc:0:NONE:
 key_FpsReducer.key.guiOpen:207:NONE:
 key_FpsReducer.key.forceIdle:197:NONE:
+key_key.immersiveengineering.magnetEquip:31:NONE:
+key_key.immersiveengineering.chemthrowerSwitch:0:NONE:
 key_gnetum.config.keyMapping:207:NONE:
 key_keybind.groovyscript.reload:0:NONE:
 key_keybind.groovyscript.quick_reload:0:NONE:
@@ -182,8 +185,6 @@ key_key.dragon_fireAttack:19:NONE:
 key_key.dragon_strike:34:NONE:
 key_key.dragon_down:45:NONE:
 key_key.dragon_change_view:65:NONE:
-key_key.immersiveengineering.magnetEquip:31:NONE:
-key_key.immersiveengineering.chemthrowerSwitch:0:NONE:
 key_key.performancemonitoringenhanc.toggleHud:35:NONE:
 key_key.performancemonitoringenhanc.openDragScreen:34:NONE:
 key_key.performancemonitoringenhanc.openSettings:37:NONE:
@@ -235,9 +236,9 @@ key_enderio.keybind.fovplus:0:NONE:
 key_enderio.keybind.fovminus:0:NONE:
 key_enderio.keybind.fovplusfast:0:NONE:
 key_enderio.keybind.fovminusfast:0:NONE:
-key_key.drop:16:NONE:
 key_key.swapHands:33:NONE:
 key_key.aether.accessory_menu:0:NONE:
+key_key.drop:16:NONE:
 soundCategory_master:0.0
 soundCategory_music:0.0
 soundCategory_record:1.0
