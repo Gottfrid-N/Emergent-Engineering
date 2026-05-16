@@ -46,3 +46,22 @@ content.createItem("warning")
 
 content.createItem("carbon_steel_gear")
     .register()
+
+content.createItem("metal_press_mold_base")
+    .register()
+
+content.createItem("crafting_catalyst")
+    .register()
+
+
+content.createBlock("compressed_marble")
+    .register()
+
+content.createBlock("double_compressed_marble")
+    .register()
+
+content.createBlock("compressed_juniper_log")
+    .register()
+
+content.createBlock("double_compressed_juniper_log")
+    .register()

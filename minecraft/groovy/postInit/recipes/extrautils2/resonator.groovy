@@ -1,0 +1,13 @@
+mods.extrautils2.resonator.recipeBuilder()
+    .name("resonating_redstone_crystal")
+    .input(item("minecraft:redstone_block"))
+    .output(item("extrautils2:ingredients"))
+    .energy(3200)
+    .register()
+
+mods.extrautils2.resonator.recipeBuilder()
+    .name("crafting_crystal")
+    .input(item("avaritia:double_compressed_crafting_table"))
+    .output(item("emergentengineering:crafting_catalyst"))
+    .energy(3200)
+    .register()

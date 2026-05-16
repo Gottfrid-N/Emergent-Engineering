@@ -1,90 +1,101 @@
-============  GroovyLog  ====  16.05.2026  ============
+============  GroovyLog  ====  17.05.2026  ============
 GroovyScript version: 1.4.3
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property Apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property rune_altar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runealtar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runeAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property RuneAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brew_recipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewrecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property BrewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property rune_altar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runealtar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runeAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property RuneAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brew_recipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewrecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property BrewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property Apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[13:26:26] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
-[13:26:27] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
-[13:26:27] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 435ms to compile and 36ms to run in preInit.
-[13:26:46] [CLIENT/INFO] [groovyscript]: Starting Language server
-[13:26:49] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
-[13:26:52] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[13:26:52] [CLIENT/INFO] [emergentengineering]:  - loading class classes.function
-[13:26:52] [CLIENT/INFO] [emergentengineering]:  - loading class classes.recipe
-[13:26:52] [CLIENT/INFO] [emergentengineering]:  - running script postInit.carbon_steel
-[13:26:52] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.crushing_recipes
-[13:26:52] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln_recipes
-[13:26:52] [CLIENT/INFO] [postInit.recipes.immersiveengineering.alloy_kiln_recipes:1]: Running alloy_kiln_recipes.groovy!
-[13:26:52] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace_recipes
-[13:26:52] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.engineers_workbench_recipes
-[13:26:52] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped_recipes
-[13:26:52] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless_recipes
-[13:26:52] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace_recipes
-[13:26:52] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.misc_recipes
-[13:26:52] [CLIENT/INFO] [emergentengineering]:  - running script postInit.tooltips
-[13:26:52] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 26ms to compile and 309ms to run in postInit.
-[13:27:14] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[13:27:14] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[13:27:14] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
-[13:27:14] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
-[13:27:14] [SERVER/INFO] [emergentengineering]:  - running script postInit.carbon_steel
-[13:27:14] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crushing_recipes
-[13:27:14] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln_recipes
-[13:27:14] [SERVER/INFO] [postInit.recipes.immersiveengineering.alloy_kiln_recipes:1]: Running alloy_kiln_recipes.groovy!
-[13:27:14] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace_recipes
-[13:27:14] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.engineers_workbench_recipes
-[13:27:14] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped_recipes
-[13:27:14] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless_recipes
-[13:27:14] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace_recipes
-[13:27:14] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc_recipes
-[13:27:14] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltips
-[13:27:14] [SERVER/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 82ms to run in postInit.
-[13:27:28] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[13:27:28] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[13:27:28] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
-[13:27:28] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
-[13:27:28] [SERVER/INFO] [emergentengineering]:  - running script postInit.carbon_steel
-[13:27:28] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crushing_recipes
-[13:27:28] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln_recipes
-[13:27:28] [SERVER/INFO] [postInit.recipes.immersiveengineering.alloy_kiln_recipes:1]: Running alloy_kiln_recipes.groovy!
-[13:27:28] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace_recipes
-[13:27:28] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.engineers_workbench_recipes
-[13:27:28] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped_recipes
-[13:27:28] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless_recipes
-[13:27:28] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace_recipes
-[13:27:28] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc_recipes
-[13:27:28] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltips
-[13:27:28] [SERVER/INFO] [emergentengineering]: Groovy scripts took 83ms to compile and 67ms to run in postInit.
-[13:27:42] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
-[13:27:42] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[13:27:42] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
-[13:27:42] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
-[13:27:42] [SERVER/INFO] [emergentengineering]:  - running script postInit.carbon_steel
-[13:27:42] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crushing_recipes
-[13:27:42] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln_recipes
-[13:27:42] [SERVER/INFO] [postInit.recipes.immersiveengineering.alloy_kiln_recipes:1]: Running alloy_kiln_recipes.groovy!
-[13:27:42] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace_recipes
-[13:27:42] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.engineers_workbench_recipes
-[13:27:42] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped_recipes
-[13:27:42] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless_recipes
-[13:27:42] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace_recipes
-[13:27:42] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc_recipes
-[13:27:42] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltips
-[13:27:42] [SERVER/INFO] [emergentengineering]: Groovy scripts took 24ms to compile and 97ms to run in postInit.
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property Apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property rune_altar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runealtar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runeAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property RuneAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brew_recipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewrecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property BrewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property rune_altar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runealtar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runeAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property RuneAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brew_recipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewrecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property BrewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property Apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[01:26:24] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
+[01:26:24] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
+[01:26:24] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 40ms to run in preInit.
+[01:26:44] [CLIENT/INFO] [groovyscript]: Starting Language server
+[01:26:47] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
+[01:26:50] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - loading class classes.function
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - loading class classes.recipe
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.carbon_steel
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.crushing_recipes
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.extrautils2.resonator
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln_recipes
+[01:26:50] [CLIENT/INFO] [postInit.recipes.immersiveengineering.alloy_kiln_recipes:1]: Running alloy_kiln_recipes.groovy!
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace_recipes
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.engineers_workbench_recipes
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.metal_recipes
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped_recipes
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless_recipes
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace_recipes
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.misc_recipes
+[01:26:50] [CLIENT/INFO] [emergentengineering]:  - running script postInit.tooltip
+[01:26:50] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 340ms to run in postInit.
+[01:35:30] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[01:35:30] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[01:35:30] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
+[01:35:30] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.astralsorcery.starlight_altar
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.carbon_steel
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crushing_recipes
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.extrautils2.resonator
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln_recipes
+[01:35:31] [SERVER/INFO] [postInit.recipes.immersiveengineering.alloy_kiln_recipes:1]: Running alloy_kiln_recipes.groovy!
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace_recipes
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.engineers_workbench_recipes
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.metal_recipes
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped_recipes
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless_recipes
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace_recipes
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc_recipes
+[01:35:31] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltip
+[01:35:31] [SERVER/INFO] [emergentengineering]: Groovy scripts took 125ms to compile and 140ms to run in postInit.
+[01:36:37] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[01:36:37] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.astralsorcery.starlight_altar
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.carbon_steel
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crushing_recipes
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.extrautils2.resonator
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln_recipes
+[01:36:37] [SERVER/INFO] [postInit.recipes.immersiveengineering.alloy_kiln_recipes:1]: Running alloy_kiln_recipes.groovy!
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace_recipes
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.engineers_workbench_recipes
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.metal_recipes
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped_recipes
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless_recipes
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace_recipes
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc_recipes
+[01:36:37] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltip
+[01:36:37] [SERVER/INFO] [emergentengineering]: Groovy scripts took 9ms to compile and 72ms to run in postInit.
+[01:37:06] [SERVER/INFO] [groovyscript]: ========== Reloading Groovy scripts ==========
+[01:37:06] [SERVER/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - loading class classes.function
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - loading class classes.recipe
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.astralsorcery.starlight_altar
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.carbon_steel
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.crushing_recipes
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.extrautils2.resonator
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln_recipes
+[01:37:06] [SERVER/INFO] [postInit.recipes.immersiveengineering.alloy_kiln_recipes:1]: Running alloy_kiln_recipes.groovy!
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace_recipes
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.engineers_workbench_recipes
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.metal_recipes
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped_recipes
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless_recipes
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace_recipes
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.recipes.misc_recipes
+[01:37:06] [SERVER/INFO] [emergentengineering]:  - running script postInit.tooltip
+[01:37:06] [SERVER/INFO] [emergentengineering]: Groovy scripts took 8ms to compile and 67ms to run in postInit.

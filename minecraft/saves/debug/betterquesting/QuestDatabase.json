@@ -63,7 +63,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Side Quests use a diamond icon and are not required for progression, some lines however wrap back to required content which means they become required later on.",
+          "desc:8": "Side Quests use a diamond icon and are not required for progression, some lines however wrap back to required content which means they become required later on.\nThese can be extremely useful for speeding up progression (just take a look at extra utilities 2 quest line ;)",
           "frame:8": "DIAMOND",
           "icon:10": {
             "Count:3": 1,
@@ -219,8 +219,8 @@
           "desc:8": "Build a 3x3 square of coke bricks and right click with an engineers hammer.",
           "frame:8": "SQUARE",
           "icon:10": {
-            "Count:3": 27,
-            "id:8": "immersiveengineering:stone_decoration"
+            "Count:3": 64,
+            "id:8": "immersiveengineering:stone_device"
           },
           "ismain:1": 1,
           "name:8": "Coke Oven",
@@ -247,7 +247,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "...\n\nYou wake up from what feels like an endless slumber, groggy as can be with nothing to your name.\n\n...\n\nIt feels like you\u0027ve been here before, when you were stronger, bigger and badder. Back when the world bent to your will.\n\n...\n\nYou yearn for that power, the boundless control over the infinite world you find yourself on, will you succumb to mother nature? Or will you find the true nature behind it all.",
+          "desc:8": "...\n\nYou wake up from what feels like an endless slumber, groggy as can be with nothing to your name.\n\n...\n\nIt feels like you\u0027ve been here before,\nwhen you were stronger, bigger and badder.\nBack when the world bent to your will.\n\n...\n\nYou yearn for that power.\nThe boundless control over the infinite world you find yourself on.\nWill you succumb to mother nature?\nOr will you find the true nature behind it all.",
           "frame:8": "CIRCLE",
           "icon:10": {
             "Count:3": 1,
@@ -295,12 +295,12 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Build a 2x2 square of kiln bricks and right click with an engineers hammer. Serves as a primitive alloy furnace and brick kiln.\nBricks are gated behind this multiblock (Check JEI!)",
+          "desc:8": "Build a 2x2 square of kiln bricks and right click with an engineers hammer. Serves as a primitive alloy furnace and brick kiln.\nBricks are gated behind this multiblock (Check JEI!)\nMost recipes made in these take a really long time, it is a very good idea to build 4 - 8 of these respectively (not as expensive as you think, check JEI!)",
           "frame:8": "SQUARE",
           "icon:10": {
-            "Count:3": 8,
-            "Damage:2": 10,
-            "id:8": "immersiveengineering:stone_decoration"
+            "Count:3": 1,
+            "Damage:2": 7,
+            "id:8": "immersiveengineering:stone_device"
           },
           "ismain:1": 1,
           "name:8": "Alloy Kiln",
@@ -416,7 +416,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Ore processing has been heavily expanded in this pack, if you are familiar with gregtech all of this should make sense (altough it isn\u0027t based on gregtech ore processing",
+          "desc:8": "Ore processing has been heavily expanded in this pack, if you are familiar with gregtech all of this should be managable (altough it isn\u0027t based on gregtech ore processing)",
           "frame:8": "DIAMOND",
           "icon:10": {
             "Count:3": 1,
@@ -473,7 +473,7 @@
     },
     "15:10": {
       "preRequisites:11": [
-        9
+        15
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -531,12 +531,12 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Build a 3x3 of blast bricks and right click with an engineers hammer, put some coal coke (coal and charcoal doesn\u0027t work) and wait.",
+          "desc:8": "Build a 3x3 of blast bricks and right click with an engineers hammer, put some coal coke (coal and charcoal doesn\u0027t work) and wait for 1200 ticks (1 minute). \nThis recipe is quite expensive but it can be improved greatly with resonating redstone crystals and red coal powder.",
           "frame:8": "SQUARE",
           "icon:10": {
-            "Count:3": 1,
+            "Count:3": 64,
             "Damage:2": 1,
-            "id:8": "immersiveengineering:stone_decoration"
+            "id:8": "immersiveengineering:stone_device"
           },
           "ismain:1": 1,
           "name:8": "Blast Furnace",
@@ -627,12 +627,48 @@
       }
     },
     "20:10": {
+      "preRequisites:11": [
+        6
+      ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "No Description",
+          "desc:8": "The external heater uses rf to fuel and speed up adjacent furnaces. It uses up to 32 RF/t but can use as little as 8 RF/t when up to temperature.",
+          "frame:8": "DIAMOND",
           "icon:10": {
             "Count:3": 1,
-            "id:8": "minecraft:nether_star"
+            "Damage:2": 1,
+            "id:8": "immersiveengineering:metal_device1"
+          },
+          "name:8": "External Heater"
+        }
+      },
+      "questID:3": 36052258,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "id:8": "immersiveengineering:metal_device1"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "21:10": {
+      "preRequisites:11": [
+        18
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "This will be very useful for the upcoming multiblocks, they require a lot of steel (plates and gears are expensive!). You can use Extra Utilities 2 to cheapen a lot of the costs though!",
+          "frame:8": "DIAMOND",
+          "icon:10": {
+            "Count:3": 64,
+            "Damage:2": 2,
+            "id:8": "immersiveengineering:stone_device"
           },
           "name:8": "Improved Blast Furnace"
         }
@@ -666,7 +702,48 @@
         }
       }
     },
-    "21:10": {
+    "22:10": {
+      "preRequisites:11": [
+        2054109106
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 64,
+            "Damage:2": 2,
+            "id:8": "immersiveengineering:stone_device"
+          },
+          "name:8": "New Quest"
+        }
+      },
+      "questID:3": 204239379,
+      "tasks:9": {}
+    },
+    "23:10": {
+      "preRequisites:11": [
+        6,
+        2010975071
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 64,
+            "id:8": "immersiveengineering:stone_device"
+          },
+          "name:8": "Coke Oven"
+        }
+      },
+      "questID:3": 258090863,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "24:10": {
       "preRequisites:11": [
         1063407773
       ],
@@ -685,21 +762,59 @@
       "questID:3": 280251705,
       "tasks:9": {}
     },
-    "22:10": {
+    "25:10": {
+      "preRequisites:11": [
+        18
+      ],
       "properties:10": {
         "betterquesting:10": {
           "desc:8": "No Description",
+          "frame:8": "SQUARE",
           "icon:10": {
             "Count:3": 1,
+            "Damage:2": 32767,
             "id:8": "minecraft:nether_star"
           },
-          "name:8": "New Quest"
+          "ismain:1": 1,
+          "name:8": "\"Advanced\" Metalworking"
         }
       },
       "questID:3": 352375834,
-      "tasks:9": {}
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "id:8": "immersiveengineering:wooden_device0"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 3,
+              "id:8": "immersiveengineering:metal_decoration0"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 5,
+              "id:8": "immersiveengineering:metal_decoration0"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "immersiveengineering:metal_multiblock"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        }
+      }
     },
-    "23:10": {
+    "26:10": {
       "preRequisites:11": [
         19
       ],
@@ -728,7 +843,7 @@
         }
       }
     },
-    "24:10": {
+    "27:10": {
       "preRequisites:11": [
         280251705
       ],
@@ -747,7 +862,7 @@
       "questID:3": 1052923234,
       "tasks:9": {}
     },
-    "25:10": {
+    "28:10": {
       "preRequisites:11": [
         1233630848
       ],
@@ -766,7 +881,7 @@
       "questID:3": 1063407773,
       "tasks:9": {}
     },
-    "26:10": {
+    "29:10": {
       "properties:10": {
         "betterquesting:10": {
           "desc:8": "No Description",
@@ -786,18 +901,152 @@
           "taskID:8": "bq_standard:checkbox"
         }
       }
-    }
-  },
-  "questLines:9": {
-    "0:10": {
-      "lineID:3": 24989134,
-      "order:3": 9,
+    },
+    "30:10": {
+      "preRequisites:11": [
+        258090863
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 64,
+            "Damage:2": 2,
+            "id:8": "immersiveengineering:wooden_device0"
+          },
+          "name:8": "New Quest"
+        }
+      },
+      "questID:3": 1234257530,
+      "tasks:9": {}
+    },
+    "31:10": {
+      "preRequisites:11": [
+        2054109106,
+        1234257530
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 64,
+            "id:8": "immersiveengineering:metal_multiblock"
+          },
+          "name:8": "New Quest"
+        }
+      },
+      "questID:3": 1711454834,
+      "tasks:9": {}
+    },
+    "32:10": {
+      "preRequisites:11": [
+        258090863
+      ],
       "properties:10": {
         "betterquesting:10": {
           "desc:8": "No Description",
           "icon:10": {
             "Count:3": 1,
-            "id:8": "minecraft:book"
+            "id:8": "immersiveengineering:wooden_device1"
+          },
+          "name:8": "New Quest"
+        }
+      },
+      "questID:3": 1734142738,
+      "tasks:9": {}
+    },
+    "33:10": {
+      "preRequisites:11": [
+        1234257530
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 1,
+            "id:8": "immersiveengineering:metal_device1"
+          },
+          "name:8": "New Quest"
+        }
+      },
+      "questID:3": 1777613545,
+      "tasks:9": {}
+    },
+    "34:10": {
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "The engineers\u0027s manual is quite useful, it has a search feature. BEWARE, some info may be invalid due to custom content, multiblock cost lists are a little funky due to localization changes, and more.",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 3,
+            "id:8": "immersiveengineering:tool"
+          },
+          "name:8": "Engineer\u0027s Manual"
+        }
+      },
+      "questID:3": 1802637694,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 3,
+              "id:8": "immersiveengineering:tool"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "35:10": {
+      "preRequisites:11": [
+        1802637694
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 64,
+            "Damage:2": 7,
+            "id:8": "immersiveengineering:stone_device"
+          },
+          "name:8": "New Quest"
+        }
+      },
+      "questID:3": 2010975071,
+      "tasks:9": {}
+    },
+    "36:10": {
+      "preRequisites:11": [
+        258090863
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 64,
+            "Damage:2": 1,
+            "id:8": "immersiveengineering:stone_device"
+          },
+          "name:8": "New Quest"
+        }
+      },
+      "questID:3": 2054109106,
+      "tasks:9": {}
+    }
+  },
+  "questLines:9": {
+    "0:10": {
+      "lineID:3": 24989134,
+      "order:3": 10,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "astralsorcery:itemjournal"
           },
           "name:8": "Astral Sorcery"
         }
@@ -805,6 +1054,86 @@
       "quests:9": {}
     },
     "1:10": {
+      "lineID:3": 306095308,
+      "order:3": 5,
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 3,
+            "id:8": "immersiveengineering:tool"
+          },
+          "name:8": "Immersive Engineering"
+        }
+      },
+      "quests:9": {
+        "0:10": {
+          "id:3": 204239379,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 156,
+          "y:3": 48
+        },
+        "1:10": {
+          "id:3": 258090863,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 108,
+          "y:3": 0
+        },
+        "2:10": {
+          "id:3": 1234257530,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 156,
+          "y:3": -48
+        },
+        "3:10": {
+          "id:3": 1711454834,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 204,
+          "y:3": 0
+        },
+        "4:10": {
+          "id:3": 1734142738,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 108,
+          "y:3": -48
+        },
+        "5:10": {
+          "id:3": 1777613545,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 156,
+          "y:3": -96
+        },
+        "6:10": {
+          "id:3": 1802637694,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 0,
+          "y:3": 0
+        },
+        "7:10": {
+          "id:3": 2010975071,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 48,
+          "y:3": 0
+        },
+        "8:10": {
+          "id:3": 2054109106,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 156,
+          "y:3": 0
+        }
+      }
+    },
+    "2:10": {
       "lineID:3": 341002466,
       "order:3": 3,
       "properties:10": {
@@ -819,7 +1148,7 @@
       },
       "quests:9": {}
     },
-    "2:10": {
+    "3:10": {
       "lineID:3": 516256065,
       "order:3": 0,
       "properties:10": {
@@ -837,14 +1166,14 @@
           "id:3": 0,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 180,
+          "x:3": 192,
           "y:3": 36
         },
         "1:10": {
           "id:3": 1,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
+          "x:3": 96,
           "y:3": 48
         },
         "2:10": {
@@ -858,28 +1187,28 @@
           "id:3": 3,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 132,
+          "x:3": 144,
           "y:3": 96
         },
         "4:10": {
           "id:3": 4,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 36,
+          "x:3": 48,
           "y:3": 48
         },
         "5:10": {
           "id:3": 5,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
+          "x:3": 96,
           "y:3": 96
         },
         "6:10": {
           "id:3": 6,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 132,
+          "x:3": 144,
           "y:3": 0
         },
         "7:10": {
@@ -900,7 +1229,7 @@
           "id:3": 9,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
+          "x:3": 96,
           "y:3": 0
         },
         "10:10": {
@@ -928,21 +1257,21 @@
           "id:3": 14,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 36,
+          "x:3": 48,
           "y:3": -36
         },
         "14:10": {
           "id:3": 15,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 36,
+          "x:3": 48,
           "y:3": 0
         },
         "15:10": {
           "id:3": 16,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
+          "x:3": 96,
           "y:3": -36
         },
         "16:10": {
@@ -956,47 +1285,54 @@
           "id:3": 18,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 180,
+          "x:3": 192,
           "y:3": 0
         },
         "18:10": {
           "id:3": 19,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
+          "x:3": 96,
           "y:3": -96
         },
         "19:10": {
           "id:3": 20,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 132,
+          "x:3": 144,
           "y:3": 36
         },
         "20:10": {
-          "id:3": 100964397,
+          "id:3": 36052258,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 228,
+          "x:3": 144,
           "y:3": -36
         },
         "21:10": {
+          "id:3": 100964397,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 192,
+          "y:3": -36
+        },
+        "22:10": {
           "id:3": 352375834,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 228,
+          "x:3": 240,
           "y:3": 0
         },
-        "22:10": {
+        "23:10": {
           "id:3": 631219583,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 132,
+          "x:3": 144,
           "y:3": -96
         }
       }
     },
-    "3:10": {
+    "4:10": {
       "lineID:3": 615579936,
       "order:3": 2,
       "properties:10": {
@@ -1011,39 +1347,39 @@
       },
       "quests:9": {}
     },
-    "4:10": {
+    "5:10": {
       "lineID:3": 1269091119,
-      "order:3": 10,
+      "order:3": 11,
       "properties:10": {
         "betterquesting:10": {
           "desc:8": "No Description",
           "icon:10": {
             "Count:3": 1,
-            "id:8": "minecraft:book"
+            "id:8": "guideapi:bloodmagic-guide"
           },
           "name:8": "Blood Magic"
         }
       },
       "quests:9": {}
     },
-    "5:10": {
+    "6:10": {
       "lineID:3": 1552475268,
-      "order:3": 5,
+      "order:3": 6,
       "properties:10": {
         "betterquesting:10": {
           "desc:8": "",
           "icon:10": {
-            "Count:3": 0,
-            "id:8": "minecraft:air"
+            "Count:3": 1,
+            "id:8": "minecraft:iron_ore"
           },
           "name:8": "Metal Ore Processing"
         }
       },
       "quests:9": {}
     },
-    "6:10": {
+    "7:10": {
       "lineID:3": 1633746691,
-      "order:3": 11,
+      "order:3": 12,
       "properties:10": {
         "betterquesting:10": {
           "desc:8": "No Description",
@@ -1056,22 +1392,22 @@
       },
       "quests:9": {}
     },
-    "7:10": {
+    "8:10": {
       "lineID:3": 1683512388,
       "order:3": 4,
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "",
+          "desc:8": "Detailed compendium of tech mod progressions",
           "icon:10": {
             "Count:3": 1,
-            "id:8": "thermalexpansion:frame"
+            "id:8": "draconicevolution:info_tablet"
           },
           "name:8": "Category: Encyclopedia Fabrico"
         }
       },
       "quests:9": {}
     },
-    "8:10": {
+    "9:10": {
       "lineID:3": 1691847123,
       "order:3": 1,
       "properties:10": {
@@ -1086,42 +1422,44 @@
       },
       "quests:9": {}
     },
-    "9:10": {
+    "10:10": {
       "lineID:3": 1758003481,
-      "order:3": 8,
+      "order:3": 9,
       "properties:10": {
         "betterquesting:10": {
           "desc:8": "No Description",
           "icon:10": {
             "Count:3": 1,
-            "id:8": "minecraft:book"
+            "id:8": "botania:lexicon",
+            "tag:10": {}
           },
           "name:8": "Botania"
         }
       },
       "quests:9": {}
     },
-    "10:10": {
+    "11:10": {
       "lineID:3": 1837604759,
-      "order:3": 6,
+      "order:3": 7,
       "properties:10": {
         "betterquesting:10": {
           "desc:8": "",
           "icon:10": {
-            "Count:3": 0,
-            "id:8": "minecraft:air"
+            "Count:3": 1,
+            "Damage:2": 1,
+            "id:8": "biomesoplenty:gem_ore"
           },
           "name:8": "Gem Ore Processing"
         }
       },
       "quests:9": {}
     },
-    "11:10": {
+    "12:10": {
       "lineID:3": 2061164154,
-      "order:3": 7,
+      "order:3": 8,
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "",
+          "desc:8": "Detailed compendium of magic mod progression",
           "icon:10": {
             "Count:3": 1,
             "id:8": "botania:lexicon",

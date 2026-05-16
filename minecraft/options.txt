@@ -87,6 +87,7 @@ key_key.hotbar.8:9:NONE:
 key_key.hotbar.9:10:NONE:
 key_ae2stuff.keybinding.adv_wireless_second:29:NONE:
 key_keybind.baublesinventory:48:NONE:
+key_quark.keybind.lockBuilding:37:NONE:
 key_quark.emote.no:0:NONE:
 key_quark.emote.yes:0:NONE:
 key_quark.emote.wave:0:NONE:
@@ -105,7 +106,6 @@ key_quark.emote.dab:0:NONE:
 key_quark.emote.jet:0:NONE:
 key_quark.emote.exorcist:0:NONE:
 key_quark.emote.zombie:0:NONE:
-key_quark.keybind.lockBuilding:37:NONE:
 key_quark.keybind.dropoff:0:NONE:
 key_quark.keybind.changeHotbar:44:NONE:
 key_quark.keybind.chestSort:0:NONE:
@@ -236,9 +236,9 @@ key_enderio.keybind.fovplus:0:NONE:
 key_enderio.keybind.fovminus:0:NONE:
 key_enderio.keybind.fovplusfast:0:NONE:
 key_enderio.keybind.fovminusfast:0:NONE:
+key_key.drop:16:NONE:
 key_key.swapHands:33:NONE:
 key_key.aether.accessory_menu:0:NONE:
-key_key.drop:16:NONE:
 soundCategory_master:0.0
 soundCategory_music:0.0
 soundCategory_record:1.0
