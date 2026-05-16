@@ -1,6 +1,5 @@
 import classes.function
-import classes.Recipe
-import classes.Metal
+import classes.recipe
 
 function.steel_to_carbon_steel("block", item("immersiveengineering:storage:8"))
 //crafting.removeByOutput(item("immersiveengineering:storage:8"))
@@ -55,7 +54,4 @@ crafting.shapedBuilder()
     .key("I", item("immersiveengineering:metal:8"))
     .register()
 
-//Metal.all_recipes("CarbonSteel")
-
-
-
+recipe.all_recipes("CarbonSteel")

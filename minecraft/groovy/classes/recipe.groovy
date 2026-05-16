@@ -1,6 +1,6 @@
 package classes
 
-public class Recipe {
+public class recipe {
     static compact3x3(String resource_name, IIngredient input, ItemStack output) {
         crafting.shapedBuilder()
             .name(input.toString() + "_compact3x3_to_" + output.toString())
@@ -67,40 +67,37 @@ public class Recipe {
             .register()
     }
 
-    /*public class Metal {
-        static all_recipes(String resource_name) {
-            to_ingot(resource_name)
-            to_nugget(resource_name)
-            to_block(resource_name)
-            to_plate(resource_name)
-            to_dust(resource_name)
-            to_gear(resource_name)
-        }
+   static all_recipes(String resource_name) {
+        to_ingot(resource_name)
+        to_nugget(resource_name)
+        to_block(resource_name)
+        to_plate(resource_name)
+        to_dust(resource_name)
+        to_gear(resource_name)
+    }
 
-        static to_ingot(String resource_name) {
-            Recipe.compact3x3(resource_name, ore("nugget" + resource_name), ore("ingot" + resource_name).getFirst())
-            Recipe.expandx9(resource_name, ore("block" + resource_name), ore("ingot" + resource_name).getFirst())
-        }
+    static to_ingot(String resource_name) {
+        compact3x3(resource_name, ore("nugget" + resource_name), ore("ingot" + resource_name).getFirst())
+        expandx9(resource_name, ore("block" + resource_name), ore("ingot" + resource_name).getFirst())
+    }
 
-        static to_nugget(String resource_name) {
-            Recipe.expandx9(resource_name, ore("ingot" + resource_name), ore("nugget" + resource_name).getFirst())
-        }
+    static to_nugget(String resource_name) {
+        expandx9(resource_name, ore("ingot" + resource_name), ore("nugget" + resource_name).getFirst())
+    }
 
-        static to_block(String resource_name) {
-            Recipe.compact3x3(resource_name, ore("ingot" + resource_name), ore("block" + resource_name).getFirst())
-        }
+    static to_block(String resource_name) {
+        compact3x3(resource_name, ore("ingot" + resource_name), ore("block" + resource_name).getFirst())
+    }
 
-        static to_plate(String resource_name) {
-            Recipe.engineers_hammer(resource_name, [ore("ingot" + resource_name),ore("ingot" + resource_name)], ore("plate" + resource_name).getFirst())
-        }
+    static to_plate(String resource_name) {
+        engineers_hammer(resource_name, [ore("ingot" + resource_name),ore("ingot" + resource_name)], ore("plate" + resource_name).getFirst())
+    }
 
-        static to_dust(String resource_name) {
-            Recipe.machine_crushing(resource_name, ore("ingot" + resource_name), ore("dust" + resource_name).getFirst(), 2400)
-        }
+    static to_dust(String resource_name) {
+        machine_crushing(resource_name, ore("ingot" + resource_name), ore("dust" + resource_name).getFirst(), 2400)
+    }
 
-        static to_gear(String resource_name) {
-            Recipe.crafting_gear(resource_name, ore("ingot" + resource_name), ore("gear" + resource_name).getFirst())
-        }
-    }*/
+    static to_gear(String resource_name) {
+        crafting_gear(resource_name, ore("ingot" + resource_name), ore("gear" + resource_name).getFirst())
+    }
 }
-
