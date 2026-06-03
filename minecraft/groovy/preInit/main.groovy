@@ -53,6 +53,15 @@ content.createItem("metal_press_mold_base")
 content.createItem("crafting_catalyst")
     .register()
 
+content.createItem("mojohocutlul")
+    .register()
+
+content.createItem("starlight_steel_ingot")
+    .register()
+
+content.createItem("floral_catalyst")
+    .register()
+
 
 content.createBlock("compressed_marble")
     .register()
@@ -65,3 +74,32 @@ content.createBlock("compressed_juniper_log")
 
 content.createBlock("double_compressed_juniper_log")
     .register()
+
+// Felsic -> Ultramafic
+content.createBlock("syenite")
+    .register()
+    
+content.createBlock("rhyolite")
+    .register()
+    
+content.createBlock("monazite")
+    .register()
+    
+content.createBlock("gabbro")
+    .register()
+    
+content.createBlock("norite")
+    .register()
+    
+content.createBlock("basalt")
+    .register()
+    
+content.createBlock("peridotite")
+    .register()
+    
+content.createBlock("pyroxenite")
+    .register()
+    
+content.createBlock("komatiite")
+    .register()
+    

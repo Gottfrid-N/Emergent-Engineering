@@ -1,0 +1,37 @@
+filename = 'tweakedexcavation-2.0.1.jar'
+name = 'Tweaked Excavation'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'tweakedexcavation-2.0.1.jar'
+
+[download]
+hash = 'f61a5d8a9836fa50197ce7368e4eb0284de0d411'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5276772
+project-id = 687630
+
+[[x-prismlauncher-dependencies]]
+addonId = '231951'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '557549'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '239197'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '687632'
+type = 'REQUIRED'

@@ -22,6 +22,19 @@ addTooltip(item("emergentengineering:blast_brick"),
 addTooltip(item("extrautils2:ingredients"),
 "§cDrops from redstone ore at a low rate")
 
+addTooltip(item("emergentengineering:compressed_marble"),
+"§c9 Blocks")
+addTooltip(item("emergentengineering:compressed_juniper_log"),
+"§c9 Blocks, not unpackable")
+addTooltip(item("emergentengineering:double_compressed_marble"),
+"§c81 Blocks")
+addTooltip(item("emergentengineering:double_compressed_juniper_log"),
+"§c81 Blocks, not unpackable")
+addTooltip(item("avaritia:compressed_crafting_table"),
+"§c9 Crafting Tables, 36 Planks")
+addTooltip(item("avaritia:double_compressed_crafting_table"),
+"§c81 Crafting Tables, 324 Planks")
+
 mods.appliedenergistics2.grinder.removeAll()
 crafting.removeByOutput(item("appliedenergistics2:grindstone"))
 addTooltip(item("appliedenergistics2:grindstone"),

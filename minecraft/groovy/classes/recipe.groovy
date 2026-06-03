@@ -1,9 +1,11 @@
 package classes
 
+import classes.util
+
 public class recipe {
     static compact3x3(String resource_name, IIngredient input, ItemStack output) {
         crafting.shapedBuilder()
-            .name(input.toString() + "_compact3x3_to_" + output.toString())
+            .name(util.recipe_name("compact3x3_to", input, output))
             .output(output)
             .row("III")
             .row("III")
@@ -14,15 +16,15 @@ public class recipe {
 
     static expandx9(String resource_name, IIngredient input, ItemStack output) {
         crafting.shapelessBuilder()
-            .name(input.toString() + "_expandx9_to_" + output.toString())
-            .output(output.multiply(9))
+            .name(util.recipe_name("expandx9_to", input, output))
+            .output(output*9)
             .input(input)
             .register()
     }
 
     static engineers_hammer(String resource_name, Collection<IIngredient> input, ItemStack output) {
         crafting.shapelessBuilder()
-            .name(input.toString() + "_eh_crushing_to_" + output.toString())
+            .name(util.recipe_name("engineers_hammer_to", input, output))
             .input(input + [item("immersiveengineering:tool")])
             .output(output)
             .register()
@@ -34,7 +36,7 @@ public class recipe {
 
     static crafting_gear(String resource_name, IIngredient input, ItemStack output) {
         crafting.shapedBuilder()
-            .name(input.toString() + "_crafting_to_" + output.toString())
+            .name(util.recipe_name("crafting_to", input, output))
             .output(output)
             .row("III")
             .row("ISI")
@@ -50,7 +52,7 @@ public class recipe {
 
     static machine_gear(String resource_name, IIngredient input, ItemStack output, int energy) {
         mods.ie.metal_press.recipeBuilder()
-            .name(input.toString() + "_metal_press_to_" + output.toString())
+            .name(util.recipe_name("metal_press_to", input, output))
             .input(input*4)
             .mold(item("immersiveengineering:mold:1"))
             .output(output)
@@ -60,7 +62,7 @@ public class recipe {
 
     static machine_crushing(String resource_name, IIngredient input, ItemStack output, ItemStack secondaryOutput, float secondaryOutputChance, int energy) {
         mods.ie.crusher.recipeBuilder()
-            .name(input.toString() + "_ie_crushing_to_" + output.toString())
+            .name(util.recipe_name("ie_crushing_to", input, output))
             .input(input)
             .output(output)
             .secondaryOutput(secondaryOutput)
@@ -71,7 +73,7 @@ public class recipe {
 
     static machine_crushing(String resource_name, IIngredient input, ItemStack output, int energy) {
         mods.ie.crusher.recipeBuilder()
-            .name(input.toString() + "_ie_crushing_to_" + output.toString())
+            .name(util.recipe_name("ie_crushing_to", input, output))
             .input(input)
             .output(output)
             .energy(energy)
@@ -84,7 +86,7 @@ public class recipe {
 
     static machine_compactor(String resource_name, IIngredient input, ItemStack output, int energy) {
         mods.ie.metal_press.recipeBuilder()
-            .name(input.toString() + "_metal_press_to_" + output.toString())
+            .name(util.recipe_name("metal_press_plate_to", input, output))
             .input(input)
             .mold(item("immersiveengineering:mold:0"))
             .output(output)
@@ -92,13 +94,41 @@ public class recipe {
             .register()
     }
 
-   static all_metal_recipes(String resource_name) {
-        metal_to_ingot(resource_name)
-        metal_to_nugget(resource_name)
-        metal_to_block(resource_name)
-        metal_to_plate(resource_name)
-        metal_to_dust(resource_name)
-        metal_to_gear(resource_name)
+    static crafting_wire(String resource_name, IIngredient input, ItemStack output) {
+        crafting.shapelessBuilder()
+            .name(util.recipe_name("wire_cutter_to", input, output))
+            .input([input, item("immersiveengineering:tool:1")])
+            .output(output)
+            .register()
+    }
+
+    static machine_wire(String resource_name, IIngredient input, ItemStack output, energy) {
+        mods.ie.metal_press.recipeBuilder()
+            .name(util.recipe_name("metal_press_plate_to", input, output))
+            .input(input)
+            .mold(item("immersiveengineering:mold:0"))
+            .output(output)
+            .energy(energy)
+            .register()
+    }
+
+    static all_metal_recipes(String resource_name, boolean compacting,
+                                                boolean plate,
+                                                boolean dust,
+                                                boolean gear,
+                                                boolean wire) {
+        if (compacting) {
+            metal_to_ingot(resource_name)
+            metal_to_nugget(resource_name)
+            metal_to_block(resource_name)}
+        if (plate) {metal_to_plate(resource_name)}
+        if (dust) {metal_to_dust(resource_name)}
+        if (gear) {metal_to_gear(resource_name)}
+        if (wire) {metal_to_wire(resource_name)}
+    }
+
+    static all_metal_recipes(String resource_name) {
+        all_metal_recipes(resource_name, true, true, true, true) 
     }
 
     static metal_to_ingot(String resource_name) {
@@ -126,5 +156,10 @@ public class recipe {
     static metal_to_gear(String resource_name) {
         crafting_gear(resource_name, ore("ingot" + resource_name), ore("gear" + resource_name).getFirst())
         machine_gear(resource_name, ore("ingot" + resource_name), ore("gear" + resource_name).getFirst(), 2400)
+    }
+
+    static metal_to_wire(String resource_name) {
+        crafting_wire(resource_name, ore("ingot" + resource_name), ore("wire" + resource_name).getFirst())
+        machine_wire(resource_name, ore("ingot" + resource_name), ore("wire" + resource_name).getFirst(), 2400)
     }
 }

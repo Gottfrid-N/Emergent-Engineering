@@ -1,0 +1,12 @@
+mods.immersivepetroleum.distillation.removeByInput(fluid("oil"))
+/*mods.immersivepetroleum.distillation.recipeBuilder()
+    .name("crude_oil_distillation")
+    .fluidInput(fluid("crude_oil"))
+    .fluidOutput(fluid("sulfuric_refinery_gas"))
+    .fluidOutput(fluid("sulfuric_naphta"))
+    .fluidOutput(fluid("sulfuric_kerosone"))
+    .fluidOutput(fluid("sulfuric_diesel"))
+    .fluidOutput(fluid("sulfuric_atmospheric_gas_oil"))
+    .fluidOutput(fluid("residual_gas_oil"))
+    .energy(8192)
+    .time(600)*/

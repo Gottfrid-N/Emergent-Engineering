@@ -24,3 +24,30 @@ mods.tconstruct.drying.recipeBuilder()
     .output(item("minecraft:clay_ball"))
     .time(600)
     .register()
+
+in_world_crafting.fluid_to_item.recipeBuilder()
+    .name("floral_catalyst_iw")
+    .input([item("minecraft:yellow_flower"),
+    item("minecraft:red_flower"),
+    item("minecraft:red_flower:1"),
+    item("minecraft:red_flower:2"),
+    item("minecraft:red_flower:3"),
+    item("minecraft:red_flower:4"),
+    item("minecraft:red_flower:5"),
+    item("minecraft:red_flower:6"),
+    item("minecraft:red_flower:7"),
+    item("minecraft:red_flower:8"),
+    item("minecraft:double_plant"),
+    item("minecraft:double_plant:1"),
+    item("minecraft:double_plant:4"),
+    item("minecraft:double_plant:5")])
+    .fluidInput(fluid("astralsorcery.liquidstarlight"))
+    .output(item("emergentengineering:floral_catalyst"))
+    .register()
+
+in_world_crafting.fluid_to_item.recipeBuilder()
+    .name("starlight_steel_iw")
+    .input(item("minecraft:iron_block"))
+    .fluidInput(fluid("astralsorcery.liquidstarlight"))
+    .output(item("emergentengineering:starlight_steel_ingot"))
+    .register()

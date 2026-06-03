@@ -1,0 +1,37 @@
+filename = 'tweakedpetroleum-2.0.3.jar'
+name = 'Tweaked Petroleum'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'tweakedpetroleum-2.0.3.jar'
+
+[download]
+hash = '317fb1799de012651b816a3b5abe6e29a4703ebd'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6243556
+project-id = 653506
+
+[[x-prismlauncher-dependencies]]
+addonId = '268250'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '557549'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '239197'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '687632'
+type = 'REQUIRED'

@@ -1,0 +1,12 @@
+mods.tweakedMods.fluid_reservoir.recipeBuilder()
+    .name("crude_oil")
+    .fluid(fluid("crude_oil"))
+    .weight(mods.tweakedMods.fluid_reservoir.get("oil").getWeight())
+    .powerTier(mods.tweakedMods.fluid_reservoir.get("oil").getPowerTier())
+    .minSize(mods.tweakedMods.fluid_reservoir.get("oil").getMinSize())
+    .maxSize(mods.tweakedMods.fluid_reservoir.get("oil").getMaxSize())
+    .pumpSpeed(mods.tweakedMods.fluid_reservoir.get("oil").getPumpSpeed())
+    .replenishRate(mods.tweakedMods.fluid_reservoir.get("oil").getReplenishRate())
+    .register()
+    
+mods.tweakedMods.fluid_reservoir.remove("oil")

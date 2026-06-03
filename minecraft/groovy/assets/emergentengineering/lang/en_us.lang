@@ -13,3 +13,22 @@ item.emergentengineering.checkmark.name=Checkmark
 item.emergentengineering.questionmark.name=Question Mark
 item.emergentengineering.information.name=Information
 item.emergentengineering.warning.name=Warning
+item.emergentengineering.carbon_steel_gear.name=Carbon Steel Gear
+item.emergentengineering.metal_press_mold_base.name=Metal Press Mold: Base
+item.emergentengineering.crafting_catalyst.name=Crafting Catalyst
+item.emergentengineering.mojohocutlul.name=Möjöhöcutlul
+
+tile.emergentengineering.compressed_marble.name=Compressed Marble
+tile.emergentengineering.double_compressed_marble.name=Double Compressed Marble
+tile.emergentengineering.compressed_juniper_log.name=Compressed Ferrous-Juniper Log
+tile.emergentengineering.double_compressed_juniper_log.name=Double Compressed Ferrous-Juniper Log
+
+tile.emergentengineering.syenite.name=Syenite
+tile.emergentengineering.rhyolite.name=Rhyolite
+tile.emergentengineering.monazite.name=Monazite
+tile.emergentengineering.gabbro.name=Gabbro
+tile.emergentengineering.norite.name=Norite
+tile.emergentengineering.basalt.name=Basalt
+tile.emergentengineering.peridotite.name=Peridotite
+tile.emergentengineering.pyroxenite.name=Pyroxenite
+tile.emergentengineering.komatiite.name=Komatiite

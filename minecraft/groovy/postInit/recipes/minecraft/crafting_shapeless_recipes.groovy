@@ -108,14 +108,14 @@ crafting.shapelessBuilder()
     .register()
 
 crafting.shapelessBuilder()
-    .name("ferrous_juniper_sapling")
+    .name("ferrous_juniper_sapling_1")
     .input([ore("treeSapling"),item("extrautils2:ironwood_log")])
     .output(item("extrautils2:ironwood_sapling"))
     .register()
 
 crafting.shapelessBuilder()
-    .name("ferrous_juniper_sapling_dcc")
-    .input([ore("treeSapling"),item("avaritia:double_compressed_crafting_table")])
+    .name("ferrous_juniper_sapling_2")
+    .input([ore("treeSapling"),item("emergentengineering:crafting_catalyst")])
     .output(item("extrautils2:ironwood_sapling"))
     .register()
 
