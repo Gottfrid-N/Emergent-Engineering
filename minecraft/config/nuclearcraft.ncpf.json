@@ -7151,6 +7151,35 @@
                       "self_priming": true
                     }
                   }
+                },
+                {
+                  "elements": [
+                    {
+                      "name": "bigreactors:ingotblutonium",
+                      "type": "legacy_item",
+                      "modules": {}
+                    },
+                    {
+                      "name": "bigreactors:ingotyellorium",
+                      "type": "legacy_item",
+                      "modules": {}
+                    }
+                  ],
+                  "type": "list",
+                  "modules": {
+                    "nuclearcraft:overhaul_sfr:fuel_stats": {
+                      "heat": 106,
+                      "output": {
+                        "oredict": "ingotCyanite",
+                        "type": "oredict",
+                        "modules": {}
+                      },
+                      "efficiency": 1.0,
+                      "criticality": 102,
+                      "time": 2700,
+                      "self_priming": false
+                    }
+                  }
                 }
               ]
             },
@@ -9875,6 +9904,11 @@
               "modules": {}
             },
             {
+              "oredict": "ingotCyanite",
+              "type": "oredict",
+              "modules": {}
+            },
+            {
               "oredict": "dustTBP",
               "type": "oredict",
               "modules": {}
@@ -10899,6 +10933,17 @@
                 "plannerator:tags": {
                   "tags": [
                     "ingotDepletedHECf251ZA"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "bigreactors:ingotcyanite",
+              "type": "legacy_item",
+              "modules": {
+                "plannerator:tags": {
+                  "tags": [
+                    "ingotCyanite"
                   ]
                 }
               }

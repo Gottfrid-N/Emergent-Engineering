@@ -1,52 +1,56 @@
-============  GroovyLog  ====  04.06.2026  ============
+============  GroovyLog  ====  11.06.2026  ============
 GroovyScript version: 1.4.3
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property Apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property rune_altar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runealtar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runeAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property RuneAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brew_recipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewrecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property BrewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property rune_altar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runealtar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runeAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property RuneAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brew_recipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewrecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property BrewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property Apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
-[00:45:44] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
-[00:45:44] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
-[00:45:44] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 43ms to run in preInit.
-[00:46:04] [CLIENT/INFO] [groovyscript]: Starting Language server
-[00:46:07] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
-[00:46:10] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - loading class classes.function
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - loading class classes.recipe
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - loading class classes.util
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.ore_dict
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.astralsorcery.starlight_altar
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.carbon_steel
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.crushing_recipes
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.extrautils2.resonator
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln_recipes
-[00:46:10] [CLIENT/INFO] [postInit.recipes.immersiveengineering.alloy_kiln_recipes:1]: Running alloy_kiln_recipes.groovy!
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace_recipes
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.engineers_workbench_recipes
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersivepetroleum.distillation_tower
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersivepetroleum.fluid_resevoir
-[00:46:10] [CLIENT/INFO] [postInit.recipes.immersivepetroleum.fluid_resevoir:9]: Added reservoir crude_oil
-[00:46:10] [CLIENT/INFO] [postInit.recipes.immersivepetroleum.fluid_resevoir:12]: Removed reservoir with name: oil
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.metal_recipes
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.compacting
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped_recipes
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless_recipes
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace_recipes
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.misc_recipes
-[00:46:10] [CLIENT/INFO] [emergentengineering]:  - running script postInit.tooltip
-[00:46:10] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 280ms to run in postInit.
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property Apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property rune_altar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runealtar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runeAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property RuneAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brew_recipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewrecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property BrewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property rune_altar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runealtar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property runeAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property rune_altar was replaced with property RuneAltar in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brew_recipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewrecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property brewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property brew_recipe was replaced with property BrewRecipe in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/WARN] [groovyscript]: Property apothecary was replaced with property Apothecary in class class vazkii.botania.client.integration.groovyscript.BotaniaCEuAdditions!
+[00:06:15] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'preInit'
+[00:06:15] [CLIENT/INFO] [emergentengineering]:  - running script preInit.main
+[00:06:15] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 42ms to run in preInit.
+[00:06:34] [CLIENT/INFO] [groovyscript]: Starting Language server
+[00:06:38] [CLIENT/INFO] [groovyscript]: Skipping load stage init, since no scripts are configured!
+[00:06:40] [CLIENT/INFO] [emergentengineering]: Running scripts in loader 'postInit'
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - loading class classes.function
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - loading class classes.recipe
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - loading class classes.util
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.ore_dict
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.astralsorcery.starlight_altar
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.carbon_steel
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.crushing_recipes
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.extrautils2.resonator
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.alloy_kiln_recipes
+[00:06:40] [CLIENT/INFO] [postInit.recipes.immersiveengineering.alloy_kiln_recipes:1]: Running alloy_kiln_recipes.groovy!
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.blast_furnace_recipes
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersiveengineering.engineers_workbench_recipes
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersivepetroleum.distillation_tower
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.immersivepetroleum.fluid_resevoir
+[00:06:40] [CLIENT/INFO] [postInit.recipes.immersivepetroleum.fluid_resevoir:9]: Added reservoir crude_oil
+[00:06:40] [CLIENT/INFO] [postInit.recipes.immersivepetroleum.fluid_resevoir:12]: Removed reservoir with name: oil
+[00:06:40] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.metal_recipes
+[00:06:41] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.compacting
+[00:06:41] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shaped_recipes
+[00:06:41] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.crafting_shapeless_recipes
+[00:06:41] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.minecraft.furnace_recipes
+[00:06:41] [CLIENT/INFO] [emergentengineering]:  - running script postInit.recipes.misc_recipes
+[00:06:41] [CLIENT/INFO] [emergentengineering]:  - running script postInit.tooltip
+[00:06:41] [CLIENT/ERROR] [postInit.tooltip:39]: Can't find item for name appliedenergistics2:grindstone!
+[00:06:41] [CLIENT/ERROR] [postInit.tooltip:39]: Error removing Minecraft Crafting recipe: - Output must not be empty
+[00:06:41] [CLIENT/ERROR] [postInit.tooltip:40]: Can't find item for name appliedenergistics2:grindstone!
+[00:06:41] [CLIENT/INFO] [emergentengineering]: Groovy scripts took 0ms to compile and 317ms to run in postInit.
+[00:06:59] [SERVER/DEBUG] [groovyscript]: Set or created 0 GameRules

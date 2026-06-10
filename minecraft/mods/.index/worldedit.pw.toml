@@ -1,0 +1,18 @@
+filename = 'worldedit-forge-mc1.12.2-6.1.10-dist.jar'
+name = 'WorldEdit'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'WorldEdit 6.1.10 (For MC 1.12.2)'
+
+[download]
+hash = '17314bdab33678478af060d2156338ee34db8a09'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2941712
+project-id = 225608

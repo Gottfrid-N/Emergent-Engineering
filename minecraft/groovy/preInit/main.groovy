@@ -82,7 +82,7 @@ content.createBlock("syenite")
 content.createBlock("rhyolite")
     .register()
     
-content.createBlock("monazite")
+content.createBlock("monzonite")
     .register()
     
 content.createBlock("gabbro")

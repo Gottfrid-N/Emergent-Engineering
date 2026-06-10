@@ -13,8 +13,7 @@
 				},
 				"material": [
 					"minecraft:sand",
-					"minecraft:sandstone",
-					"minecraft:stone"
+					"minecraft:sandstone"
 				],
 				"cluster-size": 16
 			},
@@ -54,8 +53,7 @@
 				],
 				"material": [
 					"minecraft:dirt",
-					"minecraft:gravel",
-					"minecraft:stone"
+					"minecraft:gravel"
 				],
 				"cluster-size": 16
 			},
@@ -108,8 +106,7 @@
 				],
 				"material": [
 					"minecraft:sand",
-					"minecraft:sandstone",
-					"minecraft:stone"
+					"minecraft:sandstone"
 				],
 				"hollow": "true",
 				"filler": "thermalfoundation:fluid_crude_oil",
@@ -139,7 +136,7 @@
 			}
 		},
 		"oil_shale": {
-			"enabled": "true",
+			"enabled": "false",
 			"distribution": "uniform",
 			"generator": {
 				"type": "geode",

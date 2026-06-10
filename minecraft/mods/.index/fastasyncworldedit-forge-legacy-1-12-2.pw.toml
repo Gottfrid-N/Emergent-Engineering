@@ -1,0 +1,21 @@
+filename = 'FastAsyncWorldEdit-forge112-25.10.06-fb8a81c-1289-22.4.3.jar'
+name = 'FastAsyncWorldEdit Forge Legacy'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'FastAsyncWorldEdit-forge112-25.10.06-fb8a81c-1289-22.4.3.jar'
+
+[download]
+hash = 'c2704917d161be9ff9b4f45af5d72f8a8e30e95f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7076189
+project-id = 1360483
+
+[[x-prismlauncher-dependencies]]
+addonId = '225608'
+type = 'REQUIRED'
