@@ -1,0 +1,11 @@
+{
+  "build:8": "4.3.1",
+  "format:8": "2.1.0",
+  "questDatabase:9": {},
+  "questLines:9": {},
+  "questSettings:10": {
+    "betterquesting:10": {
+      "editmode:1": 0
+    }
+  }
+}

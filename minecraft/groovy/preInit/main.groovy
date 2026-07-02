@@ -76,13 +76,13 @@ content.createBlock("double_compressed_juniper_log")
     .register()
 
 // Felsic -> Ultramafic
-content.createBlock("syenite")
+content.createBlock("tonalite")
     .register()
-    
+
 content.createBlock("rhyolite")
     .register()
-    
-content.createBlock("monzonite")
+
+content.createBlock("syenite")
     .register()
     
 content.createBlock("gabbro")

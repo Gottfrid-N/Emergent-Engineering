@@ -1,0 +1,32 @@
+{
+  "nuclearcraft:root": {
+    "criteria": {
+      "location": "2026-07-02 04:33:26 +0200"
+    },
+    "done": true
+  },
+  "astralsorcery:root": {
+    "criteria": {
+      "astralsorcery_present": "2026-07-02 04:33:26 +0200"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/root": {
+    "criteria": {
+      "tick": "2026-07-02 04:33:26 +0200"
+    },
+    "done": true
+  },
+  "twilightforest:alt/compat/tconstruct": {
+    "criteria": {
+      "book": "2026-07-02 04:33:26 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2026-07-02 04:33:26 +0200"
+    },
+    "done": false
+  }
+}

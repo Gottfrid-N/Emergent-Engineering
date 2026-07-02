@@ -35,10 +35,23 @@ addTooltip(item("avaritia:compressed_crafting_table"),
 addTooltip(item("avaritia:double_compressed_crafting_table"),
 "§c81 Crafting Tables, 324 Planks")
 
-mods.appliedenergistics2.grinder.removeAll()
-crafting.removeByOutput(item("appliedenergistics2:grindstone"))
-addTooltip(item("appliedenergistics2:grindstone"),
-"§cDISABLED")
+addTooltip(item("emergentengineering:tonalite"),"§9Plagioclase §fFelsic §5Intrusive §6Igneous")
+addTooltip(item("minecraft:stone:1"),"§6Feldspar §fFelsic §5Intrusive §6Igneous")
+
+addTooltip(item("minecraft:stone:3"),"§9Plagioclase §eIntermediate §5Intrusive §6Igneous")
+addTooltip(item("emergentengineering:syenite"),"§6Feldspar §eIntermediate §5Intrusive §6Igneous")
+
+
+addTooltip(item("emergentengineering:gabbro"),"§3Orthopyroxene §aMafic §5Intrusive §6Igneous")
+addTooltip(item("emergentengineering:norite"),"§2Clinopyroxene §aMafic §5Intrusive §6Igneous")
+
+addTooltip(item("emergentengineering:peridotite"),"§3Olivine §2Ultramafic §5Intrusive §6Igneous")
+addTooltip(item("emergentengineering:pyroxenite"),"§aPyroxene §2Ultramafic §5Intrusive §6Igneous")
+
+addTooltip(item("emergentengineering:rhyolite"),"§fFelsic §4Extrusive §6Igneous")
+addTooltip(item("minecraft:stone:5"),"§eIntermediate §4Extrusive §6Igneous")
+addTooltip(item("emergentengineering:basalt"),"§aMafic §4Extrusive §6Igneous")
+addTooltip(item("emergentengineering:komatiite"),"§2Ultramafic §4Extrusive §6Igneous")
 
 crafting.removeByOutput(item("immersiveengineering:metal_device1:3"))
 addTooltip(item("immersiveengineering:metal_device1:3"),

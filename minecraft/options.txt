@@ -4,7 +4,7 @@ mouseSensitivity:0.6549296
 fov:1.0
 gamma:1.0
 saturation:0.0
-renderDistance:10
+renderDistance:32
 guiScale:2
 particles:1
 bobView:true
@@ -14,7 +14,7 @@ fboEnable:true
 difficulty:2
 fancyGraphics:true
 ao:2
-renderClouds:true
+renderClouds:false
 resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:
@@ -87,33 +87,6 @@ key_key.hotbar.8:9:NONE:
 key_key.hotbar.9:10:NONE:
 key_ae2stuff.keybinding.adv_wireless_second:29:NONE:
 key_keybind.baublesinventory:48:NONE:
-key_quark.keybind.lockBuilding:37:NONE:
-key_quark.emote.no:0:NONE:
-key_quark.emote.yes:0:NONE:
-key_quark.emote.wave:0:NONE:
-key_quark.emote.salute:0:NONE:
-key_quark.emote.cheer:0:NONE:
-key_quark.emote.clap:0:NONE:
-key_quark.emote.think:0:NONE:
-key_quark.emote.point:0:NONE:
-key_quark.emote.shrug:0:NONE:
-key_quark.emote.headbang:0:NONE:
-key_quark.emote.weep:0:NONE:
-key_quark.emote.facepalm:0:NONE:
-key_quark.emote.dance:0:NONE:
-key_quark.emote.tpose:0:NONE:
-key_quark.emote.dab:0:NONE:
-key_quark.emote.jet:0:NONE:
-key_quark.emote.exorcist:0:NONE:
-key_quark.emote.zombie:0:NONE:
-key_quark.keybind.dropoff:0:NONE:
-key_quark.keybind.changeHotbar:44:NONE:
-key_quark.keybind.chestSort:0:NONE:
-key_quark.keybind.chestDropoff:0:NONE:
-key_quark.keybind.chestMerge:0:NONE:
-key_quark.keybind.chestRestock:0:NONE:
-key_quark.keybind.chestExtract:0:NONE:
-key_quark.keybind.toggleAutojump:48:NONE:
 key_key.betterquesting.quests:184:NONE:
 key_key.betterquesting.back:14:NONE:
 key_bloodmagic.keybind.open_holding:35:NONE:
@@ -131,6 +104,9 @@ key_pe.key.extra_function:46:NONE:
 key_pe.key.fire_projectile:19:NONE:
 key_pe.key.mode:34:NONE:
 key_Reload Default Sound Device:25:NONE:
+key_Strip World:14:ALT:56
+key_Dress World:28:ALT:56
+key_Inspect Block:27:ALT:56
 key_key.toggle_focus.desc:15:NONE:
 key_key.open_wireless_terminal.desc:20:SHIFT:42
 key_key.open_wireless_crafting_terminal.desc:18:SHIFT:42
@@ -206,6 +182,7 @@ key_teamsmod.keycompass.desc:50:NONE:
 key_teamsmod.keyaccept.desc:27:NONE:
 key_teamsmod.keyswitch.desc:19:NONE:
 key_keybind.universaltweaks.clear_toasts:11:CONTROL:219
+key_WorldEdit Reference:38:NONE:
 key_bogosort.key.move_all_same:-100:ALT:56
 key_bogosort.key.move_all:-100:NONE:57
 key_bogosort.key.move_single:-100:CONTROL:219
@@ -236,9 +213,9 @@ key_enderio.keybind.fovplus:0:NONE:
 key_enderio.keybind.fovminus:0:NONE:
 key_enderio.keybind.fovplusfast:0:NONE:
 key_enderio.keybind.fovminusfast:0:NONE:
-key_key.aether.accessory_menu:0:NONE:
-key_key.swapHands:33:NONE:
 key_key.drop:16:NONE:
+key_key.swapHands:33:NONE:
+key_key.aether.accessory_menu:0:NONE:
 soundCategory_master:0.0
 soundCategory_music:0.0
 soundCategory_record:1.0

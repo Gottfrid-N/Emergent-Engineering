@@ -1,0 +1,262 @@
+
+{
+    "priority": 64,
+    "populate": {
+        "plate_peridotite": {
+            "distribution": "custom",
+            "generator": {
+                "type": "plate",
+                "block": {
+                    "name": "emergentengineering:peridotite",
+                    "metadata": 0
+                },
+                "material": [
+                    {
+                        "name": "minecraft:stone",
+                        "metadata": 0
+                    }
+                ],
+                "radius": 32,
+                "height": 24,
+                "slim": true
+            },
+            "cluster-count": 1,
+            "chunk-chance": 100,
+            "x-offset": 0,
+            "y-offset": 60,
+            "z-offset": 0,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        },
+        "plate_pyroxenite": {
+            "distribution": "custom",
+            "generator": {
+                "type": "plate",
+                "block": {
+                    "name": "emergentengineering:pyroxenite",
+                    "metadata": 0
+                },
+                "material": [
+                    {
+                        "name": "minecraft:stone",
+                        "metadata": 0
+                    }
+                ],
+                "radius": 32,
+                "height": 24,
+                "slim": true
+            },
+            "cluster-count": 1,
+            "chunk-chance": 100,
+            "x-offset": 0,
+            "y-offset": 60,
+            "z-offset": 0,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        },
+        "plate_gabbro": {
+            "distribution": "custom",
+            "generator": {
+                "type": "plate",
+                "block": {
+                    "name": "emergentengineering:gabbro",
+                    "metadata": 0
+                },
+                "material": [
+                    {
+                        "name": "minecraft:stone",
+                        "metadata": 0
+                    }
+                ],
+                "radius": 32,
+                "height": 24,
+                "slim": true
+            },
+            "cluster-count": 1,
+            "chunk-chance": 100,
+            "x-offset": 0,
+            "y-offset": 60,
+            "z-offset": 0,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        },
+        "plate_norite": {
+            "distribution": "custom",
+            "generator": {
+                "type": "plate",
+                "block": {
+                    "name": "emergentengineering:norite",
+                    "metadata": 0
+                },
+                "material": [
+                    {
+                        "name": "minecraft:stone",
+                        "metadata": 0
+                    }
+                ],
+                "radius": 32,
+                "height": 24,
+                "slim": true
+            },
+            "cluster-count": 1,
+            "chunk-chance": 100,
+            "x-offset": 0,
+            "y-offset": 60,
+            "z-offset": 0,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        },
+        "plate_diorite": {
+            "distribution": "custom",
+            "generator": {
+                "type": "plate",
+                "block": {
+                    "name": "minecraft:stone",
+                    "metadata": 3
+                },
+                "material": [
+                    {
+                        "name": "minecraft:stone",
+                        "metadata": 0
+                    }
+                ],
+                "radius": 32,
+                "height": 24,
+                "slim": true
+            },
+            "cluster-count": 1,
+            "chunk-chance": 100,
+            "x-offset": 0,
+            "y-offset": 60,
+            "z-offset": 0,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        },
+        "plate_syenite": {
+            "distribution": "custom",
+            "generator": {
+                "type": "plate",
+                "block": {
+                    "name": "emergentengineering:syenite",
+                    "metadata": 0
+                },
+                "material": [
+                    {
+                        "name": "minecraft:stone",
+                        "metadata": 0
+                    }
+                ],
+                "radius": 32,
+                "height": 24,
+                "slim": true
+            },
+            "cluster-count": 1,
+            "chunk-chance": 100,
+            "x-offset": 0,
+            "y-offset": 60,
+            "z-offset": 0,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        },
+        "plate_tonalite": {
+            "distribution": "custom",
+            "generator": {
+                "type": "plate",
+                "block": {
+                    "name": "emergentengineering:tonalite",
+                    "metadata": 0
+                },
+                "material": [
+                    {
+                        "name": "minecraft:stone",
+                        "metadata": 0
+                    }
+                ],
+                "radius": 32,
+                "height": 24,
+                "slim": true
+            },
+            "cluster-count": 1,
+            "chunk-chance": 100,
+            "x-offset": 0,
+            "y-offset": 60,
+            "z-offset": 0,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        },
+        "plate_granite": {
+            "distribution": "custom",
+            "generator": {
+                "type": "plate",
+                "block": {
+                    "name": "minecraft:stone",
+                    "metadata": 1
+                },
+                "material": [
+                    {
+                        "name": "minecraft:stone",
+                        "metadata": 0
+                    }
+                ],
+                "radius": 32,
+                "height": 24,
+                "slim": true
+            },
+            "cluster-count": 1,
+            "chunk-chance": 100,
+            "x-offset": 0,
+            "y-offset": 60,
+            "z-offset": 0,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        } 
+    }
+}

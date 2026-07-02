@@ -1,0 +1,134 @@
+
+{
+    "priority": 63,
+    "populate": {
+        "plate_rhyolite": {
+            "distribution": "custom",
+            "generator": {
+                "type": "plate",
+                "block": {
+                    "name": "emergentengineering:rhyolite",
+                    "metadata": 0
+                },
+                "material": [
+                    {
+                        "name": "minecraft:stone",
+                        "metadata": 0
+                    }
+                ],
+                "radius": 12,
+                "height": 32,
+                "slim": true
+            },
+            "cluster-count": 1,
+            "chunk-chance": 40,
+            "x-offset": 0,
+            "y-offset": 32,
+            "z-offset": 0,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        },
+        "plate_andesite": {
+            "distribution": "custom",
+            "generator": {
+                "type": "plate",
+                "block": {
+                    "name": "minecraft:stone",
+                    "metadata": 5
+                },
+                "material": [
+                    {
+                        "name": "minecraft:stone",
+                        "metadata": 0
+                    }
+                ],
+                "radius": 14,
+                "height": 32,
+                "slim": true
+            },
+            "cluster-count": 1,
+            "chunk-chance": 40,
+            "x-offset": 0,
+            "y-offset": 32,
+            "z-offset": 0,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        },
+        "plate_basalt": {
+            "distribution": "custom",
+            "generator": {
+                "type": "plate",
+                "block": {
+                    "name": "emergentengineering:basalt",
+                    "metadata": 0
+                },
+                "material": [
+                    {
+                        "name": "minecraft:stone",
+                        "metadata": 0
+                    }
+                ],
+                "radius": 8,
+                "height": 32,
+                "slim": true
+            },
+            "cluster-count": 1,
+            "chunk-chance": 40,
+            "x-offset": 0,
+            "y-offset": 32,
+            "z-offset": 0,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        },
+        "plate_komatiite": {
+            "distribution": "custom",
+            "generator": {
+                "type": "plate",
+                "block": {
+                    "name": "emergentengineering:komatiite",
+                    "metadata": 0
+                },
+                "material": [
+                    {
+                        "name": "minecraft:stone",
+                        "metadata": 0
+                    }
+                ],
+                "radius": 16,
+                "height": 32,
+                "slim": true
+            },
+            "cluster-count": 1,
+            "chunk-chance": 40,
+            "x-offset": 0,
+            "y-offset": 32,
+            "z-offset": 0,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        }
+    }
+}
